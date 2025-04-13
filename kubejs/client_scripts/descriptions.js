@@ -272,7 +272,7 @@ JEIEvents.information(event => {
 	['Cloth scraps drop from all mobs wearing clothes, like zombies, piglins and witches, and can also be found in various loot chests.'])
 	
 	event.addItem('quark:soul_bead', 
-	['Soul beads can be acquired by killing vexes or wraiths, or by destroying spawners.'])
+	['Soul beads can be acquired by killing vexes or wraiths, by destroying spawners, or by bartering with piglin alchemists.'])
 	
 	event.addItem('kubejs:copper_brush', 
 	['Brushes will let you brush various animals for some drops, such as feathers from chickens, or string from sheep. After being brushed, animals can\'t be brushed again until some time has passed. Brushes can also be made into glue brushes and wax brushes.'])

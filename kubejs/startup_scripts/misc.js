@@ -36,6 +36,9 @@ StartupEvents.registry('fluid', event =>
 	event.create('scarlet_cheese').stillTexture('kubejs:fluid/scarlet_cheese_still').flowingTexture('kubejs:fluid/scarlet_cheese_flow')
 	event.create('ink').stillTexture('kubejs:fluid/ink_still').flowingTexture('kubejs:fluid/ink_flow')
 	event.create('latex').stillTexture('kubejs:fluid/latex_still').flowingTexture('kubejs:fluid/latex_flow')
+	event.create('cooking_oil').stillTexture('kubejs:fluid/cooking_oil_still').flowingTexture('kubejs:fluid/cooking_oil_flow')
+	
+	// don't ask
 	event.create('wooden_pickaxe').displayName('Wooden Pickaxe Fluid').stillTexture('kubejs:fluid/wooden_pickaxe').flowingTexture('kubejs:fluid/wooden_pickaxe')
 })
 
@@ -164,6 +167,9 @@ ItemEvents.modification(event => {
 		item.craftingRemainder = Item.of('minecraft:bucket').item
 	})
 	event.modify('kubejs:batter_bucket', item => {
+		item.craftingRemainder = Item.of('minecraft:bucket').item
+	})
+	event.modify('kubejs:cooking_oil_bucket', item => {
 		item.craftingRemainder = Item.of('minecraft:bucket').item
 	})
 	event.modify('kubejs:batter', item => {

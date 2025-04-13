@@ -3,7 +3,8 @@
 StartupEvents.registry('block', event => {
 	const allColours = ['white','orange','magenta','light_blue','yellow','lime','pink','gray','light_gray','cyan','purple','blue','brown','green','red','black']
 
-	event.create('wheat_flour_bag').soundType('wool').hardness(0.8).resistance(0.8).tagBlock('farmersdelight:mineable/knife')
+	event.create('wheat_flour_bag').soundType('wool').hardness(0.8).resistance(0.8)
+	event.create('cinder_flour_bag').soundType('wool').hardness(0.8).resistance(0.8)
 	event.create('paper_block').soundType('wool').hardness(0.1).resistance(0.1)
 	
 	event.create('lead_ore').soundType('stone').hardness(3).resistance(3).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)

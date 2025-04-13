@@ -978,7 +978,7 @@ hash = "00f4070b111ef9ef992856809c239c6b0dc7d9926d3189333a955e36161ef374"
 
 [[files]]
 file = "config/fancymenu/customization/rfchangelog.txt"
-hash = "2024dbe15d3a2488aa924c6eee0fa889467243f386856d227d42cd4d133d1bc2"
+hash = "6687355ad7cd0be8569e7c2e593b3ea55dc12f0009bd451489cdbb946558fc6b"
 
 [[files]]
 file = "config/fancymenu/customization/rfcontrols1.txt"
@@ -990,7 +990,7 @@ hash = "c2f01180ce2b0abc3f8a861207aa7e86d9abda2ed38613964c98821c3d197186"
 
 [[files]]
 file = "config/fancymenu/customization/rfcredits.txt"
-hash = "987d2c80454b601eacaf01ff30a2624e9d36c8b4b97318013f052a6b1454637e"
+hash = "953258fec4a73db60402a8178dcb8e97d445ffb95900cb37ca12c112e789a41c"
 
 [[files]]
 file = "config/fancymenu/customization/rfdeath.txt"
@@ -1022,7 +1022,7 @@ hash = "cf13a6533eac12ed1906550dbba69cbf91abd6d356e00fbeccabdc095ad1aefa"
 
 [[files]]
 file = "config/fancymenu/customization/rfwarning.txt"
-hash = "b26f4977bf40cc011ea5b6b22087040e45c486ecfbe1d71400e9420971887f72"
+hash = "046eae1e7e1508145260184939cea32573184c3c7865e5f8aab229b51efd1122"
 
 [[files]]
 file = "config/fancymenu/customization/rfworldselection2.txt"
@@ -1266,7 +1266,7 @@ hash = "c06268cb667664db683baecfdd08f8f1fa8a3d8d3d357ff0fe5e7c4605388336"
 
 [[files]]
 file = "config/fancymenu/fancymenu_assets/splashes.txt"
-hash = "bce8477aeaa534c74c6e862d219d4234487f71a8fcd542d5b8f456fab2c2ec66"
+hash = "3e00cac5ee51c1898a149de8e70e93463ef46173ac653363ad6ec15f7f64cffa"
 
 [[files]]
 file = "config/fancymenu/fancymenu_assets/teamraspberry.png"
@@ -1777,12 +1777,16 @@ file = "config/nock_enough_arrows-common.toml"
 hash = "8a92a1058a50cea6349585889e66588b7dac4c1afaea0be16e4bf426552d5ee8"
 
 [[files]]
+file = "config/nostalgic_tweaks/backup/nostalgic_tweaks-client-startup_backup.json"
+hash = "6aecda4ec51d0c13296859bb536f9dfaf0e2eca8bbdba2073320fd4d79963cbe"
+
+[[files]]
 file = "config/nostalgic_tweaks/nostalgic_tweaks-server.json"
 hash = "79228e68697e18bd82e5b343f3337ab5a7dff7bf3fea88b4cedf4a4163e2b361"
 
 [[files]]
 file = "config/nostalgic_tweaks/nostalgic_tweaks.json"
-hash = "356aa6270f42376942d342b2c107afc00dd0ed9c532169af9473eaaa04efaf07"
+hash = "809f3b1691387024afed3e56e4370f94f1cd0e6d72b41b759c883f84bb7a67cf"
 
 [[files]]
 file = "config/notenoughanimations.json"
@@ -2990,11 +2994,11 @@ hash = "ebe61a36c2c03c36be6b1e67e6d92e908e662adaddb36abcbd792842773a9142"
 
 [[files]]
 file = "config/prettyrain.json5"
-hash = "1787799e8baf6351fd74a10ca5138888020e963abdc82278802c29a1e4846cf7"
+hash = "4e74af152052d31acedb6c92240d9e43d5a5ccffc54fcfa333b81290b287dbd1"
 
 [[files]]
 file = "config/propertymodifier-common.toml"
-hash = "db7620114f5aa96e15b182d3cfb84f78f4006ea29b97c02497dd493010c18977"
+hash = "c6b20f215abbf5cd35e5b09d03595221172fb2b45979051177b22422c90fc1b1"
 
 [[files]]
 file = "config/propertymodifier_generated.toml"
@@ -3090,7 +3094,7 @@ hash = "cc0b4aaa0a95dd42ee25dcb42ac0f370e76554b9077161635dea792aaa287883"
 
 [[files]]
 file = "config/snowrealmagic-common.toml"
-hash = "73526d3f196c017dd60c91d3e528697008f709f2f2075b8f8c6ead3f0052d502"
+hash = "78f1eea2deacaeaddaedebbd665139ae4923d817f005f37d386cc16757555f14"
 
 [[files]]
 file = "config/snowundertrees-common.toml"
@@ -3233,48 +3237,12 @@ file = "config/xray/block_store.json"
 hash = "9a41b3813469f1b369b0e70ca81573be32dce11dc4469e955a48cc524a2673e6"
 
 [[files]]
-file = "defaultconfigs/additional_enchantments-server.toml"
-hash = "9826eb66efd77dfbeb26acad5721bf4dd0aa45fe4da8d99e234bce5caf23548e"
-
-[[files]]
-file = "defaultconfigs/cofh_core-server.toml"
-hash = "ce708d8e2bead2aebfc4f4ad73494a6734729771e724c10ea3db4ec5e83d5380"
-
-[[files]]
-file = "defaultconfigs/create-server.toml"
-hash = "9cb4b028d865edbfc437b8ba767fefc58c679a2fd74a6cdfba158b278e63077e"
-
-[[files]]
-file = "defaultconfigs/easyshulkerboxes-server.toml"
-hash = "889b35466b0531bbb41cccfed12c98d1806c8923346e2585c01a0a5e8d84b08e"
-
-[[files]]
-file = "defaultconfigs/ensorcellation-server.toml"
-hash = "caaee961d804a16800640f3d15852fc4699bd3c116c473962b68fd4724c59b8b"
-
-[[files]]
-file = "defaultconfigs/hourglass-server.toml"
-hash = "e3859e3b593683bfd184861ec746f97c31544a8eeb959fd0146de0f73ba2aafe"
-
-[[files]]
-file = "defaultconfigs/nostalgic_tweaks/nostalgic_tweaks-server.json"
-hash = "79228e68697e18bd82e5b343f3337ab5a7dff7bf3fea88b4cedf4a4163e2b361"
-
-[[files]]
-file = "defaultconfigs/rrp.properties"
-hash = "126b80f6c694aa1ab404e06ead03ffce379ec446013fb0111dce06ed1c2e820b"
-
-[[files]]
-file = "defaultconfigs/universalbonemeal-server.toml"
-hash = "21a09b8b674c2db3e2fbab14b1521e4612f65a1336282b508f06b40145a4b77a"
-
-[[files]]
 file = "emi.json"
-hash = "b19656d3ef35ab3d1db17c2273ed72bc123ebd730bdd74d008873397ec473305"
+hash = "17101d231df73a0200be7d5500914f53a44d44278e1a4af27931dd2cda9b41c7"
 
 [[files]]
 file = "icon.png"
-hash = "4e401062ea9c9f37890f5993acc9365897b16ce3b5160441d14ad5a3898c6df8"
+hash = "890cd92e3da4fb04c482075cea388b50cc2286b95193e3a4277d0d6165e8e853"
 
 [[files]]
 file = "kubejs/README.txt"
@@ -3286,7 +3254,7 @@ hash = "1f3e19ee380eb0af7d0e6382997b4015c393e8ad405852b1c85ad9d15eaa38d2"
 
 [[files]]
 file = "kubejs/client_scripts/descriptions.js"
-hash = "fb4a9f11ed9b93a1115a7d7e8d45aa54160f98c29d5a66d554b758630128894b"
+hash = "c822abbb153fff7000cac720e6828a516dd8986e685d31be9c9a9030abff3ba2"
 
 [[files]]
 file = "kubejs/client_scripts/ench_tablet_tooltips.js"
@@ -3306,7 +3274,7 @@ hash = "d8eceb10afa7b662342be1be8a5a14e341eff0bb5cb570805a01b86053e34c3f"
 
 [[files]]
 file = "kubejs/config/client.properties"
-hash = "938ed4edb766d46699eeeee42440009936dd5e1f14f2440ad88791e3f8c6668a"
+hash = "0204f9edb192035dbbd767b50c16f38c87428eb4bec3eafdb34027379839ce43"
 
 [[files]]
 file = "kubejs/config/common.properties"
@@ -7842,7 +7810,7 @@ hash = "355069e614a3580d25d6bae1f3157ad987941d0dc0fee7b8d3bd96dfe55d1409"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/chests/buried_treasure.json"
-hash = "7eda097af13be785ed05e23183f0817d53f74d7ccd70c897320a27955a0b845c"
+hash = "310d54b5fb62c90a98969e85ef01e581b9076b4b8786c3ac161ce72dce5c1f2a"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/chests/desert_pyramid.json"
@@ -11134,7 +11102,7 @@ hash = "81085738a03e85c508a5b20c2c55eb324f7ac71fde2743f4faf7750baf1a1a30"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "14e482fc840e6fd93bf087f6bd0492c93afac6a869cb356db50c128ae48bb6d1"
+hash = "305c18dda311a95ec90a9d6fcaad4e0427b8b9299ae22e1eed06246235cb8161"
 
 [[files]]
 file = "kubejs/server_scripts/remove_mob_armour.js"
@@ -11142,7 +11110,7 @@ hash = "240974dde4c8096fe214ce65d014c7c0eee6b1a9fff2989394b8546af63133e6"
 
 [[files]]
 file = "kubejs/server_scripts/remove_recipes.js"
-hash = "792c0cd4f11e9c054761a249a6298f6032ca552956a8763771d0841d44ecb48e"
+hash = "8c4d965e0a15ab0685f6ce7fa9d7a19e930df516cf1732427a4ffb63020722ee"
 
 [[files]]
 file = "kubejs/server_scripts/repair_materials.js"
@@ -11158,7 +11126,7 @@ hash = "476fdbfa3da5b43235dbfbbb0d8cf5d6730da715acbc493859ac146cc3f1cf57"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
-hash = "a730ff57f3736c20b1e8efc02298e4d639cd68e63c1b83354af5003654768bdf"
+hash = "7898f491a4bec0f0940842458da7596e2a5636456caa9550d7b9be914fca4273"
 
 [[files]]
 file = "kubejs/startup_scripts/attributes_modify.js"
@@ -11170,7 +11138,7 @@ hash = "bea17b8f51fb5b954066f5f932dce5597c3e5bc3ff726c6d297089da3ba95b87"
 
 [[files]]
 file = "kubejs/startup_scripts/blocks.js"
-hash = "2f7595346243947cb190a6a119f4bbdcfa33b0d6b1af1bf397aee69841bdb1de"
+hash = "4b14d74060abb04f2cb3f36edd138b223b051a8cd2f6413a7082711c34152957"
 
 [[files]]
 file = "kubejs/startup_scripts/copper_brush.js"
@@ -11218,7 +11186,7 @@ hash = "968579868043a63c27537e84db750f0e0c7e756eff5b5a9fb9b62c50df4188b2"
 
 [[files]]
 file = "kubejs/startup_scripts/misc.js"
-hash = "b16e62bb6eaf44c6d7b75581c4444e92b2d46a804f6fb689d0ae8276aef86284"
+hash = "d66a4369e45ffce11a679be1034427191c743cf317bafc0499d3d03a13ac16da"
 
 [[files]]
 file = "kubejs/startup_scripts/music_discs.js"
@@ -11529,7 +11497,7 @@ metafile = true
 
 [[files]]
 file = "mods/cooks-collection.pw.toml"
-hash = "9035a1f26df2ce4ae4f52bdc83921bc8aaadb63ebf71d8b28677b6dcd1c25709"
+hash = "78a81ea7d2065361e40fb728b38dcc5fe1a49d42225100402ccb31e9105f012b"
 metafile = true
 
 [[files]]
@@ -12169,7 +12137,7 @@ metafile = true
 
 [[files]]
 file = "mods/raspberry-core.pw.toml"
-hash = "a2824a05d99a9458f85df9d82dd6406f3b760c13de618380fc27a032f059ee60"
+hash = "e3537d8ca42853d3bd82b2ea44e49eda0cb4856a94bbb110933176449c238c7d"
 metafile = true
 
 [[files]]

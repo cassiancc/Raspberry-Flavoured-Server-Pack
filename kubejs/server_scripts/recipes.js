@@ -36,6 +36,7 @@ ServerEvents.recipes(event => {
 	event.shapeless('9x string', ['architects_palette:spool'])
 	event.shapeless('9x additionaladditions:rose_gold_alloy', ['#forge:storage_blocks/rose_gold'])
 	event.shapeless('9x kubejs:rose_gold_nugget', ['#forge:ingots/rose_gold'])
+	event.shapeless('9x create:cinder_flour', ['kubejs:cinder_flour_bag'])
 	
 	event.shapeless('charcoal', ['8x kubejs:charcoal_lump'])
 	event.shapeless('8x kubejs:charcoal_lump', ['charcoal'])
@@ -128,6 +129,8 @@ ServerEvents.recipes(event => {
 	event.shapeless('4x kubejs:batter', ['kubejs:batter_bucket', '4x bowl'])
 	event.shapeless('cookscollection:cooking_oil', ['glass_bottle', '2x sunflower']).id('cookscollection:sunflower_oil')
 	event.shapeless('cookscollection:cooking_oil', ['glass_bottle', '8x supplementaries:flax_seeds'])
+	event.shapeless('4x cookscollection:cooking_oil', ['kubejs:cooking_oil_bucket', '4x glass_bottle'])
+	event.shapeless('kubejs:cooking_oil_bucket', ['bucket', '4x cookscollection:cooking_oil'])
 	event.shapeless('cookscollection:fish_and_chips', ['2x #forge:cooked_fishes', 'bowl', 'cookscollection:fried_potato', '#forge:crops/onion', 'cookscollection:lemon']).id('cookscollection:fish_and_chips')
 	event.shapeless('kubejs:pumpkin_pie', ['4x create_central_kitchen:pumpkin_pie_slice']).id('create_central_kitchen:crafting/pumpkin_pie_from_slices')
 	event.shapeless('brewinandchewin:pizza', ['4x brewinandchewin:pizza_slice'])
@@ -272,6 +275,7 @@ ServerEvents.recipes(event => {
 	threeByThree('cookscollection:lemon', 'cookscollection:lemon_crate', 1)
 	threeByThree('additionaladditions:rose_gold_alloy', 'kubejs:rose_gold_block', 1)
 	threeByThree('kubejs:rose_gold_nugget', 'additionaladditions:rose_gold_alloy', 1)
+	threeByThree('create:cinder_flour', 'kubejs:cinder_flour_bag', 1)
 	
 	event.shaped('minecraft:white_bed', ['CCC', 'AAA', 'BBB'], {A: ['minecraft:white_wool', 'kubejs:cloth_scrap_block', 'kubejs:white_cloth_scrap_block', 'supplementaries:feather_block'], B: '#minecraft:planks', C: 'kubejs:cloth_scrap'}).id('minecraft:white_bed')
     event.shaped('3x minecraft:white_banner', ['AAA', 'AAA', ' B '], {A: ['minecraft:white_wool', 'kubejs:cloth_scrap_block', 'kubejs:white_cloth_scrap_block', 'supplementaries:feather_block'], B: 'stick'}).id('minecraft:white_banner')
@@ -1321,6 +1325,8 @@ ServerEvents.recipes(event => {
 	event.recipes.create.compacting(['cookscollection:lemon_muffin'], ['cookscollection:lemon', 'poppy', Fluid.of('kubejs:batter',250)]).heated()
 	event.recipes.create.compacting(['2x farmersdelight:pie_crust'], ['3x #farmersdelight:wheat_or_flour', 'sugar', 'spelunkery:salt'])
 	event.recipes.create.compacting(['2x create_confectionery:cocoa_butter'], ['cocoa_beans', Fluid.of('minecraft:milk',250)])
+	event.recipes.create.compacting([Fluid.of('kubejs:cooking_oil',250)], ['sunflower'])
+	event.recipes.create.compacting([Fluid.of('kubejs:cooking_oil',250)], ['4x supplementaries:flax_seeds'])
 	
 	// Cakes
 	event.recipes.create.compacting(['cake'], [
@@ -1608,6 +1614,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.filling('kubejs:latex_rosewood_log', [Fluid.of('kubejs:latex',250), 'atmospheric:stripped_rosewood_log'])
 	event.recipes.create.filling('kubejs:latex_rosewood', [Fluid.of('kubejs:latex',250), 'atmospheric:stripped_rosewood'])
 	event.recipes.create.filling('kubejs:batter', [Fluid.of('kubejs:batter',250), 'bowl'])
+	event.recipes.create.filling('cookscollection:cooking_oil', [Fluid.of('kubejs:cooking_oil',250), 'glass_bottle'])
 	
 // Emptying
 	event.recipes.create.emptying([Fluid.of('kubejs:ink',1000), 'minecraft:glass_bottle'], 'supplementaries:antique_ink')
@@ -1623,6 +1630,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.emptying([Fluid.of('minecraft:milk',250), 'minecraft:glass_bottle'], 'neapolitan:milk_bottle').id('create:emptying/compat/neapolitan/milk_bottle')
 	event.recipes.create.emptying([Fluid.of('minecraft:milk',250), 'ecologics:coconut_husk'], 'ecologics:coconut_slice')
 	event.recipes.create.emptying([Fluid.of('kubejs:batter',250), 'bowl'], 'kubejs:batter')
+	event.recipes.create.emptying([Fluid.of('kubejs:cooking_oil',250), 'glass_bottle'], 'cookscollection:cooking_oil')
 	
 // Deploying
 	event.recipes.create.deploying('2x farmersdelight:cod_roll', ['farmersdelight:cooked_rice', '#raspberry_flavoured:white_fish'])

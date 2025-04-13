@@ -2707,7 +2707,8 @@ ServerEvents.recipes(event => {
 	'neapolitan:banana/banana_bundle',
 	'atmospheric:roasted_yucca_bundle_from_campfire_cooking',
 	'atmospheric:roasted_yucca_bundle_from_smoking',
-	'atmospheric:roasted_yucca_bundle'
+	'atmospheric:roasted_yucca_bundle',
+	'cookscollection:cutting/sunflower_seeds'
 	]
     
     removedIds.forEach(removedId => {

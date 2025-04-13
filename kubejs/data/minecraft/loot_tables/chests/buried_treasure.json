@@ -4,10 +4,163 @@
     {
       "bonus_rolls": 0.0,
       "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:jungle\", targetBiomeColor: 2274816, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:bamboo_jungle\", targetBiomeColor: 4055575, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:savanna\", targetBiomeColor: 10200418, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:desert\", targetBiomeColor: 13416782, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:swamp\", targetBiomeColor: 2242319, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:mangrove_swamp\", targetBiomeColor: 3880719, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:ice_spikes\", targetBiomeColor: 8381695, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:taiga\", targetBiomeColor: 1724967, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"environmental:blossom_woods\", targetBiomeColor: 16745114, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"environmental:blossom_valleys\", targetBiomeColor: 13657738, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"atmospheric:rainforest\", targetBiomeColor: 3407985, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"atmospheric:dunes\", targetBiomeColor: 15767630, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 3
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+	    {
+          "type": "minecraft:item",
+          "name": "minecraft:turtle_egg",
+          "weight": 3
+        },
+	    {
+          "type": "minecraft:item",
+          "name": "minecraft:scute"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 2
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 6.0,
+        "min": 2.0
+      }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
 	    {
           "type": "minecraft:item",
           "name": "kubejs:raw_ammonite",
-          "weight": 4
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -280,7 +433,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:cooked_cod"
+          "name": "minecraft:cod"
         },
         {
           "type": "minecraft:item",
@@ -295,7 +448,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:cooked_salmon"
+          "name": "minecraft:salmon"
         },
         {
           "type": "minecraft:item",
@@ -310,7 +463,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "upgrade_aquatic:cooked_pike"
+          "name": "upgrade_aquatic:pike"
         },
         {
           "type": "minecraft:item",
@@ -325,7 +478,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "upgrade_aquatic:cooked_perch"
+          "name": "upgrade_aquatic:perch"
         },
         {
           "type": "minecraft:item",
@@ -340,7 +493,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "naturalist:cooked_bass"
+          "name": "naturalist:bass"
         },
         {
           "type": "minecraft:item",
@@ -366,25 +519,14 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "minecraft:long_water_breathing"
+              "id": "minecraft:water_breathing"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:water_breathing"
-            }
-          ],
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
           "name": "brewinandchewin:salty_folly",
-          "weight": 6
+          "weight": 5
         }
       ],
       "rolls": {

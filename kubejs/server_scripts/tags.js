@@ -3864,6 +3864,8 @@ ServerEvents.tags('block', event => {
 		.add('kubejs:green_canvas_rug')
 		.add('kubejs:red_canvas_rug')
 		.add('kubejs:black_canvas_rug')
+		.add('kubejs:wheat_flour_bag')
+		.add('kubejs:cinder_flour_bag')
 	
 	event.get('minecraft:needs_stone_tool')
 		.add('create_confectionery:candy_cane_block')
