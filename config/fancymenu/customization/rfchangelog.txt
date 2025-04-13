@@ -1,0 +1,97 @@
+type = menu
+
+customization-meta {
+  identifier = rfchangelog
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  path = config/fancymenu/fancymenu_assets/backgroundshadows.png
+  orientation = mid-centered
+  x = -261
+  width = 522
+  action = addtexture
+  actionid = ea4d23f3-9a9e-483d-b882-692af3fc4c2b1707261155019
+  y = -153
+  height = 295
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = &6&nMod List Changes:%n%&e- Added: &fFog Looks Good Now%n%&e- Removed: &fBE Style Wither%n%&e- Updated: &fRaspberry Core, Create%n%%n%&6&nGameplay/Content Changes:%n%&e- &fThe Wither no longer has different AI, but instead now has 500 health %n%and 14 armour points rather than 300 health and 4 armour points%n%&e- &fWardens now have 6 armour points, %n%and 40 attack damage rather than 30%n%&e- &fPiglin bartering loot table has been tweaked%n%&e- &fPiglin alchemists now have their own unique bartering loot table%n%&e- &fBlasting items that can't be smelted with a fan behind lava will %n%no longer destroy those items (implemented by Cassian)%n%&e- &fCrushing striated ores now yields less dye, but slightly more ore%n%&e- &fWashing gravel, deepslate gravel and blackstone gravel %n%now yields more ore%n%&e- &fRaked deepslate and blackstone gravel %n%has been added (implemented by Cassian)%n%&e- &fChiseled silt bricks, chiseled ash bricks and %n%trimmed ash bricks have been added%n%&e- &fOnyx and esoterrack blocks have been re-enabled%n%&e- &fEcho chest recipe now requires 4 echo shards rather than 1%n%&e- &fRedstone link recipe now requires an echo shard %n%instead of a sculk sensor%n%&e- &fBeacons and encased item pipes are now crafted %n%with framed glass specifically%n%&e- &fBlaze tart recipe has had its pressing step removed%n%&e- &fKunai recipe now outputs 48 instead of 32%n%&e- &fExtension and levitation potions are now brewed with %n%sap and latex instead of cinnabar and feather blocks respectively%n%&e- &fAll raw meats now have a chance to inflict the hunger effect%n%%n%&6&nCosmetic/Aesthetic Changes:%n%&e- &fAdded a new hidden advancement%n%&e- &fSporedough's texture has been changed %n%(new texture by ProbablyEkho)%n%&e- &fBeacons and encased item pipes' models now use %n%the framed glass texture%n%&e- &fThe golden outline around the hearts of the health bar %n%at maximum health amounts higher than 20 has been changed to a %n%simple Absorption-like golden hearts overlay%n%&e- &fAdded a tooltip to dimensional tear bottles%n%%n%&6&nFixes/Technical Changes:%n%&e- &fPikes and thrashers no longer crash the game %n%(for real this time) (fixed by Cassian)%n%&e- &fLightning rods no longer require a copper pickaxe to mine%n%&e- &fSafes no longer require a tool to mine%n%&e- &fMetal frames can now be mined with pickaxes properly%n%&e- &fDouble copper doors will now open at once when %n%right-clicked like other doors (fixed by Cassian)%n%&e- &fRaw fish fillet is now usable in more recipes%n%&e- &fTorches now have less fuel time%n%&e- &fDeepslate and blackstone gravel no longer have %n%incorrectly coloured hanging particles %n%(fixed by Cassian) (this was fixed by replacing the previous %n%deepslate & blackstone gravels with new custom ones - you'll be able to %n%convert the old into the new for this release only!)%n%&e- &fDeepslate gravel no longer generates in the Nether%n%&e- &fBrewing stands will no longer generate in structures%n%&e- &fPiglin alchemists will no longer barter unobtainable items%n%&e- &fChickens can now be bred with all seeds%n%&e- &fThe crosshair will now display the correct icon for the %n%harvestability state of many more tools (fixed by Cassian)%n%&e- &fExodic torches will no longer display %n%the wrong particles (fixed by Cassian)%n%&e- &fChiseled silt bricks have had their name and recipe changed %n%to be consistent with trimmed bricks, now being called trimmed silt bricks%n%&e- &fCertain blocks no longer have missing footstep sounds%n%&e- &fCertain items and blocks no longer use unintended textures%n%&e- &fCertain unintended recipes have been removed%n%&e- &fUnobtainable items won't appear in certain places anymore%n%&e- &fFlywheel backend renderer has been %n%set to off by default (you may want to switch to batching %n%or instancing depending on your hardware)
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -193
+  width = 387
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 0753e5b4-7a02-4d4e-8877-037b5dfb73041690066138901
+  y = -94
+  alignment = left
+  height = 167
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = closegui%btnaction_splitter_fm%
+  x = -102
+  width = 204
+  action = addbutton
+  actionid = 6d5a4aa0-6dcc-4ede-a838-09c3de7a27731690067224501
+  y = 78
+  label = Done
+  height = 20
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = false
+  shadow = true
+  scale = 1.35
+  source = &o&nRF 3.0 PRE-RELEASE 2 CHANGELOG
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -192
+  width = 385
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 7c1eae62-f707-4682-90c9-eb6896e7a41c1701372163321
+  y = -112
+  alignment = centered
+  base_color = E8587C
+  height = 16
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://discord.gg/jxNe26WNYh%btnaction_splitter_fm%
+  backgroundhovered = config/fancymenu/fancymenu_assets/discordbuttonhover.png
+  description = Join the RF%n%Discord server!
+  label = 
+  loopbackgroundanimations = true
+  orientation_element = 6d5a4aa0-6dcc-4ede-a838-09c3de7a27731690067224501
+  x = 288
+  width = 20
+  action = addbutton
+  actionid = 3fd0d2f5-5337-4a56-b5a4-4679af6a36c01714671721695
+  y = 0
+  backgroundnormal = config/fancymenu/fancymenu_assets/discordbutton.png
+  height = 20
+}
+

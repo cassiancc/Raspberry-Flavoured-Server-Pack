@@ -1,0 +1,7 @@
+name = "Mixin Transmogrifier"
+filename = "mixin-transmogrifier-0.4.6+1.19.2.jar"
+
+[download]
+url = "https://github.com/cassiancc/MixinTransmogrifier/releases/download/0.4.6%2B1.19.2/mixin-transmogrifier-0.4.6+1.19.2.jar"
+hash-format = "sha256"
+hash = "a9753c1b8d09a379a453812362b9d421d154e3ee47d1114beca93c0eaec5f87a"

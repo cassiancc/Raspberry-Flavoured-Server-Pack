@@ -1,0 +1,13 @@
+name = "Survivality"
+filename = "survivality-1.19.2-1.2.4-forge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Q9ZA0ul7/versions/qsWFuGRr/survivality-1.19.2-1.2.4-forge.jar"
+hash-format = "sha1"
+hash = "9e987d53f3c0e5931d3366af4f3e1453b2e9878c"
+
+[update]
+[update.modrinth]
+mod-id = "Q9ZA0ul7"
+version = "qsWFuGRr"

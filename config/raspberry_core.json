@@ -1,0 +1,15 @@
+{
+  "aftershock": true,
+  "stoves_start_lit": false,
+  "campfires_start_lit": false,
+  "braziers_start_lit": false,
+  "hide_world_version": true,
+  "hide_tooltips": true,
+  "gliders_disable_lightning": true,
+  "gliders_disable_nether_damage": true,
+  "aquaculture_bad_bait_lure_bonus": 1,
+  "aquaculture_mid_bait_lure_bonus": 2,
+  "aquaculture_good_bait_lure_bonus": 3,
+  "aquaculture_worm_discovery_range": 80,
+  "create_blastproofing": true
+}

@@ -1,0 +1,13 @@
+name = "Raspberry Core"
+filename = "raspberry_core-0.1.11.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9b56bcb440424daa2b6d3bca66dbb8367fde79a2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6245281
+project-id = 1204167

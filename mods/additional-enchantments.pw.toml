@@ -1,0 +1,13 @@
+name = "Additional Enchantments"
+filename = "additional_enchantments-1.19.2-1.1.2-all.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cd702d215ddd72e78af1a0c3c5d78a5386b903f3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5156812
+project-id = 965249

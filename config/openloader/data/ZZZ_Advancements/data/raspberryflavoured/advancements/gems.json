@@ -1,0 +1,60 @@
+{
+  "parent": "raspberryflavoured:iron_pick",
+  "criteria": {
+    "Obtain Rough Cinnabar, Rough Diamond or Rose Quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "spelunkery:rough_cinnabar",
+              "spelunkery:rough_diamond",
+              "create:rose_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+	"Obtain Cinnabar, Diamond or Polished Rose Quartz": {
+      "conditions": {
+        "items": [
+		  {
+            "items": [
+              "spelunkery:cinnabar",
+              "minecraft:diamond",
+              "create:polished_rose_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "color": "#ED3D69",
+      "text": "Make sand paper or a grindstone and use it to polish any rough gemstone"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "spelunkery:cinnabar"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "The Crystal Gems"
+    }
+  },
+  "rewards": {
+      "function": "raspberryflavoured:sound_goal"
+    },
+  "requirements": [
+    [
+      "Obtain Rough Cinnabar, Rough Diamond or Rose Quartz"
+    ],
+	[
+	  "Obtain Cinnabar, Diamond or Polished Rose Quartz"
+	]
+  ]
+}

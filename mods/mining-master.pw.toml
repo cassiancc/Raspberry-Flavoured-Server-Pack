@@ -1,0 +1,13 @@
+name = "Mining Master"
+filename = "miningmaster-1.19.2-4.1.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bc12358c18718126e1c48a13d8580bf77b254412"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4662004
+project-id = 534956

@@ -1,0 +1,13 @@
+name = "Peeping Angels"
+filename = "peeping_angels-1.19.2-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2634237be6ab019e2b54ed496f7711cf8f85b8ba"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5828316
+project-id = 1125256
