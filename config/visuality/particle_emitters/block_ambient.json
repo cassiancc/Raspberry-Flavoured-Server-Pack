@@ -45,16 +45,6 @@
     },
     {
       "block": [
-		"spelunkery:rock_salt_block",
-		"spelunkery:rock_salt",
-		"supplementaries:soap_block"
-	  ],
-      "particle": {
-        "type": "buzzier_bees:small_soul_fire_flame"
-      }
-    },
-    {
-      "block": [
 		"minecraft:magma_block",
 		"kubejs:heating_cask"
 	  ],

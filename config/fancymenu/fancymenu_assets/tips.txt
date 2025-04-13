@@ -10,7 +10,8 @@ Bellows can make fires last longer and speed up furnaces.
 Bombs will damage mobs, but not blocks.
 Campfires grant the &lComfort &reffect when lit and stood near.
 Crushing cinnabar will yield redstone dust.
-Cooking pots can cook big meals that grant helpful effects.
+Cooking pots can cook meals that grant helpful effects.
+Ovens can cook meals and pastries that grant helpful effects.
 Blaze burners with cooking guides can cook automatically.
 There are no stone tools in RF - only copper tools.
 Chainmail armour, horse armour, saddles and name tags are craftable in RF.
@@ -93,11 +94,14 @@ There are numerous wood types in RF. Which one's your favourite?
 Shearing yaks will yield yak hair, but it'll also make them angry at you.
 Shearing bears will yield bear fur, but it'll also make them angry at you.
 Shearing mooblooms will yield a few buttercups and turn them into regular cows.
+Awoken exopearls will fly towards ruined structures.
+Spirited exopearls will fly towards structures with spawners.
 Hand a binding exopearl to another player to easily locate them.
 Using scaffolding can make building easier.
 Lead can be used as an alternative to iron in various recipes.
 Compasses, depth gauges, atlases and spyglasses are helpful to bring along.
 Paragliders allow for slower descension.
+Smoke from fires will boost you up when using a paraglider.
 Koi fish will reduce hostile mob spawns in an area.
 Large obsidian spikes in the Nether are easy sources of blazes.
 Blaze spawners will also fill empty blaze burners when right-clicked.
@@ -139,3 +143,4 @@ Copper and gold can be hammered into sheets, with a chance of breaking.
 A storage interface and terminal allow for a more unified storage system.
 Fortresses have gotten reinforcements and a refreshed layout.
 Tuff golems can be created with a carved pumpkin, any wool and a tuff block.
+Crops can be harvested by right-clicking them.

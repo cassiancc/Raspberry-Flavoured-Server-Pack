@@ -1,6 +1,6 @@
 name = "Make Bubbles Pop [Client] [Forge/Fabric/Quilt]"
 filename = "make_bubbles_pop-0.2.0-forge-mc1.19-1.19.3.jar"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"

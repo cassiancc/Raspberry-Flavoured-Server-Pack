@@ -25,7 +25,6 @@ StartupEvents.registry('item', event => {
 	'incomplete_mutton_sandwich',
 	'incomplete_pork_wrap',
 	'incomplete_apple_pie',
-	'incomplete_truffle_pie',
 	'incomplete_mutton_pie',
 	'incomplete_butterscotch_cinnamon_pie',
 	'incomplete_stuffed_potato',

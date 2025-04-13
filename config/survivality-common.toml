@@ -19,7 +19,7 @@
 	max_night_vision_modifier = 5.0
 	#Max level for Multishot enchantment
 	#Range: 1 ~ 7
-	max_multishot_level = 3
+	max_multishot_level = 1
 	#Max speed Minecarts can reach
 	#Range: 0.0 ~ 64.0
 	max_minecart_speed = 6.4

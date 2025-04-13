@@ -93,6 +93,7 @@ ServerEvents.tags('item', event => {
 		
 	event.get('raspberry_flavoured:glider_repair_materials')
         .add('create:white_sail')
+        .add('minecraft:phantom_membrane')
 		.add('kubejs:stardust')
 		
 	event.get('raspberry_flavoured:bamboo_repair_materials')

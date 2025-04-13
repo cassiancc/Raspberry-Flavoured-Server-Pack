@@ -11,5 +11,12 @@
   "aquaculture_mid_bait_lure_bonus": 2,
   "aquaculture_good_bait_lure_bonus": 3,
   "aquaculture_worm_discovery_range": 80,
-  "create_blastproofing": true
+  "create_blastproofing": true,
+  "overlay_enable": true,
+  "overlay_search_containers": true,
+  "overlay_require_item_in_hand": false,
+  "overlay_x_colour": "Red",
+  "overlay_y_colour": "Green",
+  "overlay_z_colour": "Blue",
+  "overlay_position_vertical": 110
 }

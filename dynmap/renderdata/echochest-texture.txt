@@ -1,3 +1,0 @@
-modname:echochest
-
-block:id=%echo_chest,transparency=SEMITRANSPARENT,stdrot=true

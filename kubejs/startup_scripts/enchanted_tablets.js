@@ -7,7 +7,7 @@ StartupEvents.registry('item', event => {
 	'cyclic_tablet',
 	'enduring_tablet',
 	'flinging_tablet',
-	'frost_tablet',
+	'glacial_tablet',
 	'hallowed_tablet',
 	'haunted_tablet',
 	'heavy_tablet',

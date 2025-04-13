@@ -31,7 +31,7 @@ ItemEvents.toolTierRegistry (event => {
 // Fluids
 StartupEvents.registry('fluid', event => 
 {
-	event.create('cake_batter').stillTexture('kubejs:fluid/cake_batter_still').flowingTexture('kubejs:fluid/cake_batter_flow')
+	event.create('batter').stillTexture('kubejs:fluid/batter_still').flowingTexture('kubejs:fluid/batter_flow')
 	event.create('flaxen_cheese').stillTexture('kubejs:fluid/flaxen_cheese_still').flowingTexture('kubejs:fluid/flaxen_cheese_flow')
 	event.create('scarlet_cheese').stillTexture('kubejs:fluid/scarlet_cheese_still').flowingTexture('kubejs:fluid/scarlet_cheese_flow')
 	event.create('ink').stillTexture('kubejs:fluid/ink_still').flowingTexture('kubejs:fluid/ink_flow')
@@ -50,6 +50,9 @@ ItemEvents.modification(event => {
     })
 	event.modify('twigs:twig', item => {
 		item.burnTime = 200
+    })
+	event.modify('environmental:tall_dead_bush', item => {
+		item.burnTime = 100
     })
 	event.modify('kubejs:heating_cask', item => {
 		item.burnTime = 900
@@ -150,6 +153,7 @@ ItemEvents.modification(event => {
         item.rarity = 'epic'
     })
 	
+	// Crafting remainders
 	event.modify('minecraft:potion', item => {
 		item.craftingRemainder = Item.of('minecraft:glass_bottle').item
 	})
@@ -158,6 +162,12 @@ ItemEvents.modification(event => {
 	})
 	event.modify('kubejs:latex_bucket', item => {
 		item.craftingRemainder = Item.of('minecraft:bucket').item
+	})
+	event.modify('kubejs:batter_bucket', item => {
+		item.craftingRemainder = Item.of('minecraft:bucket').item
+	})
+	event.modify('kubejs:batter', item => {
+		item.craftingRemainder = Item.of('minecraft:bowl').item
 	})
 	event.modify('ecologics:coconut_slice', item => {
 		item.craftingRemainder = Item.of('ecologics:coconut_husk').item
@@ -190,6 +200,7 @@ StartupEvents.registry('painting_variant', event => {
     event.create('fool_me_twice').width(48).height(64).tag('minecraft:placeable')
     event.create('four_pixels').width(48).height(32).tag('minecraft:placeable')
     event.create('investigation').width(64).height(64).tag('minecraft:placeable')
+    event.create('miniature').width(48).height(48).tag('minecraft:placeable')
     event.create('mirror_mirror').width(32).height(32).tag('minecraft:placeable')
     event.create('six_months').width(48).height(32).tag('minecraft:placeable')
     event.create('sun').width(48).height(48).tag('minecraft:placeable')
@@ -267,7 +278,7 @@ EntityJSEvents.attributes(event => {
         attribute.add("minecraft:generic.max_health", 10)
     })
     event.modify('dungeons_mobs:frozen_zombie', attribute => {
-        attribute.add("minecraft:generic.max_health", 15)
+        attribute.add("minecraft:generic.max_health", 10)
     })
     event.modify('dungeons_mobs:wraith', attribute => {
         attribute.add("minecraft:generic.max_health", 15)
@@ -282,7 +293,7 @@ EntityJSEvents.attributes(event => {
         attribute.add("minecraft:generic.max_health", 20)
     })
     event.modify('caverns_and_chasms:peeper', attribute => {
-        attribute.add("minecraft:generic.max_health", 25)
+        attribute.add("minecraft:generic.max_health", 15)
     })
     event.modify('minecraft:wither', attribute => {
         attribute.add("minecraft:generic.max_health", 500)

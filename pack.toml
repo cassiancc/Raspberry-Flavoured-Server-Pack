@@ -1,12 +1,12 @@
 name = "Raspberry Flavoured"
 author = "raspmary"
-version = "3.0-pre2"
+version = "3.0pre3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "64924f62f00dd97a357f3dfbcb88a4927e657b229fc868c21b70317284c41b84"
+hash = "21925facb9c8fbd345e84b0466560ad6c9769640c08ed9f7f4d466e29c5ee306"
 
 [versions]
 forge = "43.4.12"

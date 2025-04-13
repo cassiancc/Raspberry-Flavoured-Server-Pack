@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
         event.shapeless('8x minecraft:'+colour+'_stained_glass_pane', ['8x minecraft:glass_pane', colour+'_dye']).id('minecraft:'+colour+'_stained_glass_pane_from_glass_pane')
         event.shapeless('8x minecraft:'+colour+'_terracotta', ['8x minecraft:terracotta', colour+'_dye']).id('minecraft:'+colour+'_terracotta')
         event.shapeless('8x quark:'+colour+'_shingles', ['8x quark:shingles', colour+'_dye']).id('quark:building/crafting/shingles/'+colour+'_shingles_dye')
+        event.shapeless('8x quark:'+colour+'_framed_glass_pane', ['8x quark:framed_glass_pane', colour+'_dye'])
         event.shapeless('8x clayworks:'+colour+'_terracotta_bricks', ['8x clayworks:terracotta_bricks', colour+'_dye']).id('clayworks:'+colour+'_terracotta_bricks_from_'+colour+'_dye')
         event.shapeless('8x twigs:'+colour+'_packed_silt', ['8x twigs:packed_silt', colour+'_dye']).id('twigs:'+colour+'_packed_silt')
         event.shapeless('8x twigs:'+colour+'_silt_shingles', ['8x twigs:silt_shingles', colour+'_dye']).id('twigs:'+colour+'_silt_shingles')
@@ -17,7 +18,9 @@ ServerEvents.recipes(event => {
         event.shapeless('8x minecraft:'+colour+'_concrete_powder', ['minecraft:'+colour+'_dye', '2x supplementaries:ash', '3x #forge:gravel', '3x sand'])
         event.shapeless('kubejs:'+colour+'_cloth_scrap_block', ['minecraft:'+colour+'_dye', 'kubejs:cloth_scrap_block'])
         event.shapeless('kubejs:'+colour+'_cloth_scrap_carpet', ['minecraft:'+colour+'_dye', 'kubejs:cloth_scrap_carpet'])
+        event.shapeless('kubejs:'+colour+'_canvas_rug', ['minecraft:'+colour+'_dye', 'farmersdelight:canvas_rug'])
         event.shapeless('create:'+colour+'_seat', [['minecraft:'+colour+'_wool', 'kubejs:'+colour+'_cloth_scrap_block'], '#minecraft:wooden_slabs']).id('create:crafting/kinetics/'+colour+'_seat')
+        event.shapeless('create:'+colour+'_toolbox', ['minecraft:'+colour+'_dye', '#create:toolboxes'])
     })
 	
 	noWhiteAllColours.forEach(colour => {
@@ -30,19 +33,21 @@ ServerEvents.recipes(event => {
 	event.shapeless('9x amethyst_shard', ['twigs:polished_amethyst'])
 	event.shapeless('9x paper', ['kubejs:paper_block'])
 	event.shapeless('9x kubejs:cobbled_blackstone', ['kubejs:sturdy_blackstone'])
+	event.shapeless('9x string', ['architects_palette:spool'])
+	event.shapeless('9x additionaladditions:rose_gold_alloy', ['#forge:storage_blocks/rose_gold'])
+	event.shapeless('9x kubejs:rose_gold_nugget', ['#forge:ingots/rose_gold'])
+	
+	event.shapeless('charcoal', ['8x kubejs:charcoal_lump'])
+	event.shapeless('8x kubejs:charcoal_lump', ['charcoal'])
+	
 	event.shapeless('4x kubejs:cloth_scrap', ['#raspberry_flavoured:cloth_blocks'])
 	event.shapeless('4x kubejs:rubber', ['kubejs:rubber_block'])
-	event.shapeless('9x create:rose_quartz', ['create:rose_quartz_block'])
-	event.shapeless('9x create:polished_rose_quartz', ['create:rose_quartz_tiles'])
-	event.shapeless('9x string', ['architects_palette:spool'])
-	event.shapeless('8x kubejs:charcoal_lump', ['charcoal'])
-	event.shapeless('charcoal', ['8x kubejs:charcoal_lump'])
 	event.shapeless('4x ecologics:surface_moss', ['minecraft:moss_block']).id('ecologics:surface_moss')
+	event.shapeless('4x additionaladditions:copper_patina', ['additionaladditions:patina_block'])
+	
 	event.shapeless('2x minecraft:bone_meal', [['bone', 'aquaculture:fish_bones']]).id('minecraft:bone_meal')
 	event.shapeless('2x minecraft:bone_meal', ['architects_palette:withered_bone'])
-	event.shapeless('autumnity:pumpkin_bread', ['autumnity:syrup_bottle', 'farmersdelight:pumpkin_slice', 'farmersdelight:wheat_dough']).id('create_central_kitchen:crafting/pumpkin_bread_from_dough_and_pumpkin_slice')
 	event.shapeless('farmersdelight:melon_popsicle', ['neapolitan:ice_cubes', 'minecraft:melon_slice', 'minecraft:stick']).id('abnormals_delight:neapolitan/melon_popsicle')
-	event.shapeless('4x additionaladditions:copper_patina', ['additionaladditions:patina_block'])
 	event.shapeless('architects_palette:algal_blend', ['clay_ball', 'kelp']).id('architects_palette:algal_blend')
 	event.shapeless('2x architects_palette:algal_blend', ['2x clay_ball', 'aquaculture:algae'])
 	event.shapeless('2x architects_palette:overgrown_algal_bricks', ['2x architects_palette:algal_bricks', 'aquaculture:algae'])
@@ -57,8 +62,6 @@ ServerEvents.recipes(event => {
 	event.shapeless('twigs:weeping_polished_blackstone_bricks', ['minecraft:polished_blackstone_bricks', ['minecraft:crimson_roots', 'minecraft:weeping_vines']]).id('twigs:weeping_polished_blackstone_bricks')
 	event.shapeless(Item.of('minecraft:potion',4,{Potion:"minecraft:water"}).strongNBT(), ['minecraft:water_bucket', '4x minecraft:glass_bottle'])
 	event.shapeless('minecraft:water_bucket', ['minecraft:bucket', Item.of('minecraft:potion',{Potion:"minecraft:water"}).strongNBT(), Item.of('minecraft:potion',{Potion:"minecraft:water"}).strongNBT(), Item.of('minecraft:potion',{Potion:"minecraft:water"}).strongNBT(), Item.of('minecraft:potion',{Potion:"minecraft:water"}).strongNBT()])
-	event.shapeless('neapolitan:milk_bottle', ['minecraft:glass_bottle', '3x ecologics:coconut_slice'])
-	event.shapeless('3x neapolitan:banana_bunch', ['neapolitan:banana_bundle'])
 	event.shapeless('3x farmersdelight:wheat_dough', [['minecraft:water_bucket', Item.of('minecraft:potion',{Potion:"minecraft:water"}).strongNBT()], '3x #farmersdelight:wheat_or_flour']).id('farmersdelight:wheat_dough_from_water')
 	event.shapeless('3x culturaldelights:corn_dough', [['minecraft:water_bucket', Item.of('minecraft:potion',{Potion:"minecraft:water"}).strongNBT()], '3x #raspberry_flavoured:corn_dough_ingredients']).id('culturaldelights:corn_dough')
 	event.shapeless('24x quark:rusty_iron_plate', [['minecraft:water_bucket', Item.of('minecraft:potion',{Potion:"minecraft:water"}).strongNBT()], '8x iron_ingot']).id('quark:building/crafting/rusty_iron_plate_manual_only')
@@ -68,7 +71,6 @@ ServerEvents.recipes(event => {
 	event.shapeless('3x sob:cinder_dough', [['minecraft:water_bucket', Item.of('minecraft:potion',{Potion:"minecraft:water"}).strongNBT()], '3x create:cinder_flour']).id('sob:sob/crafting/cinder_dough')
 	event.shapeless('4x andesite', ['granite', '3x cobblestone'])
 	event.shapeless('kubejs:prickly_pear_pie', ['4x kubejs:prickly_pear_pie_slice'])
-	event.shapeless('cake', ['sweet_berries', '#forge:milk', 'sweet_berries', 'sugar', '#forge:eggs', 'sugar', '3x #farmersdelight:wheat_or_flour']).id('minecraft:cake')
 	event.shapeless('neapolitan:mint_chops', ['#forge:raw_mutton', 'neapolitan:mint_leaves']).id('neapolitan:mint/mint_chops')
 	event.shapeless('caverns_and_chasms:cupric_campfire', ['campfire', 'additionaladditions:copper_patina']).id('caverns_and_chasms:cupric_campfire')
 	event.shapeless('endergetic:ender_campfire', ['campfire', '#endergetic:ender_fire_base_blocks']).id('endergetic:ender_campfire')
@@ -77,7 +79,7 @@ ServerEvents.recipes(event => {
 	event.shapeless('supplementaries:speaker_block', ['note_block', 'hopper']).id('supplementaries:speaker_block')
 	event.shapeless('ecologics:coconut_chest_boat', ['#forge:chests/wooden', 'ecologics:coconut_boat']).id('ecologics:coconut_chest_boat')
 	event.shapeless('ecologics:azalea_chest_boat', ['#forge:chests/wooden', 'ecologics:azalea_boat']).id('ecologics:azalea_chest_boat')
-	event.shapeless('2x mynethersdelight:hoglin_sausage', ['bone_meal', Item.of('minecraft:potion',{Potion:"minecraft:water"}).strongNBT(), 'nethersdelight:hoglin_loin'])
+	event.shapeless('2x mynethersdelight:hoglin_sausage', ['bone_meal', ['minecraft:water_bucket', Item.of('minecraft:potion',{Potion:"minecraft:water"}).strongNBT()], 'nethersdelight:hoglin_loin'])
 	event.shapeless('gray_dye', ['2x supplementaries:ash'])
 	event.shapeless('6x fire_charge', ['gunpowder', '#minecraft:coals']).id('minecraft:fire_charge')
 	event.shapeless('golden_apple', ['apple', 'gold_ingot']).id('minecraft:golden_apple')
@@ -93,10 +95,9 @@ ServerEvents.recipes(event => {
 	event.shapeless('twigs:twig', ['#raspberry_flavoured:saplings_with_twigs'])
 	event.shapeless('8x create:controller_rail', ['8x powered_rail', 'create:electron_tube'])
 	event.shapeless('mynethersdelight:hot_wings_bucket', ['4x mynethersdelight:hot_wings', 'bucket']).id('mynethersdelight:crafting/hot_wings_bucket')
-	event.shapeless('2x kubejs:sporedough', ['culturaldelights:corn_dough', '2x gunpowder', 'savage_and_ravage:creeper_spores'])
 	event.shapeless('8x dark_prismarine', ['ink_sac', '8x prismarine']).id('minecraft:dark_prismarine')
 	event.shapeless('8x upgrade_aquatic:luminous_prismarine', ['glow_ink_sac', '8x prismarine']).id('upgrade_aquatic:luminous_prismarine')
-	event.shapeless('mynethersdelight:breakfast_sampler', ['2x mynethersdelight:roasted_sausage', ['honey_bottle', 'autumnity:syrup_bottle'], '2x incubation:fried_egg', 'bread', 'bowl']).id('mynethersdelight:crafting/breakfast_sampler')
+	event.shapeless('mynethersdelight:breakfast_sampler', ['2x mynethersdelight:roasted_sausage', '#raspberry_flavoured:breakfast_condiments', '2x incubation:fried_egg', '#forge:bread/wheat', 'bowl']).id('mynethersdelight:crafting/breakfast_sampler')
 	event.shapeless('kubejs:latex_bucket', ['bucket', '4x kubejs:latex_bottle'])
 	event.shapeless('4x kubejs:latex_bottle', ['kubejs:latex_bucket', '4x glass_bottle'])
 	event.shapeless('4x kubejs:latex_jungle_log', ['kubejs:latex_bucket', '4x stripped_jungle_log'])
@@ -109,26 +110,95 @@ ServerEvents.recipes(event => {
 	event.shapeless('kubejs:latex_rosewood', ['kubejs:latex_bottle', 'atmospheric:stripped_rosewood'])
 	event.shapeless('culturaldelights:corn_kernels', ['culturaldelights:corn_cob'])
 	event.shapeless('caverns_and_chasms:bejeweled_apple', ['apple', 'additionaladditions:rose_gold_alloy'])
-	event.shapeless('upgrade_aquatic:tall_beachgrass', ['2x upgrade_aquatic:beachgrass'])
 	event.shapeless('2x tuff', ['cobblestone', ['cobbled_deepslate', 'basalt', 'smooth_basalt']]).id('caverns_and_chasms:tuff')
 	event.shapeless('3x kubejs:cobbled_blackstone', ['3x create:scorchia', 'black_dye'])
-	event.shapeless('kubejs:squid_sandwich', ['bread', 'miners_delight:baked_squid'])
-	event.shapeless('kubejs:cave_burger', ['bread', 'miners_delight:baked_tentacles', 'miners_delight:smoked_bat_wing', '#raspberry_flavoured:cave_scrap_ingredients', '#raspberry_flavoured:cave_scrap_ingredients'])
+	event.shapeless('kubejs:squid_sandwich', ['#forge:bread/wheat', 'miners_delight:baked_squid'])
+	event.shapeless('kubejs:cave_burger', ['#forge:bread/wheat', 'miners_delight:baked_tentacles', 'miners_delight:smoked_bat_wing', '#raspberry_flavoured:cave_scrap_ingredients', '#raspberry_flavoured:cave_scrap_ingredients'])
 	event.shapeless('2x create:portable_storage_interface', ['toms_storage:ts.inventory_connector', 'create:chute']).id('create:crafting/kinetics/portable_storage_interface')
 	event.shapeless('create:portable_fluid_interface', ['create:portable_storage_interface', 'create:fluid_tank']).id('create:crafting/kinetics/portable_fluid_interface')
 	event.shapeless('kubejs:preserved_skewer', ['brewinandchewin:kippers', 'brewinandchewin:jerky', '2x brewinandchewin:kimchi', 'stick'])
 	event.shapeless('spelunkery:portal_fluid_bottle', ['crying_obsidian', 'glass_bottle']).replaceIngredient('crying_obsidian', 'obsidian')
 	event.shapeless('aquaculture:double_hook', ['aquaculture:light_hook', 'aquaculture:heavy_hook']).id('aquaculture:double_hook')
 	event.shapeless('2x heartstone:heartstone', ['2x ender_pearl', '2x spelunkery:cinnabar']).id('heartstone:heartstone')
+	event.shapeless('domesticationinnovation:deed_of_ownership', ['domesticationinnovation:deed_of_ownership']).id('kubejs:deed_of_ownership_clear')
+	event.shapeless('4x alloyed:bronze_ingot', ['3x copper_ingot', '2x create:zinc_ingot', 'oreganized:lead_ingot'])
+	event.shapeless('farmersdelight:fruit_salad', ['#raspberry_flavoured:apples', 'melon_slice', 'farmersdelight:pumpkin_slice', '#raspberry_flavoured:berries', '#raspberry_flavoured:berries', 'bowl']).id('farmersdelight:fruit_salad')
+	event.shapeless('string', ['6x environmental:cattail_seeds']).id('environmental:string_from_cattail_seeds')
+	event.shapeless('kubejs:batter_bucket', ['bucket', '4x kubejs:batter'])
+	event.shapeless('4x kubejs:batter', ['kubejs:batter_bucket', '4x bowl'])
+	event.shapeless('cookscollection:cooking_oil', ['glass_bottle', '2x sunflower']).id('cookscollection:sunflower_oil')
+	event.shapeless('cookscollection:cooking_oil', ['glass_bottle', '8x supplementaries:flax_seeds'])
+	event.shapeless('cookscollection:fish_and_chips', ['2x #forge:cooked_fishes', 'bowl', 'cookscollection:fried_potato', '#forge:crops/onion', 'cookscollection:lemon']).id('cookscollection:fish_and_chips')
+	event.shapeless('kubejs:pumpkin_pie', ['4x create_central_kitchen:pumpkin_pie_slice']).id('create_central_kitchen:crafting/pumpkin_pie_from_slices')
+	event.shapeless('brewinandchewin:pizza', ['4x brewinandchewin:pizza_slice'])
+	event.shapeless('4x quark:bamboo_planks', ['#quark:bamboo_logs']).id('quark:building/crafting/woodsets/bamboo/planks')
+	event.shapeless('leather', ['rotten_flesh', '4x spelunkery:salt'])
+	event.shapeless('farmersdelight:mixed_salad', ['#forge:crops/cabbage', '#forge:crops/tomato', 'bowl', '#forge:crops/beetroot', 'cookscollection:cooking_oil']).id('farmersdelight:mixed_salad')
+	event.shapeless('farmersdelight:pie_crust', ['2x #farmersdelight:wheat_or_flour', 'sugar', 'spelunkery:salt'])
+	event.shapeless('create_confectionery:cocoa_butter', ['cocoa_beans', '#forge:milk'])
+	event.shapeless('pink_dye', ['2x raspberry:pink_petals']).id('raspberry:pink_dye_from_pink_petals')
+	event.shapeless('yellow_dye', ['2x raspberry:cheery_wildflowers']).id('raspberry:yellow_dye_from_wildflowers')
+	event.shapeless('purple_dye', ['2x raspberry:moody_wildflowers']).id('raspberry:purple_dye_from_wildflowers')
+	
+	event.shapeless('chest', ['chest_minecart']).replaceIngredient('chest_minecart', 'minecart')
+	event.shapeless('furnace', ['furnace_minecart']).replaceIngredient('furnace_minecart', 'minecart')
+	event.shapeless('tnt', ['tnt_minecart']).replaceIngredient('tnt_minecart', 'minecart')
+	event.shapeless('hopper', ['hopper_minecart']).replaceIngredient('hopper_minecart', 'minecart')
+	event.shapeless('oreganized:shrapnel_bomb', ['oreganized:shrapnel_bomb_minecart']).replaceIngredient('oreganized:shrapnel_bomb_minecart', 'minecart')
+	event.shapeless('dispenser', ['supplementaries:dispenser_minecart']).replaceIngredient('supplementaries:dispenser_minecart', 'minecart')
+	
+	event.shapeless('chest', ['oak_chest_boat']).replaceIngredient('oak_chest_boat', 'oak_boat')
+	event.shapeless('chest', ['spruce_chest_boat']).replaceIngredient('spruce_chest_boat', 'spruce_boat')
+	event.shapeless('chest', ['birch_chest_boat']).replaceIngredient('birch_chest_boat', 'birch_boat')
+	event.shapeless('chest', ['jungle_chest_boat']).replaceIngredient('jungle_chest_boat', 'jungle_boat')
+	event.shapeless('chest', ['acacia_chest_boat']).replaceIngredient('acacia_chest_boat', 'acacia_boat')
+	event.shapeless('chest', ['dark_oak_chest_boat']).replaceIngredient('dark_oak_chest_boat', 'dark_oak_boat')
+	event.shapeless('chest', ['mangrove_chest_boat']).replaceIngredient('mangrove_chest_boat', 'mangrove_boat')
+	event.shapeless('chest', ['boatload:crimson_chest_boat']).replaceIngredient('boatload:crimson_chest_boat', 'boatload:crimson_boat')
+	event.shapeless('chest', ['boatload:warped_chest_boat']).replaceIngredient('boatload:warped_chest_boat', 'boatload:warped_boat')
+	event.shapeless('chest', ['windswept:chestnut_chest_boat']).replaceIngredient('windswept:chestnut_chest_boat', 'windswept:chestnut_boat')
+	event.shapeless('chest', ['ecologics:coconut_chest_boat']).replaceIngredient('ecologics:coconut_chest_boat', 'ecologics:coconut_boat')
+	event.shapeless('chest', ['ecologics:azalea_chest_boat']).replaceIngredient('ecologics:azalea_chest_boat', 'ecologics:azalea_boat')
+	event.shapeless('chest', ['environmental:willow_chest_boat']).replaceIngredient('environmental:willow_chest_boat', 'environmental:willow_boat')
+	event.shapeless('chest', ['environmental:wisteria_chest_boat']).replaceIngredient('environmental:wisteria_chest_boat', 'environmental:wisteria_boat')
+	event.shapeless('chest', ['environmental:cherry_chest_boat']).replaceIngredient('environmental:cherry_chest_boat', 'environmental:cherry_boat')
+	event.shapeless('chest', ['upgrade_aquatic:driftwood_chest_boat']).replaceIngredient('upgrade_aquatic:driftwood_chest_boat', 'upgrade_aquatic:driftwood_boat')
+	event.shapeless('chest', ['autumnity:maple_chest_boat']).replaceIngredient('autumnity:maple_chest_boat', 'autumnity:maple_boat')
+	event.shapeless('chest', ['atmospheric:rosewood_chest_boat']).replaceIngredient('atmospheric:rosewood_chest_boat', 'atmospheric:rosewood_boat')
+	event.shapeless('chest', ['atmospheric:morado_chest_boat']).replaceIngredient('atmospheric:morado_chest_boat', 'atmospheric:morado_boat')
+	event.shapeless('chest', ['atmospheric:yucca_chest_boat']).replaceIngredient('atmospheric:yucca_chest_boat', 'atmospheric:yucca_boat')
+	
+	event.shapeless('furnace', ['boatload:oak_furnace_boat']).replaceIngredient('boatload:oak_furnace_boat', 'oak_boat')
+	event.shapeless('furnace', ['boatload:spruce_furnace_boat']).replaceIngredient('boatload:spruce_furnace_boat', 'spruce_boat')
+	event.shapeless('furnace', ['boatload:birch_furnace_boat']).replaceIngredient('boatload:birch_furnace_boat', 'birch_boat')
+	event.shapeless('furnace', ['boatload:jungle_furnace_boat']).replaceIngredient('boatload:jungle_furnace_boat', 'jungle_boat')
+	event.shapeless('furnace', ['boatload:acacia_furnace_boat']).replaceIngredient('boatload:acacia_furnace_boat', 'acacia_boat')
+	event.shapeless('furnace', ['boatload:dark_oak_furnace_boat']).replaceIngredient('boatload:dark_oak_furnace_boat', 'dark_oak_boat')
+	event.shapeless('furnace', ['boatload:mangrove_furnace_boat']).replaceIngredient('boatload:mangrove_furnace_boat', 'mangrove_boat')
+	event.shapeless('furnace', ['boatload:crimson_furnace_boat']).replaceIngredient('boatload:crimson_furnace_boat', 'boatload:crimson_boat')
+	event.shapeless('furnace', ['boatload:warped_furnace_boat']).replaceIngredient('boatload:warped_furnace_boat', 'boatload:warped_boat')
+	event.shapeless('furnace', ['windswept:chestnut_furnace_boat']).replaceIngredient('windswept:chestnut_furnace_boat', 'windswept:chestnut_boat')
+	event.shapeless('furnace', ['windswept:holly_furnace_boat']).replaceIngredient('windswept:holly_furnace_boat', 'ecologics:coconut_boat')
+	event.shapeless('furnace', ['atmospheric:kousa_furnace_boat']).replaceIngredient('atmospheric:kousa_furnace_boat', 'ecologics:azalea_boat')
+	event.shapeless('furnace', ['environmental:willow_furnace_boat']).replaceIngredient('environmental:willow_furnace_boat', 'environmental:willow_boat')
+	event.shapeless('furnace', ['environmental:wisteria_furnace_boat']).replaceIngredient('environmental:wisteria_furnace_boat', 'environmental:wisteria_boat')
+	event.shapeless('furnace', ['environmental:cherry_furnace_boat']).replaceIngredient('environmental:cherry_furnace_boat', 'environmental:cherry_boat')
+	event.shapeless('furnace', ['upgrade_aquatic:driftwood_furnace_boat']).replaceIngredient('upgrade_aquatic:driftwood_furnace_boat', 'upgrade_aquatic:driftwood_boat')
+	event.shapeless('furnace', ['autumnity:maple_furnace_boat']).replaceIngredient('autumnity:maple_furnace_boat', 'autumnity:maple_boat')
+	event.shapeless('furnace', ['atmospheric:rosewood_furnace_boat']).replaceIngredient('atmospheric:rosewood_furnace_boat', 'atmospheric:rosewood_boat')
+	event.shapeless('furnace', ['atmospheric:morado_furnace_boat']).replaceIngredient('atmospheric:morado_furnace_boat', 'atmospheric:morado_boat')
+	event.shapeless('furnace', ['atmospheric:yucca_furnace_boat']).replaceIngredient('atmospheric:yucca_furnace_boat', 'atmospheric:yucca_boat')
 	
 	// unused item compensation
 	event.shapeless('kubejs:loot_bag', ['#raspberry:disabled'])
 	event.shapeless('raspberry:deepslate_gravel', ['kubejs:deepslate_gravel'])
 	event.shapeless('raspberry:blackstone_gravel', ['kubejs:blackstone_gravel'])
+	event.shapeless('netherite_ingot', ['supplementaries:safe'])
 
 // Shaped crafting
 	allColours.forEach(colour => {
         event.shaped('3x kubejs:'+colour+'_cloth_scrap_carpet', ['AA'], {A: 'kubejs:'+colour+'_cloth_scrap_block'})
+        event.shaped('create:'+colour+'_toolbox', ['EAE', 'C C', 'BDB'], {A: 'minecraft:'+colour+'_dye', B: 'create:cogwheel', C: '#minecraft:planks', D: 'gold_block', E: 'create:golden_sheet'})
     })
 	
 	noWhiteAllColours.forEach(colour => {
@@ -187,16 +257,21 @@ ServerEvents.recipes(event => {
 	twoByTwo('everycomp:abnww/culturaldelights/avocado_leaf_pile', 'culturaldelights:avocado_leaves', 1)
 	twoByTwo('raspberry:deepslate_gravel', 'kubejs:deepslate_gravel_bricks', 4)
 	twoByTwo('stone', 'smooth_stone', 4)
+	twoByTwo('neapolitan:banana_bunch', 'neapolitan:banana_bundle', 1)
+	twoByTwo('atmospheric:yucca_fruit', 'atmospheric:yucca_bundle', 1)
+	twoByTwo('atmospheric:roasted_yucca_fruit', 'atmospheric:roasted_yucca_bundle', 1)
 	
 	threeByThree('amethyst_shard', 'twigs:polished_amethyst', 1)
-	threeByThree('create:rose_quartz', 'create:rose_quartz_block', 1)
-	threeByThree('create:polished_rose_quartz', 'create:rose_quartz_tiles', 1)
 	threeByThree('string', 'architects_palette:spool', 1)
 	threeByThree('twigs:pebble', 'cobblestone', 1)
 	threeByThree('twigs:twig', 'quark:stick_block', 2)
 	threeByThree('ender_pearl', 'architects_palette:ender_pearl_block', 1)
 	threeByThree('paper', 'kubejs:paper_block', 1)
 	threeByThree('kubejs:cobbled_blackstone', 'kubejs:sturdy_blackstone', 1)
+	threeByThree('alloyed:bronze_ingot', 'kubejs:bronze_block', 1)
+	threeByThree('cookscollection:lemon', 'cookscollection:lemon_crate', 1)
+	threeByThree('additionaladditions:rose_gold_alloy', 'kubejs:rose_gold_block', 1)
+	threeByThree('kubejs:rose_gold_nugget', 'additionaladditions:rose_gold_alloy', 1)
 	
 	event.shaped('minecraft:white_bed', ['CCC', 'AAA', 'BBB'], {A: ['minecraft:white_wool', 'kubejs:cloth_scrap_block', 'kubejs:white_cloth_scrap_block', 'supplementaries:feather_block'], B: '#minecraft:planks', C: 'kubejs:cloth_scrap'}).id('minecraft:white_bed')
     event.shaped('3x minecraft:white_banner', ['AAA', 'AAA', ' B '], {A: ['minecraft:white_wool', 'kubejs:cloth_scrap_block', 'kubejs:white_cloth_scrap_block', 'supplementaries:feather_block'], B: 'stick'}).id('minecraft:white_banner')
@@ -222,7 +297,7 @@ ServerEvents.recipes(event => {
 	event.shaped('4x architects_palette:calcite_bricks', ['BA', 'AA'], {A: 'minecraft:calcite', B: 'paletteblocks:cobblestone_bricks'}).id('architects_palette:calcite_bricks')
 	event.shaped('4x architects_palette:dripstone_bricks', ['BA', 'AA'], {A: 'minecraft:dripstone_block', B: 'paletteblocks:cobblestone_bricks'}).id('architects_palette:dripstone_bricks')
 	event.shaped('4x twigs:smooth_basalt_bricks', ['BA', 'AA'], {A: 'minecraft:smooth_basalt', B: 'paletteblocks:cobblestone_bricks'}).id('twigs:smooth_basalt_bricks')
-	event.shaped('4x architects_palette:sunstone', ['AB', 'BA'], {A: 'minecraft:basalt', B: 'architects_palette:sunmetal_brick'}).id('architects_palette:sunstone')
+	event.shaped('4x architects_palette:sunstone', ['AB', 'BA'], {A: 'minecraft:basalt', B: 'alloyed:bronze_ingot'}).id('architects_palette:sunstone')
 	event.shaped('8x architects_palette:plating_block', [' B ', 'BAB', ' B '], {A: ['#forge:ingots/iron', '#forge:ingots/lead'], B: ['#forge:nuggets/iron', '#forge:nuggets/lead']}).id('architects_palette:plating_block')
 	event.shaped('incubation:twig_nest', ['A A', 'AAA'], {A: 'twigs:twig'})
 	event.shaped('etched:blank_music_disc', ['AAA', 'A A', 'AAA'], {A: 'minecraft:disc_fragment_5'})
@@ -232,20 +307,19 @@ ServerEvents.recipes(event => {
 	event.shaped('8x supplementaries:slice_map', ['AAA', 'ABA', 'AAA'], {A: 'minecraft:map', B: 'caverns_and_chasms:depth_gauge'}).id('supplementaries:slice_map')
 	event.shaped('etched:etching_table', ['BC', 'DD', 'AA'], {A: '#minecraft:planks', B: 'diamond', C: 'iron_ingot', D: 'alloyed:bronze_sheet'}).id('etched:etching_table')
 	event.shaped('etched:radio', ['B', 'C', 'A'], {A: '#minecraft:planks', B: 'iron_nugget', C: 'alloyed:bronze_ingot'}).id('etched:radio')
-	event.shaped('4x note_block', ['CAC', 'ABA', 'CAC'], {A: '#minecraft:planks', B: 'redstone', C: 'alloyed:bronze_sheet'}).id('minecraft:note_block')
-	event.shaped('etched:boombox', [' B ', 'BAB'], {A: 'etched:album_jukebox', B: 'iron_ingot'}).id('etched:boombox')
+	event.shaped('4x note_block', ['CAC', 'ABA', 'CAC'], {A: '#minecraft:planks', B: 'redstone', C: 'alloyed:bronze_ingot'}).id('minecraft:note_block')
+	event.shaped('etched:boombox', [' C ', 'BAB'], {A: 'etched:album_jukebox', B: 'alloyed:bronze_ingot', C: 'alloyed:bronze_sheet'}).id('etched:boombox')
 	event.shaped('4x spectral_arrow', [' B ', 'BAB', ' B '], {A: ['glowstone_dust', 'naturalist:glow_goop'], B: 'arrow'}).id('minecraft:spectral_arrow')
-	event.shaped('kubejs:prickly_pear_pie', [' C ', 'CCC', 'BAB'], {A: 'farmersdelight:pie_crust', B: 'sugar', C: ['ecologics:prickly_pear', 'ecologics:cooked_prickly_pear']})
 	event.shaped('2x upgrade_aquatic:prismarine_rod', ['A', 'A'], {A: 'prismarine_shard'}).id('upgrade_aquatic:prismarine_rod')
 	event.shaped('2x architects_palette:entwine_rod', ['ABA'], {A: 'additionaladditions:copper_patina', B: 'upgrade_aquatic:prismarine_rod'}).id('architects_palette:entwine_rod')
 	event.shaped('architects_palette:gilded_sandstone', ['AB', 'BA'], {A: 'sandstone', B: ['spelunkery:raw_gold_nugget', 'gold_nugget']}).id('architects_palette:gilded_sandstone')
 	event.shaped('2x twigs:silt_shingles', ['AA'], {A: 'twigs:packed_silt'}).id('twigs:silt_shingles')
 	event.shaped('12x create:andesite_alloy', ['AB', 'BA'], {A: '#raspberry_flavoured:sturdy_stone', B: 'create:zinc_ingot'}).id('create:crafting/materials/andesite_alloy_from_zinc')
-	event.shaped('caverns_and_chasms:tuning_fork', ['B B', 'B B', ' A '], {A: 'copper_ingot', B: 'create:copper_nugget'}).id('caverns_and_chasms:tuning_fork')
+	event.shaped('caverns_and_chasms:tuning_fork', ['B B', 'B B', ' A '], {A: 'alloyed:bronze_ingot', B: 'alloyed:bronze_nugget'}).id('caverns_and_chasms:tuning_fork')
 	event.shaped('exposure:camera', ['BAB', 'ACA', 'BAB'], {A: 'gold_ingot', B: '#minecraft:planks', C: '#forge:glass'}).id('exposure:camera')
-	event.shaped('4x exposure:black_and_white_film', ['ABB', 'ACC', 'ADD'], {A: 'iron_ingot', B: 'bone_meal', C: 'gunpowder', D: 'dried_kelp'}).id('exposure:black_and_white_film')
-	event.shaped('4x exposure:color_film', ['ABB', 'ACC', 'ADD'], {A: 'gold_ingot', B: 'amethyst_shard', C: 'create:rose_quartz', D: 'kubejs:rubber'}).id('exposure:color_film')
-	event.shaped('vc_gliders:paraglider_wood', ['ABA', 'ABA', 'BCB'], {A: 'create:white_sail', B: 'stick', C: 'feather'}).id('vc_gliders:paraglider_wood')
+	event.shaped('6x exposure:black_and_white_film', ['ABB', 'ACC', 'ADD'], {A: 'iron_ingot', B: 'bone_meal', C: 'gunpowder', D: 'dried_kelp'}).id('exposure:black_and_white_film')
+	event.shaped('6x exposure:color_film', ['ABB', 'ACC', 'ADD'], {A: 'gold_ingot', B: 'amethyst_shard', C: 'spelunkery:cinnabar', D: 'kubejs:rubber'}).id('exposure:color_film')
+	event.shaped('vc_gliders:paraglider_wood', ['ABA', 'ABA', 'BCB'], {A: 'create:white_sail', B: 'stick', C: 'phantom_membrane'}).id('vc_gliders:paraglider_wood')
 	event.shaped('8x minecraft:scaffolding', ['ABA', 'A A', 'A A'], {A: '#raspberry_flavoured:bamboolikes', B: ['string', 'farmersdelight:canvas']}).id('minecraft:scaffolding')
 	event.shaped('6x hopper', ['A A', 'ABA', ' A '], {A: 'iron_ingot', B: ['#forge:chests/wooden', '#forge:barrels/wooden']}).id('minecraft:hopper')
 	event.shaped('3x hopper', ['A A', 'ABA', ' A '], {A: 'oreganized:lead_ingot', B: ['#forge:chests/wooden', '#forge:barrels/wooden']})
@@ -264,10 +338,10 @@ ServerEvents.recipes(event => {
 	event.shaped('create:mechanical_drill', ['DBD', 'CBC', ' A '], {A: 'alloyed:steel_casing', B: 'alloyed:steel_ingot', C: 'alloyed:steel_sheet', D: 'alloyed:steel_nugget'}).id('create:crafting/kinetics/mechanical_drill')
 	event.shaped('create:mechanical_saw', [' C ', 'CBC', ' A '], {A: 'alloyed:steel_casing', B: 'alloyed:steel_ingot', C: 'alloyed:steel_sheet'}).id('create:crafting/kinetics/mechanical_saw')
 	event.shaped('create:mechanical_roller', ['C', 'A', 'B'], {A: 'alloyed:steel_casing', B: 'create:crushing_wheel', C: 'create:electron_tube'}).id('create:crafting/kinetics/mechanical_roller')
-	event.shaped('create:encased_fan', ['C', 'A', 'B'], {A: 'alloyed:steel_casing', B: 'create:propeller', C: 'create:shaft'}).id('create:crafting/kinetics/encased_fan')
+	event.shaped('create:encased_fan', [' C ', ' A ', 'BDB'], {A: 'alloyed:steel_casing', B: 'alloyed:steel_sheet', C: 'create:shaft', D: 'alloyed:steel_ingot'}).id('create:crafting/kinetics/encased_fan')
 	event.shaped('kubejs:bone_knife', ['B', 'A'], {A: 'stick', B: '#brewinandchewin:bone_or_withered_bone'})
 	event.shaped('sculk_sensor', ['B B', 'AAA', 'ACA'], {A: 'sculk', B: 'sculk_vein', C: 'echo_shard'})
-	event.shaped('48x caverns_and_chasms:kunai', [' A', 'B '], {A: 'oreganized:silver_ingot', B: 'oreganized:silver_nugget'}).id('caverns_and_chasms:kunai')
+	event.shaped('24x caverns_and_chasms:kunai', [' A', 'B '], {A: 'oreganized:silver_ingot', B: 'oreganized:silver_nugget'}).id('caverns_and_chasms:kunai')
 	event.shaped('4x quark:midori_block', ['BA', 'AB'], {A: '#raspberry_flavoured:moss', B: 'additionaladditions:copper_patina'}).id('quark:building/crafting/midori_block')
 	event.shaped('4x prismarine_bricks', ['AA', 'AA'], {A: 'prismarine'}).id('minecraft:prismarine_bricks')
 	event.shaped('4x sea_lantern', ['ABA', 'BBB', 'ABA'], {A: 'prismarine_shard', B: 'prismarine_crystals'}).id('minecraft:sea_lantern')
@@ -300,19 +374,52 @@ ServerEvents.recipes(event => {
 	event.shaped('toms_storage:ts.storage_terminal', [' B ', 'ADA', ' C '], {A: 'create:andesite_alloy', B: 'create:electron_tube', C: 'minecraft:comparator', D: '#forge:glass'}).id('toms_storage:storage_terminal')
 	event.shaped('4x kubejs:heating_cask', ['ABA', 'ADA', 'ACA'], {A: '#minecraft:planks', B: 'stick', C: 'magma_block', D: '#minecraft:coals'})
 	event.shaped('4x kubejs:ice_crate', ['ABA', 'ACA', 'ACA'], {A: '#minecraft:planks', B: 'farmersdelight:canvas', C: 'packed_ice'})
-	event.shaped('2x create:rose_quartz_lamp', ['ABA', 'BCB', 'ABA'], {A: 'create:zinc_ingot', B: 'create:polished_rose_quartz', C: 'redstone'}).id('create:crafting/kinetics/rose_quartz_lamp')
-	event.shaped('aquaculture:tackle_box', ['AAA', 'BBB', 'BBB'], {A: 'green_dye', B: 'iron_ingot'}).id('aquaculture:tackle_box')
+	event.shaped('2x create:rose_quartz_lamp', ['ABA', 'BCB', 'ABA'], {A: 'create:zinc_ingot', B: 'spelunkery:cinnabar', C: 'redstone'}).id('create:crafting/kinetics/rose_quartz_lamp')
+	event.shaped('aquaculture:tackle_box', ['CCC', 'BAB', 'BBB'], {A: 'string', B: 'iron_ingot', C: 'create:zinc_ingot'}).id('aquaculture:tackle_box')
 	event.shaped('2x twigs:chiseled_bricks', ['A', 'A'], {A: 'bricks'}).id('twigs:chiseled_bricks')
 	event.shaped('2x twigs:chiseled_silt_bricks', ['A', 'A'], {A: 'twigs:silt_bricks'}).id('twigs:chiseled_silt_bricks')
 	event.shaped('2x kubejs:trimmed_ash_bricks', ['A', 'A'], {A: 'supplementaries:ash_bricks'})
 	event.shaped('kubejs:chiseled_silt_bricks', ['A', 'A'], {A: 'twigs:silt_brick_slab'})
 	event.shaped('kubejs:chiseled_ash_bricks', ['A', 'A'], {A: 'supplementaries:ash_bricks_slab'})
 	event.shaped('echochest:echo_chest', ['ABA', 'B B', 'ABA'], {A: '#raspberry_flavoured:deepslate', B: 'echo_shard'}).id('echochest:echo_chest')
+	event.shaped('2x create:electron_tube', ['AB', 'CC'], {A: 'quartz', B: 'spelunkery:cinnabar', C: 'create:iron_sheet'}).id('create:crafting/materials/electron_tube')
+	event.shaped('8x create:nixie_tube', ['BB', 'AA', 'BB'], {A: 'create:electron_tube', B: 'quartz'}).id('create:crafting/kinetics/nixie_tube')
+	event.shaped('create:mechanical_mixer', [' A ', ' B ', 'CCC'], {A: 'create:cogwheel', B: 'create:andesite_casing', C: 'create:iron_sheet'}).id('create:crafting/kinetics/mechanical_mixer')
+	event.shaped('create:deployer', [' A ', ' B ', 'CCC'], {A: 'create:electron_tube', B: 'create:andesite_casing', C: 'create:golden_sheet'}).id('create:crafting/kinetics/deployer')
+	event.shaped('domesticationinnovation:deed_of_ownership', ['AAA', 'ABA', 'AAA'], {A: 'paper', B: 'domesticationinnovation:collar_tag'})
+	event.shaped('8x architects_palette:hazard_sign', [' A ', 'AAA'], {A: 'architects_palette:hazard_block'}).id('architects_palette:hazard_sign')
+	event.shaped('farmersdelight:cooking_pot', ['C C', 'BAB', 'BBB'], {A: ['minecraft:water_bucket', Item.of('minecraft:potion',{Potion:"minecraft:water"}).strongNBT()], B: 'iron_ingot', C: '#forge:ingots/brick'}).id('farmersdelight:cooking_pot')
+	event.shaped('farmersdelight:skillet', [' AA', ' AA', 'B  '], {A: 'iron_ingot', B: '#forge:ingots/brick'}).id('farmersdelight:skillet')
+	event.shaped('supplementaries:wind_vane', [' A ', 'BBB', ' C '], {A: 'copper_ingot', B: 'caverns_and_chasms:copper_bars', C: 'redstone'}).id('supplementaries:wind_vane')
+	event.shaped('shulker_box', [' A ', 'ABA', ' A '], {A: 'scute', B: 'quark:soul_bead'}).id('minecraft:shulker_box')
+	event.shaped('4x quark:bamboo_chest', ['AAA', 'A A', 'AAA'], {A: '#quark:bamboo_logs'}).id('quark:building/crafting/woodsets/bamboo/chest_wood')
+	event.shaped('8x quark:bamboo_post', ['A', 'A', 'A'], {A: 'quark:bamboo_block'}).id('quark:building/crafting/woodsets/bamboo/post')
+	event.shaped('8x quark:stripped_bamboo_post', ['A', 'A', 'A'], {A: 'quark:stripped_bamboo_block'}).id('quark:building/crafting/woodsets/bamboo/stripped_post')
+	event.shaped('8x everycomp:q/mynethersdelight/powdery_post', ['A', 'A', 'A'], {A: 'mynethersdelight:powdery_block'})
+	event.shaped('8x everycomp:q/mynethersdelight/stripped_powdery_post', ['A', 'A', 'A'], {A: 'mynethersdelight:stripped_powdery_block'})
+	event.shaped('4x everycomp:q/mynethersdelight/powdery_chest', ['AAA', 'A A', 'AAA'], {A: '#mynethersdelight:powdery_logs'})
+	event.shaped('2x quark:mud_pillar', ['A', 'A'], {A: 'mud_bricks'}).id('quark:building/crafting/mud_pillar')
+	event.shaped('3x farmersdelight:canvas_rug', ['AA'], {A: 'farmersdelight:canvas'}).id('farmersdelight:canvas_rug')
 	
 	event.shaped('aquaculture:gold_hook', [' A', ' B', 'BB'], {A: 'spelunkery:magnetite_chunk', B: 'spelunkery:raw_magnetite_nugget'}).id('aquaculture:gold_hook')
 	event.shaped('aquaculture:light_hook', [' A', ' B', 'BB'], {A: 'copper_ingot', B: 'create:copper_nugget'}).id('aquaculture:light_hook')
 	event.shaped('aquaculture:heavy_hook', [' A', ' B', 'BB'], {A: 'alloyed:steel_ingot', B: 'alloyed:steel_nugget'}).id('aquaculture:heavy_hook')
 	event.shaped('aquaculture:redstone_hook', [' A', ' B', 'BB'], {A: 'create:zinc_ingot', B: 'create:zinc_nugget'}).id('aquaculture:redstone_hook')
+	
+	event.shaped('4x twigs:bamboo_thatch', ['AAA', 'AAA'], {A: 'twigs:bamboo_leaves'}).id('twigs:bamboo_thatch')
+	event.shaped('4x neapolitan:frond_thatch', ['AAA', 'AAA'], {A: 'neapolitan:banana_frond'}).id('neapolitan:banana/frond_thatch/frond_thatch')
+	event.shaped('4x environmental:grass_thatch', ['ABA', 'BAB'], {A: 'wheat', B: 'grass'})
+	event.shaped('4x environmental:cattail_thatch', ['AAA', 'AAA'], {A: 'environmental:cattail'}).id('environmental:cattail_thatch')
+	event.shaped('4x environmental:duckweed_thatch', ['AAA', 'AAA'], {A: 'environmental:duckweed'}).id('environmental:duckweed_thatch')
+	event.shaped('4x upgrade_aquatic:beachgrass_thatch', ['AAA', 'AAA'], {A: 'farmersdelight:sandy_shrub'}).id('upgrade_aquatic:beachgrass_thatch')
+	event.shaped('4x kubejs:straw_thatch', ['AAA', 'AAA'], {A: 'farmersdelight:straw'})
+	event.shaped('4x kubejs:flax_thatch', ['AAA', 'AAA'], {A: 'supplementaries:flax'})
+	
+	event.shaped('6x kubejs:straw_thatch_slab', ['AAA'], {A: 'kubejs:straw_thatch'})
+	event.shaped('4x kubejs:straw_thatch_stairs', ['A  ', 'AA ', 'AAA'], {A: 'kubejs:straw_thatch'})
+	event.shaped('6x kubejs:flax_thatch_slab', ['AAA'], {A: 'kubejs:flax_thatch'})
+	event.shaped('4x kubejs:flax_thatch_stairs', ['A  ', 'AA ', 'AAA'], {A: 'kubejs:flax_thatch'})
+	event.shaped('4x kubejs:bamboo_thatch_stairs', ['A  ', 'AA ', 'AAA'], {A: 'twigs:bamboo_thatch'})
 	
 	event.shaped('4x kubejs:deepslate_gravel_brick_stairs', ['A  ', 'AA ', 'AAA'], {A: 'kubejs:deepslate_gravel_bricks'})
 	event.shaped('6x kubejs:deepslate_gravel_brick_wall', ['AAA', 'AAA'], {A: 'kubejs:deepslate_gravel_bricks'})
@@ -389,6 +496,9 @@ ServerEvents.recipes(event => {
 	event.shaped('4x kubejs:lazurite_stairs', ['A  ', 'AA ', 'AAA'], {A: 'spelunkery:rough_lazurite_block'})
 	event.shaped('6x kubejs:lazurite_wall', ['AAA', 'AAA'], {A: 'spelunkery:rough_lazurite_block'})
 	
+	event.shaped('6x oreganized:polished_glance_slab', ['AAA'], {A: 'oreganized:polished_glance'})
+	event.shaped('4x oreganized:polished_glance_stairs', ['A  ', 'AA ', 'AAA'], {A: 'oreganized:polished_glance'})
+	
 	event.shaped('4x kubejs:smooth_stone_stairs', ['A  ', 'AA ', 'AAA'], {A: 'smooth_stone'})
 	event.shaped('6x kubejs:smooth_stone_wall', ['AAA', 'AAA'], {A: 'smooth_stone'})
 	
@@ -424,6 +534,15 @@ ServerEvents.recipes(event => {
 	event.shaped('everycomp:q/architects_palette/twisted_bookshelf', ['AAA', 'BBB', 'AAA'], {A: 'architects_palette:twisted_planks', B: 'book'})
 	event.shaped('quark:bamboo_bookshelf', ['AAA', 'BBB', 'AAA'], {A: 'quark:bamboo_planks', B: 'book'})
 	
+	event.shaped('another_furniture:spruce_drawer', ['AAA', 'BCB', 'AAA'], {A: 'spruce_planks', B: 'spruce_slab', C: 'stick'}).id('another_furniture:spruce_drawer')
+	event.shaped('another_furniture:birch_drawer', ['AAA', 'BCB', 'AAA'], {A: 'birch_planks', B: 'birch_slab', C: 'stick'}).id('another_furniture:birch_drawer')
+	event.shaped('another_furniture:jungle_drawer', ['AAA', 'BCB', 'AAA'], {A: 'jungle_planks', B: 'jungle_slab', C: 'stick'}).id('another_furniture:jungle_drawer')
+	event.shaped('another_furniture:acacia_drawer', ['AAA', 'BCB', 'AAA'], {A: 'acacia_planks', B: 'acacia_slab', C: 'stick'}).id('another_furniture:acacia_drawer')
+	event.shaped('another_furniture:dark_oak_drawer', ['AAA', 'BCB', 'AAA'], {A: 'dark_oak_planks', B: 'dark_oak_slab', C: 'stick'}).id('another_furniture:dark_oak_drawer')
+	event.shaped('another_furniture:mangrove_drawer', ['AAA', 'BCB', 'AAA'], {A: 'mangrove_planks', B: 'mangrove_slab', C: 'stick'}).id('another_furniture:mangrove_drawer')
+	event.shaped('another_furniture:crimson_drawer', ['AAA', 'BCB', 'AAA'], {A: 'crimson_planks', B: 'crimson_slab', C: 'stick'}).id('another_furniture:crimson_drawer')
+	event.shaped('another_furniture:warped_drawer', ['AAA', 'BCB', 'AAA'], {A: 'warped_planks', B: 'warped_slab', C: 'stick'}).id('another_furniture:warped_drawer')
+	
 	event.shaped('music_disc_otherside', ['AAA', 'ABA', 'AAA'], {A: 'disc_fragment_5', B: '#quark:runes_lootable'})
 	event.shaped('kubejs:music_disc_shimmer', ['AAA', 'ABA', 'AAA'], {A: 'disc_fragment_5', B: 'quark:glow_shroom'})
 	event.shaped('kubejs:music_disc_frontier', ['AAA', 'ABA', 'AAA'], {A: 'disc_fragment_5', B: ['hay_block', 'farmersdelight:rice_bale', 'farmersdelight:straw_bale', 'supplementaries:flax_block']})
@@ -444,7 +563,6 @@ ServerEvents.recipes(event => {
 	event.smelting('minecraft:glass', 'create:vertical_framed_glass').cookingTime(40).id('create:smelting/glass_from_vertical_framed_glass')
 	event.smelting('kubejs:charcoal_lump', 'ecologics:coconut_husk').cookingTime(200)
 	event.smelting('kubejs:charcoal_lump', 'farmersdelight:tree_bark').cookingTime(200)
-	event.smelting('2x slime_ball', 'atmospheric:aloe_gel_block').cookingTime(300)
 	event.smelting('gold_ingot', 'gilded_blackstone').cookingTime(200)
 	event.smelting('kubejs:exolite', 'kubejs:cobbled_exolite').cookingTime(200)
 	event.smelting('oreganized:lead_ingot', 'kubejs:nether_lead_ore').cookingTime(200)
@@ -456,10 +574,17 @@ ServerEvents.recipes(event => {
 	event.smelting('green_dye', 'aquaculture:algae').cookingTime(200)
 	event.smelting('cyan_dye', 'additionaladditions:copper_patina').cookingTime(200)
 	event.smelting('stone_bricks', 'paletteblocks:cobblestone_bricks').cookingTime(200).id('minecraft:stone_bricks')
-	event.smelting('kubejs:cooked_fish', '#raspberry_flavoured:raw_fish').cookingTime(200)
+	event.smelting('kubejs:cooked_fish', '#raspberry_flavoured:full_raw_fish').cookingTime(200)
+	event.smelting('iron_ingot', 'create:iron_sheet').cookingTime(200)
+	event.smelting('gold_ingot', 'create:golden_sheet').cookingTime(200)
+	event.smelting('copper_ingot', 'create:copper_sheet').cookingTime(200)
+	event.smelting('create:brass_ingot', 'create:brass_sheet').cookingTime(200)
+	event.smelting('alloyed:steel_ingot', 'alloyed:steel_sheet').cookingTime(200)
+	event.smelting('alloyed:bronze_ingot', 'alloyed:bronze_sheet').cookingTime(200)
+	event.smelting('sob:cinder_bread', 'sob:cinder_dough').cookingTime(200)
 	
 // Smoking
-	event.smoking('kubejs:cooked_fish', '#raspberry_flavoured:raw_fish').cookingTime(100)
+	event.smoking('kubejs:cooked_fish', '#raspberry_flavoured:full_raw_fish').cookingTime(100)
 	
 // Blasting
 	event.blasting('gold_ingot', 'gilded_blackstone').cookingTime(100)
@@ -467,8 +592,14 @@ ServerEvents.recipes(event => {
 	event.blasting('iron_nugget', 'compass').cookingTime(100)
 	event.blasting('gold_nugget', 'clock').cookingTime(100)
 	event.blasting('oreganized:lead_nugget', 'caverns_and_chasms:depth_gauge').cookingTime(100)
+	event.blasting('iron_ingot', 'create:iron_sheet').cookingTime(100)
+	event.blasting('gold_ingot', 'create:golden_sheet').cookingTime(100)
+	event.blasting('copper_ingot', 'create:copper_sheet').cookingTime(100)
+	event.blasting('create:brass_ingot', 'create:brass_sheet').cookingTime(100)
+	event.blasting('alloyed:steel_ingot', 'alloyed:steel_sheet').cookingTime(100)
+	event.blasting('alloyed:bronze_ingot', 'alloyed:bronze_sheet').cookingTime(100)
 
-// Baking
+// Firing
 	event.custom({type: 'clayworks:baking', cookingtime: 100, experience: 0.1, ingredient: {tag: 'minecraft:sand'}, result: 'minecraft:glass'}).id('clayworks:glass_from_baking')
 	event.custom({type: 'clayworks:baking', cookingtime: 50, ingredient: {item: 'quark:dirty_glass'}, result: 'minecraft:glass'}).id('clayworks:quark/clean_glass_from_baking')
 	event.custom({type: 'clayworks:baking', cookingtime: 20, ingredient: {item: 'create:tiled_glass'}, result: 'minecraft:glass'})
@@ -477,12 +608,12 @@ ServerEvents.recipes(event => {
 	event.custom({type: 'clayworks:baking', cookingtime: 20, ingredient: {item: 'create:vertical_framed_glass'}, result: 'minecraft:glass'})
 	event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'ecologics:coconut_husk'}, result: 'kubejs:charcoal_lump'})
 	event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'farmersdelight:tree_bark'}, result: 'kubejs:charcoal_lump'})
-	event.custom({type: 'clayworks:baking', cookingtime: 150, ingredient: {item: 'atmospheric:aloe_gel_block'}, result: Item.of('minecraft:slime_ball',2)})
 	event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'kubejs:cobbled_exolite'}, result: 'kubejs:exolite'})
 	event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'kubejs:cobbled_blackstone'}, result: 'minecraft:blackstone'})
 	event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'create:scoria'}, result: 'create:scorchia'})
 	event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'aquaculture:algae'}, result: 'minecraft:green_dye'})
 	event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'additionaladditions:copper_patina'}, result: 'minecraft:cyan_dye'})
+	event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'twigs:silt_ball'}, result: 'twigs:silt_brick'})
 
 // Campfire
 	event.campfireCooking('culturaldelights:smoked_eggplant', 'culturaldelights:eggplant').cookingTime(600)
@@ -490,7 +621,7 @@ ServerEvents.recipes(event => {
 	event.campfireCooking('culturaldelights:smoked_white_eggplant', 'culturaldelights:white_eggplant').cookingTime(600)
 	event.campfireCooking('kubejs:charcoal_lump', 'ecologics:coconut_husk').cookingTime(600)
 	event.campfireCooking('kubejs:charcoal_lump', 'farmersdelight:tree_bark').cookingTime(600)
-	event.campfireCooking('kubejs:cooked_fish', '#raspberry_flavoured:raw_fish').cookingTime(600)
+	event.campfireCooking('kubejs:cooked_fish', '#raspberry_flavoured:full_raw_fish').cookingTime(600)
 	
 // Smithing
 	event.smithing('minecraft:recovery_compass', 'minecraft:compass', 'quark:soul_bead').id('minecraft:recovery_compass')
@@ -499,19 +630,20 @@ ServerEvents.recipes(event => {
 	event.smithing('kubejs:rose_gold_horse_armor', 'minecraft:iron_horse_armor', 'additionaladditions:rose_gold_alloy')
 	event.smithing('kubejs:steel_horse_armor', 'minecraft:iron_horse_armor', 'alloyed:steel_ingot')
 	event.smithing('kubejs:electrum_horse_armor', 'minecraft:diamond_horse_armor', 'oreganized:electrum_ingot')
+	event.smithing('kubejs:necromium_horse_armor', 'minecraft:diamond_horse_armor', 'caverns_and_chasms:necromium_ingot')
+	event.smithing('kubejs:netherite_horse_armor', 'minecraft:diamond_horse_armor', 'minecraft:netherite_ingot')
 	event.smithing('spelunkery:echo_fork', 'caverns_and_chasms:tuning_fork', 'minecraft:echo_shard').id('spelunkery:echo_fork')
 	event.smithing('create:super_glue', 'kubejs:copper_brush', 'minecraft:slime_ball').id('create:crafting/kinetics/super_glue')
 	event.smithing('kubejs:copper_brush_wax', 'kubejs:copper_brush', 'minecraft:honeycomb')
 	
 // Stonecutting
 	event.stonecutting('4x iron_bars', 'iron_ingot').id('minecraft:iron_bars')
+	event.stonecutting('4x caverns_and_chasms:copper_bars', 'copper_ingot')
 	event.stonecutting('4x alloyed:steel_bars', 'alloyed:steel_ingot').id('alloyed:crafting/steel_bars')
 	event.stonecutting('4x architects_palette:entwine_bars', 'architects_palette:entwine_rod').id('architects_palette:entwine_bars')
-	event.stonecutting('4x architects_palette:sunmetal_bars', 'architects_palette:sunmetal_brick').id('architects_palette:sunmetal_bars')
+	event.stonecutting('4x architects_palette:sunmetal_bars', 'alloyed:bronze_ingot').id('architects_palette:sunmetal_bars')
 	event.stonecutting('4x caverns_and_chasms:silver_bars', 'oreganized:silver_ingot').id('caverns_and_chasms:silver_bars')
 	event.stonecutting('4x caverns_and_chasms:golden_bars', 'oreganized:lead_ingot').id('caverns_and_chasms:golden_bars')
-	event.stonecutting('4x create:small_rose_quartz_tiles', 'create:rose_quartz_tiles')
-	event.stonecutting('kubejs:glance_pillar', 'oreganized:glance').id('oreganized:quark/glance_pillar_stonecutter')
 	event.stonecutting('kubejs:chiseled_silt_bricks', 'twigs:silt_bricks')
 	event.stonecutting('kubejs:chiseled_ash_bricks', 'supplementaries:ash_bricks')
 	event.stonecutting('kubejs:trimmed_ash_bricks', 'supplementaries:ash_bricks')
@@ -611,11 +743,9 @@ ServerEvents.recipes(event => {
 	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'minecraft:wheat'}], tool: {item: 'another_furniture:furniture_hammer'}, 
 	result: [{item: 'kubejs:oats', count: 1}]})
 	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'spelunkery:rock_salt_block'}], tool: {item: 'another_furniture:furniture_hammer'}, 
-	result: [{item: 'spelunkery:rock_salt', count: 1}, {item: 'spelunkery:rock_salt', count: 1, chance: 0.25}]})
+	result: [{item: 'spelunkery:rock_salt', count: 1}]})
 	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'spelunkery:rock_salt'}], tool: {item: 'another_furniture:furniture_hammer'}, 
-	result: [{item: 'kubejs:soul_salt', count: 1}, {item: 'kubejs:soul_salt', count: 1, chance: 0.25}]})
-	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'quark:soul_bead'}], tool: {item: 'another_furniture:furniture_hammer'}, 
-	result: [{item: 'spelunkery:rock_salt', count: 1}, {item: 'spelunkery:rock_salt', count: 1, chance: 0.15}]})
+	result: [{item: 'spelunkery:salt', count: 1}]})
 	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'minecraft:sugar_cane'}], tool: {item: 'another_furniture:furniture_hammer'}, 
 	result: [{item: 'minecraft:paper', count: 1}]})
 	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'architects_palette:coarse_snow'}], tool: {tag: 'forge:tools/hoes'}, 
@@ -624,6 +754,30 @@ ServerEvents.recipes(event => {
 	result: [{item: 'architects_palette:crustless_bread_block', count: 1}]})
 	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'aquaculture:tin_can'}], tool: {item: 'another_furniture:furniture_hammer'}, 
 	result: [{item: 'minecraft:iron_nugget', count: 4}, {item: 'minecraft:iron_nugget', count: 4, chance: 0.5}]})
+	event.custom({type: 'farmersdelight:cutting', ingredients: [[{item: 'minecraft:dead_bush'}, {item: 'environmental:tall_dead_bush'}]], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'minecraft:stick', count: 2}, {item: 'farmersdelight:straw', count: 1, chance: 0.5}]})
+	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'minecraft:melon_slice'}], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'minecraft:melon_seeds', count: 2}]})
+	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'farmersdelight:pumpkin_slice'}], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'minecraft:pumpkin_seeds', count: 2}]})
+	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'minecraft:apple'}], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'kubejs:apple_slices', count: 2}]})
+	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'kubejs:pumpkin_pie'}], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'create_central_kitchen:pumpkin_pie_slice', count: 4}]}).id('create_central_kitchen:cutting/pumpkin_pie_slice')
+	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'neapolitan:banana_bunch'}], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'neapolitan:banana', count: 2}, {item: 'neapolitan:banana', count: 2, chance: 0.5}]})
+	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'neapolitan:banana_bundle'}], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'neapolitan:banana_bunch', count: 4}]})
+	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'atmospheric:yucca_bundle'}], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'atmospheric:yucca_fruit', count: 4}]})
+	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'atmospheric:roasted_yucca_bundle'}], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'atmospheric:roasted_yucca_fruit', count: 4}]})
+	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'raspberry:pink_petals'}], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'minecraft:pink_dye', count: 1}]})
+	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'raspberry:cheery_wildflowers'}], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'minecraft:yellow_dye', count: 1}, {item: 'minecraft:white_dye', count: 1, chance: 0.5}]})
+	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'raspberry:moody_wildflowers'}], tool: {tag: 'forge:tools/knives'}, 
+	result: [{item: 'minecraft:purple_dye', count: 1}, {item: 'minecraft:red_dye', count: 1, chance: 0.5}, {item: 'minecraft:blue_dye', count: 1, chance: 0.25}]})
 	
 	event.custom({type: 'farmersdelight:cutting', ingredients: [{item: 'raspberry:deepslate_gravel'}], tool: {tag: 'forge:tools/shovels'}, 
 	result: [{item: 'raspberry:deepslate_gravel', count: 1, chance: 0.95}, {item: 'minecraft:flint', count: 2, chance: 0.95}]})
@@ -767,63 +921,324 @@ ServerEvents.recipes(event => {
 	mushCapCutting('quark:glow_shroom_block', 'quark:glow_shroom')
 
 // Cooking
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'minecraft:cactus'}, {item: 'minecraft:cactus'}, {item: 'minecraft:sugar'}], result: {item: 'kubejs:cactus_juice', count: 1}})
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'minecraft:melon_slice'}, {item: 'minecraft:melon_slice'}, {item: 'minecraft:melon_slice'}, {item: 'minecraft:melon_slice'}, {item: 'minecraft:sugar'}], result: {item: 'farmersdelight:melon_juice', count: 2}}).id('farmersdelight:melon_juice')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'minecraft:apple'}, {item: 'minecraft:apple'}, {item: 'kubejs:cinnamon'}, {item: 'minecraft:sugar'}], result: {item: 'farmersdelight:apple_cider', count: 2}}).id('farmersdelight:cooking/apple_cider')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:green_tea_leaves'}, {item: 'farmersrespite:green_tea_leaves'}], result: {item: 'farmersrespite:green_tea', count: 1}}).id('farmersrespite:brewing/green_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:yellow_tea_leaves'}, {item: 'farmersrespite:yellow_tea_leaves'}], result: {item: 'farmersrespite:yellow_tea', count: 1}}).id('farmersrespite:brewing/yellow_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:black_tea_leaves'}, {item: 'farmersrespite:black_tea_leaves'}], result: {item: 'farmersrespite:black_tea', count: 1}}).id('farmersrespite:brewing/black_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'minecraft:dandelion'}, {item: 'minecraft:dandelion'}, {tag: 'farmersrespite:tea_leaves'}], result: {item: 'farmersrespite:dandelion_tea', count: 1}}).id('farmersrespite:brewing/dandelion_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 0.35, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:rose_hips'}, {item: 'farmersrespite:rose_hips'}], result: {item: 'farmersrespite:rose_hip_tea', count: 1}}).id('farmersrespite:brewing/rose_hip_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:coffee_berries'}, {item: 'minecraft:glow_berries'}], result: {item: 'farmersrespite:gamblers_tea', count: 1}}).id('farmersrespite:brewing/gamblers_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'minecraft:crimson_fungus'}, {item: 'minecraft:warped_fungus'}, {item: 'autumnity:snail_goo'}], result: {item: 'farmersrespite:purulent_tea', count: 2}}).id('farmersrespite:brewing/purulent_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 400, experience: 1.25, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:coffee_beans'}, {item: 'farmersrespite:coffee_beans'}], result: {item: 'farmersrespite:coffee', count: 1}}).id('farmersrespite:brewing/coffee')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'neapolitan:chocolate_bar'}, {item: 'farmersrespite:coffee_beans'}, {tag: 'forge:milk'}], result: {item: 'respiteful:mocha_coffee', count: 1}}).id('respiteful:brewing/mocha_coffee')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'environmental:cherries'}, {item: 'environmental:cherries'}, {item: 'farmersrespite:black_tea_leaves'}, {tag: 'forge:milk'}], result: {item: 'respiteful:adzuki_milk_tea', count: 1}}).id('respiteful:brewing/adzuki_milk_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'neapolitan:dried_vanilla_pods'}, {item: 'farmersrespite:yellow_tea_leaves'}, {tag: 'forge:milk'}], result: {item: 'respiteful:vanilla_milk_tea', count: 1}}).id('respiteful:brewing/vanilla_milk_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 400, experience: 1.25, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'neapolitan:mint_leaves'}, {item: 'farmersrespite:green_tea_leaves'}], result: {item: 'respiteful:mint_green_tea', count: 1}}).id('respiteful:brewing/mint_green_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 400, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{tag: 'minecraft:leaves'}, {tag: 'minecraft:leaves'}, {tag: 'forge:milk'}], result: {item: 'create:builders_tea', count: 1}})
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 400, experience: 1.0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{tag: 'farmersrespite:tea_leaves'}, {tag: 'farmersrespite:tea_leaves'}, {tag: 'forge:milk'}], result: {item: 'create:builders_tea', count: 2}}).id('create_central_kitchen:brewing/builders_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 1.25, container: {item: 'minecraft:glass_bottle'}, ingredients: [{tag: 'minecraft:cocoa_beans_or_powder'}, {tag: 'minecraft:cocoa_beans_or_powder'}, {tag: 'minecraft:cocoa_beans_or_powder'}, {tag: 'forge:milk'}, {item: 'minecraft:sugar'}], result: {item: 'farmersdelight:hot_cocoa', count: 2}}).id('farmersdelight:cooking/hot_cocoa')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:green_tea'}, {tag: 'forge:milk'}], result: {item: 'farmersrespite:long_green_tea', count: 1}}).id('farmersrespite:brewing/long_green_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:yellow_tea'}, {tag: 'forge:milk'}], result: {item: 'farmersrespite:long_yellow_tea', count: 1}}).id('farmersrespite:brewing/long_yellow_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:black_tea'}, {tag: 'forge:milk'}], result: {item: 'farmersrespite:long_black_tea', count: 1}}).id('farmersrespite:brewing/long_black_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:coffee'}, {tag: 'forge:milk'}], result: {item: 'farmersrespite:long_coffee', count: 1}}).id('farmersrespite:brewing/long_coffee')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:green_tea'}, {item: 'minecraft:honey_bottle'}], result: {item: 'farmersrespite:strong_green_tea', count: 1}}).id('farmersrespite:brewing/strong_green_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:yellow_tea'}, {item: 'minecraft:honey_bottle'}], result: {item: 'farmersrespite:strong_yellow_tea', count: 1}}).id('farmersrespite:brewing/strong_yellow_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:black_tea'}, {item: 'minecraft:honey_bottle'}], result: {item: 'farmersrespite:strong_black_tea', count: 1}}).id('farmersrespite:brewing/strong_black_tea')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:coffee'}, {item: 'minecraft:honey_bottle'}], result: {item: 'farmersrespite:strong_coffee', count: 1}}).id('farmersrespite:brewing/strong_coffee')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:bowl'}, ingredients: [{tag: 'forge:raw_fishes/perch'}, {item: 'minecraft:red_mushroom'}, {item: 'farmersdelight:rice'}, {item: 'farmersdelight:tomato'}], result: {item: 'abnormals_delight:perch_with_mushrooms', count: 1}}).id('abnormals_delight:perch_with_mushrooms')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0.35, container: {item: 'minecraft:bowl'}, ingredients: [{tag: 'culturaldelights:regular_eggplants'}, {item: 'farmersdelight:tomato_sauce'}, {tag: 'forge:eggs'}, {item: 'farmersdelight:onion'}], result: {item: 'culturaldelights:fried_eggplant_pasta', count: 1}}).id('culturaldelights:cooking/fried_eggplant_pasta')
+	event.recipes.farmersdelight.cooking(['#raspberry_flavoured:cacti', '#raspberry_flavoured:cacti', '#raspberry_flavoured:cacti', 'sugar'], '2x kubejs:cactus_juice', 0, 200, 'minecraft:glass_bottle')
+	event.recipes.farmersdelight.cooking(['melon_slice', 'melon_slice', 'melon_slice', 'melon_slice', 'sugar'], '2x farmersdelight:melon_juice', 0, 200, 'minecraft:glass_bottle').id('farmersdelight:melon_juice')
+	event.recipes.farmersdelight.cooking(['cocoa_beans', 'create_confectionery:cocoa_butter', 'sugar'], '2x farmersdelight:hot_cocoa', 0, 200, 'minecraft:glass_bottle').id('farmersdelight:cooking/hot_cocoa')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{tag: 'raspberry_flavoured:apples'}, {tag: 'raspberry_flavoured:apples'}, {tag: 'raspberry_flavoured:apples'}, {item: 'kubejs:cinnamon'}], result: {item: 'farmersdelight:apple_cider', count: 2}}).id('farmersdelight:cooking/apple_cider')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:green_tea_leaves'}, {item: 'farmersrespite:green_tea_leaves'}], result: {item: 'farmersrespite:green_tea', count: 1}}).id('farmersrespite:brewing/green_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:yellow_tea_leaves'}, {item: 'farmersrespite:yellow_tea_leaves'}], result: {item: 'farmersrespite:yellow_tea', count: 1}}).id('farmersrespite:brewing/yellow_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:black_tea_leaves'}, {item: 'farmersrespite:black_tea_leaves'}], result: {item: 'farmersrespite:black_tea', count: 1}}).id('farmersrespite:brewing/black_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'minecraft:dandelion'}, {item: 'minecraft:dandelion'}, {tag: 'farmersrespite:tea_leaves'}], result: {item: 'farmersrespite:dandelion_tea', count: 1}}).id('farmersrespite:brewing/dandelion_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:rose_hips'}, {item: 'farmersrespite:rose_hips'}], result: {item: 'farmersrespite:rose_hip_tea', count: 1}}).id('farmersrespite:brewing/rose_hip_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:coffee_berries'}, {item: 'minecraft:glow_berries'}], result: {item: 'farmersrespite:gamblers_tea', count: 1}}).id('farmersrespite:brewing/gamblers_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'minecraft:crimson_fungus'}, {item: 'minecraft:warped_fungus'}, {item: 'autumnity:snail_goo'}], result: {item: 'farmersrespite:purulent_tea', count: 2}}).id('farmersrespite:brewing/purulent_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 400, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:coffee_beans'}, {item: 'farmersrespite:coffee_beans'}], result: {item: 'farmersrespite:coffee', count: 1}}).id('farmersrespite:brewing/coffee')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'neapolitan:chocolate_bar'}, {item: 'farmersrespite:coffee_beans'}, {tag: 'forge:milk'}], result: {item: 'respiteful:mocha_coffee', count: 1}}).id('respiteful:brewing/mocha_coffee')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'environmental:cherries'}, {item: 'environmental:cherries'}, {item: 'farmersrespite:black_tea_leaves'}, {tag: 'forge:milk'}], result: {item: 'respiteful:adzuki_milk_tea', count: 1}}).id('respiteful:brewing/adzuki_milk_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 300, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'neapolitan:dried_vanilla_pods'}, {item: 'farmersrespite:yellow_tea_leaves'}, {tag: 'forge:milk'}], result: {item: 'respiteful:vanilla_milk_tea', count: 1}}).id('respiteful:brewing/vanilla_milk_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 400, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'neapolitan:mint_leaves'}, {item: 'farmersrespite:green_tea_leaves'}], result: {item: 'respiteful:mint_green_tea', count: 1}}).id('respiteful:brewing/mint_green_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 400, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{tag: 'minecraft:leaves'}, {tag: 'minecraft:leaves'}, {tag: 'forge:milk'}], result: {item: 'create:builders_tea', count: 1}})
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 400, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{tag: 'farmersrespite:tea_leaves'}, {tag: 'farmersrespite:tea_leaves'}, {tag: 'forge:milk'}], result: {item: 'create:builders_tea', count: 2}}).id('create_central_kitchen:brewing/builders_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:green_tea'}, {tag: 'forge:milk'}], result: {item: 'farmersrespite:long_green_tea', count: 1}}).id('farmersrespite:brewing/long_green_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:yellow_tea'}, {tag: 'forge:milk'}], result: {item: 'farmersrespite:long_yellow_tea', count: 1}}).id('farmersrespite:brewing/long_yellow_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:black_tea'}, {tag: 'forge:milk'}], result: {item: 'farmersrespite:long_black_tea', count: 1}}).id('farmersrespite:brewing/long_black_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:coffee'}, {tag: 'forge:milk'}], result: {item: 'farmersrespite:long_coffee', count: 1}}).id('farmersrespite:brewing/long_coffee')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:green_tea'}, {item: 'minecraft:honey_bottle'}], result: {item: 'farmersrespite:strong_green_tea', count: 1}}).id('farmersrespite:brewing/strong_green_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:yellow_tea'}, {item: 'minecraft:honey_bottle'}], result: {item: 'farmersrespite:strong_yellow_tea', count: 1}}).id('farmersrespite:brewing/strong_yellow_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:black_tea'}, {item: 'minecraft:honey_bottle'}], result: {item: 'farmersrespite:strong_black_tea', count: 1}}).id('farmersrespite:brewing/strong_black_tea')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:glass_bottle'}, ingredients: [{item: 'farmersrespite:coffee'}, {item: 'minecraft:honey_bottle'}], result: {item: 'farmersrespite:strong_coffee', count: 1}}).id('farmersrespite:brewing/strong_coffee')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{tag: 'culturaldelights:regular_eggplants'}, {item: 'farmersdelight:tomato_sauce'}, {tag: 'forge:eggs'}, {item: 'farmersdelight:onion'}], result: {item: 'culturaldelights:fried_eggplant_pasta', count: 1}}).id('culturaldelights:cooking/fried_eggplant_pasta')
 	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [[{tag: 'raspberry_flavoured:raw_fish'}, {item: 'aquaculture:fish_bones'}], [{tag: 'raspberry_flavoured:raw_fish'}, {item: 'aquaculture:fish_bones'}], {tag: 'raspberry_flavoured:cat_prey'}, {tag: 'forge:eggs'}], result: {item: 'kubejs:cat_food', count: 1}})
 	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [[{item: 'minecraft:cobblestone'}, {item: 'minecraft:cobbled_deepslate'}, {tag: 'forge:stone'}], [{item: 'minecraft:cobblestone'}, {item: 'minecraft:cobbled_deepslate'}, {tag: 'forge:stone'}]], result: {item: 'kubejs:stoup', count: 1}}).id('kubejs:stone_soup')
 	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{tag: 'forge:raw_chicken'}, {tag: 'mynethersdelight:hot_spice'}, {item: 'farmersdelight:onion'}], result: {item: 'mynethersdelight:hot_wings', count: 2}}).id('mynethersdelight:cooking/hot_wings')
 	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, ingredients: [{tag: 'forge:eggs'}, {tag: 'forge:eggs'}, {tag: 'mynethersdelight:hot_spice'}, {tag: 'forge:raw_pork'}], result: {item: 'mynethersdelight:deviled_egg', count: 2}}).id('mynethersdelight:cooking/deviled_egg')
 	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, ingredients: [{item: 'miners_delight:bat_wing'}, {tag: 'farmersdelight:cabbage_roll_ingredients'}], result: {item: 'kubejs:bat_rolls'}})
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'miners_delight:tentacles'}, {item: 'miners_delight:tentacles'}, {tag: 'raspberry_flavoured:dough'}, {tag: 'forge:crops/onion'}], result: {item: 'kubejs:takoyaki'}})
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'miners_delight:tentacles'}, {item: 'miners_delight:tentacles'}, {tag: 'raspberry_flavoured:dough'}, {tag: 'forge:crops/onion'}, {item: 'cookscollection:cooking_oil'}], result: {item: 'kubejs:takoyaki'}})
 	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [[{tag: 'brewinandchewin:bone_or_withered_bone'}, {item: 'aquaculture:fish_bones'}], [{tag: 'raspberry_flavoured:cave_scrap_ingredients'}, {item: 'miners_delight:bat_wing'}, {item: 'aquaculture:algae'}]], result: {item: 'farmersdelight:bone_broth'}}).id('farmersdelight:cooking/bone_broth')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'farmersdelight:tomato'}, {item: 'farmersdelight:onion'}, {item: 'culturaldelights:eggplant'}, {tag: 'forge:vegetables'}], result: {item: 'farmersdelight:ratatouille'}}).id('farmersdelight:cooking/ratatouille')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'culturaldelights:corn_dough'}, {item: 'farmersdelight:onion'}, {item: 'brewinandchewin:flaxen_cheese_wedge'}, {tag: 'forge:eggs'}], result: {item: 'kubejs:corn_fritters'}})
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'minecraft:cod'}, {item: 'farmersrespite:black_tea_leaves'}, {tag: 'forge:crops/cabbage'}, {item: 'farmersdelight:rice'}], result: {item: 'farmersrespite:black_cod'}}).id('farmersrespite:black_cod')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'minecraft:salmon'}, {item: 'minecraft:sweet_berries'}, {tag: 'forge:crops/cabbage'}, {item: 'farmersdelight:onion'}], result: {item: 'farmersdelight:grilled_salmon'}}).id('farmersdelight:grilled_salmon')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'culturaldelights:corn_dough'}, {item: 'farmersdelight:onion'}, {item: 'brewinandchewin:flaxen_cheese_wedge'}, {tag: 'forge:eggs'}, {item: 'cookscollection:cooking_oil'}], result: {item: 'kubejs:corn_fritters'}})
 	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{tag: 'raspberry_flavoured:red_fish'}, {item: 'farmersdelight:tomato_sauce'}, {item: 'farmersdelight:onion'}], result: {item: 'farmersdelight:fish_stew'}}).id('farmersdelight:cooking/fish_stew')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{tag: 'raspberry_flavoured:raw_fish'}, {tag: 'forge:pasta'}, {item: 'farmersdelight:tomato'}, [{item: 'minecraft:ink_sac'}, {item: 'miners_delight:squid'}, {item: 'miners_delight:tentacles'}]], result: {item: 'farmersdelight:squid_ink_pasta'}}).id('farmersdelight:cooking/squid_ink_pasta')
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'sullysmod:lanternfish'}, {tag: 'forge:pasta'}, {item: 'minecraft:glow_berries'}, [{item: 'minecraft:glow_ink_sac'}, {item: 'miners_delight:glow_squid'}]], result: {item: 'kubejs:glow_ink_pasta'}})
 	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{tag: 'raspberry_flavoured:white_fish'}, {tag: 'forge:crops/cabbage'}, {item: 'farmersdelight:onion'}], result: {item: 'kubejs:white_fish_soup'}})
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'aquaculture:tambaqui'}, {item: 'farmersdelight:rice'}, {tag: 'forge:vegetables'}, {item: 'farmersdelight:pumpkin_slice'}], result: {item: 'kubejs:tambaqui_curry'}})
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'aquaculture:pollock'}, {item: 'minecraft:carrot'}, {tag: 'forge:crops/cabbage'}, {tag: 'forge:vegetables'}], result: {item: 'kubejs:pollock_with_vegetables'}})
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'aquaculture:tuna'}, {tag: 'forge:pasta'}, {item: 'farmersdelight:tomato_sauce'}], result: {item: 'kubejs:pasta_with_tuna'}})
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'aquaculture:atlantic_herring'}, {item: 'aquaculture:atlantic_herring'}, {item: 'minecraft:glow_berries'}, {item: 'farmersdelight:onion'}, {tag: 'forge:eggs'}], result: {item: 'kubejs:rollmops'}})
-	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{tag: 'raspberry_flavoured:white_fish'}, {item: 'minecraft:potato'}, {item: 'farmersdelight:onion'}, {tag: 'forge:eggs'}], result: {item: 'kubejs:fish_and_chips'}})
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'aquaculture:tambaqui'}, {item: 'farmersdelight:rice'}, {tag: 'forge:vegetables'}, {item: 'farmersdelight:pumpkin_slice'}, {item: 'cookscollection:cooking_oil'}], result: {item: 'kubejs:tambaqui_curry'}})
 	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{tag: 'raspberry_flavoured:raw_fish'}, {item: 'environmental:dianthus'}, {item: 'minecraft:bone_meal'}, {tag: 'abnormals_delight:slabdish_ingredients'}, {tag: 'abnormals_delight:slabdish_ingredients'}], result: {item: 'abnormals_delight:slabdish'}}).id('abnormals_delight:environmental/cooking/slabdish')
 	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [[{item: 'nethersdelight:hoglin_loin'}, {item: 'nethersdelight:hoglin_sirloin'}], {tag: 'farmersdelight:wheat_or_flour'}, {tag: 'forge:eggs'}, {item: 'mynethersdelight:bullet_pepper'}], result: {item: 'mynethersdelight:fried_hoglin_chop'}}).id('mynethersdelight:cooking/fried_hoglin_chop')
 	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{tag: 'mynethersdelight:strider_meats'}, {tag: 'forge:pasta'}, {item: 'minecraft:crimson_fungus'}, {item: 'minecraft:crimson_fungus'}], result: {item: 'mynethersdelight:crimson_stroganoff'}}).id('mynethersdelight:cooking/crimson_stroganoff')
+	event.custom({type: 'farmersdelight:cooking', cookingtime: 200, experience: 0, container: {item: 'minecraft:bowl'}, ingredients: [{item: 'kubejs:oats'}, {tag: 'raspberry_flavoured:berries'}, {tag: 'raspberry_flavoured:breakfast_condiments'}, {item: 'kubejs:cinnamon'}], result: {item: 'kubejs:mixed_oatmeal'}})
+	event.recipes.farmersdelight.cooking(['#farmersdelight:wheat_or_flour', '#forge:eggs', '#forge:milk', 'sugar'], '2x kubejs:batter', 0, 100, 'minecraft:bowl')
+	event.recipes.farmersdelight.cooking(['cookscollection:lemon', 'cookscollection:lemon', 'cookscollection:lemon', 'sugar'], '2x cookscollection:lemonade', 0, 200, 'minecraft:glass_bottle').id('cookscollection:lemonade')
+	event.recipes.farmersdelight.cooking(['#raspberry_flavoured:raw_squid', '#forge:crops/rice', '#forge:crops/cabbage', 'farmersdelight:tomato_sauce', 'cookscollection:cooking_oil'], 'kubejs:squid_stir_fry', 0, 200, 'minecraft:bowl')
+	event.recipes.farmersdelight.cooking(['#forge:crops/potato', '#forge:crops/potato', 'cookscollection:cooking_oil', 'mynethersdelight:hoglin_sausage', 'mynethersdelight:hoglin_sausage'], '2x mynethersdelight:sausage_and_potatoes', 0, 200, 'minecraft:bowl').id('mynethersdelight:cooking/sausage_and_potatoes')
+	event.recipes.farmersdelight.cooking(['windswept:roasted_chestnuts', '#forge:raw_chicken', '#forge:crops/onion', 'brewinandchewin:flaxen_cheese_wedge'], 'windswept:chestnut_risotto', 0, 200, 'minecraft:bowl').id('windswept:cooking/chestnut_risotto')
+	
+	event.recipes.farmersdelight.cooking(['brewinandchewin:flaxen_cheese_wedge', '#forge:pasta', '#forge:crops/tomato', '#forge:crops/cabbage', 'cookscollection:cooking_oil'], 'brewinandchewin:cheesy_pasta', 0, 200, 'minecraft:bowl').id('brewinandchewin:cooking/cheesy_pasta')
+	event.recipes.farmersdelight.cooking(['farmersdelight:minced_beef', '#forge:pasta', 'farmersdelight:tomato_sauce', 'cookscollection:cooking_oil'], 'farmersdelight:pasta_with_meatballs', 0, 200, 'minecraft:bowl').id('farmersdelight:cooking/pasta_with_meatballs')
+	event.recipes.farmersdelight.cooking(['#forge:raw_mutton', '#forge:pasta', 'farmersdelight:tomato_sauce', 'cookscollection:cooking_oil'], 'farmersdelight:pasta_with_mutton_chop', 0, 200, 'minecraft:bowl').id('farmersdelight:cooking/pasta_with_mutton_chop')
+	event.recipes.farmersdelight.cooking(['#raspberry_flavoured:raw_fish', '#forge:pasta', ['ink_sac', '#raspberry_flavoured:raw_squid'], ['#forge:crops/tomato', '#forge:crops/beetroot'], 'cookscollection:cooking_oil'], 'farmersdelight:squid_ink_pasta', 0, 200, 'minecraft:bowl').id('farmersdelight:cooking/squid_ink_pasta')
+	event.recipes.farmersdelight.cooking(['sullysmod:lanternfish', '#forge:pasta', ['glow_ink_sac', 'miners_delight:glow_squid'], 'glow_berries', 'cookscollection:cooking_oil'], 'kubejs:glow_ink_pasta', 0, 200, 'minecraft:bowl')
+	event.recipes.farmersdelight.cooking(['#forge:raw_turkey', '#forge:pasta', '#forge:crops/cabbage', 'brewinandchewin:flaxen_cheese_wedge', 'cookscollection:cooking_oil'], 'kubejs:pasta_with_turkey', 0, 200, 'minecraft:bowl')
+	event.recipes.farmersdelight.cooking(['aquaculture:tuna', '#forge:pasta', 'farmersdelight:tomato_sauce', 'cookscollection:cooking_oil'], 'kubejs:pasta_with_tuna', 0, 200, 'minecraft:bowl')
+
+// Baking
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'neapolitan:chocolate_bar'}, {item: 'kubejs:batter'}
+	], result: {item: 'cookscollection:chocolate_muffin'}}).id('cookscollection:chocolate_muffin')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'cookscollection:lemon'}, {item: 'minecraft:poppy'}, {item: 'kubejs:batter'}
+	], result: {item: 'cookscollection:lemon_muffin'}}).id('cookscollection:lemon_muffin')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'farmersdelight:wheat_dough'}, {item: 'farmersdelight:wheat_dough'}, 
+		{item: 'kubejs:oats'}, {item: 'supplementaries:flax_seeds'}, {item: 'supplementaries:flax_seeds'}
+	], result: {item: 'cookscollection:rustic_loaf', count: 2}}).id('cookscollection:rustic_loaf')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'brewinandchewin:scarlet_cheese_wedge'}, {tag: 'forge:crops/beetroot'}, {item: 'farmersdelight:tomato_sauce'}, 
+		{item: 'farmersdelight:raw_pasta'}, {tag: 'brewinandchewin:horror_lasagna_meats'}, {item: 'minecraft:bowl'}
+	], result: {item: 'brewinandchewin:horror_lasagna'}}).id('brewinandchewin:cooking/horror_lasagna')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'minecraft:cod'}, {item: 'farmersrespite:black_tea_leaves'}, {item: 'minecraft:bowl'}, {tag: 'forge:crops/cabbage'}, {tag: 'forge:crops/rice'}
+	], result: {item: 'farmersrespite:black_cod'}}).id('farmersrespite:black_cod')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{tag: 'forge:raw_mutton'}, {tag: 'forge:crops/beetroot'}, {item: 'minecraft:bowl'}, {tag: 'forge:crops/tomato'}, {tag: 'forge:crops/rice'}
+	], result: {item: 'farmersdelight:roasted_mutton_chops'}}).id('farmersdelight:roasted_mutton_chops')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'minecraft:beef'}, {tag: 'forge:crops/potato'}, {item: 'minecraft:bowl'}, {tag: 'forge:crops/onion'}, {tag: 'forge:crops/rice'}
+	], result: {item: 'farmersdelight:steak_and_potatoes'}}).id('farmersdelight:steak_and_potatoes')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{tag: 'forge:crops/tomato'}, {tag: 'forge:crops/onion'}, {item: 'minecraft:bowl'}, 
+		{tag: 'culturaldelights:regular_eggplants'}, {tag: 'forge:vegetables'}, {item: 'cookscollection:cooking_oil'}
+	], result: {item: 'farmersdelight:ratatouille'}}).id('farmersdelight:cooking/ratatouille')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'minecraft:salmon'}, {tag: 'forge:crops/cabbage'}, {item: 'minecraft:bowl'}, {item: 'minecraft:sweet_berries'}, {tag: 'forge:crops/onion'}
+	], result: {item: 'farmersdelight:grilled_salmon'}}).id('farmersdelight:grilled_salmon')
+	event.custom({type: 'cookscollection:baking', cooktime: 600, ingredients: [
+		{tag: 'forge:crops/onion'}, {tag: 'forge:eggs'}, {tag: 'forge:bread/wheat'}, 
+		{tag: 'forge:crops/carrot'}, {item: 'minecraft:chicken'}, {tag: 'forge:crops/potato'}, 
+		{tag: 'forge:crops/carrot'}, {item: 'minecraft:bowl'}, {tag: 'forge:crops/potato'}
+	], result: {item: 'farmersdelight:roast_chicken_block'}}).id('farmersdelight:roast_chicken')
+	event.custom({type: 'cookscollection:baking', cooktime: 600, ingredients: [
+		{item: 'minecraft:sweet_berries'}, {item: 'minecraft:honey_bottle'}, {item: 'minecraft:sweet_berries'}, 
+		{item: 'minecraft:sweet_berries'}, {item: 'farmersdelight:ham'}, {item: 'minecraft:sweet_berries'}, 
+		{tag: 'forge:crops/rice'}, {item: 'minecraft:bowl'}, {tag: 'forge:crops/rice'}
+	], result: {item: 'farmersdelight:honey_glazed_ham_block'}}).id('farmersdelight:honey_glazed_ham')
+	event.custom({type: 'cookscollection:baking', cooktime: 600, ingredients: [
+		{tag: 'forge:crops/potato'}, {tag: 'forge:milk'}, {tag: 'forge:crops/potato'}, 
+		{tag: 'forge:raw_mutton'}, {tag: 'forge:raw_mutton'}, {tag: 'forge:raw_mutton'}, 
+		{tag: 'forge:crops/onion'}, {item: 'minecraft:bowl'}, {tag: 'forge:crops/onion'}
+	], result: {item: 'farmersdelight:shepherds_pie_block'}}).id('farmersdelight:shepherds_pie')
+	event.custom({type: 'cookscollection:baking', cooktime: 600, ingredients: [
+		{tag: 'culturaldelights:regular_eggplants'}, {item: 'brewinandchewin:flaxen_cheese_wedge'}, {tag: 'culturaldelights:regular_eggplants'}, 
+		{tag: 'forge:eggs'}, {item: 'farmersdelight:tomato_sauce'}, {tag: 'forge:bread/wheat'}, 
+		{tag: 'forge:pasta'}, {item: 'minecraft:bowl'}, {tag: 'forge:pasta'}
+	], result: {item: 'kubejs:eggplant_parmesan_block'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'sob:cinder_dough'}, {item: 'sob:cinder_dough'}, {tag: 'raspberry_flavoured:soul_blocks'}, {item: 'minecraft:crimson_fungus'}
+	], result: {item: 'farmersrespite:nether_wart_sourdough', count: 2}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'culturaldelights:corn_dough'}, {item: 'culturaldelights:corn_dough'}, {item: 'minecraft:gunpowder'}, {item: 'savage_and_ravage:creeper_spores'}
+	], result: {item: 'kubejs:sporedough', count: 2}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {tag: 'forge:fruits/strawberry'}, {item: 'minecraft:sugar'}
+	], result: {item: 'neapolitan:strawberry_scones', count: 2}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'farmersdelight:wheat_dough'}, {tag: 'forge:fruits/banana'}, {item: 'minecraft:sugar'}
+	], result: {item: 'neapolitan:banana_bread', count: 2}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'farmersdelight:wheat_dough'}, {item: 'autumnity:syrup_bottle'}, {item: 'farmersdelight:pumpkin_slice'}, {item: 'farmersdelight:pumpkin_slice'}
+	], result: {item: 'autumnity:pumpkin_bread', count: 2}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{tag: 'forge:raw_venison'}, {tag: 'forge:crops/carrot'}, {item: 'minecraft:bowl'},
+		{tag: 'forge:fruits/cherry'}, {tag: 'forge:fruits/cherry'}
+	], result: {item: 'abnormals_delight:seared_venison'}}).id('abnormals_delight:seared_venison')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{tag: 'forge:raw_rabbit'}, {item: 'atmospheric:aloe_leaves'}, {item: 'minecraft:bowl'},
+		{item: 'atmospheric:yucca_fruit'}, {item: 'atmospheric:yellow_blossoms'}, {tag: 'raspberry_flavoured:cacti'}
+	], result: {item: 'abnormals_delight:dune_platter'}}).id('abnormals_delight:dune_platter')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'upgrade_aquatic:perch'}, {item: 'minecraft:red_mushroom'}, {item: 'minecraft:bowl'},
+		{tag: 'forge:crops/rice'}, {tag: 'forge:crops/tomato'}
+	], result: {item: 'abnormals_delight:perch_with_mushrooms'}}).id('abnormals_delight:perch_with_mushrooms')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'upgrade_aquatic:pike'}, {tag: 'forge:crops/beetroot'}, {item: 'minecraft:bowl'},
+		{item: 'minecraft:kelp'}, {item: 'minecraft:kelp'}
+	], result: {item: 'abnormals_delight:pike_with_beetroot'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{tag: 'forge:raw_venison'}, {item: 'minecraft:kelp'}, {item: 'minecraft:bowl'},
+		{tag: 'forge:vegetables'}, {item: 'minecraft:bamboo'}, {item: 'minecraft:bamboo'}
+	], result: {item: 'abnormals_delight:venison_with_bamboo_shoots'}}).id('abnormals_delight:venison_with_bamboo_shoots')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'nethersdelight:hoglin_loin'}, {item: 'minecraft:warped_roots'}, {item: 'minecraft:bowl'},
+		{item: 'minecraft:warped_fungus'}, {item: 'minecraft:warped_fungus'}
+	], result: {item: 'mynethersdelight:blue_tenderloin_steak'}}).id('mynethersdelight:crafting/blue_tenderloin_steak')
+	event.custom({type: 'cookscollection:baking', cooktime: 900, ingredients: [
+		{item: 'farmersdelight:ham'}, {item: 'farmersdelight:nether_salad'}, {item: 'farmersdelight:ham'}, 
+		{item: 'minecraft:crimson_roots'}, {item: 'nethersdelight:hoglin_hide'}, {item: 'minecraft:warped_roots'}, 
+		{item: 'nethersdelight:hoglin_loin'}, {item: 'minecraft:bowl'}, {item: 'nethersdelight:hoglin_loin'}
+	], result: {item: 'mynethersdelight:roast_stuffed_hoglin'}}).id('mynethersdelight:cooking/roast_stuffed_hoglin')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{tag: 'mynethersdelight:strider_meats'}, {item: 'minecraft:crimson_fungus'}, {item: 'minecraft:bowl'},
+		{item: 'minecraft:warped_fungus'}, {tag: 'raspberry_flavoured:edible_mushrooms'}
+	], result: {item: 'mynethersdelight:strider_with_grilled_fungus'}}).id('mynethersdelight:cooking/strider_and_grilled_fungus')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{tag: 'mynethersdelight:strider_meats'}, {tag: 'mynethersdelight:strider_meats'}, {item: 'minecraft:bowl'},
+		{tag: 'mynethersdelight:strider_meats'}, {tag: 'mynethersdelight:strider_meats'}, {item: 'sob:cinder_dough'}
+	], result: {item: 'mynethersdelight:striderloaf'}}).id('mynethersdelight:crafting/striderloaf')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'aquaculture:pollock'}, {tag: 'forge:crops/carrot'}, {item: 'minecraft:bowl'},
+		{tag: 'forge:crops/cabbage'}, {tag: 'forge:vegetables'}
+	], result: {item: 'kubejs:pollock_with_vegetables'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'culturaldelights:corn_dough'}, {item: 'culturaldelights:corn_dough'}, {item: 'culturaldelights:corn_dough'}
+	], result: {item: 'culturaldelights:tortilla', count: 3}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'sob:cinder_dough'}, {item: 'sob:cinder_dough'}, {item: 'sob:cinder_dough'}
+	], result: {item: 'sob:cinder_bread', count: 3}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'culturaldelights:corn_dough'}, {item: 'culturaldelights:corn_dough'}, {tag: 'culturaldelights:avocados'},
+		{item: 'farmersdelight:tomato_sauce'}, {tag: 'forge:crops/onion'}
+	], result: {item: 'culturaldelights:empanada', count: 2}}).id('culturaldelights:cooking/empanada')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'minecraft:potato'}, {item: 'minecraft:potato'},
+		{item: 'spelunkery:salt'}, {item: 'cookscollection:cooking_oil'}
+	], result: {item: 'cookscollection:fried_potato', count: 4}}).id('cookscollection:fried_potato')
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'farmersdelight:wheat_dough'},
+		{tag: 'forge:milk'}, {item: 'minecraft:sugar'}
+	], result: {item: 'create:sweet_roll', count: 2}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'farmersdelight:wheat_dough'},
+		{tag: 'forge:milk'}, {item: 'minecraft:sugar'}, {item: 'kubejs:cinnamon'}
+	], result: {item: 'kubejs:cinnamon_roll', count: 2}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'sob:cinder_dough'}, {item: 'sob:cinder_dough'},
+		{tag: 'mynethersdelight:hot_spice'}, {item: 'minecraft:magma_cream'}
+	], result: {item: 'sob:caldera_roll', count: 2}})
+	
+	// Cakes
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'minecraft:sweet_berries'}, {item: 'minecraft:sweet_berries'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'minecraft:cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'neapolitan:dried_vanilla_pods'}, {item: 'neapolitan:dried_vanilla_pods'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'neapolitan:vanilla_cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'neapolitan:chocolate_bar'}, {item: 'neapolitan:chocolate_bar'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'neapolitan:chocolate_cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'neapolitan:strawberries'}, {item: 'neapolitan:strawberries'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'neapolitan:strawberry_cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'neapolitan:banana'}, {item: 'neapolitan:banana'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'neapolitan:banana_cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'neapolitan:mint_leaves'}, {item: 'neapolitan:mint_leaves'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'neapolitan:mint_cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'environmental:cherries'}, {item: 'environmental:cherries'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'neapolitan:adzuki_cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersrespite:green_tea_leaves'}, {item: 'farmersrespite:green_tea_leaves'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'respiteful:green_tea_cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersrespite:yellow_tea_leaves'}, {item: 'farmersrespite:yellow_tea_leaves'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'respiteful:yellow_tea_cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersrespite:black_tea_leaves'}, {item: 'farmersrespite:black_tea_leaves'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'respiteful:black_tea_cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersrespite:coffee_beans'}, {item: 'farmersrespite:coffee_beans'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'farmersrespite:coffee_cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'mynethersdelight:hot_cream'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'mynethersdelight:magma_cake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'atmospheric:aloe_gel_bottle'}, {item: 'atmospheric:yucca_fruit'}, {item: 'kubejs:batter'}, {item: 'kubejs:batter'}
+	], result: {item: 'atmospheric:yucca_gateau'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'autumnity:syrup_bottle'}, {item: 'cookscollection:lemon'}, {item: 'kubejs:batter'}
+	], result: {item: 'autumnity:pancake', count: 4}})
+	
+	// Pies
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersdelight:pumpkin_slice'}, {item: 'farmersdelight:pumpkin_slice'}, 
+		{item: 'farmersdelight:pumpkin_slice'}, {item: 'farmersdelight:pie_crust'}
+	], result: {item: 'kubejs:pumpkin_pie'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'farmersrespite:rose_hips'}, {item: 'farmersrespite:rose_hips'}, 
+		{item: 'farmersrespite:rose_hips'}, {item: 'minecraft:honey_bottle'},
+		{item: 'farmersdelight:pie_crust'}
+	], result: {item: 'farmersrespite:rose_hip_pie'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{tag: 'raspberry_flavoured:apples'}, {tag: 'raspberry_flavoured:apples'}, 
+		{tag: 'raspberry_flavoured:apples'}, {item: 'farmersdelight:pie_crust'}
+	], result: {item: 'farmersdelight:apple_pie'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'environmental:cherries'}, {item: 'environmental:cherries'}, 
+		{item: 'environmental:cherries'}, {item: 'environmental:cherries'},
+		{item: 'environmental:cherries'}, {item: 'farmersdelight:pie_crust'}
+	], result: {item: 'environmental:cherry_pie'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'environmental:truffle'}, {tag: 'raspberry_flavoured:edible_mushrooms'}, 
+		{tag: 'raspberry_flavoured:edible_mushrooms'}, {tag: 'raspberry_flavoured:edible_mushrooms'},
+		{item: 'farmersdelight:pie_crust'}
+	], result: {item: 'environmental:truffle_pie'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{tag: 'forge:milk'}, {item: 'minecraft:glow_berries'}, 
+		{item: 'minecraft:glow_berries'}, {item: 'minecraft:glow_berries'}, 
+		{item: 'minecraft:glow_berries'}, {item: 'farmersdelight:pie_crust'}
+	], result: {item: 'farmersdelight:sweet_berry_cheesecake'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'neapolitan:chocolate_bar'}, {item: 'neapolitan:chocolate_bar'},
+		{item: 'farmersdelight:pie_crust'}
+	], result: {item: 'farmersdelight:chocolate_pie'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{item: 'kubejs:cinnamon'}, {item: 'kubejs:cinnamon'}, 
+		{item: 'kubejs:cinnamon'}, {item: 'create_confectionery:cocoa_butter'},
+		{item: 'farmersdelight:pie_crust'}
+	], result: {item: 'kubejs:butterscotch_cinnamon_pie'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{tag: 'raspberry_flavoured:prickly_pears'}, {tag: 'raspberry_flavoured:prickly_pears'}, 
+		{tag: 'raspberry_flavoured:prickly_pears'}, {item: 'farmersdelight:pie_crust'}
+	], result: {item: 'kubejs:prickly_pear_pie'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 200, ingredients: [
+		{tag: 'brewinandchewin:bacon_or_mushroom'}, {tag: 'forge:crops/cabbage'}, 
+		{tag: 'forge:eggs'}, {item: 'brewinandchewin:flaxen_cheese_wedge'}, 
+		{item: 'farmersdelight:pie_crust'}
+	], result: {item: 'brewinandchewin:quiche'}})
+	event.custom({type: 'cookscollection:baking', cooktime: 300, ingredients: [
+		{item: 'brewinandchewin:flaxen_cheese_wedge'}, {item: 'brewinandchewin:flaxen_cheese_wedge'}, {item: 'brewinandchewin:flaxen_cheese_wedge'}, 
+		{tag: 'raspberry_flavoured:edible_mushrooms'}, {item: 'farmersdelight:tomato_sauce'}, {item: 'farmersdelight:minced_beef'}, 
+		{item: 'farmersdelight:wheat_dough'}, {item: 'farmersdelight:wheat_dough'}, {item: 'farmersdelight:wheat_dough'}
+	], result: {item: 'brewinandchewin:pizza'}})
+	
+	// Cookies
+	event.custom({type: 'cookscollection:baking', cooktime: 100, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'neapolitan:chocolate_bar'}
+	], result: {item: 'minecraft:cookie', count: 8}})
+	event.custom({type: 'cookscollection:baking', cooktime: 100, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'farmersrespite:green_tea_leaves'}
+	], result: {item: 'farmersrespite:green_tea_cookie', count: 8}})
+	event.custom({type: 'cookscollection:baking', cooktime: 100, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'minecraft:sweet_berries'}
+	], result: {item: 'farmersdelight:sweet_berry_cookie', count: 8}})
+	event.custom({type: 'cookscollection:baking', cooktime: 100, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'minecraft:honey_bottle'}
+	], result: {item: 'farmersdelight:honey_cookie', count: 8}})
+	event.custom({type: 'cookscollection:baking', cooktime: 100, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'minecraft:sugar'}
+	], result: {item: 'kubejs:sugar_cookie', count: 8}})
+	event.custom({type: 'cookscollection:baking', cooktime: 100, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'kubejs:cinnamon'}
+	], result: {item: 'kubejs:cinnamon_cracker', count: 8}})
+	event.custom({type: 'cookscollection:baking', cooktime: 100, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'environmental:cherries'}
+	], result: {item: 'abnormals_delight:cherry_cookie', count: 8}})
+	event.custom({type: 'cookscollection:baking', cooktime: 100, ingredients: [
+		{item: 'farmersdelight:wheat_dough'}, {item: 'autumnity:syrup_bottle'}
+	], result: {item: 'abnormals_delight:maple_cookie', count: 8}})
 
 // Fermenting
-	event.custom({type: 'brewinandchewin:fermenting', fermentingtime: 750, experience: 0.0, temperature: 4, container: {item: 'minecraft:bowl'}, fluiditem: {tag: 'forge:milk'}, ingredients: [{item: 'minecraft:glow_berries'}, {item: 'minecraft:glow_berries'}, {item: 'minecraft:glow_berries'}, {item: 'minecraft:sugar'}], result: {item: 'berry_good:glowgurt', count: 2}}).id('berry_good:glowgurt')
-	event.custom({type: 'brewinandchewin:fermenting', fermentingtime: 500, experience: 0.0, temperature: 3, ingredients: [{tag: 'brewinandchewin:raw_meats'}, {tag: 'brewinandchewin:raw_meats'}, {tag: 'brewinandchewin:raw_meats'}], result: {item: 'brewinandchewin:jerky', count: 3}}).id('brewinandchewin:fermenting/jerky')
-	event.custom({type: 'brewinandchewin:fermenting', fermentingtime: 500, experience: 0.0, temperature: 3, ingredients: [{tag: 'brewinandchewin:raw_meats'}, {tag: 'brewinandchewin:raw_meats'}, {tag: 'brewinandchewin:raw_meats'}, {item: 'kubejs:soul_salt'}], result: {item: 'brewinandchewin:jerky', count: 5}})
-	event.custom({type: 'brewinandchewin:fermenting', fermentingtime: 6000, experience: 0.0, temperature: 2, container: {item: 'brewinandchewin:tankard'}, fluiditem: {item: 'atmospheric:aloe_gel_bottle'}, ingredients: [{item: 'autumnity:foul_berries'}, {item: 'autumnity:foul_berries'}, {item: 'neapolitan:mint_leaves'}, {item: 'mynethersdelight:bullet_pepper'}], result: {item: 'kubejs:foul_fernet', count: 2}})
+	event.custom({type: 'brewinandchewin:fermenting', fermentingtime: 2400, experience: 0, temperature: 4, container: {item: 'minecraft:bowl'}, fluiditem: {tag: 'forge:milk'}, ingredients: [{item: 'minecraft:glow_berries'}, {item: 'minecraft:glow_berries'}, {item: 'minecraft:glow_berries'}, {item: 'minecraft:sugar'}], result: {item: 'berry_good:glowgurt', count: 3}}).id('berry_good:glowgurt')
+	event.custom({type: 'brewinandchewin:fermenting', fermentingtime: 1200, experience: 0, temperature: 3, ingredients: [{tag: 'brewinandchewin:raw_meats'}, {tag: 'brewinandchewin:raw_meats'}, {tag: 'brewinandchewin:raw_meats'}, {item: 'spelunkery:salt'}], result: {item: 'brewinandchewin:jerky', count: 6}}).id('brewinandchewin:fermenting/jerky')
+	event.custom({type: 'brewinandchewin:fermenting', fermentingtime: 3600, experience: 0, temperature: 2, container: {item: 'brewinandchewin:tankard'}, fluiditem: {item: 'atmospheric:aloe_gel_bottle'}, ingredients: [{item: 'autumnity:foul_berries'}, {item: 'autumnity:foul_berries'}, {item: 'neapolitan:mint_leaves'}, {item: 'mynethersdelight:bullet_pepper'}], result: {item: 'kubejs:foul_fernet', count: 2}})
+	event.custom({type: 'brewinandchewin:fermenting', fermentingtime: 2400, experience: 0, temperature: 3, container: {item: 'minecraft:bowl'}, fluiditem: {item: 'cookscollection:cooking_oil'}, ingredients: [{item: 'aquaculture:atlantic_herring'}, {item: 'aquaculture:atlantic_herring'}, {tag: 'forge:crops/onion'}, {item: 'spelunkery:salt'}], result: {item: 'kubejs:rollmops'}})
 	
 // Warping
 	event.custom({type: 'architects_palette:warping', dimension: 'minecraft:the_nether', ingredient: [{tag: 'raspberry_flavoured:logs'}], result: {item: 'architects_palette:twisted_log'}}).id('architects_palette:warping/twisted_log_from_logs')
@@ -849,6 +1264,7 @@ ServerEvents.recipes(event => {
 	event.custom({type: 'architects_palette:warping', dimension: 'minecraft:the_nether', ingredient: [{item: 'kubejs:music_disc_droopy1'}], result: {item: 'kubejs:music_disc_droopy2'}})
 	event.custom({type: 'architects_palette:warping', dimension: 'minecraft:the_nether', ingredient: [{item: 'minecraft:potato'}], result: {item: 'minecraft:poisonous_potato'}})
 	event.custom({type: 'architects_palette:warping', dimension: 'minecraft:the_nether', ingredient: [{item: 'mynethersdelight:hoglin_trophy'}], result: {item: 'mynethersdelight:zoglin_trophy'}}).id('mynethersdelight:zoglin_trophy')
+	event.custom({type: 'architects_palette:warping', dimension: 'minecraft:the_nether', ingredient: [{item: 'minecraft:glow_lichen'}], result: {item: 'twigs:petrified_lichen'}})
 	event.custom({type: 'architects_palette:warping', dimension: 'minecraft:the_nether', ingredient: [{item: 'kubejs:music_disc_origin'}], result: {item: 'kubejs:music_disc_savour'}})
 	event.custom({type: 'architects_palette:warping', dimension: 'minecraft:the_nether', ingredient: [{item: 'minecraft:music_disc_pigstep'}], result: {item: 'kubejs:music_disc_exostep'}}).id('kubejs:exostep')
 	event.custom({type: 'architects_palette:warping', dimension: 'minecraft:overworld', ingredient: [{item: 'minecraft:music_disc_pigstep'}], result: {item: 'kubejs:music_disc_exostep'}}).id('kubejs:exostep_2')
@@ -860,7 +1276,6 @@ ServerEvents.recipes(event => {
 // Grindstone polishing
 	event.custom({type: 'sullysmod:grindstone_polishing', ingredients: [{item: 'spelunkery:rough_cinnabar'}], result: {item: 'spelunkery:cinnabar'}, experience: 0})
 	event.custom({type: 'sullysmod:grindstone_polishing', ingredients: [{item: 'spelunkery:rough_diamond'}], result: {item: 'minecraft:diamond'}, experience: 0})
-	event.custom({type: 'sullysmod:grindstone_polishing', ingredients: [{item: 'create:rose_quartz'}], result: {item: 'create:polished_rose_quartz'}, experience: 0})
 	
 // Pressing
 	event.recipes.create.pressing(['4x minecraft:disc_fragment_5', Item.of('minecraft:disc_fragment_5', 3).withChance(0.3)], '#minecraft:music_discs')
@@ -871,7 +1286,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.pressing(['2x bone', Item.of('bone',3).withChance(0.65)], 'skeleton_skull')
 	event.recipes.create.pressing(['3x architects_palette:withered_bone', Item.of('architects_palette:withered_bone',4).withChance(0.65)], 'wither_skeleton_skull')
 	event.recipes.create.pressing(['ender_pearl', Item.of('ender_pearl',3).withChance(0.65)], 'supplementaries:enderman_head')
-	event.recipes.create.pressing(['2x gunpowder', Item.of('gunpowder',3).withChance(0.5), Item.of('savage_and_ravage:creeper_spores',2).withChance(0.65)], 'creeper_head')
+	event.recipes.create.pressing(['3x gunpowder', Item.of('savage_and_ravage:creeper_spores',2).withChance(0.65)], 'creeper_head')
 	event.recipes.create.pressing(['2x gunpowder', Item.of('gunpowder',4).withChance(0.65)], 'caverns_and_chasms:deeper_head')
 	event.recipes.create.pressing(['3x gunpowder', Item.of('gunpowder',4).withChance(0.65)], 'caverns_and_chasms:peeper_head')
 	event.recipes.create.pressing(['4x amethyst_shard', Item.of('amethyst_shard',4).withChance(0.65)], 'caverns_and_chasms:mime_head')
@@ -881,10 +1296,8 @@ ServerEvents.recipes(event => {
 	event.recipes.create.pressing(['4x rotten_flesh', Item.of('bone',2).withChance(0.3)], 'piglinproliferation:zombified_piglin_head')
 
 // Compacting
-	event.recipes.create.compacting([Fluid.of('minecraft:milk',125), Item.of('ecologics:coconut_husk').withChance(0.125)], 'ecologics:coconut_slice')
-	event.recipes.create.compacting([Fluid.of('minecraft:milk',250), Item.of('ecologics:coconut_husk').withChance(0.25)], 'ecologics:coconut')
 	event.recipes.create.compacting(['12x supplementaries:candy'], ['paper', 'create_confectionery:cocoa_butter', 'sugar'])
-	event.recipes.create.compacting(['8x architects_palette:hazard_block'], ['4x black_concrete_powder', '4x yellow_concrete_powder', Fluid.of('minecraft:water',1000)])
+	event.recipes.create.compacting(['16x architects_palette:hazard_block'], ['4x black_concrete_powder', '4x yellow_concrete_powder', Fluid.of('minecraft:water',1000)])
 	event.recipes.create.compacting(['kubejs:oat_bar'], ['kubejs:oats', 'neapolitan:banana', 'sugar'])
 	event.recipes.create.compacting(['quark:slime_in_a_bucket'], ['bucket', 'slime_block', Fluid.of('minecraft:water',1000)])
 	event.recipes.create.compacting([Item.of('minecraft:rabbit_hide'), Fluid.of('minecraft:water',250)], '#raspberry_flavoured:cacti')
@@ -894,6 +1307,127 @@ ServerEvents.recipes(event => {
 	event.recipes.create.compacting(['6x chain'], ['2x oreganized:lead_nugget', 'oreganized:lead_ingot'])
 	event.recipes.create.compacting(['4x mynethersdelight:hoglin_sausage'], ['bone_meal', 'nethersdelight:hoglin_loin', Fluid.of('minecraft:water',250)])
 	event.recipes.create.compacting(['4x kubejs:rubber'], [Fluid.of('kubejs:latex',250), 'create:zinc_ingot', 'gunpowder']).heated()
+	event.recipes.create.compacting(['spelunkery:salt', Item.of('spelunkery:salt').withChance(0.25)], ['4x pointed_dripstone', Fluid.of('minecraft:water',500)]).heated().id('spelunkery:mixing/salt')
+	event.recipes.create.compacting(['leather'], ['rotten_flesh', '2x spelunkery:salt']).heated()
+	event.recipes.create.compacting(['2x farmersrespite:nether_wart_sourdough'], ['2x sob:cinder_dough', '#raspberry_flavoured:soul_blocks', 'crimson_fungus']).heated()
+	event.recipes.create.compacting(['2x kubejs:sporedough'], ['2x culturaldelights:corn_dough', 'gunpowder', 'savage_and_ravage:creeper_spores']).heated()
+	event.recipes.create.compacting(['2x neapolitan:strawberry_scones'], ['farmersdelight:wheat_dough', 'neapolitan:strawberries', 'sugar']).heated()
+	event.recipes.create.compacting(['2x neapolitan:banana_bread'], ['2x farmersdelight:wheat_dough', 'neapolitan:banana', 'sugar']).heated()
+	event.recipes.create.compacting(['4x autumnity:pancake'], [Fluid.of('create_central_kitchen:syrup',250), Fluid.of('kubejs:batter',250), 'cookscollection:lemon']).heated()
+	event.recipes.create.compacting(['2x autumnity:pumpkin_bread'], ['2x farmersdelight:wheat_dough', '2x farmersdelight:pumpkin_slice', Fluid.of('create_central_kitchen:syrup',250)]).heated()
+	event.recipes.create.compacting(['2x culturaldelights:empanada'], ['2x culturaldelights:corn_dough', '#culturaldelights:avocados', '#forge:crops/onion', Fluid.of('create_central_kitchen:tomato_sauce',250)]).heated()
+	event.recipes.create.compacting(['cookscollection:chocolate_muffin'], ['neapolitan:chocolate_bar', Fluid.of('kubejs:batter',250)]).heated()
+	event.recipes.create.compacting(['cookscollection:chocolate_muffin'], [Fluid.of('create:chocolate',250), Fluid.of('kubejs:batter',250)]).heated()
+	event.recipes.create.compacting(['cookscollection:lemon_muffin'], ['cookscollection:lemon', 'poppy', Fluid.of('kubejs:batter',250)]).heated()
+	event.recipes.create.compacting(['2x farmersdelight:pie_crust'], ['3x #farmersdelight:wheat_or_flour', 'sugar', 'spelunkery:salt'])
+	event.recipes.create.compacting(['2x create_confectionery:cocoa_butter'], ['cocoa_beans', Fluid.of('minecraft:milk',250)])
+	
+	// Cakes
+	event.recipes.create.compacting(['cake'], [
+		'2x sweet_berries', Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['neapolitan:vanilla_cake'], [
+		'2x neapolitan:dried_vanilla_pods', Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['neapolitan:chocolate_cake'], [
+		'2x neapolitan:chocolate_bar', Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['neapolitan:chocolate_cake'], [
+		Fluid.of('create:chocolate',500), Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['neapolitan:strawberry_cake'], [
+		'2x neapolitan:strawberries', Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['neapolitan:banana_cake'], [
+		'2x neapolitan:banana', Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['neapolitan:mint_cake'], [
+		'2x neapolitan:mint_leaves', Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['neapolitan:adzuki_cake'], [
+		'2x environmental:cherries', Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['respiteful:green_tea_cake'], [
+		'2x farmersrespite:green_tea_leaves', Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['respiteful:green_tea_cake'], [
+		Fluid.of('create_central_kitchen:green_tea',500), Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['respiteful:yellow_tea_cake'], [
+		'2x farmersrespite:yellow_tea_leaves', Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['respiteful:yellow_tea_cake'], [
+		Fluid.of('create_central_kitchen:yellow_tea',500), Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['respiteful:black_tea_cake'], [
+		'2x farmersrespite:black_tea_leaves', Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['respiteful:black_tea_cake'], [
+		Fluid.of('create_central_kitchen:black_tea',500), Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['farmersrespite:coffee_cake'], [
+		'2x farmersrespite:coffee_beans', Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['farmersrespite:coffee_cake'], [
+		Fluid.of('create_central_kitchen:coffee',500), Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['mynethersdelight:magma_cake'], [
+		'2x #mynethersdelight:hot_spice', '2x magma_cream', Fluid.of('minecraft:lava',500), Fluid.of('kubejs:batter',500)
+	]).heated()
+	event.recipes.create.compacting(['atmospheric:yucca_gateau'], [
+		'atmospheric:yucca_fruit', Fluid.of('create_central_kitchen:aloe_gel',250), Fluid.of('kubejs:batter',500)
+	]).heated()
+	
+	// Pies
+	event.recipes.create.compacting(['kubejs:pumpkin_pie'], [
+		'3x farmersdelight:pumpkin_slice', 'farmersdelight:pie_crust'
+	]).heated()
+	event.recipes.create.compacting(['farmersdelight:apple_pie'], [
+		'3x #raspberry_flavoured:apples', 'farmersdelight:pie_crust'
+	]).heated()
+	event.recipes.create.compacting(['farmersdelight:chocolate_pie'], [
+		'2x neapolitan:chocolate_bar', 'farmersdelight:pie_crust'
+	]).heated()
+	event.recipes.create.compacting(['farmersdelight:chocolate_pie'], [
+		Fluid.of('create:chocolate',500), 'farmersdelight:pie_crust'
+	]).heated()
+	event.recipes.create.compacting(['farmersdelight:sweet_berry_cheesecake'], [
+		'4x glow_berries', Fluid.of('minecraft:milk',250), 'farmersdelight:pie_crust'
+	]).heated()
+	event.recipes.create.compacting(['farmersrespite:rose_hip_pie'], [
+		'3x farmersrespite:rose_hips', Fluid.of('create:honey',250), 'farmersdelight:pie_crust'
+	]).heated()
+	event.recipes.create.compacting(['kubejs:butterscotch_cinnamon_pie'], [
+		'3x kubejs:cinnamon', 'create_confectionery:cocoa_butter', 'farmersdelight:pie_crust'
+	]).heated()
+	event.recipes.create.compacting(['kubejs:prickly_pear_pie'], [
+		'3x #raspberry_flavoured:prickly_pears', 'farmersdelight:pie_crust'
+	]).heated()
+	event.recipes.create.compacting(['environmental:cherry_pie'], [
+		'5x environmental:cherries', 'farmersdelight:pie_crust'
+	]).heated()
+	event.recipes.create.compacting(['environmental:truffle_pie'], [
+		'environmental:truffle', '3x #raspberry_flavoured:edible_mushrooms', 'farmersdelight:pie_crust'
+	]).heated()
+	event.recipes.create.compacting(['brewinandchewin:quiche'], [
+		'#brewinandchewin:bacon_or_mushroom', '#forge:crops/cabbage', Fluid.of('kubejs:flaxen_cheese',250), '#forge:eggs', 'farmersdelight:pie_crust'
+	]).heated()
+	event.recipes.create.compacting(['brewinandchewin:pizza'], [
+		Fluid.of('kubejs:flaxen_cheese',750), Fluid.of('create_central_kitchen:tomato_sauce',250), 
+		'#raspberry_flavoured:edible_mushrooms', 'farmersdelight:minced_beef', '3x farmersdelight:wheat_dough'
+	]).heated()
+	
+	// Cookies
+	event.recipes.create.compacting(['8x cookie'], ['farmersdelight:wheat_dough', 'neapolitan:chocolate_bar']).heated()
+	event.recipes.create.compacting(['8x cookie'], ['farmersdelight:wheat_dough', Fluid.of('create:chocolate',250)]).heated()
+	event.recipes.create.compacting(['8x farmersrespite:green_tea_cookie'], ['farmersdelight:wheat_dough', 'farmersrespite:green_tea_leaves']).heated()
+	event.recipes.create.compacting(['8x farmersrespite:green_tea_cookie'], ['farmersdelight:wheat_dough', Fluid.of('create_central_kitchen:green_tea',250)]).heated()
+	event.recipes.create.compacting(['8x farmersdelight:honey_cookie'], ['farmersdelight:wheat_dough', Fluid.of('create:honey',250)]).heated()
+	event.recipes.create.compacting(['8x farmersdelight:sweet_berry_cookie'], ['farmersdelight:wheat_dough', 'sweet_berries']).heated()
+	event.recipes.create.compacting(['8x kubejs:sugar_cookie'], ['farmersdelight:wheat_dough', 'sugar']).heated()
+	event.recipes.create.compacting(['8x kubejs:cinnamon_cracker'], ['farmersdelight:wheat_dough', 'kubejs:cinnamon']).heated()
+	event.recipes.create.compacting(['8x abnormals_delight:cherry_cookie'], ['farmersdelight:wheat_dough', 'environmental:cherries']).heated()
+	event.recipes.create.compacting(['8x abnormals_delight:maple_cookie'], ['farmersdelight:wheat_dough', Fluid.of('create_central_kitchen:syrup',250)]).heated()
 
 // Mixing
 	noWhiteAllColours.forEach(colour => {
@@ -903,17 +1437,17 @@ ServerEvents.recipes(event => {
 	allColours.forEach(colour => {
 		event.recipes.create.mixing('8x kubejs:'+colour+'_cloth_scrap_block', ['minecraft:'+colour+'_dye', '8x kubejs:cloth_scrap_block'])
 		event.recipes.create.mixing('8x kubejs:'+colour+'_cloth_scrap_carpet', ['minecraft:'+colour+'_dye', '8x kubejs:cloth_scrap_carpet'])
+		event.recipes.create.mixing('8x kubejs:'+colour+'_canvas_rug', ['minecraft:'+colour+'_dye', '8x farmersdelight:canvas_rug'])
     })
-	event.recipes.create.mixing('additionaladditions:rose_gold_alloy', ['copper_ingot', 'copper_ingot', 'copper_ingot', 'gold_ingot', 'gold_ingot', 'gold_ingot'])
-	event.recipes.create.mixing('2x alloyed:steel_ingot', ['3x iron_ingot', '3x oreganized:lead_nugget', 'blaze_powder']).heated().id('alloyed:mixing/steel_ingot')
+	event.recipes.create.mixing('2x additionaladditions:rose_gold_alloy', ['4x copper_ingot', '4x gold_ingot']).heated()
+	event.recipes.create.mixing('3x alloyed:steel_ingot', ['3x iron_ingot', '3x oreganized:lead_nugget', 'blaze_powder']).heated().id('alloyed:mixing/steel_ingot')
 	event.recipes.create.mixing('2x architects_palette:algal_blend', ['clay_ball', 'kelp'])
 	event.recipes.create.mixing('4x architects_palette:algal_blend', ['2x clay_ball', 'aquaculture:algae'])
 	event.recipes.create.mixing('culturaldelights:corn_dough', ['kubejs:corn_flour', Fluid.of('minecraft:water',250)])
 	event.recipes.create.mixing(Fluid.of('create_central_kitchen:melon_juice',500), ['melon_slice', 'melon_slice', 'melon_slice', 'melon_slice', 'sugar']).heated().id('create_central_kitchen:mixing/melon_juice')
-	event.recipes.create.mixing(Fluid.of('create_central_kitchen:apple_cider',500), ['2x apple', 'sugar', 'kubejs:cinnamon']).heated().id('create_central_kitchen:mixing/apple_cider')
-	event.recipes.create.mixing('slime_ball', ['create:wheat_flour', Fluid.of('create_central_kitchen:aloe_gel',250)]).heated()
-	event.recipes.create.mixing('8x architects_palette:sunmetal_brick', ['6x #minecraft:soul_fire_base_blocks', '2x create:golden_sheet']).heated()
-	event.recipes.create.mixing('8x architects_palette:wardstone_brick', ['4x spelunkery:rough_lazurite_block', '2x kubejs:soul_salt', '2x warped_fungus']).heated()
+	event.recipes.create.mixing(Fluid.of('create_central_kitchen:apple_cider',500), ['3x #raspberry_flavoured:apples', 'kubejs:cinnamon']).heated().id('create_central_kitchen:mixing/apple_cider')
+	event.recipes.create.mixing(Fluid.of('create_central_kitchen:hot_cocoa',500), ['cocoa_beans', 'create_confectionery:cocoa_butter', 'sugar']).heated().id('create_central_kitchen:mixing/hot_cocoa')
+	event.recipes.create.mixing('8x architects_palette:wardstone_brick', ['4x spelunkery:rough_lazurite_block', '2x warped_fungus']).heated()
 	event.recipes.create.mixing('4x architects_palette:entwine_rod', ['upgrade_aquatic:prismarine_rod', '2x additionaladditions:copper_patina']).heated()
 	event.recipes.create.mixing('2x architects_palette:gilded_sandstone', ['2x sandstone', ['spelunkery:raw_gold_nugget', 'gold_nugget'], ['spelunkery:raw_gold_nugget', 'gold_nugget']])
 	event.recipes.create.mixing('caverns_and_chasms:necromium_ingot', ['3x netherite_scrap', '3x oreganized:silver_ingot']).superheated().id('caverns_and_chasms:necromium_ingot')
@@ -928,6 +1462,15 @@ ServerEvents.recipes(event => {
 	event.recipes.create.mixing(Fluid.of('oreganized:molten_lead',250), ['oreganized:deepslate_lead_ore']).heated()
 	event.recipes.create.mixing(Fluid.of('create_central_kitchen:purulent_tea',500), ['crimson_fungus', 'warped_fungus', 'autumnity:snail_goo']).heated().id('create_central_kitchen:mixing/purulent_tea')
 	event.recipes.create.mixing(Fluid.of('kubejs:ink',250), ['black_dye', Fluid.of('minecraft:water',250)])
+	event.recipes.create.mixing('8x alloyed:bronze_ingot', ['3x copper_ingot', '2x create:zinc_ingot', 'oreganized:lead_ingot']).heated().id('alloyed:mixing/bronze_ingot')
+	event.recipes.create.mixing(Fluid.of('kubejs:batter',1000), ['2x #farmersdelight:wheat_or_flour', '#forge:eggs', 'sugar', Fluid.of('minecraft:milk',250)])
+	
+	event.recipes.create.mixing('2x slime_ball', ['autumnity:snail_goo', 'lime_dye', 'create:wheat_flour'])
+	event.recipes.create.mixing('2x slime_ball', [Fluid.of('create:honey',250), 'lime_dye', 'create:wheat_flour'])
+	event.recipes.create.mixing('2x slime_ball', [Fluid.of('create_central_kitchen:sap',250), 'lime_dye', 'create:wheat_flour'])
+	event.recipes.create.mixing('2x slime_ball', [Fluid.of('create_central_kitchen:mulberry_jam',250), 'lime_dye', 'create:wheat_flour'])
+	event.recipes.create.mixing('2x slime_ball', [Fluid.of('kubejs:latex',250), 'lime_dye', 'create:wheat_flour'])
+	event.recipes.create.mixing('2x slime_ball', [Fluid.of('create_central_kitchen:aloe_gel',250), 'create:wheat_flour'])
 	
 // Milling
 	event.recipes.create.milling(['2x farmersrespite:coffee_beans', 'minecraft:red_dye'], 'farmersrespite:coffee_berries').id('create_central_kitchen:milling/coffee_berries')
@@ -958,9 +1501,6 @@ ServerEvents.recipes(event => {
 	event.recipes.create.milling(['gunpowder', Item.of('minecraft:gunpowder',1).withChance(0.5)], 'mynethersdelight:powder_cannon')
 	event.recipes.create.milling(['prismarine_shard'], 'prismarine')
 	event.recipes.create.milling(['prismarine_crystals', Item.of('minecraft:prismarine_crystals').withChance(0.5)], 'prismarine_shard')
-	event.recipes.create.milling(['spelunkery:rock_salt', Item.of('spelunkery:rock_salt',2).withChance(0.5)], 'spelunkery:rock_salt_block')
-	event.recipes.create.milling(['kubejs:soul_salt', Item.of('kubejs:soul_salt',2).withChance(0.5)], 'spelunkery:rock_salt')
-	event.recipes.create.milling(['spelunkery:rock_salt', Item.of('spelunkery:rock_salt').withChance(0.75)], 'quark:soul_bead')
 	event.recipes.create.milling(['raspberry:deepslate_gravel'], 'cobbled_deepslate')
 	event.recipes.create.milling(['raspberry:blackstone_gravel'], 'kubejs:cobbled_blackstone')
 	event.recipes.create.milling(['2x flint', Item.of('minecraft:gray_dye').withChance(0.5)], 'raspberry:deepslate_gravel')
@@ -968,6 +1508,15 @@ ServerEvents.recipes(event => {
 	event.recipes.create.milling(['farmersdelight:rice', 'farmersdelight:straw', Item.of('farmersdelight:rice').withChance(0.5)], 'farmersdelight:rice_panicle')
 	event.recipes.create.milling(['culturaldelights:eggplant_seeds', Item.of('minecraft:purple_dye').withChance(0.15)], '#culturaldelights:all_eggplants')
 	event.recipes.create.milling(['5x iron_nugget', Item.of('minecraft:iron_nugget',5).withChance(0.5)], 'aquaculture:tin_can')
+	event.recipes.create.milling(['spelunkery:salt'], 'spelunkery:rock_salt')
+	event.recipes.create.milling(['spelunkery:rock_salt'], 'spelunkery:rock_salt_block')
+	event.recipes.create.milling(['pointed_dripstone', Item.of('pointed_dripstone').withChance(0.25), 'clay_ball'], 'dripstone_block').id('create:milling/dripstone_block')
+	event.recipes.create.milling(['3x farmersdelight:tree_bark'], '#raspberry_flavoured:regular_logs')
+	event.recipes.create.milling(['2x farmersdelight:tree_bark', 'kubejs:cinnamon'], '#raspberry_flavoured:cinnamon_logs')
+	event.recipes.create.milling(['2x pink_dye'], 'raspberry:pink_petals').id('raspberry:milling/pink_dye_from_pink_petals')
+	event.recipes.create.milling(['yellow_dye', 'white_dye', Item.of('orange_dye').withChance(0.25)], 'raspberry:cheery_wildflowers').id('raspberry:milling/yellow_dye_from_wildflowers')
+	event.recipes.create.milling(['purple_dye', 'red_dye', Item.of('blue_dye').withChance(0.5)], 'raspberry:moody_wildflowers').id('raspberry:milling/purple_dye_from_wildflowers')
+	event.recipes.create.milling(['green_dye'], 'raspberry:clovers')
 
 // Crushing
 	event.recipes.create.crushing(['2x spelunkery:rough_cinnabar', Item.of('redstone').withChance(0.5), Item.of('twigs:pebble',4).withChance(0.12)], 'redstone_ore').id('create:crushing/redstone_ore')
@@ -1023,6 +1572,9 @@ ServerEvents.recipes(event => {
 	event.recipes.create.crushing(['raspberry:deepslate_gravel', Item.of('minecraft:flint',2).withChance(0.5)], 'cobbled_deepslate')
 	event.recipes.create.crushing(['raspberry:blackstone_gravel', Item.of('minecraft:flint',2).withChance(0.5)], 'kubejs:cobbled_blackstone')
 	event.recipes.create.crushing(['7x kubejs:stardust'], 'nether_star').processingTime(1000)
+	event.recipes.create.crushing(['2x spelunkery:salt'], 'spelunkery:rock_salt').id('spelunkery:crushing/salt')
+	event.recipes.create.crushing(['3x farmersdelight:tree_bark', Item.of('farmersdelight:tree_bark',2).withChance(0.5)], '#raspberry_flavoured:regular_logs')
+	event.recipes.create.crushing(['2x farmersdelight:tree_bark', Item.of('farmersdelight:tree_bark',2).withChance(0.5), 'kubejs:cinnamon'], '#raspberry_flavoured:cinnamon_logs')
 	
 	event.recipes.create.crushing(['red_dye', Item.of('spelunkery:raw_iron_nugget').withChance(0.4)], '#create:stone_types/crimsite').id('create:crushing/crimsite_recycling')
 	event.recipes.create.crushing(['yellow_dye', Item.of('spelunkery:raw_gold_nugget').withChance(0.2)], '#create:stone_types/ochrum').id('create:crushing/ochrum_recycling')
@@ -1035,6 +1587,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.splashing([Item.of('minecraft:flint',2).withChance(0.25), Item.of('spelunkery:raw_iron_nugget').withChance(0.4)], 'raspberry:deepslate_gravel')
 	event.recipes.create.splashing([Item.of('minecraft:flint',2).withChance(0.25), Item.of('spelunkery:raw_lead_nugget').withChance(0.6)], 'raspberry:blackstone_gravel')
 	event.recipes.create.splashing(['9x create:copper_nugget', Item.of('additionaladditions:copper_patina').withChance(0.875)], 'create:crushed_raw_copper').id('create:splashing/crushed_raw_copper')
+	event.recipes.create.splashing(['9x iron_nugget', Item.of('spelunkery:rough_cinnabar_shard').withChance(0.5)], 'create:crushed_raw_iron').id('create:splashing/crushed_raw_iron')
 	event.recipes.create.splashing(['9x oreganized:silver_nugget', Item.of('minecraft:glowstone_dust',5).withChance(0.75)], 'create:crushed_raw_silver').id('oreganized:create/splashing/crushed_silver_ore')
 	event.recipes.create.splashing(['9x oreganized:lead_nugget', Item.of('minecraft:quartz').withChance(0.75)], 'create:crushed_raw_lead').id('oreganized:create/splashing/crushed_lead_ore')
 	event.recipes.create.splashing('culturaldelights:corn_dough', 'kubejs:corn_flour')
@@ -1054,6 +1607,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.filling('kubejs:latex_jungle_wood', [Fluid.of('kubejs:latex',250), 'minecraft:stripped_jungle_wood'])
 	event.recipes.create.filling('kubejs:latex_rosewood_log', [Fluid.of('kubejs:latex',250), 'atmospheric:stripped_rosewood_log'])
 	event.recipes.create.filling('kubejs:latex_rosewood', [Fluid.of('kubejs:latex',250), 'atmospheric:stripped_rosewood'])
+	event.recipes.create.filling('kubejs:batter', [Fluid.of('kubejs:batter',250), 'bowl'])
 	
 // Emptying
 	event.recipes.create.emptying([Fluid.of('kubejs:ink',1000), 'minecraft:glass_bottle'], 'supplementaries:antique_ink')
@@ -1066,6 +1620,9 @@ ServerEvents.recipes(event => {
 	event.recipes.create.emptying([Fluid.of('kubejs:latex',250), 'minecraft:stripped_jungle_wood'], 'kubejs:latex_jungle_wood')
 	event.recipes.create.emptying([Fluid.of('kubejs:latex',250), 'atmospheric:stripped_rosewood_log'], 'kubejs:latex_rosewood_log')
 	event.recipes.create.emptying([Fluid.of('kubejs:latex',250), 'atmospheric:stripped_rosewood'], 'kubejs:latex_rosewood')
+	event.recipes.create.emptying([Fluid.of('minecraft:milk',250), 'minecraft:glass_bottle'], 'neapolitan:milk_bottle').id('create:emptying/compat/neapolitan/milk_bottle')
+	event.recipes.create.emptying([Fluid.of('minecraft:milk',250), 'ecologics:coconut_husk'], 'ecologics:coconut_slice')
+	event.recipes.create.emptying([Fluid.of('kubejs:batter',250), 'bowl'], 'kubejs:batter')
 	
 // Deploying
 	event.recipes.create.deploying('2x farmersdelight:cod_roll', ['farmersdelight:cooked_rice', '#raspberry_flavoured:white_fish'])
@@ -1096,12 +1653,12 @@ ServerEvents.recipes(event => {
 	],'culturaldelights:tortilla',[
 		event.recipes.createDeploying('kubejs:incomplete_chicken_taco',['kubejs:incomplete_chicken_taco','#forge:cooked_chicken']),
 		event.recipes.createDeploying('kubejs:incomplete_chicken_taco',['kubejs:incomplete_chicken_taco','#forge:crops/cabbage']),
-		event.recipes.createDeploying('kubejs:incomplete_chicken_taco',['kubejs:incomplete_chicken_taco','farmersdelight:tomato'])
+		event.recipes.createDeploying('kubejs:incomplete_chicken_taco',['kubejs:incomplete_chicken_taco','#forge:crops/onion'])
 	]).transitionalItem('kubejs:incomplete_chicken_taco').loops(1).id('kubejs:chicken_taco_assembly')
 
 	event.recipes.createSequencedAssembly([
 		Item.of('culturaldelights:eggplant_burger'),
-	],'minecraft:bread',[
+	],'#forge:bread/wheat',[
 		event.recipes.createDeploying('kubejs:incomplete_eggplant_burger',['kubejs:incomplete_eggplant_burger','#culturaldelights:smoked_regular_eggplants']),
 		event.recipes.createDeploying('kubejs:incomplete_eggplant_burger',['kubejs:incomplete_eggplant_burger','#forge:salad_ingredients']),
 		event.recipes.createDeploying('kubejs:incomplete_eggplant_burger',['kubejs:incomplete_eggplant_burger','farmersdelight:tomato'])
@@ -1120,83 +1677,25 @@ ServerEvents.recipes(event => {
 	],'culturaldelights:tortilla',[
 		event.recipes.createDeploying('kubejs:incomplete_pork_wrap',['kubejs:incomplete_pork_wrap','#forge:cooked_pork']),
 		event.recipes.createDeploying('kubejs:incomplete_pork_wrap',['kubejs:incomplete_pork_wrap','#forge:crops/cabbage']),
-		event.recipes.createDeploying('kubejs:incomplete_pork_wrap',['kubejs:incomplete_pork_wrap','minecraft:apple'])
+		event.recipes.createDeploying('kubejs:incomplete_pork_wrap',['kubejs:incomplete_pork_wrap','#raspberry_flavoured:apples'])
 	]).transitionalItem('kubejs:incomplete_pork_wrap').loops(1).id('kubejs:pork_wrap_assembly')
 
 	event.recipes.createSequencedAssembly([
 		Item.of('culturaldelights:mutton_sandwich'),
-	],'minecraft:bread',[
+	],'#forge:bread/wheat',[
 		event.recipes.createDeploying('kubejs:incomplete_mutton_sandwich',['kubejs:incomplete_mutton_sandwich','#forge:cooked_mutton']),
 		event.recipes.createDeploying('kubejs:incomplete_mutton_sandwich',['kubejs:incomplete_mutton_sandwich','minecraft:beetroot']),
 		event.recipes.createDeploying('kubejs:incomplete_mutton_sandwich',['kubejs:incomplete_mutton_sandwich','incubation:fried_egg'])
 	]).transitionalItem('kubejs:incomplete_mutton_sandwich').loops(1).id('kubejs:mutton_sandwich_assembly')
 
 	event.recipes.createSequencedAssembly([
-		Item.of('brewinandchewin:quiche'),
-	],'farmersdelight:pie_crust',[
-		event.recipes.createDeploying('kubejs:incomplete_quiche',['kubejs:incomplete_quiche','#brewinandchewin:bacon_or_mushroom']),
-		event.recipes.createDeploying('kubejs:incomplete_quiche',['kubejs:incomplete_quiche','#forge:crops/cabbage']),
-		event.recipes.createDeploying('kubejs:incomplete_quiche',['kubejs:incomplete_quiche','#forge:eggs']),
-		event.recipes.createFilling('kubejs:incomplete_quiche',['kubejs:incomplete_quiche',Fluid.of('minecraft:milk',250)]),
-		event.recipes.createFilling('kubejs:incomplete_quiche',['kubejs:incomplete_quiche',Fluid.of('kubejs:flaxen_cheese',250)])
-	]).transitionalItem('kubejs:incomplete_quiche').loops(1).id('kubejs:quiche_assembly')
-
-	event.recipes.createSequencedAssembly([
-		Item.of('farmersrespite:rose_hip_pie'),
-	],'farmersdelight:pie_crust',[
-		event.recipes.createDeploying('kubejs:incomplete_rose_hip_pie',['kubejs:incomplete_rose_hip_pie','farmersrespite:rose_hips']),
-		event.recipes.createFilling('kubejs:incomplete_rose_hip_pie',['kubejs:incomplete_rose_hip_pie',Fluid.of('create:honey',250)]),
-		event.recipes.createDeploying('kubejs:incomplete_rose_hip_pie',['kubejs:incomplete_rose_hip_pie','minecraft:sugar'])
-	]).transitionalItem('kubejs:incomplete_rose_hip_pie').loops(2).id('kubejs:rose_hip_pie_assembly')
-
-	event.recipes.createSequencedAssembly([
-		Item.of('kubejs:butterscotch_cinnamon_pie'),
-	],'farmersdelight:pie_crust',[
-		event.recipes.createDeploying('kubejs:incomplete_butterscotch_cinnamon_pie',['kubejs:incomplete_butterscotch_cinnamon_pie','sugar']),
-		event.recipes.createDeploying('kubejs:incomplete_butterscotch_cinnamon_pie',['kubejs:incomplete_butterscotch_cinnamon_pie','create_confectionery:cocoa_butter']),
-		event.recipes.createDeploying('kubejs:incomplete_butterscotch_cinnamon_pie',['kubejs:incomplete_butterscotch_cinnamon_pie','create:wheat_flour']),
-		event.recipes.createDeploying('kubejs:incomplete_butterscotch_cinnamon_pie',['kubejs:incomplete_butterscotch_cinnamon_pie','kubejs:cinnamon'])
-	]).transitionalItem('kubejs:incomplete_butterscotch_cinnamon_pie').loops(3).id('kubejs:butterscotch_cinnamon_pie_assembly')
-
-	event.recipes.createSequencedAssembly([
-		Item.of('kubejs:prickly_pear_pie'),
-	],'farmersdelight:pie_crust',[
-		event.recipes.createDeploying('kubejs:incomplete_prickly_pear_pie',['kubejs:incomplete_prickly_pear_pie','ecologics:cooked_prickly_pear']),
-		event.recipes.createDeploying('kubejs:incomplete_prickly_pear_pie',['kubejs:incomplete_prickly_pear_pie','ecologics:cooked_prickly_pear']),
-		event.recipes.createDeploying('kubejs:incomplete_prickly_pear_pie',['kubejs:incomplete_prickly_pear_pie','minecraft:sugar'])
-	]).transitionalItem('kubejs:incomplete_prickly_pear_pie').loops(2).id('kubejs:prickly_pear_pie_assembly')
-
-	event.recipes.createSequencedAssembly([
-		Item.of('brewinandchewin:pizza'),
-	],'farmersdelight:wheat_dough',[
-		event.recipes.createFilling('kubejs:incomplete_pizza',['kubejs:incomplete_pizza',Fluid.of('create_central_kitchen:tomato_sauce',250)]),
-		event.recipes.createFilling('kubejs:incomplete_pizza',['kubejs:incomplete_pizza',Fluid.of('kubejs:flaxen_cheese',250)]),
-		event.recipes.createDeploying('kubejs:incomplete_pizza',['kubejs:incomplete_pizza','farmersdelight:beef_patty']),
-		event.recipes.createDeploying('kubejs:incomplete_pizza',['kubejs:incomplete_pizza','minecraft:brown_mushroom'])
-	]).transitionalItem('kubejs:incomplete_pizza').loops(1).id('kubejs:pizza_assembly')
-
-	event.recipes.createSequencedAssembly([
 		Item.of('brewinandchewin:ham_and_cheese_sandwich', 2),
-	],'minecraft:bread',[
+	],'#forge:bread/wheat',[
 		event.recipes.createDeploying('kubejs:incomplete_ham_and_cheese_sandwich',['kubejs:incomplete_ham_and_cheese_sandwich','farmersdelight:smoked_ham']),
 		event.recipes.createFilling('kubejs:incomplete_ham_and_cheese_sandwich',['kubejs:incomplete_ham_and_cheese_sandwich',Fluid.of('kubejs:flaxen_cheese',250)]),
-		event.recipes.createDeploying('kubejs:incomplete_ham_and_cheese_sandwich',['kubejs:incomplete_ham_and_cheese_sandwich','minecraft:bread'])
+		event.recipes.createDeploying('kubejs:incomplete_ham_and_cheese_sandwich',['kubejs:incomplete_ham_and_cheese_sandwich','#forge:bread/wheat'])
 	]).transitionalItem('kubejs:incomplete_ham_and_cheese_sandwich').loops(1).id('kubejs:ham_and_cheese_sandwich_assembly')
 
-	event.recipes.createSequencedAssembly([
-		Item.of('farmersrespite:nether_wart_sourdough'),
-	],'minecraft:soul_soil',[
-		event.recipes.createDeploying('kubejs:incomplete_souldough',['kubejs:incomplete_souldough','create:cinder_flour']),
-		event.recipes.createDeploying('kubejs:incomplete_souldough',['kubejs:incomplete_souldough','create:cinder_flour']),
-		event.recipes.createDeploying('kubejs:incomplete_souldough',['kubejs:incomplete_souldough','minecraft:crimson_fungus'])
-	]).transitionalItem('kubejs:incomplete_souldough').loops(1).id('kubejs:souldough_assembly')
-	
-	event.recipes.createSequencedAssembly([
-		Item.of('farmersrespite:nether_wart_sourdough'),
-	],'minecraft:soul_soil',[
-		event.recipes.createDeploying('kubejs:incomplete_souldough',['kubejs:incomplete_souldough','sob:cinder_dough']),
-		event.recipes.createDeploying('kubejs:incomplete_souldough',['kubejs:incomplete_souldough','minecraft:crimson_fungus'])
-	]).transitionalItem('kubejs:incomplete_souldough').loops(1).id('kubejs:souldough_assembly_alt')
 	event.recipes.createSequencedAssembly([
 		Item.of('farmersdelight:stuffed_potato'),
 	],'minecraft:baked_potato',[
@@ -1260,12 +1759,12 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_rice_ball',['kubejs:incomplete_rice_ball','minecraft:dried_kelp']),
 		event.recipes.createDeploying('kubejs:incomplete_rice_ball',['kubejs:incomplete_rice_ball','minecraft:sweet_berries']),
 		event.recipes.createDeploying('kubejs:incomplete_rice_ball',['kubejs:incomplete_rice_ball','#raspberry_flavoured:raw_fish']),
-		event.recipes.createDeploying('kubejs:incomplete_rice_ball',['kubejs:incomplete_rice_ball','farmersdelight:cooked_rice'])
+		event.recipes.createDeploying('kubejs:incomplete_rice_ball',['kubejs:incomplete_rice_ball','spelunkery:salt'])
 	]).transitionalItem('kubejs:incomplete_rice_ball').loops(1).id('kubejs:rice_ball_assembly')
 
 	event.recipes.createSequencedAssembly([
 		Item.of('kubejs:kipper_sandwich'),
-	],'minecraft:bread',[
+	],'#forge:bread/wheat',[
 		event.recipes.createDeploying('kubejs:incomplete_kipper_sandwich',['kubejs:incomplete_kipper_sandwich','brewinandchewin:kippers']),
 		event.recipes.createDeploying('kubejs:incomplete_kipper_sandwich',['kubejs:incomplete_kipper_sandwich','#culturaldelights:avocados']),
 		event.recipes.createDeploying('kubejs:incomplete_kipper_sandwich',['kubejs:incomplete_kipper_sandwich','incubation:fried_egg'])
@@ -1336,14 +1835,6 @@ ServerEvents.recipes(event => {
 	]).transitionalItem('kubejs:incomplete_blaze_tart').loops(1).id('create:filling/blaze_cake')
 
 	event.recipes.createSequencedAssembly([
-		Item.of('kubejs:sporedough', 2),
-	],'culturaldelights:corn_dough',[
-		event.recipes.createDeploying('kubejs:incomplete_sporedough',['kubejs:incomplete_sporedough','minecraft:gunpowder']),
-		event.recipes.createDeploying('kubejs:incomplete_sporedough',['kubejs:incomplete_sporedough','minecraft:gunpowder']),
-		event.recipes.createDeploying('kubejs:incomplete_sporedough',['kubejs:incomplete_sporedough','savage_and_ravage:creeper_spores'])
-	]).transitionalItem('kubejs:incomplete_sporedough').loops(1).id('kubejs:sporedough_assembly')
-
-	event.recipes.createSequencedAssembly([
 		Item.of('create:track', 4),
 	],'create:andesite_alloy',[
 		event.recipes.createDeploying('create:incomplete_track',['create:incomplete_track',['iron_nugget', 'create:zinc_nugget', 'oreganized:lead_nugget']]),
@@ -1358,6 +1849,17 @@ ServerEvents.recipes(event => {
 		event.recipes.createPressing('kubejs:incomplete_balloon',['kubejs:incomplete_balloon']),
 		event.recipes.createPressing('kubejs:incomplete_balloon',['kubejs:incomplete_balloon'])
 	]).transitionalItem('kubejs:incomplete_balloon').loops(1).id('endergetic:bolloom_balloon')
+	
+// Mechanical crafting
+	event.recipes.create.mechanical_crafting(
+	'create:extendo_grip', [
+	' B ',
+	' C ',
+	'DDD',
+	'AAA'
+	], {
+	A: 'create:golden_sheet', B: 'create:precision_mechanism', C: 'create:cogwheel', D: 'stick'
+	}).id('create:mechanical_crafting/extendo_grip')
 
 // Replace recipe inputs
 	event.replaceInput({ input: 'oreganized:lead_ore' }, 'oreganized:lead_ore', 'kubejs:lead_ore')
@@ -1367,13 +1869,14 @@ ServerEvents.recipes(event => {
 	event.replaceInput({ input: 'minecraft:jukebox' }, 'minecraft:jukebox', 'etched:album_jukebox')
 	event.replaceInput({ input: 'minecraft:nether_wart' }, 'minecraft:nether_wart', 'minecraft:crimson_fungus')
 	event.replaceInput({ input: 'upgrade_aquatic:mulberry' }, 'upgrade_aquatic:mulberry', 'minecraft:sweet_berries')
+	event.replaceInput({ input: 'architects_palette:sunmetal_brick' }, 'architects_palette:sunmetal_brick', 'alloyed:bronze_ingot')
+	event.replaceInput({ input: 'minecraft:bread' }, 'minecraft:bread', '#forge:bread/wheat')
 	event.replaceInput({ not: [{type: 'farmersdelight:cutting'}, {type: 'create:compacting'}, {id: 'twigs:gravel_bricks'}], input: 'minecraft:gravel' }, 'minecraft:gravel', '#forge:gravel')
 	event.replaceInput({ output: 'create:steam_engine' }, 'minecraft:copper_block', 'copperandtuffbackport:chiseled_copper')
 	event.replaceInput({ output: 'create:copper_backtank' }, 'minecraft:copper_block', 'copperandtuffbackport:chiseled_copper')
 	event.replaceInput({ output: 'minecraft:copper_ingot' }, 'minecraft:copper_block', 'copperandtuffbackport:chiseled_copper')
 	event.replaceInput({ output: 'minecraft:copper_ingot' }, 'minecraft:waxed_copper_block', 'copperandtuffbackport:waxed_chiseled_copper')
 	event.replaceInput({ output: 'minecraft:shears' }, 'minecraft:iron_ingot', 'minecraft:copper_ingot')
-	event.replaceInput({ output: 'create:propeller' }, 'create:iron_sheet', 'alloyed:steel_sheet')
 	event.replaceInput({ output: 'oreganized:exposer' }, '#forge:ingots/silver', 'oreganized:silver_nugget')
 	event.replaceInput({ output: 'mynethersdelight:waxed_hoglin_trophy' }, 'minecraft:crimson_fungus', 'minecraft:honeycomb')
 	event.replaceInput({ output: 'caverns_and_chasms:depth_gauge' }, '#forge:ingots/silver', 'oreganized:lead_ingot')
@@ -1385,10 +1888,11 @@ ServerEvents.recipes(event => {
 	event.replaceInput({ output: 'architects_palette:myonite_brick_slab' }, 'architects_palette:myonite_bricks', 'kubejs:cobbled_exolite')
 	event.replaceInput({ output: 'architects_palette:myonite_brick_stairs' }, 'architects_palette:myonite_bricks', 'kubejs:cobbled_exolite')
 	event.replaceInput({ output: 'architects_palette:myonite_brick_wall' }, 'architects_palette:myonite_bricks', 'kubejs:cobbled_exolite')
-	event.replaceInput({ output: 'farmersdelight:sweet_berry_cheesecake' }, 'minecraft:sweet_berries', 'minecraft:glow_berries')
 	event.replaceInput({ output: 'caverns_and_chasms:large_arrow' }, 'oreganized:silver_ingot', 'oreganized:lead_ingot')
 	event.replaceInput({ output: 'create:steam_whistle' }, 'create:golden_sheet', 'alloyed:bronze_ingot')
 	event.replaceInput({ output: 'caverns_and_chasms:sugilite' }, 'caverns_and_chasms:spinel', 'minecraft:amethyst_shard')
+	event.replaceInput({ output: 'another_furniture:service_bell' }, 'minecraft:iron_nugget', 'alloyed:bronze_nugget')
+	event.replaceInput({ output: 'another_furniture:service_bell' }, 'minecraft:iron_ingot', 'alloyed:bronze_sheet')
 	event.replaceInput({ id: 'minecraft:crossbow' }, 'minecraft:tripwire_hook', 'minecraft:string')
 	event.replaceInput({ id: 'minecraft:crossbow' }, 'minecraft:iron_ingot', 'create:iron_sheet')
 	event.replaceInput({ id: 'quark:building/crafting/dirt_bricks' }, 'paletteblocks:cobblestone_bricks', 'minecraft:dirt')
@@ -1424,7 +1928,6 @@ ServerEvents.recipes(event => {
 	event.replaceInput({ id: 'quark:tweaks/crafting/utility/misc/hopper_minecart' }, 'minecraft:iron_ingot', '#brewinandchewin:iron_or_lead')
 	event.replaceInput({ id: 'quark:building/crafting/furnaces/deepslate_minecart_tweaked' }, 'minecraft:iron_ingot', '#brewinandchewin:iron_or_lead')
 	event.replaceInput({ id: 'quark:building/crafting/furnaces/blackstone_minecart_tweaked' }, 'minecraft:iron_ingot', '#brewinandchewin:iron_or_lead')
-	event.replaceInput({ id: 'mynethersdelight:magma_cake' }, 'farmersdelight:straw', '#farmersdelight:wheat_or_flour')
 	event.replaceInput({ id: 'naturalist:teddy_bear' }, '#minecraft:wool', ['#minecraft:wool', '#raspberry_flavoured:cloth_blocks'])
 	event.replaceInput({ id: 'create:crafting/kinetics/nozzle' }, '#minecraft:wool', ['#minecraft:wool', '#raspberry_flavoured:cloth_blocks'])
 	event.replaceInput({ id: 'create:crafting/kinetics/white_sail' }, '#minecraft:wool', ['#minecraft:wool', '#raspberry_flavoured:cloth_blocks'])
@@ -1442,13 +1945,16 @@ ServerEvents.recipes(event => {
 	event.replaceInput({ id: 'quark:building/crafting/blackstone_bricks' }, 'paletteblocks:cobblestone_bricks', 'kubejs:cobbled_blackstone')
 	event.replaceInput({ id: 'minecraft:beacon' }, 'minecraft:glass', '#quark:framed_glasses')
 	event.replaceInput({ id: 'quark:oddities/crafting/encased_pipe' }, 'minecraft:glass', '#quark:framed_glasses')
+	event.replaceInput({ id: 'create:mechanical_crafting/crushing_wheel' }, '#forge:stone', 'create:shaft')
+	event.replaceInput({ id: 'farmersdelight:apple_pie' }, 'minecraft:apple', '#raspberry_flavoured:apples')
+	event.replaceInput({ id: 'farmersdelight:horse_feed' }, 'minecraft:apple', '#raspberry_flavoured:apples')
+	event.replaceInput({ id: 'cookscollection:oven' }, 'minecraft:stone_bricks', ['stone_bricks', 'paletteblocks:cobblestone_bricks'])
 
 // Replace recipe outputs
 	event.replaceOutput({ id: 'minecraft:copper_block' }, 'minecraft:copper_block', 'copperandtuffbackport:chiseled_copper')
+	event.replaceOutput({ id: 'alloyed:crafting/bronze/bronze_block' }, 'alloyed:bronze_block', 'kubejs:bronze_block')
 	event.replaceOutput({ id: 'minecraft:light_gray_dye_from_oxeye_daisy' }, 'minecraft:light_gray_dye', 'minecraft:white_dye')
 	event.replaceOutput({ id: 'minecraft:light_gray_dye_from_white_tulip' }, 'minecraft:light_gray_dye', 'minecraft:white_dye')
 	event.replaceOutput({ id: 'minecraft:light_gray_dye_from_azure_bluet' }, 'minecraft:light_gray_dye', 'minecraft:white_dye')
 	event.replaceOutput({ id: 'create:copper_bars_from_ingots_copper_stonecutting' }, 'create:copper_bars', 'caverns_and_chasms:copper_bars')
-	event.replaceOutput({ id: 'caverns_and_chasms:necromium_horse_armor_smithing' }, 'caverns_and_chasms:necromium_horse_armor', 'kubejs:necromium_horse_armor')
-	event.replaceOutput({ id: 'caverns_and_chasms:netherite_horse_armor_smithing' }, 'caverns_and_chasms:netherite_horse_armor', 'kubejs:netherite_horse_armor')
 })

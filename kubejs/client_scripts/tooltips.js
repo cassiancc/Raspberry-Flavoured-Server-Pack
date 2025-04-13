@@ -25,7 +25,7 @@ ItemEvents.tooltip(tooltip => {
   tooltip.add(['neapolitan:vanilla_ice_cream'], "§cChilled (0:05)")
   tooltip.add(['respiteful:black_tea_ice_cream'], "§9Maturity II (0:30)")
   tooltip.add(['respiteful:black_tea_ice_cream'], "§cChilled (0:05)")
-  tooltip.add(['respiteful:respiteful_ice_cream'], "§9Vitality (0:45)")
+  tooltip.add(['respiteful:respiteful_ice_cream'], "§9Flourishing (0:45)")
   tooltip.add(['respiteful:respiteful_ice_cream'], "§9Tenacity (0:45)")
   tooltip.add(['respiteful:respiteful_ice_cream'], "§9Maturity (0:45)")
   tooltip.add(['respiteful:respiteful_ice_cream'], "§cChilled (0:07)")
@@ -37,7 +37,7 @@ ItemEvents.tooltip(tooltip => {
   tooltip.add(['minecraft:milk_bucket'], "§9Clears All Effects")
   tooltip.add(['caverns_and_chasms:golden_milk_bucket'], "§9Clears All Effects")
   tooltip.add(['neapolitan:milk_bottle'], "§9Clears 1 Effect")
-  tooltip.add(['ecologics:coconut_slice'], "§9Clears All Effects")
+  tooltip.add(['ecologics:coconut_slice'], "§9Clears 1 Effect")
   tooltip.add(['ecologics:tropical_stew'], "§9Clears All Effects")
   tooltip.add(['minecraft:rabbit_stew'], "§9Jump Boost II (0:10)")
   tooltip.add(['kubejs:mixed_oatmeal'], "§9Minor Instant Health")
@@ -593,21 +593,7 @@ ItemEvents.tooltip(tooltip => {
 	"spelunkery:tuff_silver_ore",
 	"spelunkery:compression_blast_miner",
 	"spelunkery:diamond_grindstone",
-	"spelunkery:salt_lamp",
-	"spelunkery:salt_block",
-	"spelunkery:rock_salt_slab",
-	"spelunkery:rock_salt_stairs",
-	"spelunkery:rock_salt_wall",
-	"spelunkery:rock_salt_brick_slab",
-	"spelunkery:rock_salt_brick_stairs",
-	"spelunkery:polished_rock_salt",
-	"spelunkery:polished_rock_salt_slab",
-	"spelunkery:rock_salt_brick_wall",
-	"spelunkery:polished_rock_salt_stairs",
-	"spelunkery:polished_rock_salt_wall",
-	"spelunkery:rock_salt_bricks",
 	"spelunkery:salt_bucket",
-	"spelunkery:salt",
 	"spelunkery:grilled_portabella",
 	"environmental:large_lily_pad",
 	"environmental:giant_lily_pad",
@@ -985,23 +971,6 @@ ItemEvents.tooltip(tooltip => {
 	"minecraft:elytra",
 	"minecraft:dragon_egg",
 	"minecraft:shulker_shell",
-	"minecraft:shulker_box",
-	"minecraft:white_shulker_box",
-	"minecraft:orange_shulker_box",
-	"minecraft:magenta_shulker_box",
-	"minecraft:light_blue_shulker_box",
-	"minecraft:yellow_shulker_box",
-	"minecraft:lime_shulker_box",
-	"minecraft:pink_shulker_box",
-	"minecraft:gray_shulker_box",
-	"minecraft:light_gray_shulker_box",
-	"minecraft:cyan_shulker_box",
-	"minecraft:purple_shulker_box",
-	"minecraft:blue_shulker_box",
-	"minecraft:brown_shulker_box",
-	"minecraft:green_shulker_box",
-	"minecraft:red_shulker_box",
-	"minecraft:black_shulker_box",
 	"architects_palette:cracked_end_stone_bricks",
 	"architects_palette:chiseled_end_stone_bricks",
 	"architects_palette:oracle_block",
@@ -1045,11 +1014,9 @@ ItemEvents.tooltip(tooltip => {
 	"spelunkery:rough_emerald_shard",
 	"spelunkery:rough_emerald",
 	"spelunkery:emerald_shard",
-	"domesticationinnovation:collar_tag",
 	"domesticationinnovation:feather_on_a_stick",
 	"domesticationinnovation:rotten_apple",
 	"domesticationinnovation:sinister_carrot",
-	"domesticationinnovation:deed_of_ownership",
 	"minecraft:pillager_spawn_egg",
 	"minecraft:ravager_spawn_egg",
 	"minecraft:evoker_spawn_egg",
@@ -1069,7 +1036,6 @@ ItemEvents.tooltip(tooltip => {
 	"ecologics:penguin_feather",
 	"naturalist:snail_eggs",
 	"nethersdelight:blackstone_furnace",
-	"ecologics:thin_ice",
 	"oreganized:lead_ore",
 	"architects_palette:coal_ore_bricks",
 	"architects_palette:coal_ore_brick_slab",
@@ -1640,7 +1606,6 @@ ItemEvents.tooltip(tooltip => {
 	"upgrade_aquatic:boiled_blue_pickerelweed",
 	"upgrade_aquatic:boiled_purple_pickerelweed",
 	"abnormals_delight:pickerelweed_juice",
-	"abnormals_delight:pike_with_beetroot",
 	"abnormals_delight:passion_fruit_glazed_duck",
 	"sob:passionfruit_smoothie",
 	"atmospheric:passion_vine",
@@ -2330,7 +2295,54 @@ ItemEvents.tooltip(tooltip => {
 	"everycomp:faf/quark/bamboo_beehive",
 	"everycomp:faf/mynethersdelight/powdery_beehive",
 	"quark:ancient_tome",
-	"clash:swept_axe_head"
+	"clash:swept_axe_head",
+	"create:rose_quartz",
+	"create:polished_rose_quartz",
+	"create:rose_quartz_block",
+	"create:rose_quartz_tiles",
+	"create:small_rose_quartz_tiles",
+	"create:propeller",
+	"create:whisk",
+	"alloyed:bronze_block",
+	"alloyed:exposed_bronze_block",
+	"alloyed:weathered_bronze_block",
+	"alloyed:oxidized_bronze_block",
+	"alloyed:waxed_bronze_block",
+	"alloyed:waxed_exposed_bronze_block",
+	"alloyed:waxed_weathered_bronze_block",
+	"alloyed:waxed_oxidized_bronze_block",
+	"architects_palette:sunmetal_brick",
+	"naturalist:vulture_spawn_egg",
+	"quark:crab_leg",
+	"quark:cooked_crab_leg",
+	"quark:crab_shell",
+	"quark:crab_bucket",
+	"minecraft:rabbit_foot",
+	"cookscollection:salt",
+	"cookscollection:salted_dripstone_block",
+	"cookscollection:lemon_log",
+	"cookscollection:lemon_wood",
+	"everycomp:q/cookscollection/fruiting_lemon_hedge",
+	"everycomp:abnww/cookscollection/fruiting_lemon_leaf_pile",
+	"quark:egg_parrot_red_blue",
+	"quark:egg_parrot_blue",
+	"quark:egg_parrot_green",
+	"quark:egg_parrot_yellow_blue",
+	"quark:egg_parrot_grey",
+	"minecraft:pumpkin_pie",
+	"mynethersdelight:raw_stuffed_hoglin",
+	"create_confectionery:black_chocolate_bucket",
+	"create_confectionery:white_chocolate_bucket",
+	"create_confectionery:black_chocolate_bricks",
+	"create_confectionery:black_chocolate_bricks_stairs",
+	"create_confectionery:black_chocolate_bricks_slab",
+	"create_confectionery:white_chocolate_bricks",
+	"create_confectionery:white_chocolate_bricks_stairs",
+	"create_confectionery:white_chocolate_bricks_slab",
+	"upgrade_aquatic:beachgrass",
+	"upgrade_aquatic:tall_beachgrass",
+	"create_confectionery:cocoa_powder",
+	"create:brass_hand"
 	], "§4Unobtainable")
   
   tooltip.addAdvanced('lucky:raspberry_lucky_block', (item, advanced, text) => {
@@ -2398,7 +2410,6 @@ ItemEvents.tooltip(tooltip => {
   'kubejs:necromium_horse_armor',
   'kubejs:electrum_horse_armor',
   'mynethersdelight:plate_of_striderloaf',
-  'mynethersdelight:ghast_salad',
   'mynethersdelight:magma_cake_slice'
   ], (item, advanced, text) => {
 	text.remove(1)
@@ -2417,7 +2428,6 @@ ItemEvents.tooltip(tooltip => {
   'farmersdelight:fruit_salad',
   'mynethersdelight:plate_of_ghasta_with_cream',
   'mynethersdelight:hot_wings_bucket',
-  'mynethersdelight:chilidog',
   'mynethersdelight:spicy_noodle_soup',
   'mynethersdelight:hot_cream_cone',
   'minecraft:netherite_pickaxe',
@@ -2436,6 +2446,7 @@ ItemEvents.tooltip(tooltip => {
   tooltip.addAdvanced([
   'clash:greatblade',
   'clash:spear',
+  'mynethersdelight:chilidog',
   'mynethersdelight:plate_of_cold_striderloaf',
   'sob:exotic_fruit_salad',
   'sob:lava_top_cocktail'
@@ -2445,10 +2456,20 @@ ItemEvents.tooltip(tooltip => {
 	text.remove(1)
   })
   
+  // remove 5 lines
+  tooltip.addAdvanced([
+  'mynethersdelight:ghast_salad'
+  ], (item, advanced, text) => {
+	text.remove(1)
+	text.remove(1)
+	text.remove(1)
+	text.remove(1)
+	text.remove(1)
+  })
+  
   tooltip.add(['kubejs:yoyleberry'], "§5Yoylemetallic (5:00)")
   
   tooltip.add(['minecraft:enchanting_table'], "§dLegacy Item")
-  tooltip.add(['architects_palette:twisted_sapling'], "§dWork in Progress")
   
 // cat food
   tooltip.addAdvanced('kubejs:cat_food', (item, advanced, text) => {
@@ -2482,12 +2503,19 @@ ItemEvents.tooltip(tooltip => {
   tooltip.addAdvanced([
   '#raspberry:disabled',
   'kubejs:deepslate_gravel',
-  'kubejs:blackstone_gravel'
+  'kubejs:blackstone_gravel',
+  'supplementaries:safe'
   ], (item, advanced, text) => {
       text.add(1, [Text.of('Deprecated Item').lightPurple().bold()])
       text.add(2, [Text.of('This item is unobtainable, and is').lightPurple()])
       text.add(3, [Text.of('getting removed soon! However, you can').lightPurple()])
       text.add(4, [Text.of('place it in a crafting grid for compensation!').lightPurple()])
+  })
+  tooltip.addAdvanced([
+  'supplementaries:safe'
+  ], (item, advanced, text) => {
+      text.add(5, [Text.of('If this item is a Safe, remove its contents').red().bold()])
+      text.add(6, [Text.of('before doing this or they will be lost!').red().bold()])
   })
   
 // toms simple storage
@@ -2531,30 +2559,6 @@ ItemEvents.tooltip(tooltip => {
       text.add(10, [Text.of(' Storage Interface').color('#EEDA78'), Text.of('.').color('#C7954B')])
     }
   })
- 
-  // create interactive compat
-  tooltip.addAdvanced('create_interactive:buffer_stop', (item, advanced, text) => {
-    if (!tooltip.shift) {
-      text.add(1, [Text.of('Hold [').darkGray(), Text.of('Shift').gray(), Text.of('] for Summary').darkGray()])
-    } else {
-      text.add(1, [Text.of('Hold [').darkGray(), Text.of('Shift').white(), Text.of('] for Summary').darkGray()])
-      text.add(2, [Text.of('')])
-      text.add(3, [Text.of('Prevents ').color('#C7954B'), Text.of('Trains').color('#EEDA78'), Text.of(' from').color('#C7954B')])
-      text.add(4, [Text.of('rolling off of ').color('#C7954B'), Text.of('Train Tracks').color('#EEDA78')])
-      text.add(5, [Text.of('when they reach the end of the line.').color('#C7954B')])
-    }
-  })
-  tooltip.addAdvanced('create_interactive:propagator_bearing', (item, advanced, text) => {
-    if (!tooltip.shift) {
-      text.add(1, [Text.of('Hold [').darkGray(), Text.of('Shift').gray(), Text.of('] for Summary').darkGray()])
-    } else {
-      text.add(1, [Text.of('Hold [').darkGray(), Text.of('Shift').white(), Text.of('] for Summary').darkGray()])
-      text.add(2, [Text.of('')])
-      text.add(3, [Text.of('A modified ').color('#C7954B'), Text.of('Mechanical Bearing').color('#EEDA78')])
-      text.add(4, [Text.of('that propagates ').color('#C7954B'), Text.of('rotation').color('#EEDA78')])
-      text.add(5, [Text.of('to its ').color('#C7954B'), Text.of('contraption').color('#EEDA78'), Text.of('.').color('#C7954B')])
-    }
-  })
 })
 
 // durability tooltip for items that don't have it
@@ -2593,5 +2597,8 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced('vc_gliders:paraglider_wood', (item, advanced, text) => {
 		filter(text, "Installed")
 		filter(text, "Nether")
+    })
+    tooltip.addAdvanced('upgrade_aquatic:jellyfish_bucket', (item, advanced, text) => {
+		filter(text, "Yields")
     })
 })

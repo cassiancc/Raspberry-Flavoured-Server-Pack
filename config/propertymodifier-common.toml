@@ -89,6 +89,22 @@
 		"additionaladditions:amethyst_lamp[lit=true]" = 15
 		"toms_storage:ts.storage_terminal" = 10
 		"toms_storage:ts.inventory_connector" = 7
+		"caverns_and_chasms:floodlight" = 15
+		"caverns_and_chasms:exposed_floodlight" = 12
+		"caverns_and_chasms:weathered_floodlight" = 8
+		"caverns_and_chasms:oxidized_floodlight" = 4
+		"caverns_and_chasms:waxed_floodlight" = 15
+		"caverns_and_chasms:waxed_exposed_floodlight" = 12
+		"caverns_and_chasms:waxed_weathered_floodlight" = 8
+		"caverns_and_chasms:waxed_oxidized_floodlight" = 4
+		"architects_palette:abyssaline_lamp[charged=true]" = 15
+		"architects_palette:hadaline_lamp[charged=true]" = 15
+		"architects_palette:dripstone_lamp" = 15
+		"architects_palette:calcite_lamp" = 15
+		"architects_palette:tuff_lamp" = 15
+		"architects_palette:redstone_cage_lantern[lit=true]" = 15
+		"architects_palette:glowstone_cage_lantern[lit=true]" = 15
+		"architects_palette:algal_cage_lantern[lit=true]" = 15
 
 #Set the respective values here by adding lines in the respective groups. Keys can be either a block (e.g. "minecraft:stripped_birch_wood") or a block regex (e.g. "minecraft:.*_block").
 [blocks]
@@ -179,14 +195,6 @@
 		"alloyed:steel_chestplate" = "combat"
 		"alloyed:steel_leggings" = "combat"
 		"alloyed:steel_boots" = "combat"
-		"alloyed:bronze_block" = "building_blocks"
-		"alloyed:exposed_bronze_block" = "building_blocks"
-		"alloyed:weathered_bronze_block" = "building_blocks"
-		"alloyed:oxidized_bronze_block" = "building_blocks"
-		"alloyed:waxed_bronze_block" = "building_blocks"
-		"alloyed:waxed_exposed_bronze_block" = "building_blocks"
-		"alloyed:waxed_weathered_bronze_block" = "building_blocks"
-		"alloyed:waxed_oxidized_bronze_block" = "building_blocks"
 		"alloyed:bronze_bell" = "decorations"
 		"alloyed:steel_block" = "building_blocks"
 		"alloyed:steel_casing" = "decorations"
@@ -200,7 +208,6 @@
 		"alloyed:steel_trapdoor" = "redstone"
 		"alloyed:steel_ladder" = "decorations"
 		"alloyed:steel_knife" = "combat"
-		"firesticks:fire_stick" = "tools"
 		"farmersrespite:green_tea_leaves_sack" = "decorations"
 		"farmersrespite:yellow_tea_leaves_sack" = "decorations"
 		"farmersrespite:black_tea_leaves_sack" = "decorations"
@@ -258,6 +265,7 @@
 		"ecologics:ice_brick_stairs" = "building_blocks"
 		"ecologics:ice_brick_slab" = "building_blocks"
 		"ecologics:ice_brick_wall" = "building_blocks"
+		"ecologics:thin_ice" = "decorations"
 		"ecologics:azalea_log" = "building_blocks"
 		"ecologics:stripped_azalea_log" = "building_blocks"
 		"ecologics:azalea_wood" = "building_blocks"
@@ -311,7 +319,6 @@
 		"naturalist:teddy_bear" = "decorations"
 		"naturalist:bass_bucket" = "misc"
 		"naturalist:bass" = "food"
-		"naturalist:cooked_bass" = "food"
 		"naturalist:butterfly" = "misc"
 		"naturalist:caterpillar" = "misc"
 		"naturalist:bug_net" = "tools"
@@ -352,36 +359,14 @@
 		"culturaldelights:avocado_crate" = "decorations"
 		"culturaldelights:corn_cob_crate" = "decorations"
 		"culturaldelights:eggplant_crate" = "decorations"
-		"culturaldelights:exotic_roll_medley" = "food"
 		"kubejs:flaxen_cheese_bucket" = "misc"
 		"kubejs:scarlet_cheese_bucket" = "misc"
-		"kubejs:glue_bucket" = "misc"
-		"kubejs:butterscotch_bucket" = "misc"
-		"kubejs:cake_batter_bucket" = "misc"
-		"kubejs:white_chocolate_pavement_stairs" = "building_blocks"
-		"kubejs:white_chocolate_pavement" = "building_blocks"
-		"kubejs:dark_chocolate_tiles" = "building_blocks"
-		"kubejs:dark_chocolate_pavement_slab" = "building_blocks"
-		"kubejs:dark_chocolate_tile_stairs" = "building_blocks"
-		"kubejs:white_chocolate_tile_stairs" = "building_blocks"
-		"kubejs:white_chocolate_tile_wall" = "building_blocks"
-		"kubejs:white_chocolate_pavement_slab" = "building_blocks"
-		"kubejs:white_chocolate_tiles" = "building_blocks"
-		"kubejs:white_chocolate_tile_slab" = "building_blocks"
+		"kubejs:ink_bucket" = "misc"
+		"kubejs:batter_bucket" = "misc"
 		"kubejs:lead_ore" = "building_blocks"
-		"kubejs:dark_chocolate_block" = "building_blocks"
 		"kubejs:butterscotch_cinnamon_pie" = "food"
-		"kubejs:dark_chocolate_pavement_stairs" = "building_blocks"
 		"kubejs:eggplant_parmesan_block" = "food"
-		"kubejs:chiseled_dark_chocolate_pavement" = "building_blocks"
-		"kubejs:dark_chocolate_tile_wall" = "building_blocks"
-		"kubejs:dark_chocolate_pavement" = "building_blocks"
-		"kubejs:chiseled_white_chocolate_pavement" = "building_blocks"
 		"kubejs:wheat_flour_bag" = "decorations"
-		"kubejs:white_chocolate_block" = "building_blocks"
-		"kubejs:white_chocolate_pavement_wall" = "building_blocks"
-		"kubejs:dark_chocolate_pavement_wall" = "building_blocks"
-		"kubejs:dark_chocolate_tile_slab" = "building_blocks"
 		"paletteblocks:polished_netherrack" = "building_blocks"
 		"paletteblocks:polished_basalt" = "building_blocks"
 		"paletteblocks:cobblestone_bricks" = "building_blocks"
@@ -458,7 +443,7 @@
 		"create:red_valve_handle" = "redstone"
 		"create:black_valve_handle" = "redstone"
 		"create:fluid_tank" = "decorations"
-		"create:creative_fluid_tank" = "search"
+		"create:creative_fluid_tank" = "decorations"
 		"create:hose_pulley" = "redstone"
 		"create:item_drain" = "redstone"
 		"create:spout" = "redstone"
@@ -513,7 +498,7 @@
 		"create:brass_tunnel" = "redstone"
 		"create:content_observer" = "redstone"
 		"create:stockpile_switch" = "redstone"
-		"create:creative_crate" = "search"
+		"create:creative_crate" = "decorations"
 		"create:display_link" = "redstone"
 		"create:display_board" = "redstone"
 		"create:nixie_tube" = "redstone"
@@ -526,17 +511,13 @@
 		"create:powered_toggle_latch" = "redstone"
 		"create:wheat_flour" = "misc"
 		"create:cinder_flour" = "misc"
-		"create:rose_quartz" = "misc"
-		"create:polished_rose_quartz" = "misc"
 		"create:powdered_obsidian" = "misc"
 		"create:sturdy_sheet" = "misc"
-		"create:propeller" = "misc"
-		"create:whisk" = "misc"
-		"create:brass_hand" = "misc"
 		"create:crafter_slot_cover" = "misc"
 		"create:electron_tube" = "misc"
 		"create:precision_mechanism" = "misc"
 		"create:blaze_cake" = "misc"
+		"create:creative_blaze_cake" = "tools"
 		"create:sweet_roll" = "food"
 		"create:chocolate_glazed_berries" = "food"
 		"create:builders_tea" = "food"
@@ -574,7 +555,7 @@
 		"create:potato_cannon" = "combat"
 		"create:extendo_grip" = "tools"
 		"create:wand_of_symmetry" = "tools"
-		"create:handheld_worldshaper" = "search"
+		"create:handheld_worldshaper" = "tools"
 		"create:filter" = "tools"
 		"create:attribute_filter" = "tools"
 		"create:schedule" = "transportation"
@@ -640,9 +621,6 @@
 		"create:andesite_alloy_block" = "building_blocks"
 		"create:industrial_iron_block" = "building_blocks"
 		"create:brass_block" = "building_blocks"
-		"create:rose_quartz_block" = "building_blocks"
-		"create:rose_quartz_tiles" = "building_blocks"
-		"create:small_rose_quartz_tiles" = "building_blocks"
 		"create:copper_shingles" = "building_blocks"
 		"create:exposed_copper_shingles" = "building_blocks"
 		"create:weathered_copper_shingles" = "building_blocks"
@@ -983,17 +961,8 @@
 		"create_confectionery:chocolate_bricks" = "building_blocks"
 		"create_confectionery:chocolate_bricks_stairs" = "building_blocks"
 		"create_confectionery:chocolate_bricks_slab" = "building_blocks"
-		"create_confectionery:black_chocolate_bricks" = "building_blocks"
-		"create_confectionery:black_chocolate_bricks_stairs" = "building_blocks"
-		"create_confectionery:black_chocolate_bricks_slab" = "building_blocks"
-		"create_confectionery:white_chocolate_bricks" = "building_blocks"
-		"create_confectionery:white_chocolate_bricks_stairs" = "building_blocks"
-		"create_confectionery:white_chocolate_bricks_slab" = "building_blocks"
 		"create_confectionery:candy_cane_block" = "building_blocks"
-		"create_confectionery:cocoa_powder" = "misc"
 		"create_confectionery:cocoa_butter" = "misc"
-		"create_confectionery:black_chocolate_bucket" = "misc"
-		"create_confectionery:white_chocolate_bucket" = "misc"
 		"create_confectionery:marshmallow_on_a_stick" = "food"
 		"create_confectionery:marshmallow" = "food"
 		"create_confectionery:chocolate_glazed_marshmallow" = "food"
@@ -1419,7 +1388,6 @@
 		"minecraft:cauldron" = "decorations"
 		"minecraft:glistering_melon_slice" = "food"
 		"minecraft:golden_carrot" = "food"
-		"minecraft:rabbit_foot" = "misc"
 		"minecraft:splash_potion" = "brewing"
 		"minecraft:lingering_potion" = "brewing"
 		"minecraft:phantom_membrane" = "misc"
@@ -1655,8 +1623,6 @@
 		"architects_palette:myonite_wall" = "building_blocks"
 		"architects_palette:myonite_brick_wall" = "building_blocks"
 		"architects_palette:mushy_myonite_brick_wall" = "building_blocks"
-		"architects_palette:olivestone_brick_wall" = "building_blocks"
-		"architects_palette:olivestone_tile_wall" = "building_blocks"
 		"architects_palette:algal_brick_wall" = "building_blocks"
 		"architects_palette:overgrown_algal_brick_wall" = "building_blocks"
 		"architects_palette:flint_tile_wall" = "building_blocks"
@@ -1684,7 +1650,6 @@
 		"architects_palette:onyx_brick_wall" = "building_blocks"
 		"architects_palette:wardstone_wall" = "building_blocks"
 		"architects_palette:wardstone_brick_wall" = "building_blocks"
-		"architects_palette:ancient_plating_wall" = "building_blocks"
 		"architects_palette:tread_plate_wall" = "building_blocks"
 		"architects_palette:cerebral_wall" = "building_blocks"
 		"architects_palette:cerebral_tile_wall" = "building_blocks"
@@ -1772,6 +1737,7 @@
 		"create_central_kitchen:cherry_pie_slice" = "food"
 		"create_central_kitchen:truffle_pie_slice" = "food"
 		"kubejs:prickly_pear_pie" = "food"
+		"kubejs:pumpkin_pie" = "food"
 		"miningmaster:gem_forge" = "decorations"
 		"spelunkery:portal_fluid_bucket" = "misc"
 		"kubejs:lazurite_slab" = "building_blocks"
@@ -1822,10 +1788,7 @@
 		"copperandtuffbackport:oxidized_copper_bulb" = "redstone"
 		"copperandtuffbackport:waxed_oxidized_copper_bulb" = "redstone"
 		"mynethersdelight:nether_bricks_cabinet" = "decorations"
-		"mynethersdelight:resurgent_soil_farmland" = "decorations"
 		"mynethersdelight:powdery_cabinet" = "decorations"
-		"mynethersdelight:letios_compost" = "building_blocks"
-		"mynethersdelight:resurgent_soil" = "building_blocks"
 		"mynethersdelight:powder_cannon" = "decorations"
 		"mynethersdelight:powdery_block" = "building_blocks"
 		"mynethersdelight:stripped_powdery_block" = "building_blocks"
@@ -1840,6 +1803,7 @@
 		"mynethersdelight:powdery_button" = "redstone"
 		"mynethersdelight:powdery_pressure_plate" = "redstone"
 		"mynethersdelight:powdery_sign" = "decorations"
+		"everycomp:q/mynethersdelight/powdery_ladder" = "decorations"
 		"mynethersdelight:bullet_pepper_crate" = "decorations"
 		"mynethersdelight:strider_slice" = "food"
 		"mynethersdelight:minced_strider" = "food"
@@ -1865,7 +1829,6 @@
 		"mynethersdelight:hoglin_trophy" = "decorations"
 		"mynethersdelight:waxed_hoglin_trophy" = "decorations"
 		"mynethersdelight:zoglin_trophy" = "decorations"
-		"mynethersdelight:raw_stuffed_hoglin" = "food"
 		"mynethersdelight:roast_stuffed_hoglin" = "food"
 		"mynethersdelight:roast_ear" = "food"
 		"mynethersdelight:plate_of_stuffed_hoglin_snout" = "food"
@@ -2063,6 +2026,55 @@
 		"suppsquared:sack_green" = "tools"
 		"suppsquared:sack_red" = "tools"
 		"suppsquared:sack_black" = "tools"
+		"raspberry:raked_deepslate_gravel" = "decorations"
+		"raspberry:raked_blackstone_gravel" = "decorations"
+		"minecraft:mushroom_stem" = "building_blocks"
+		"quark:glow_shroom_stem" = "building_blocks"
+		"minecraft:brown_mushroom_block" = "building_blocks"
+		"minecraft:red_mushroom_block" = "building_blocks"
+		"kubejs:choral_cap" = "building_blocks"
+		"spelunkery:conk_fungus_block" = "building_blocks"
+		"spelunkery:portabella_block" = "building_blocks"
+		"spelunkery:inkcap_mushroom_block" = "building_blocks"
+		"spelunkery:white_inkcap_mushroom_block" = "building_blocks"
+		"spelunkery:milly_bubcap_block" = "building_blocks"
+		"quark:glow_shroom_block" = "building_blocks"
+		"domesticationinnovation:deed_of_ownership" = "tools"
+		"domesticationinnovation:collar_tag" = "combat"
+		"kubejs:bronze_block" = "building_blocks"
+		"kubejs:rose_gold_block" = "building_blocks"
+		"farmersdelight:horse_feed" = "food"
+		"neapolitan:milk_bottle" = "food"
+		"spelunkery:rope_ladder" = "decorations"
+		"kubejs:glance_pillar" = "building_blocks"
+		"cookscollection:oven" = "decorations"
+		"cookscollection:lemon_sapling" = "decorations"
+		"cookscollection:lemon_leaves" = "decorations"
+		"cookscollection:fruiting_lemon_leaves" = "decorations"
+		"cookscollection:rustic_loaf" = "food"
+		"kubejs:straw_thatch" = "building_blocks"
+		"kubejs:straw_thatch_slab" = "building_blocks"
+		"kubejs:straw_thatch_stairs" = "building_blocks"
+		"kubejs:flax_thatch" = "building_blocks"
+		"kubejs:flax_thatch_slab" = "building_blocks"
+		"kubejs:flax_thatch_stairs" = "building_blocks"
+		"kubejs:bamboo_thatch_stairs" = "building_blocks"
+		"kubejs:white_canvas_rug" = "decorations"
+		"kubejs:orange_canvas_rug" = "decorations"
+		"kubejs:magenta_canvas_rug" = "decorations"
+		"kubejs:light_blue_canvas_rug" = "decorations"
+		"kubejs:yellow_canvas_rug" = "decorations"
+		"kubejs:lime_canvas_rug" = "decorations"
+		"kubejs:pink_canvas_rug" = "decorations"
+		"kubejs:gray_canvas_rug" = "decorations"
+		"kubejs:light_gray_canvas_rug" = "decorations"
+		"kubejs:cyan_canvas_rug" = "decorations"
+		"kubejs:purple_canvas_rug" = "decorations"
+		"kubejs:blue_canvas_rug" = "decorations"
+		"kubejs:brown_canvas_rug" = "decorations"
+		"kubejs:green_canvas_rug" = "decorations"
+		"kubejs:red_canvas_rug" = "decorations"
+		"kubejs:black_canvas_rug" = "decorations"
 
 	#Set this value to true to make an item fire resistant (like netherite is), or set it to false to make it burn in fire and lava. Example (without the leading #):
 	#"minecraft:netherite_ingot" = false
@@ -2215,7 +2227,7 @@
 		"create:copper_diving_boots" = "#raspberry_flavoured:copper_repair_materials"
 		"create:sand_paper" = "#raspberry_flavoured:sand_repair_materials"
 		"create:potato_cannon" = "#raspberry_flavoured:copper_repair_materials"
-		"create:extendo_grip" = "#raspberry_flavoured:brass_repair_materials"
+		"create:extendo_grip" = "#raspberry_flavoured:iron_repair_materials"
 		"environmental:yak_pants" = "#raspberry_flavoured:yak_repair_materials"
 		"savage_and_ravage:griefer_helmet" = "#raspberry_flavoured:griefer_repair_materials"
 		"savage_and_ravage:griefer_chestplate" = "#raspberry_flavoured:griefer_repair_materials"
@@ -2611,6 +2623,8 @@
 	#Add new compostables here. Consists of an item or item regex and a float between 0 and 1, representing the chance that the composter level is increased. Example (without the leading #):
 	#"minecraft:netherite_scrap" = 0.8
 	[composting.composting]
+		"ecologics:prickly_pear" = 0.75
+		"ecologics:cooked_prickly_pear" = 0.75
 		"minecraft:poisonous_potato" = 0.85
 		"minecraft:spider_eye" = 0.85
 		"minecraft:bamboo" = 0.03
@@ -2622,6 +2636,8 @@
 		"supplementaries:ash" = 0.05
 		"minecraft:honeycomb" = 1
 		"environmental:truffle_pie" = 1
+		"minecraft:pumpkin_pie" = 0
+		"kubejs:pumpkin_pie" = 1
 		"kubejs:butterscotch_cinnamon_pie" = 1
 		"kubejs:prickly_pear_pie" = 1
 		"kubejs:butterscotch_cinnamon_pie_slice" = 0.85
@@ -2644,37 +2660,6 @@
 		"spelunkery:inkcap_mushroom_block" = 0.85
 		"spelunkery:white_inkcap_mushroom_block" = 0.85
 		"spelunkery:milly_bubcap_block" = 0.85
-		"create_confectionery:chocolate_bricks" = 1
-		"create_confectionery:chocolate_bricks_stairs" = 0.85
-		"create_confectionery:chocolate_bricks_slab" = 0.3
-		"create_confectionery:black_chocolate_bricks" = 1
-		"create_confectionery:black_chocolate_bricks_stairs" = 0.85
-		"create_confectionery:black_chocolate_bricks_slab" = 0.3
-		"create_confectionery:white_chocolate_bricks" = 1
-		"create_confectionery:white_chocolate_bricks_stairs" = 0.85
-		"create_confectionery:white_chocolate_bricks_slab" = 0.3
-		"kubejs:bar_of_black_chocolate" = 0.3
-		"kubejs:dark_chocolate_block" = 1
-		"kubejs:dark_chocolate_pavement_slab" = 0.3
-		"kubejs:chiseled_dark_chocolate_pavement" = 0.85
-		"kubejs:dark_chocolate_tile_slab" = 0.3
-		"kubejs:dark_chocolate_tiles" = 0.85
-		"kubejs:dark_chocolate_pavement_wall" = 0.85
-		"kubejs:dark_chocolate_pavement" = 0.85
-		"kubejs:dark_chocolate_tile_wall" = 0.85
-		"kubejs:dark_chocolate_tile_stairs" = 0.85
-		"kubejs:dark_chocolate_pavement_stairs" = 0.85
-		"kubejs:bar_of_white_chocolate" = 0.3
-		"kubejs:white_chocolate_block" = 1
-		"kubejs:white_chocolate_pavement_slab" = 0.3
-		"kubejs:chiseled_white_chocolate_pavement" = 0.85
-		"kubejs:white_chocolate_tile_slab" = 0.3
-		"kubejs:white_chocolate_tiles" = 0.85
-		"kubejs:white_chocolate_pavement_wall" = 0.85
-		"kubejs:white_chocolate_pavement" = 0.85
-		"kubejs:white_chocolate_tile_wall" = 0.85
-		"kubejs:white_chocolate_tile_stairs" = 0.85
-		"kubejs:white_chocolate_pavement_stairs" = 0.85
 		"minecraft:dragon_egg" = 1
 		"culturaldelights:wild_corn" = 0.65
 		"culturaldelights:wild_eggplants" = 0.65
@@ -2706,6 +2691,18 @@
 		"woodworks:dark_oak_leaf_pile" = 0.075
 		"woodworks:mangrove_leaf_pile" = 0.075
 		"woodworks:azalea_leaf_pile" = 0.075
+		"twigs:bamboo_thatch" = 0.65
+		"twigs:bamboo_thatch_slab" = 0.65
+		"kubejs:bamboo_thatch_stairs" = 0.65
+		"kubejs:straw_thatch" = 0.65
+		"kubejs:straw_thatch_slab" = 0.65
+		"kubejs:straw_thatch_stairs" = 0.65
+		"kubejs:flax_thatch" = 0.65
+		"kubejs:flax_thatch_slab" = 0.65
+		"kubejs:flax_thatch_stairs" = 0.65
+		"raspberry:pink_petals" = 0.3
+		"raspberry:wildflowers" = 0.3
+		"raspberry:clovers" = 0.5
 
 #Set the values for axe stripping.
 [stripping]

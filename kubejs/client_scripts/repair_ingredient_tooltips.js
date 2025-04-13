@@ -19,9 +19,9 @@ ItemEvents.tooltip(event => {
     'create:super_glue': 'Slimeball',
     'naturalist:bug_net': 'Bamboo, Bamboo Planks',
     'supplementaries:flute': 'Bamboo, Bamboo Planks',
-    'vc_gliders:paraglider_wood': 'Sail',
+    'vc_gliders:paraglider_wood': 'Sail, Phantom Membrane',
     'create:potato_cannon': 'Copper Ingot, Copper Sheet',
-    'create:extendo_grip': 'Brass Ingot, Brass Sheet',
+    'create:extendo_grip': 'Iron Ingot, Iron Sheet',
     'supplementaries:wrench': 'Copper Ingot, Copper Sheet',
     'quark:echorang': 'Echo Shard',
 	

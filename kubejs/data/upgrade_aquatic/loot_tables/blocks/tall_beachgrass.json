@@ -37,7 +37,8 @@
                   "condition": "minecraft:match_tool",
                   "predicate": {
                     "items": [
-                      "minecraft:shears"
+                      "minecraft:shears",
+                      "ecologics:crab_claw"
                     ]
                   }
                 }
@@ -92,7 +93,8 @@
                   "condition": "minecraft:match_tool",
                   "predicate": {
                     "items": [
-                      "minecraft:shears"
+                      "minecraft:shears",
+                      "ecologics:crab_claw"
                     ]
                   }
                 }

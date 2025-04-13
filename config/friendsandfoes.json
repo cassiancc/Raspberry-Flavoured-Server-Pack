@@ -47,7 +47,7 @@
   "invisibilityTicks": 60,
   "enableZombieHorseTrap": false,
   "enableRascal": true,
-  "enableRascalSpawn": true,
+  "enableRascalSpawn": false,
   "enableTuffGolem": true,
   "generateTuffGolemInStronghold": false,
   "enableWildfire": false,

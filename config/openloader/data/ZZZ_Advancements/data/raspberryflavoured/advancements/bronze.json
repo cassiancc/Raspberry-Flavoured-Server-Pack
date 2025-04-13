@@ -1,5 +1,5 @@
 {
-  "parent": "raspberryflavoured:blaze_burner",
+  "parent": "raspberryflavoured:mech_mixer",
   "criteria": {
     "0": {
       "conditions": {
@@ -18,7 +18,7 @@
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "text": "Mix copper, zinc and cinder flour in a heated mixer to get bronze"
+      "text": "Craft or mix together copper, zinc and lead to obtain bronze"
     },
     "frame": "task",
     "hidden": false,

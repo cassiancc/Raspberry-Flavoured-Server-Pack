@@ -167,7 +167,7 @@ Beware of the man who speaks in hands!
 On days like this, kids like you should be playing &lRaspberry Flavoured!
 &l[Hyperlink Blocked]
 [Press F1 for] HELP
-EVERY BUDDY'S FAVOURITE [Number 1 Rated Modpack2024]
+EVERY BUDDY'S FAVOURITE [Number 1 Rated Modpack2025]
 MY EYES ARE [Burning] LIKE [Campfire Kindling]!
 [this splash text is now] [3 Easy Payments of $9.99]
 Who are you talking to?
@@ -419,7 +419,7 @@ I always hit my mark!
 Live strong, as the mountains!
 Sugar rush crush!
 I am not a bug - I am a &ofeature!
-At least &l1 FPS &rguarenteed!
+At least &l1 FPS &rguaranteed!
 I'm &owaaaaitiiiing!
 Made with love and neutronium-carbon alloy!
 I find you guilty... &oof nothing!
@@ -723,7 +723,7 @@ New Soup 2!
 U Eat Soup!
 Your face is good!
 Memphis, Tennessee!
-Love is pointless!
+Love is NOT pointless!
 Boohoo, my wife is dead!
 Mah wiife!
 Et cetera, ad infinitum!
@@ -979,7 +979,7 @@ I was on my way to grape flying class...
 See you in post-production!
 Looks like someone's got the munchies!
 Hork-glorp-gloop-doot!
-There's points now!
+OMG, there's points now!
 Dab it, my boyonocerus!
 Oobily goobily weezer beezers!
 Holy roly poly crawling in my guacamole!
@@ -1065,6 +1065,61 @@ Speed is key!
 Thread the needle!
 Vanilla style!
 I'll take a double triple MCreator Deluxe, sixteen by sixteen Vanilla Style, extra mixels with a Farmer and a Delight, make it AI, publish it, and let it slop!
+Make a new instance, don't update!
+It's time to ask someone who's actually smart!
+I've been sleepin' in a cardboard box!
+Every shape is a different flavour!
+Every flavour is a different shape!
+I turn little black worms into centipedes!
+For his neutral special, he wields a gun!
+The narwhal bacons at midnight!
+I'm dying because I'm so surprised!
+I'm dying because I'm an asparagus!
+Mine, you fools!
+As a large language model...
+Has working fletching tables!
+Craftable Mines!
+Secret Tuesday update!
+Now with magic!
+You RAM is the limit!
+Now with sphere-like objects!
+Working as intended!
+Talent trees!
+Clearly not made with AI!
+Unlockable!
+Participation awards!
+Copyright Mojang AB. Do not distribute!
+The sum of its parts!
+Slow acting portals!
+Download more RAM!
+Enter The Mine!
+Craft mines in Minecraft!
+Check out this mine of mine!
+Infinity 2.0: Now more finite!
+Minecraftlike!
+Deleting Overworld!
+Now with even less realism!
+How do I dig for mine?
+Contains collectibles!
+Famously unfinished!
+Reduced quality!
+Craft the Earth! In Minecraft!
+Minecraft À La Carte!
+Comparable with leading brands!
+Screens full of excitement!
+<loud portal sounds>
+Programmer Art without extra packs!
+Now with many more Mines!
+Unlock ALL the things!
+We joked every other year, but this time we are FOR REAL!
+Over 3 new items!
+Is that... is that a sphere!?
+99% less starch!
+And they call it a Mine? A MINE!
+Mine your own business!
+Do you Mine?
+Craft a Mine and then Mine and Craft!
+Just one more Mine
 Justice for seagulls!
 Justice for crabs!
 Justice for copper golems!
@@ -1091,8 +1146,8 @@ Also try &lPlayful!
 Also try &lVanilla Extract!
 Also try &lMusketeer!
 Also try &lRose's Reimagined Minecraft!
-Also try &lZenia!
-Also try &lSonic Rust!
+Also try &lInfinity Plus!
+Also try &lSimply Infinite!
 Also try &lSonic Spinball!
 Also try &lSonic Colours!
 Also try &lSonic Sunventure!
@@ -1113,6 +1168,7 @@ Also try &lCreate: Estrogen!
 Also try &lCursed Delights!
 Also try &lCook's Collection!
 Also try &lModest Mining!
+Also try &lPyrite!
 Also try &lPisciculture!
 Also try &lMuddy Routes!
 Also try &lQin's Artificery!
@@ -1139,6 +1195,10 @@ Also try &lThe Stanley Parable!
 Also try &lThe Stanley Parable: Ultra Deluxe!
 Also try &lPortal!
 Also try &lPortal 2!
+Also try &lViva Piñata!
+Also try &lViva Piñata: Party Animals!
+Also try &lViva Piñata: Trouble in Paradise!
+Also try &lViva Piñata: Trouble in Paradise!
 Also try &lSonic Robo Blast 2!
 Also try &lSonic 1 Forever!
 Also try &lSonic 2 Absolute!
@@ -1150,37 +1210,38 @@ Also try &lThe Impossible Quiz!
 Also try &lSuper Mario Bros. Wonder!
 Also try &lForager!
 Also try &lUndertale Yellow!
-&lSubscribe to raspmary! &r... please?
-MadRaz forever!
-love you bailey :3
 Now Tio Flavoured! Mmm, spicy.
-Shoutout to &lSonicBoss1991!
-Shoutout to &lNCP Bails!
-Shoutout to &lQinomeD!
-Shoutout to &lChad!
-Shoutout to &lNive!
-Shoutout to &lCrabbarition!
-Shoutout to &lnöelle!
+&lSubscribe to raspmary! &r... please?
+love you bailey <3
+Shoutout to &lBaisylia! <3
 Shoutout to &lcassiancc!
 Shoutout to &lDavigJ!
-Shoutout to &lWaterOre!
+Shoutout to &lnöelle!
+Shoutout to &lNive!
+Shoutout to &lQinomeD!
+Shoutout to &lCrabbarition!
 Shoutout to &lasof!
 Shoutout to &lDerb!
+Shoutout to &lChad!
 Shoutout to &lKiroto!
-Shoutout to &lculling!
+Shoutout to &lMehVahdJukaar!
 Shoutout to &lDoltHHaven!
 Shoutout to &lMythrilBagels!
-Shoutout to &lMehVahdJukaar!
+Shoutout to &lKayladillo!
 Shoutout to &lJamiscus!
-Shoutout to &lFreshah!
-Shoutout to &lVazkii!
-Shoutout to &lKelpiesaurus!
+Shoutout to &lProbablyEkho!
+Shoutout to &lCW!
 Shoutout to &lnoodleman!
-Shoutout to &lmurao.kun!
 Shoutout to &lbeb!
 Shoutout to &lJameslice!
-Shoutout to &lProbablyEkho!
+Shoutout to &ljaybees!
+Shoutout to &lWaterOre!
 Shoutout to &lAkhillLikesMinecraft!
+Shoutout to &lculling!
+Shoutout to &lKelpiesaurus!
+Shoutout to &lVazkii!
+Shoutout to &lFreshah!
+Shoutout to &lmurao.kun!
 Shoutout to &lZeera the Zesty!
 Shoutout to &lThe Bottom Dweller!
 Shoutout to &lWestoro!
@@ -1188,10 +1249,11 @@ Shoutout to &lCosmonautic!
 Shoutout to &lIceMcFall!
 Shoutout to &lMisty Rio Strider!
 Shoutout to &lChef's Delights!
+Shoutout to &lSonicBoss1991!
 Shoutout to &lPalm!
 Shoutout to &lScrap Sorra!
 Shoutout to &lSpncr!
 Shoutout to &lThe Sonic Hangout!
 Shoutout to &lthe RF Discord server!
 234 mods!
-&oThis splash has a 1 in 1197 chance of showing up!
+&oThis splash has a 1 in 1204 chance of showing up!

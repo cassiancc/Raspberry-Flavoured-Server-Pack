@@ -52,16 +52,168 @@
           "type": "minecraft:item",
           "functions": [
             {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:jungle\", targetBiomeColor: 2274816, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:bamboo_jungle\", targetBiomeColor: 4055575, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:savanna\", targetBiomeColor: 10200418, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:desert\", targetBiomeColor: 13416782, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:swamp\", targetBiomeColor: 2242319, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:mangrove_swamp\", targetBiomeColor: 3880719, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:ice_spikes\", targetBiomeColor: 8381695, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"minecraft:taiga\", targetBiomeColor: 1724967, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"environmental:blossom_woods\", targetBiomeColor: 16745114, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"environmental:blossom_valleys\", targetBiomeColor: 13657738, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"atmospheric:rainforest\", targetBiomeColor: 3407985, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{targetBiome:\"atmospheric:dunes\", targetBiomeColor: 15767630, targetBiomeUnderground: 0b}"
+            }
+          ],
+          "name": "quark:pathfinders_quill"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 2
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 3.0
+                "max": 4.0,
+                "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:map"
+          "name": "supplementaries:antique_ink"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 8.0,
+                "min": 4.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:map",
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -86,8 +238,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 2.0
+                "max": 6.0,
+                "min": 3.0
               },
               "function": "minecraft:set_count"
             }
@@ -102,30 +254,14 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
+                "max": 8.0,
+                "min": 4.0
               },
               "function": "minecraft:set_count"
             }
           ],
           "name": "minecraft:ink_sac",
-          "weight": 7
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 5
+          "weight": 8
         },
         {
           "type": "minecraft:item",
@@ -140,8 +276,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "supplementaries:antique_ink",
-          "weight": 2
+          "name": "minecraft:book",
+          "weight": 5
         }
       ],
       "rolls": 3.0

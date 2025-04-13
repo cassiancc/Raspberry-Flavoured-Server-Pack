@@ -5,6 +5,7 @@ ItemEvents.tooltip(event => {
 		if (!event.shift) {
 			text.add([Text.of('Respiration').gray()])
 			text.add([Text.of('Depth Strider').gray()])
+			text.add([Text.of('Amphibious').gray()])
 		} else {
 			text.add([Text.of('Respiration').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
@@ -16,6 +17,12 @@ ItemEvents.tooltip(event => {
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Boots').gray()])
 			text.add([Text.of('Increases underwater movement speed.').darkGray()])
+			
+			text.add([Text.of('Amphibious').gray().underlined()])
+			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I').gray()])
+			text.add([Text.of('Applied to: ').darkGray(), Text.of('Collar Tag').gray()])
+			text.add([Text.of('Allows non-aquatic pets to swim').darkGray()])
+			text.add([Text.of('and breathe underwater.').darkGray()])
 		}
 	})
 	
@@ -23,6 +30,7 @@ ItemEvents.tooltip(event => {
 		if (!event.shift) {
 			text.add([Text.of('Cavalier').gray()])
 			text.add([Text.of('Multi-Leap').gray()])
+			text.add([Text.of('Intimidation').gray()])
 		} else {
 			text.add([Text.of('Cavalier').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
@@ -34,6 +42,12 @@ ItemEvents.tooltip(event => {
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Leggings').gray()])
 			text.add([Text.of('Allows the wearer to perform').darkGray()])
 			text.add([Text.of('an extra jump mid-air per level.').darkGray()])
+			
+			text.add([Text.of('Intimidation').gray().underlined()])
+			text.add([Text.of('Max. Level: ').darkGray(), Text.of('II').gray()])
+			text.add([Text.of('Applied to: ').darkGray(), Text.of('Collar Tag').gray()])
+			text.add([Text.of('Pet will occasionally scare away').darkGray()])
+			text.add([Text.of('hostile mobs.').darkGray()])
 		}
 	})
 	
@@ -65,13 +79,20 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('kubejs:enduring_tablet', (item, advanced, text) => {
 		if (!event.shift) {
 			text.add([Text.of('Vitality').gray()])
+			text.add([Text.of('Life Force').gray()])
 		} else {
 			text.add([Text.of('Vitality').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('II').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Armor').gray()])
 			text.add([Text.of('Increases maximum health of the wearer').darkGray()])
-			text.add([Text.of('by one heart per level.').darkGray()])
+			text.add([Text.of('by 2 per level.').darkGray()])
 			text.add([Text.of('Increases durability damage taken by the armor.').darkGray()])
+			
+			text.add([Text.of('Life Force').gray().underlined()])
+			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
+			text.add([Text.of('Applied to: ').darkGray(), Text.of('Collar Tag').gray()])
+			text.add([Text.of('Increases pet\'s maximum health').darkGray()])
+			text.add([Text.of('by 10 per level.').darkGray()])
 		}
 	})
 	
@@ -90,6 +111,7 @@ ItemEvents.tooltip(event => {
 		if (!event.shift) {
 			text.add([Text.of('Launch').gray()])
 			text.add([Text.of('Volley').gray()])
+			text.add([Text.of('Deflection').gray()])
 		} else {
 			text.add([Text.of('Launch').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('II').gray()])
@@ -97,21 +119,33 @@ ItemEvents.tooltip(event => {
 			text.add([Text.of('Launches target upwards upon strike.').darkGray()])
 			
 			text.add([Text.of('Volley').gray().underlined()])
-			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I - III').gray()])
+			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Bow, Crossbow').gray()])
 			text.add([Text.of('Increases amount of arrows shot.').darkGray()])
+			
+			text.add([Text.of('Deflection').gray().underlined()])
+			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I').gray()])
+			text.add([Text.of('Applied to: ').darkGray(), Text.of('Collar Tag').gray()])
+			text.add([Text.of('Pet deflects projectiles.').darkGray()])
 		}
 	})
 	
-	event.addAdvanced('kubejs:frost_tablet', (item, advanced, text) => {
+	event.addAdvanced('kubejs:glacial_tablet', (item, advanced, text) => {
 		if (!event.shift) {
 			text.add([Text.of('Frost Walker').gray()])
+			text.add([Text.of('Frost Fang').gray()])
 		} else {
 			text.add([Text.of('Frost Walker').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('IV').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Boots, Horse Armor').gray()])
 			text.add([Text.of('Freezes the surface of water').darkGray()])
 			text.add([Text.of('the wearer walks over.').darkGray()])
+			
+			text.add([Text.of('Frost Fang').gray().underlined()])
+			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I').gray()])
+			text.add([Text.of('Applied to: ').darkGray(), Text.of('Collar Tag').gray()])
+			text.add([Text.of('Pet deals freezing damage when').darkGray()])
+			text.add([Text.of('attacking and slows targets.').darkGray()])
 		}
 	})
 	
@@ -144,6 +178,7 @@ ItemEvents.tooltip(event => {
 		if (!event.shift) {
 			text.add([Text.of('Soul Chaser').gray()])
 			text.add([Text.of('Soul Speed').gray()])
+			text.add([Text.of('Spirit Seal').gray()])
 		} else {
 			text.add([Text.of('Soul Chaser').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I').gray()])
@@ -154,6 +189,13 @@ ItemEvents.tooltip(event => {
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Boots').gray()])
 			text.add([Text.of('Increases movement speed on soul infused blocks.').darkGray()])
+			
+			text.add([Text.of('Spirit Seal').gray().underlined()])
+			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I').gray()])
+			text.add([Text.of('Applied to: ').darkGray(), Text.of('Collar Tag').gray()])
+			text.add([Text.of('Pet will be sealed in a soul box').darkGray()])
+			text.add([Text.of('when on low health, preventing its death').darkGray()])
+			text.add([Text.of('until freed by its owner.').darkGray()])
 		}
 	})
 	
@@ -205,6 +247,7 @@ ItemEvents.tooltip(event => {
 		if (!event.shift) {
 			text.add([Text.of('Stasis').gray()])
 			text.add([Text.of('Displacement').gray()])
+			text.add([Text.of('Tether Warp').gray()])
 		} else {
 			text.add([Text.of('Stasis').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I').gray()])
@@ -217,6 +260,12 @@ ItemEvents.tooltip(event => {
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Chestplate').gray()])
 			text.add([Text.of('Causes attackers to randomly teleport around.').darkGray()])
+			
+			text.add([Text.of('Tether Warp').gray().underlined()])
+			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I').gray()])
+			text.add([Text.of('Applied to: ').darkGray(), Text.of('Collar Tag').gray()])
+			text.add([Text.of('Following pets will teleport with their owner').darkGray()])
+			text.add([Text.of('through portals and when using exopearls.').darkGray()])
 		}
 	})
 	
@@ -244,14 +293,14 @@ ItemEvents.tooltip(event => {
 			text.add([Text.of('Reach').gray()])
 		} else {
 			text.add([Text.of('Reeling').gray().underlined()])
-			text.add([Text.of('Max. Level: ').darkGray(), Text.of('II - III').gray()])
+			text.add([Text.of('Max. Level: ').darkGray(), Text.of('II').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Crossbow').gray()])
 			text.add([Text.of('Allows crossbow projectiles to').darkGray()])
 			text.add([Text.of('pull struck targets closer.').darkGray()])
 			
 			text.add([Text.of('Reach').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
-			text.add([Text.of('Applied to: ').darkGray(), Text.of('Chestplates').gray()])
+			text.add([Text.of('Applied to: ').darkGray(), Text.of('Chestplate').gray()])
 			text.add([Text.of('Allows the wearer to reach further.').darkGray()])
 		}
 	})
@@ -260,6 +309,7 @@ ItemEvents.tooltip(event => {
 		if (!event.shift) {
 			text.add([Text.of('Backstabbing').gray()])
 			text.add([Text.of('Swift Sneak').gray()])
+			text.add([Text.of('Docility').gray()])
 		} else {
 			text.add([Text.of('Backstabbing').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
@@ -271,6 +321,12 @@ ItemEvents.tooltip(event => {
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Leggings').gray()])
 			text.add([Text.of('Increases movement speed while sneaking.').darkGray()])
+			
+			text.add([Text.of('Docility').gray().underlined()])
+			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I').gray()])
+			text.add([Text.of('Applied to: ').darkGray(), Text.of('Collar Tag').gray()])
+			text.add([Text.of('Pet will make no sounds and').darkGray()])
+			text.add([Text.of('cause no vibrations.').darkGray()])
 		}
 	})
 	
@@ -286,7 +342,7 @@ ItemEvents.tooltip(event => {
 			
 			text.add([Text.of('Quick Draw').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I - III').gray()])
-			text.add([Text.of('Applied to: ').darkGray(), Text.of('Ranged Weapons').gray()])
+			text.add([Text.of('Applied to: ').darkGray(), Text.of('Bow, Crossbow, Slingshot').gray()])
 			text.add([Text.of('Increases draw speed.').darkGray()])
 		}
 	})

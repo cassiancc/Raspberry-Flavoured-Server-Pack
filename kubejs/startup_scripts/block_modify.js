@@ -81,7 +81,7 @@ BlockEvents.modification(event => {
 	breakFast('create:deepslate_pillar', 2.0)
 	breakFast('quark:deepslate_furnace', 2.0)
 	breakFast('supplementaries:deepslate_lamp', 2.0)
-	breakFast('minecraft:budding_amethyst', 10)
+	breakFast('minecraft:budding_amethyst', 5)
 	breakFast('supplementaries:skull_pile', 0.5)
 	breakFast('minecraft:clay', 0.3)
 	breakFast('minecraft:gravel', 0.3)
@@ -136,6 +136,7 @@ BlockEvents.modification(event => {
 	breakFast('kubejs:eggplant_parmesan_block', 0.5)
 	breakFast('kubejs:butterscotch_cinnamon_pie', 0.5)
 	breakFast('kubejs:prickly_pear_pie', 0.5)
+	breakFast('kubejs:pumpkin_pie', 0.5)
 	breakFast('ecologics:seashell', 0)
 	breakFast('spelunkery:magnetite', 16.0)
 	breakFast('minecraft:campfire', 1.0)
@@ -185,8 +186,6 @@ BlockEvents.modification(event => {
 	breakFast('naturalist:bear', 0.35)
 	breakFast('minecraft:mushroom_stem', 1)
 	breakFast('quark:glow_shroom_stem', 1)
-	breakFast('spelunkery:rock_salt_block', 1.5)
-	breakFast('spelunkery:rock_salt', 1.5)
 	breakFast('minecraft:spawner', 10.0)
 	breakFast('minecraft:cobweb', 2.0)
 	breakFast('farmersdelight:organic_compost', 0.5)
@@ -205,6 +204,20 @@ BlockEvents.modification(event => {
 	breakFast('supplementaries:ash_bricks_slab', 2)
 	breakFast('supplementaries:ash_bricks_wall', 2)
 	breakFast('supplementaries:ash_bricks_stairs', 2)
+	breakFast('architects_palette:sunmetal_block', 3) 
+	breakFast('architects_palette:sunmetal_slab', 3) 
+	breakFast('architects_palette:sunmetal_stairs', 3) 
+	breakFast('architects_palette:chiseled_sunmetal_block', 3) 
+	breakFast('architects_palette:sunmetal_pillar', 3) 
+	breakFast('architects_palette:sunmetal_bars', 3)
+	breakFast('supplementaries:netherite_door', 5)
+	breakFast('supplementaries:netherite_trapdoor', 5)
+	breakFast('supplementaries:doormat', 0.3)
+	breakFast('farmersdelight:half_tatami_mat', 0.3)
+	breakFast('farmersdelight:full_tatami_mat', 0.3)
+	breakFast('twigs:bamboo_mat', 0.3)
+	breakFast('twigs:bamboo_thatch', 0.5)
+	breakFast('twigs:bamboo_thatch_slab', 0.5)
 	
 	breakFast('minecraft:player_head', 0.5)
 	breakFast('minecraft:player_wall_head', 0.5)
@@ -237,6 +250,16 @@ BlockEvents.modification(event => {
 // Set block explosion resistance
 	howExplode('minecraft:end_stone', 0.5)
 	howExplode('kubejs:sturdy_blackstone', 11)
+	howExplode('architects_palette:sunmetal_block', 6) 
+	howExplode('architects_palette:sunmetal_slab', 6) 
+	howExplode('architects_palette:sunmetal_stairs', 6) 
+	howExplode('architects_palette:chiseled_sunmetal_block', 6) 
+	howExplode('architects_palette:sunmetal_pillar', 6) 
+	howExplode('architects_palette:sunmetal_bars', 6)
+	howExplode('supplementaries:netherite_door', 5)
+	howExplode('supplementaries:netherite_trapdoor', 5)
+	howExplode('twigs:bamboo_thatch', 0.5)
+	howExplode('twigs:bamboo_thatch_slab', 0.5)
 	
 // Set exolite blocks' destroy speed
 	event.modify([
@@ -319,7 +342,16 @@ BlockEvents.modification(event => {
 	'woodworks:sawmill',
 	'ecologics:pot',
 	'aquaculture:tackle_box',
-	'supplementaries:safe'
+	'supplementaries:safe',
+	'quark:red_crystal_lamp',
+	'quark:orange_crystal_lamp',
+	'quark:yellow_crystal_lamp',
+	'quark:green_crystal_lamp',
+	'quark:blue_crystal_lamp',
+	'quark:indigo_crystal_lamp',
+	'quark:violet_crystal_lamp',
+	'quark:white_crystal_lamp',
+	'quark:black_crystal_lamp'
 	], block => {block.requiresTool = false})
 	
 // Set blocks to require tool

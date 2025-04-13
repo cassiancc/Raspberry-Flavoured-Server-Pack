@@ -2,7 +2,7 @@
 
 JEIEvents.information(event => {
 	event.addItem('#raspberry_flavoured:campfires', 
-	['Campfire kindling can be lit by sneaking and right-clicking on one while holding two twigs in both hands, or by using a fire striker. Standing in close proximity of a lit campfire will grant the Comfort effect.'])
+	['Campfire kindling can be lit by sneaking and right-clicking on one while holding twigs in both hands, or by using a fire striker. Standing in close proximity of a lit campfire will grant the Comfort effect.'])
 	
 	event.addItem('#minecraft:beds', 
 	['A bed to sleep your troubles away. Sets your spawn point when right-clicked. Sleeping will not skip the night instantly.'])
@@ -85,7 +85,7 @@ JEIEvents.information(event => {
 	event.addItem(['minecraft:melon_seeds','minecraft:melon','minecraft:melon_slice'], 
 	['Watermelons can be found in jungles, rainforests and similar biomes. You\'ll need a knife to cut them up into slices.'])
 	
-	event.addItem(['minecraft:beetroot_seeds','farmersdelight:sandy_shrub', 'farmersdelight:beetroot_crate'], 
+	event.addItem(['minecraft:beetroot_seeds', 'farmersdelight:beetroot_crate'], 
 	['Beetroot can be commonly found as a wild plant in beach coasts.'])
 	
 	event.addItem(['farmersdelight:tomato_seeds', 'farmersdelight:tomato_crate'], 
@@ -119,7 +119,7 @@ JEIEvents.information(event => {
 	['Vanilla is found in savanna biomes. You might wanna use some shears when harvesting vanilla pods.'])
 	
 	event.addItem(['supplementaries:flax','supplementaries:flax_seeds', 'supplementaries:flax_block'], 
-	['Flax can be found in the wild in most biomes, and is used to make things like sacks, doormats and rope, or can be cut/ground into string.'])
+	['Flax can be found in the wild in most biomes, and is used to make things like sacks, doormats and rope, or can be cut/ground into string. Flax seeds are also an alternative to sunflowers as a source of cooking oil.'])
 	
 	event.addItem(['culturaldelights:eggplant_seeds','culturaldelights:eggplant','culturaldelights:eggplant_crate','culturaldelights:wild_eggplants'], 
 	['Eggplants are found somewhat sparsely in jungles.'])
@@ -127,8 +127,11 @@ JEIEvents.information(event => {
 	event.addItem(['culturaldelights:corn_kernels','culturaldelights:corn_cob','culturaldelights:corn_cob_crate','culturaldelights:wild_corn'], 
 	['Corn can be found scattered around in all plains-like biomes.'])
 	
-	event.addItem(['culturaldelights:avocado','culturaldelights:avocado_crate','culturaldelights:avocado_pit','culturaldelights:avocado_sapling'], 
+	event.addItem(['#culturaldelights:avocados','culturaldelights:avocado_crate','culturaldelights:avocado_pit','culturaldelights:avocado_sapling','culturaldelights:fruiting_avocado_leaves'], 
 	['Avocados can be found growing on avocado trees in jungles.'])
+	
+	event.addItem(['cookscollection:lemon','cookscollection:lemon_crate','cookscollection:lemon_sapling','cookscollection:fruiting_lemon_leaves'], 
+	['Lemons can be found growing on lemon trees in savannas.'])
 	
 	event.addItem(['environmental:truffle','environmental:buried_truffle','environmental:truffle_crate'], 
 	['After feeding a pig a golden carrot, it will lead you to some buried truffles, which you can dig to obtain... well, truffles.'])
@@ -172,11 +175,14 @@ JEIEvents.information(event => {
 	event.addItem(['spelunkery:magnetite', 'spelunkery:magnetite_chunk', 'spelunkery:raw_magnetite_nugget'], 
 	['Magnetite can be found near large iron veins deep underground. Deepslate iron ore will occasionally drop magnetite nuggets, and small magnetite geodes covered with obsidian will spawn around the Nether.'])
 	
+	event.addItem(['spelunkery:salt', 'spelunkery:salt_block', 'spelunkery:rock_salt', 'spelunkery:rock_salt_block'], 
+	['Rock salt can be found in mountainous biomes and crushed into salt, which is used as a cooking ingredient and will prevent undead mobs from walking over it when placed in a line. Placing dripstone below pointed dripstone with rock salt and water above it will eventually turn the dripstone into rock salt.'])
+	
 	event.addItem('minecraft:compass', 
 	['Compasses point towards the world\'s spawn point. If used on a lodestone, they will point towards the specific lodestone to which they were assigned. Right-clicking with a compass in hand will briefly display your latitude and longitude.'])
 	
 	event.addItem('minecraft:recovery_compass', 
-	['Recovery compasses point towards your last death point. Keep one at your base so you never lose track of your lost items!'])
+	['Recovery compasses point towards your last death point. You will also not lose them upon death.'])
 	
 	event.addItem('spelunkery:magnetic_compass', 
 	['Magnetic compasses always point towards north, unless there\'s interference being caused by nearby magnetite, in which case they will glow and point towards that magnetite chunk. Right-clicking with a magnetic compass in hand will briefly display your latitude and longitude, however if there\'s interference, it will display the coordinates of the interference\'s source instead.'])
@@ -208,7 +214,7 @@ JEIEvents.information(event => {
 	event.addItem('nethersdelight:hoglin_hide', 
 	['Some thick hide skinned off of a hoglin, which can be made into a trophy or cut into a bunch of leather. You\'ll need something lighter than a sword to get this off a hoglin...'])
 	
-	event.addItem(['#create:sandpaper', 'minecraft:grindstone', 'spelunkery:rough_cinnabar', 'spelunkery:rough_diamond', 'create:rose_quartz'], 
+	event.addItem(['#create:sandpaper', 'minecraft:grindstone', 'spelunkery:rough_cinnabar', 'spelunkery:rough_diamond'], 
 	['Sand paper and grindstones will allow you to polish rough gems. Sand paper can be used by looking at rough gems on the floor or by holding them in your offhand and holding right-click, while grindstones can simply be right-clicked with a rough gem in hand.'])
 	
 	event.addItem('spelunkery:item_magnet', 
@@ -254,7 +260,7 @@ JEIEvents.information(event => {
 	['Binding exopearls come in pairs and will allow you to easily locate and/or keep track of another player. Simply hand someone one of the two binding exopearls and this will bind you and them together, creating a particle trail leading towards each other whenever one of you two right-clicks with the item in hand.'])
 	
 	event.addItem('spelunkery:portal_fluid_bottle', 
-	['Bottled dimensional tears, obtained from crying obsidian or made in a super-heated mixer. Using this bottle on a valid obsidian portal frame will open a portal to the Nether - fire won\'t do the trick here! Drinking a bottle of dimensional tears also teleports you to your last set spawn point.'])
+	['A bottle of dimensional tears, obtained from either crying obsidian, by killing a witch or looting her hut, or made in a super-heated mixer. Using this bottle on a valid obsidian portal frame will open a portal to the Nether - fire won\'t do the trick here! Drinking a bottle of dimensional tears also teleports you to your last set spawn point.'])
 	
 	event.addItem('spelunkery:portal_fluid_bucket',
 	['A bucket of dimensional tears can be emptied into a cauldron then jumped into, which will also teleport you to your last spawn point and use up 1/3rd of the tears.'])
@@ -269,7 +275,7 @@ JEIEvents.information(event => {
 	['Soul beads can be acquired by killing vexes or wraiths, or by destroying spawners.'])
 	
 	event.addItem('kubejs:copper_brush', 
-	['Brushes will let you brush various animals for some drops, such as feathers from chickens and birds, or string from sheep and cats. After being brushed, animals can\'t be brushed again until some time has passed. Brushes can also be made into glue brushes and wax brushes.'])
+	['Brushes will let you brush various animals for some drops, such as feathers from chickens, or string from sheep. After being brushed, animals can\'t be brushed again until some time has passed. Brushes can also be made into glue brushes and wax brushes.'])
 	
 	event.addItem('kubejs:copper_brush_wax',
 	['Wax brushes are very similar to glue brushes - though instead of gluing blocks, they will allow you to bulk wax blocks, creating an area to wax when right-clicked, which can be confirmed by right-clicking again or discarded by right-clicking while sneaking.'])
@@ -289,11 +295,11 @@ JEIEvents.information(event => {
 	event.addItem('savage_and_ravage:creeper_spores', 
 	['Creeper spores drop from creepers when they\'re killed by explosions. They can be used in various recipes, or thrown to create a small spore cloud that spawns creepies which will fight for you.'])
 	
-	event.addItem(['spelunkery:rock_salt_block', 'spelunkery:rock_salt', 'kubejs:soul_salt'],
-	['Soul crystals can be found under ceilings in soul sand valleys (and can be obtained by crushing soul beads). They can be crushed into soul salt, which can be used to cure rotten flesh into leather and is also used in some foods.'])
-	
 	event.addItem('naturalist:glow_goop', 
 	['Glow goop drops from fireflies and can also be obtained by smelting glow berries. Up to 3 glow goop can be placed in one spot, which will provide an invisible light source - as long as you\'re not holding glow goop in your hand, that is.'])
+	
+	event.addItem(['aquaculture:tackle_box', 'aquaculture:iron_fishing_rod'], 
+	['Tackle boxes will let you customize reinforced fishing rods, allowing you to attach hooks, baits, fishing lines and bobbers to them. Reinforced fishing rods do not require any of these to be attached in order to work, but they will provide some neat utilities.'])
 	
 	event.addItem('#raspberry_flavoured:hooks', 
 	['Hooks can be equipped to reinforced fishing rods in a tackle box. Each hook will have a unique effect on your fishing experience.'])
@@ -320,10 +326,19 @@ JEIEvents.information(event => {
 	['Brown bears and yaks can be sheared for their fur or hair, though beware: this will make them hostile towards you!'])
 	
 	event.addItem('kubejs:stardust', 
-	['Stardust is a powerful crafting ingredient obtained by crushing Nether Stars. It is a universal repair material, meaning it can be used to repair any item with durability - it can also be used to forge Everlasting Tablets.'])
+	['Stardust is a powerful crafting ingredient obtained by crushing Nether Stars. It is a universal repair material, meaning it can be used to repair any item with durability. Stardust is also required to forge Everlasting Tablets.'])
 	
 	event.addItem('minecraft:echo_shard', 
 	['Echo shards can be obtained by harvesting sculk sensors, or found in ancient city chests.'])
+	
+	event.addItem('domesticationinnovation:wayward_lantern', 
+	['Wayward lanterns allow pets that have unloaded from the world to teleport to them, so that you won\'t lose your pets if you\'ve ventured out far into the world. They also make good street lights!'])
+	
+	event.addItem('domesticationinnovation:collar_tag', 
+	['Collar tags can be used to rename pets, but they can also have unique enchantments applied to them which will grant your pets various benefits.'])
+	
+	event.addItem('domesticationinnovation:deed_of_ownership', 
+	['Using a deed of ownership on a pet will bind it to the deed, and when that deed is passed over to another player, they can right-click the pet with the deed to transfer its ownership to them.'])
 
 // Liquid to stone interactions	
 	// Stone & deepslate
@@ -355,7 +370,7 @@ JEIEvents.information(event => {
 	['Lava flowing next to water over packed mud will create dripstone.'])
 	
 	// Calcite
-	event.addItem(['minecraft:water_bucket', 'minecraft:lava_bucket', 'minecraft:bone_block', 'minecraft:calite'],
+	event.addItem(['minecraft:water_bucket', 'minecraft:lava_bucket', 'minecraft:bone_block', 'minecraft:calcite'],
 	['Lava flowing next to water over bone blocks will create calcite.'])
 	
 	// Tuff
@@ -379,8 +394,8 @@ JEIEvents.information(event => {
 	['Lava flowing next to water over patina blocks will create veridium.'])
 	
 	// Limestone
-	event.addItem(['kubejs:cake_batter_bucket', 'minecraft:lava_bucket', 'create:limestone'],
-	['Lava flowing next to cake batter will create limestone.'])
+	event.addItem(['kubejs:batter_bucket', 'minecraft:lava_bucket', 'create:limestone'],
+	['Lava flowing next to batter will create limestone.'])
 	
 	// Scoria
 	event.addItem(['create:chocolate_bucket', 'minecraft:lava_bucket', 'create:scoria'],

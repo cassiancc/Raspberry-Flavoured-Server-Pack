@@ -65,7 +65,7 @@
 	},
 	"renderVanillaWeather": false,
 	"tickVanillaWeather": false,
-	"biomeTint": false,
+	"biomeTint": true,
 	"tintMix": 100,
 	"spawnAboveClouds": false,
 	"cloudHeight": 191,

@@ -16,7 +16,7 @@
     "announce_to_chat": true,
     "description": {
       "color": "#CE3131",
-      "text": "Craft a sack to carry up to 12 extra slots of items"
+      "text": "Obtain a sack to carry up to 12 extra slots of items"
     },
     "frame": "task",
     "hidden": false,

@@ -1,6 +1,6 @@
 name = "Client Crafting"
 filename = "clientcrafting-1.19.2-1.6.jar"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"

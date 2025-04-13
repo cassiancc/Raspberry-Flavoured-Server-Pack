@@ -18,7 +18,7 @@
     "announce_to_chat": true,
     "description": {
       "color": "#C44E00",
-      "text": "Right-click on a sappy maple log with a glass bottle to obtain sap"
+      "text": "Right-click on a sappy maple log with a glass bottle to obtain sap - or find a bottle of it somewhere"
     },
     "frame": "task",
     "hidden": false,

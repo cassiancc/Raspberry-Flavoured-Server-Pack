@@ -339,7 +339,7 @@
 	"Skull Pikes" = true
 	"Seed Pouch" = false
 	Pickarang = true
-	"Pathfinder Maps" = false
+	"Pathfinder Maps" = true
 	"Parrot Eggs" = false
 	"Endermosh Music Disc" = false
 	"Color Runes" = true
@@ -1698,7 +1698,7 @@
 		"Disable Tripwire Hook Dupe" = true
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = ["minecraft:protection", "minecraft:fire_protection", "minecraft:blast_protection", "minecraft:feather_falling", "minecraft:aqua_affinity", "minecraft:fire_aspect", "minecraft:punch", "minecraft:thorns", "minecraft:looting", "minecraft:mending", "minecraft:infinity", "minecraft:flame", "minecraft:efficiency", "minecraft:fortune", "minecraft:power", "minecraft:sharpness", "minecraft:loyalty", "additionaladditions:precision", "additionaladditions:speed", "ensorcellation:magic_protection", "cofh_core:holding", "minecraft:unbreaking"]
+		"Enchantments To Begone" = ["minecraft:protection", "minecraft:fire_protection", "minecraft:blast_protection", "minecraft:feather_falling", "minecraft:aqua_affinity", "minecraft:fire_aspect", "minecraft:punch", "minecraft:thorns", "minecraft:looting", "minecraft:mending", "minecraft:infinity", "minecraft:flame", "minecraft:efficiency", "minecraft:fortune", "minecraft:power", "minecraft:sharpness", "minecraft:loyalty", "additionaladditions:precision", "additionaladditions:speed", "ensorcellation:magic_protection", "cofh_core:holding"]
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
@@ -1814,7 +1814,7 @@
 		#How long it takes for an item to cross a pipe. Bigger = slower.
 		"Pipe Speed" = 5
 		#Set to 0 if you don't want pipes to have a max amount of items
-		"Max Pipe Items" = 16
+		"Max Pipe Items" = 0
 		#When items eject or are absorbed by pipes, should they make sounds?
 		"Do Pipes Whoosh" = true
 		"Enable Encased Pipes" = true

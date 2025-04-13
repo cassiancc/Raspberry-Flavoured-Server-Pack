@@ -207,3 +207,12 @@ EntityEvents.hurt(event => {
 		event.entity.potionEffects.add('cofh_core:wrenched', 10, 9, false, false)
     }
 })
+
+EntityEvents.spawned(event => {
+	if (event.entity.type === 'ecologics:boat' || event.entity.type === 'ecologics:chest_boat') {
+		event.level.playSound(null, event.entity.x, event.entity.y, event.entity.z, 'minecraft:block.wood.place', 'players', 1, 1)
+	}
+	if (event.entity.type === 'oreganized:shrapnel_bomb_minecart') {
+		event.level.playSound(null, event.entity.x, event.entity.y, event.entity.z, 'minecraft:block.netherite_block.place', 'players', 1, 1.325)
+	}
+})

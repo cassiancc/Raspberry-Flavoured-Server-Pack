@@ -18,7 +18,7 @@
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "text": "Right-click on a latex jungle log/latex rosewood log with a glass bottle to obtain latex"
+      "text": "Right-click on a latex jungle log or latex rosewood log with a glass bottle to obtain latex - or find a bottle of it somewhere"
     },
     "frame": "task",
     "hidden": false,

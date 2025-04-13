@@ -31,6 +31,13 @@ ItemEvents.foodEaten('kubejs:sporedough', event =>{
 ItemEvents.foodEaten('create:blaze_cake', event =>{
 	event.player.setRemainingFireTicks(400)
 })
+ItemEvents.foodEaten('cookscollection:cooking_oil', event =>{
+	let rainCheck = event.level.isRaining()
+	let thunderCheck = event.level.isThundering()
+	if (rainCheck === true || thunderCheck === true) {
+		event.player.potionEffects.add('minecraft:levitation', 200, 0, true, false)
+	}
+})
 
 // Make custom BnC drinks apply increasing tipsy effect
 ItemEvents.foodEaten(['kubejs:soulstice_sake', 'kubejs:buzzing_bourbon'], event =>{
@@ -154,8 +161,7 @@ ItemEvents.foodEaten([
 	'kubejs:tambaqui_curry',
 	'kubejs:pollock_with_vegetables',
 	'kubejs:pasta_with_tuna',
-	'kubejs:rollmops',
-	'kubejs:fish_and_chips'
+	'kubejs:rollmops'
 	], event => {
 		if (!event.player.isCreative()) {
 			event.server.schedule(1, callback => {

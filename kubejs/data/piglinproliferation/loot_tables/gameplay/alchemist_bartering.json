@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "minecraft:strong_strength"
+              "id": "minecraft:strength"
             }
           ],
           "name": "minecraft:potion",
@@ -20,7 +20,7 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "minecraft:strong_healing"
+              "id": "minecraft:healing"
             }
           ],
           "name": "minecraft:potion",

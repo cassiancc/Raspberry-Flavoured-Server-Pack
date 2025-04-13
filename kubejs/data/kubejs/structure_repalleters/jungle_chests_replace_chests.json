@@ -1,7 +1,7 @@
 {
   "type": "blueprint:simple",
   "priority": "normal",
-  "replaces_block": "minecraft:ladder",
+  "replaces_block": "minecraft:chest",
   "replaces_with": "woodworks:jungle_chest",
   "selector": {
     "type": "names",

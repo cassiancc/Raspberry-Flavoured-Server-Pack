@@ -50,6 +50,8 @@ StartupEvents.registry('sound_event', (event) => {
 	event.create('sound.glowstone.place')
 	event.create('sound.workstation.break')
 	event.create('sound.workstation.place')
+	event.create('sound.small.break')
+	event.create('sound.small.place')
 	
 // Misc sounds
 	event.create('spawner.spawn')

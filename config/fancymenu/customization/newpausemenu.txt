@@ -207,7 +207,7 @@ customization {
 customization {
   identifier = %id=504330%
   action = setbuttondescription
-  description = Open to Lan / Player Reporting
+  description = Open to LAN / Player Reporting
 }
 
 customization {

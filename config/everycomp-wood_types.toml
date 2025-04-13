@@ -49,6 +49,10 @@
 			willow = true
 			cherry = true
 
+		[types.leaves_type.cookscollection]
+			lemon = true
+			fruiting_lemon = true
+
 	[types.wood_type]
 
 		[types.wood_type.quark]

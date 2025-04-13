@@ -1,3 +1,0 @@
-modname:echochest
-
-modellist:id=%echo_chest

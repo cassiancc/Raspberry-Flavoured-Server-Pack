@@ -7,7 +7,8 @@ let excluded=[
   /architects_palette:.*nub/,
   /twigs:.*pillar/,
   /vertical_slab/,
-  /friendsandfoes/
+  /friendsandfoes/,
+  /alloyed/
 ]
 
 ServerEvents.recipes(event=>{

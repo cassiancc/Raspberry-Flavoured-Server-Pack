@@ -73,12 +73,12 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "Obtain Frost Tablet": {
+    "Obtain Glacial Tablet": {
       "conditions": {
         "items": [
           {
             "items": [
-              "kubejs:frost_tablet"
+              "kubejs:glacial_tablet"
             ]
           }
         ]
@@ -186,7 +186,7 @@
         "items": [
           {
             "items": [
-              "kubejs:cyclic_tablet"
+              "kubejs:swift_tablet"
             ]
           }
         ]
@@ -234,7 +234,7 @@
       "Obtain Flinging Tablet"
     ],
     [
-      "Obtain Frost Tablet"
+      "Obtain Glacial Tablet"
     ],
     [
       "Obtain Hallowed Tablet"

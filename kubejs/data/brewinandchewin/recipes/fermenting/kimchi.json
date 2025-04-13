@@ -1,7 +1,7 @@
 {
   "type": "brewinandchewin:fermenting",
   "experience": 0.5,
-  "fermentingtime": 750,
+  "fermentingtime": 1200,
   "ingredients": [
     {
       "tag": "forge:crops/cabbage"
@@ -13,7 +13,7 @@
       "tag": "forge:vegetables"
     },
     {
-      "item": "kubejs:soul_salt"
+      "item": "spelunkery:salt"
     }
   ],
   "recipe_book_tab": "misc",

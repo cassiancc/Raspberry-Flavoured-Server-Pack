@@ -1,5 +1,5 @@
 {
-  "parent": "raspberryflavoured:cutting_board",
+  "parent": "raspberryflavoured:oven",
   "criteria": {
     "0": {
       "conditions": {

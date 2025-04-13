@@ -34,7 +34,7 @@ let outputTypes = [
   ["log",1,"WOOD_cabinet",["farmersdelight:","MOD:","abnormals_delight:","everycomp:fd/MOD/"]],
   
   //this bit's nice. no conficts here!
-  ["log",2,"WOOD_drawer",["another_furniture:","everycomp:af/MOD/"]],
+  ["log",1,"WOOD_drawer",["another_furniture:","everycomp:af/MOD/"]],
   ["log",2,"WOOD_table",["another_furniture:","everycomp:af/MOD/"]],
   ["log",4,"WOOD_shutter",["another_furniture:","everycomp:af/MOD/"]],
   ["log",4,"WOOD_shelf",["another_furniture:","everycomp:af/MOD/"]],

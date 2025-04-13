@@ -129,6 +129,28 @@ to make editing this file much easier.
 	    				"age": "3"
 	    			}
 	    		}
+	    	},
+			{
+	    		"new": {
+	    			"Name": "farmersdelight:sandy_shrub"
+	    		},
+	    		"old": {
+	    			"Name": "upgrade_aquatic:tall_beachgrass",
+	    			"Properties": {
+	    				"half": "lower"
+	    			}
+	    		}
+	    	},
+			{
+	    		"new": {
+	    			"Name": "minecraft:air"
+	    		},
+	    		"old": {
+	    			"Name": "upgrade_aquatic:tall_beachgrass",
+	    			"Properties": {
+	    				"half": "upper"
+	    			}
+	    		}
 	    	}
 	],
 	/* A map of blocks that specifies what the "old" block is and what its "new" block is.
@@ -140,6 +162,7 @@ to make editing this file much easier.
 	*/
 	"swapper": {
 	   		"farmersdelight:rope": "supplementaries:rope",
+	   		"upgrade_aquatic:beachgrass": "farmersdelight:sandy_shrub",
 	   		"mynethersdelight:letios_compost": "farmersdelight:organic_compost",
 	   		"mynethersdelight:resurgent_soil": "farmersdelight:rich_soil",
 	   		"mynethersdelight:resurgent_soil_farmland": "farmersdelight:rich_soil_farmland",
@@ -166,7 +189,6 @@ to make editing this file much easier.
 			"windswept:holly_hedge": "quark:spruce_hedge",
 			"windswept:holly_leaf_pile": "woodworks:spruce_leaf_pile",
 			"ecologics:flowering_azalea_log": "ecologics:azalea_log",
-			"ecologics:thin_ice": "minecraft:ice",
 			"miners_delight:wild_cave_carrots": "minecraft:air",
 			"miners_delight:gossypium": "minecraft:air",
 			"brewinandchewin:unripe_flaxen_cheese_wheel": "brewinandchewin:flaxen_cheese_wheel",
@@ -296,6 +318,21 @@ to make editing this file much easier.
 			"friendsandfoes:waxed_weathered_lightning_rod": "caverns_and_chasms:waxed_weathered_lightning_rod",
 			"friendsandfoes:waxed_oxidized_lightning_rod": "caverns_and_chasms:waxed_oxidized_lightning_rod",
 			"kubejs:deepslate_gravel": "raspberry:deepslate_gravel",
-			"kubejs:blackstone_gravel": "raspberry:blackstone_gravel"
+			"kubejs:blackstone_gravel": "raspberry:blackstone_gravel",
+			"quark:white_stool": "another_furniture:white_stool",
+			"create:rose_quartz_block": "minecraft:amethyst_block",
+			"create:rose_quartz_tiles": "sullysmod:polished_jade_tiles",
+			"create:small_rose_quartz_tiles": "sullysmod:polished_jade_shingles",
+			"alloyed:bronze_block": "kubejs:bronze_block",
+			"alloyed:exposed_bronze_block": "kubejs:bronze_block",
+			"alloyed:weathered_bronze_block": "kubejs:bronze_block",
+			"alloyed:oxidized_bronze_block": "kubejs:bronze_block",
+			"alloyed:waxed_bronze_block": "kubejs:bronze_block",
+			"alloyed:waxed_exposed_bronze_block": "kubejs:bronze_block",
+			"alloyed:waxed_weathered_bronze_block": "kubejs:bronze_block",
+			"alloyed:waxed_oxidized_bronze_block": "kubejs:bronze_block",
+			"cookscollection:salted_dripstone_block": "minecraft:dripstone_block",
+			"cookscollection:lemon_log": "minecraft:oak_log",
+			"cookscollection:lemon_wood": "minecraft:oak_wood"
 	   	}
 }

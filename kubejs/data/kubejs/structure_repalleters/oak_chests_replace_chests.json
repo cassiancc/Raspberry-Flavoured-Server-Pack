@@ -8,10 +8,7 @@
     "config": [
       "bettermineshafts:mineshaft_dripstone",
       "bettermineshafts:mineshaft_oak",
-      "bettermineshafts:mineshaft_overgrown",
-      "betterdungeons:skeleton_dungeon",
-      "betterdungeons:small_dungeon",
-      "betterdungeons:zombie_dungeon"
+      "bettermineshafts:mineshaft_overgrown"
     ]
   }
 }
