@@ -3237,6 +3237,470 @@ file = "config/xray/block_store.json"
 hash = "9a41b3813469f1b369b0e70ca81573be32dce11dc4469e955a48cc524a2673e6"
 
 [[files]]
+file = "dynmap/renderdata/README"
+hash = "abc0e67d2e376e4ba00a31deea488b091221132c9a073e94ecd3ece41b657e00"
+
+[[files]]
+file = "dynmap/renderdata/abnormals_delight-models.txt"
+hash = "89f20dd0762c761862c38eaec32d216fa56644b108b3c02ac12ddc7af0f817ab"
+
+[[files]]
+file = "dynmap/renderdata/abnormals_delight-texture.txt"
+hash = "db4181c6e1e8671e99c5ac6cf5bb14374777371bc445aedadae35a94274594fe"
+
+[[files]]
+file = "dynmap/renderdata/additionaladditions-models.txt"
+hash = "5f7b12f8152e0233b9e44314b44001e25113b5bf4e4e3902ae4d985253b5c5f4"
+
+[[files]]
+file = "dynmap/renderdata/additionaladditions-texture.txt"
+hash = "33dd1beda599002449ecbf600363a9b48bb5f539e54dd152d7752f42c5359bdc"
+
+[[files]]
+file = "dynmap/renderdata/alloyed-models.txt"
+hash = "91efb44a6b362763f7fc1da02b1876d038bbfb070bea0965c38110e691dc92b4"
+
+[[files]]
+file = "dynmap/renderdata/alloyed-texture.txt"
+hash = "456789964990a295d1d94b05cc09a62fd9ec1d7f29726bc50d8cf0139317e822"
+
+[[files]]
+file = "dynmap/renderdata/another_furniture-models.txt"
+hash = "2c019589cf0a3439c8d946c28334334d204b7afa653b2cabefe155051827f567"
+
+[[files]]
+file = "dynmap/renderdata/another_furniture-texture.txt"
+hash = "5c181786cc33431deec25636f6fade8e52154f10660c2a40695e1687c7f371bf"
+
+[[files]]
+file = "dynmap/renderdata/architects_palette-models.txt"
+hash = "feb059418c970c0dc6ee4877c4c321b751774bb722cb86df760070b6c0e38664"
+
+[[files]]
+file = "dynmap/renderdata/architects_palette-texture.txt"
+hash = "be1136bfc1bf341c4ffcf093ef66e7d45f36c38c1ac5769354b26e8f2ef7d93f"
+
+[[files]]
+file = "dynmap/renderdata/atmospheric-models.txt"
+hash = "2b953f71bb19d0c101bc0b8d504d5c3b48f748a36e9449326e59f3ac342a7393"
+
+[[files]]
+file = "dynmap/renderdata/atmospheric-texture.txt"
+hash = "54d2d30b7486cecce32b1b30180814893f6a47b2acf308dd052c60aa3ddbe5b1"
+
+[[files]]
+file = "dynmap/renderdata/autumnity-models.txt"
+hash = "c8a5b58f0899c1f1e3f60113d323cdafba8570f0f4e5f32c345d8a814c73955c"
+
+[[files]]
+file = "dynmap/renderdata/autumnity-texture.txt"
+hash = "cf75ccb33f077abad9ee8e675a76e8b0161920c3572ae1e973ae0a84bb2d5804"
+
+[[files]]
+file = "dynmap/renderdata/berry_good-models.txt"
+hash = "73d9ed2b74ed02d064a926568e3bdc0eaa9ee7cdcf78cec4831f2addafee23ae"
+
+[[files]]
+file = "dynmap/renderdata/berry_good-texture.txt"
+hash = "5a48a62dba87286f0fd59f4c6adc310b82d11b50c927f290acdd30400f11d540"
+
+[[files]]
+file = "dynmap/renderdata/brewinandchewin-models.txt"
+hash = "253ca8273dd62484268f00ac847366f1304d30ecf049973614f5fef2b6d0f829"
+
+[[files]]
+file = "dynmap/renderdata/brewinandchewin-texture.txt"
+hash = "aa84317d05473d6cad31d6d2beffb9fb5225aa1770ce5d3399fb7fbb8301b31a"
+
+[[files]]
+file = "dynmap/renderdata/buzzier_bees-models.txt"
+hash = "618e3b3f5592df32a32fcfc15162ee0f224c74ca62f862515816e46d75c6071a"
+
+[[files]]
+file = "dynmap/renderdata/buzzier_bees-texture.txt"
+hash = "55734b73d128afe7ad77808a9d200672a0d26e23c0e0a0c9907018ff3b2201dd"
+
+[[files]]
+file = "dynmap/renderdata/caverns_and_chasms-models.txt"
+hash = "272a8e389229612931bb7ea9663b9322072d2cae624ea89a87d40dd56fccf634"
+
+[[files]]
+file = "dynmap/renderdata/caverns_and_chasms-texture.txt"
+hash = "7cb51ffa0a9de16c790efa3111fbc3bc8f4a273765149ba7496f9743682dac67"
+
+[[files]]
+file = "dynmap/renderdata/chalk-models.txt"
+hash = "b81c151e286f7131729cedda6f77d722720db148d37a2837929a87efb603ba02"
+
+[[files]]
+file = "dynmap/renderdata/chalk-texture.txt"
+hash = "d943c9f0fcd47ceb7e12432ee2e4f94b67b6f0aa07e28fb18ed396a0340174d4"
+
+[[files]]
+file = "dynmap/renderdata/citadel-models.txt"
+hash = "7b54bfb6dd2f83b7ebeafe65c53c8c8a6dc8fa3aaec9073ecf24e93a4bc22687"
+
+[[files]]
+file = "dynmap/renderdata/citadel-texture.txt"
+hash = "9cc5eabacd97e8d0ab4958f9e5917e44de62c950e1ab1218c850dce21c305d30"
+
+[[files]]
+file = "dynmap/renderdata/clayworks-models.txt"
+hash = "e148ceb201bc105b0594085f2e55a53767ecfc854bcfc63799567322a2bfaaa1"
+
+[[files]]
+file = "dynmap/renderdata/clayworks-texture.txt"
+hash = "d8eac75062ba25c6a187078785cc999e4f1f4bf828ca15f01db8d64f31c53a2e"
+
+[[files]]
+file = "dynmap/renderdata/cofh_core-texture.txt"
+hash = "0a8d1d2224c50bd19bb02d75e5c9200289839a15135ca8ddc3f4d6565b6029ed"
+
+[[files]]
+file = "dynmap/renderdata/copperandtuffbackport-models.txt"
+hash = "d7d1a2216500bdde4cbfcad4d4652cc247b976a2f718a3d93783b08b8cb728c4"
+
+[[files]]
+file = "dynmap/renderdata/copperandtuffbackport-texture.txt"
+hash = "2a7936df2f34aa877fa5e89b3c6546670c2193701c5467160dae2ac3844d8a1b"
+
+[[files]]
+file = "dynmap/renderdata/copperized-models.txt"
+hash = "b9b4864a3f5ddb07584721eae16fda223cbf68cac3facf17f9044d03d3efdd8e"
+
+[[files]]
+file = "dynmap/renderdata/copperized-texture.txt"
+hash = "1eaea9f2e9fd0e87f1756f256958ef88dc1dadf63a41b4c294a5e72d8e2a54ac"
+
+[[files]]
+file = "dynmap/renderdata/copycats-models.txt"
+hash = "55c70e1104df68a157612a7fbb09c7fa8deb83f68cea96ecee0788edc560e205"
+
+[[files]]
+file = "dynmap/renderdata/copycats-texture.txt"
+hash = "7da7e9f096d6d7490d378d220a41b4e5eee02677efff8dc51b01c98697f26d6b"
+
+[[files]]
+file = "dynmap/renderdata/create-models.txt"
+hash = "3919d45cb5fc928ad9629de1e9a4795cbbb393db4b4d14110fc52257d253ecf7"
+
+[[files]]
+file = "dynmap/renderdata/create-texture.txt"
+hash = "b7325790fb1f7ada0f7d4944bbfa1c61ad847dbbdbc4ecb6f4b5c0209fa7d408"
+
+[[files]]
+file = "dynmap/renderdata/create_central_kitchen-models.txt"
+hash = "95e9f1f496fde7920660b43c70b0d4dfb36f3a270a76ed9bfab605ca96d3027f"
+
+[[files]]
+file = "dynmap/renderdata/create_central_kitchen-texture.txt"
+hash = "31884da58a18c7289178e2da3a7e617b84fe19cff40463858e2b726bfc010a33"
+
+[[files]]
+file = "dynmap/renderdata/create_confectionery-models.txt"
+hash = "0e9a66a4beeb2bfc463cbc90752b9ab9b0d5ec9a3e6c39986b4242c6aa637ec9"
+
+[[files]]
+file = "dynmap/renderdata/create_confectionery-texture.txt"
+hash = "c5bd0651fd26da905a0d5973fc834fb8ccecdb1ef7e030bd744ea4fb00bec016"
+
+[[files]]
+file = "dynmap/renderdata/culturaldelights-models.txt"
+hash = "83535f15e5c7716b077615711dc761a3c9d09a7ea8e21e524dadd931aee87a39"
+
+[[files]]
+file = "dynmap/renderdata/culturaldelights-texture.txt"
+hash = "c893feb0a6d9294d504de05f7a6512a23143d6475ebf2d7dbbbb8988983b21d9"
+
+[[files]]
+file = "dynmap/renderdata/dolt_compat-models.txt"
+hash = "5f1509ed9cbaeb277d182040f169c0591048ad2e8ea8982a409eabf22258da40"
+
+[[files]]
+file = "dynmap/renderdata/dolt_compat-texture.txt"
+hash = "e13b34b938a4624ac574f8070284c88eb811e157444310ac4ace31931efffd95"
+
+[[files]]
+file = "dynmap/renderdata/dolt_mod_how-models.txt"
+hash = "3b3afdcbf9905fad2d595bad824e42550439b36bc546ee4d1247a6cfc005f6ec"
+
+[[files]]
+file = "dynmap/renderdata/dolt_mod_how-texture.txt"
+hash = "51b5fc33ad3722901f706e216d9e0dabeb276d62e601fd29739c687072d342d9"
+
+[[files]]
+file = "dynmap/renderdata/domesticationinnovation-models.txt"
+hash = "d0d4c00e1db669112105e1eae232dcacbed5e4b5705c18eccaa463e788f26a4d"
+
+[[files]]
+file = "dynmap/renderdata/domesticationinnovation-texture.txt"
+hash = "348b7b6b785ccd8a7220079c2a2609ad427e80f015bb5f872a46d0f7f4750e15"
+
+[[files]]
+file = "dynmap/renderdata/echochest-models.txt"
+hash = "fdcd5d9a44fdc70c484022574551b4fd092519ca839f243547cea4b3678ba63c"
+
+[[files]]
+file = "dynmap/renderdata/echochest-texture.txt"
+hash = "01eb7b68d0b228b92f43f09d79dec10cc725baeb3761cb7770516f56d9984f47"
+
+[[files]]
+file = "dynmap/renderdata/ecologics-models.txt"
+hash = "20ad9370bf5f811b5531af901c629081e2295f71efc7980e0ace5f1054d7cc50"
+
+[[files]]
+file = "dynmap/renderdata/ecologics-texture.txt"
+hash = "56dc853e8f97ca25c45498744f5241a1f66235069bba9c583db79692dffb3265"
+
+[[files]]
+file = "dynmap/renderdata/endergetic-models.txt"
+hash = "ee049058cc516de0ea9bcfa44f2955212382eb3b89ce3f4b73aed2fcfd7c9e70"
+
+[[files]]
+file = "dynmap/renderdata/endergetic-texture.txt"
+hash = "a31862eb37f0ed642f5a72268d9199e728ee4419479a4989e9709857d3e4fed4"
+
+[[files]]
+file = "dynmap/renderdata/environmental-models.txt"
+hash = "b66a2038a2ed0be6fe2e440bda85e8f60f89e893c14514fe67a458f97ccbd91a"
+
+[[files]]
+file = "dynmap/renderdata/environmental-texture.txt"
+hash = "14a24263ce29dc6aadbca7348b08d51caaeab5eabd1fc5e4bac9ce77de062866"
+
+[[files]]
+file = "dynmap/renderdata/etched-models.txt"
+hash = "6758b3563d9222aae7a65aa0e2ef2d6d6ffb2aec0fc9bdb392362de8793f805f"
+
+[[files]]
+file = "dynmap/renderdata/etched-texture.txt"
+hash = "810f6ec25524b335703e31fd5cd5056b167ef2bc078fe6dfb9df0743b4879d8a"
+
+[[files]]
+file = "dynmap/renderdata/exposure-models.txt"
+hash = "1875a4316b3e5c257ab0f6fc4ae3928e47edd7b4941ca2646a48bab1c1ec11d9"
+
+[[files]]
+file = "dynmap/renderdata/exposure-texture.txt"
+hash = "8eaa3b350f47db6609b860581d455de63507c8dfdbed81064d60223469738532"
+
+[[files]]
+file = "dynmap/renderdata/farmersdelight-models.txt"
+hash = "f447fb34d0e5169550c721997b16271de6948e1e6dd377243e75a35ae3382469"
+
+[[files]]
+file = "dynmap/renderdata/farmersdelight-texture.txt"
+hash = "b707f4645d3e48c2d084a3d95de3aa30c98f49f130de88ea6ab4eb9dc841ec60"
+
+[[files]]
+file = "dynmap/renderdata/farmersrespite-models.txt"
+hash = "898d67eeea07fc84933de2fca8ac9d58f25acfb39f98feea93186e56f8cb4e99"
+
+[[files]]
+file = "dynmap/renderdata/farmersrespite-texture.txt"
+hash = "4da4381afba1448a392d8ae373f716dee78a4c5736290d38f0e3e031455ddb52"
+
+[[files]]
+file = "dynmap/renderdata/fastpaintings-models.txt"
+hash = "fca393ee4b1d7d8c63be2ef9f5c74cacaffc4df00e070b6ed97d9877aaff28a1"
+
+[[files]]
+file = "dynmap/renderdata/fastpaintings-texture.txt"
+hash = "74df4544f50592625d31626ffdb6c1e5d1d1055a1759e8a68ded1034be8926a2"
+
+[[files]]
+file = "dynmap/renderdata/fishermens_trap-models.txt"
+hash = "7c9ba119dc7f22542d4c837bf9b42f28f519d637ae64329eb7b3107083d72b4f"
+
+[[files]]
+file = "dynmap/renderdata/fishermens_trap-texture.txt"
+hash = "f09f366c87d823b6973a81854d4a07a3a4285e647fe564823b07246f4d26789b"
+
+[[files]]
+file = "dynmap/renderdata/incubation-models.txt"
+hash = "0d5c3ae7cc515ebdb54ac303d93aa98f927b24a97688f43decab86834407fd29"
+
+[[files]]
+file = "dynmap/renderdata/incubation-texture.txt"
+hash = "7c5cfe179c27beaf74735484bf6039204d7c12aae682c5b6c869a6af74fe0db1"
+
+[[files]]
+file = "dynmap/renderdata/miners_delight-models.txt"
+hash = "77d2dc9b855fe7263fdaf00e964767aa0162e2e28f144b5dcb8100dc34adc8d0"
+
+[[files]]
+file = "dynmap/renderdata/miners_delight-texture.txt"
+hash = "fb00e9d65fcca1bfa7199b1be7e2d962c81f386f87454e03833622b00a8fe7a2"
+
+[[files]]
+file = "dynmap/renderdata/miningmaster-models.txt"
+hash = "81545f3fb92fa0edb3c8f8e9563f78b71d454e3b4355cbc86ff9bce33c34ef55"
+
+[[files]]
+file = "dynmap/renderdata/miningmaster-texture.txt"
+hash = "2d0e6a29b01a3dfd937b14831fdfe3fcdf11fcc86d143c0e5ac6f89dcc6f8149"
+
+[[files]]
+file = "dynmap/renderdata/moreconcrete-models.txt"
+hash = "f9f4fa04f45b36d0f70e2df4026e1615c9faec8f4eba1b9b49c6cecbf1c79ad2"
+
+[[files]]
+file = "dynmap/renderdata/moreconcrete-texture.txt"
+hash = "8614095e3074949ad037695c2d3ccf741bdc1f7b1e6945311ebc9cf23025a2d0"
+
+[[files]]
+file = "dynmap/renderdata/moyai-models.txt"
+hash = "4bdb78ebb36c13057ca79f588bc5f52411590335143165bdb5fff9cbc88d64eb"
+
+[[files]]
+file = "dynmap/renderdata/moyai-texture.txt"
+hash = "05eef32502ef5d4aa19db3e1e2913a43f7bc9051fc6f62a27fb79ae6eb0e2a5f"
+
+[[files]]
+file = "dynmap/renderdata/mynethersdelight-models.txt"
+hash = "5bb79dd7b71e367ad44356756b84942ac919023a660eeae381828e71b928c52d"
+
+[[files]]
+file = "dynmap/renderdata/mynethersdelight-texture.txt"
+hash = "63b6d85c526c3b4babfa4262fb1ff4dadf6cd1eef1fdaee3b36efdf46dc9d5e9"
+
+[[files]]
+file = "dynmap/renderdata/naturalist-models.txt"
+hash = "2d3f9414c1025df80e6d540bb4735410e363e54b86e362abb739d71bd3b25cd2"
+
+[[files]]
+file = "dynmap/renderdata/naturalist-texture.txt"
+hash = "14126c5f1d1398d6c5863892913932ee3a871da4ff687cb5277f983bdc184d0f"
+
+[[files]]
+file = "dynmap/renderdata/neapolitan-models.txt"
+hash = "a57f4022d3a110f65eadc6db3809831102af0e0206be90ae18221d0a44bc3971"
+
+[[files]]
+file = "dynmap/renderdata/neapolitan-texture.txt"
+hash = "b40f0aea9b22f3f3c1d0794746465a2615860b4d61f8e5dc447085c16f0930e3"
+
+[[files]]
+file = "dynmap/renderdata/nethersdelight-models.txt"
+hash = "de00bf9d232adedb3b5913ba595fee40f3f93e16c206b6f3b13de332e0c597dd"
+
+[[files]]
+file = "dynmap/renderdata/nethersdelight-texture.txt"
+hash = "eecb4f876343d3f63ae58d9247138ecc763427bd67bb63e5aba181b6ee251805"
+
+[[files]]
+file = "dynmap/renderdata/oreganized-models.txt"
+hash = "31abab2da23eccb2b48da00ec33088997b7195f3d6e143d2aadeb3487e650e05"
+
+[[files]]
+file = "dynmap/renderdata/oreganized-texture.txt"
+hash = "461a4bdddac09baff69b3666dcd2bf3c033b6842d7a6ac8a3bbc31a5fe37309d"
+
+[[files]]
+file = "dynmap/renderdata/paletteblocks-models.txt"
+hash = "f6848474bebbbfdd4478b1610ae58bd9cda745f8e0006ff1a3cba329e2d3d839"
+
+[[files]]
+file = "dynmap/renderdata/paletteblocks-texture.txt"
+hash = "e6266f607feed43889a102452ea4751bb3e89a76a4bb626dc8f023c0c729deb2"
+
+[[files]]
+file = "dynmap/renderdata/quark-models.txt"
+hash = "66fc56a05d0a11c7a5307165c0be15ae464976eb34a0ab94101b0e987340db3c"
+
+[[files]]
+file = "dynmap/renderdata/quark-texture.txt"
+hash = "e1134dbbbff6782998c159efee0812c601883ae7cc73c6062e6a43fd6da0c959"
+
+[[files]]
+file = "dynmap/renderdata/respiteful-models.txt"
+hash = "c856c3e5ffd83f47b8a108fc99a6956da50924bce1e67d1592d97ee7b7d9987d"
+
+[[files]]
+file = "dynmap/renderdata/respiteful-texture.txt"
+hash = "f55a54b116eccd0282e83f78c4f163a66fa29537c43b02e4a7974c7b9c991d93"
+
+[[files]]
+file = "dynmap/renderdata/savage_and_ravage-models.txt"
+hash = "c4b410ece05dc38bf1bbdd80cfe7c69942ae2af7d3db666597559aeaba58a0d6"
+
+[[files]]
+file = "dynmap/renderdata/savage_and_ravage-texture.txt"
+hash = "453db3ff2e1c2a0f147df8edfbcaaa6724820e463990507ed9e3ae01464dee44"
+
+[[files]]
+file = "dynmap/renderdata/snowrealmagic-models.txt"
+hash = "f8eafca2e6858428f3ef3850c0d5afd1070344a2a5d71e37d9da5419e826b91e"
+
+[[files]]
+file = "dynmap/renderdata/snowrealmagic-texture.txt"
+hash = "c48f8361868c212ee4a62b18763e3717cdd45a34e731b9801faa7a3b09323e34"
+
+[[files]]
+file = "dynmap/renderdata/spelunkery-models.txt"
+hash = "71d6265d849086232fd9e2130938f8c97ac2d3fb032126a558dd10678f95d827"
+
+[[files]]
+file = "dynmap/renderdata/spelunkery-texture.txt"
+hash = "ad4a111db820555af51b61d8dda15cc17913c4125cc21bd297884c4663737c3a"
+
+[[files]]
+file = "dynmap/renderdata/sullysmod-models.txt"
+hash = "e2072e1f15fd64a9a309b709aa1f28a773dc7106d8e36c70043257cddde1b03e"
+
+[[files]]
+file = "dynmap/renderdata/sullysmod-texture.txt"
+hash = "83ccd2bf740d1aca172a74bf164a9fa9717c213fdca8bd081497366a26d9ec7e"
+
+[[files]]
+file = "dynmap/renderdata/supplementaries-models.txt"
+hash = "2f4e62173ed7cb63fa929325f909ad2bc6860e0f0a4005b29327583316743c15"
+
+[[files]]
+file = "dynmap/renderdata/supplementaries-texture.txt"
+hash = "f7bf938e0e415eb59d37b51a0f69df49ccf8f87de0b7f0eac2d9720ffe92b980"
+
+[[files]]
+file = "dynmap/renderdata/suppsquared-models.txt"
+hash = "c9bc71f563411d568577a5a0d429c9a7ac443d3b6fefd6adca826bae63f48183"
+
+[[files]]
+file = "dynmap/renderdata/suppsquared-texture.txt"
+hash = "bfb4de837f463e7768be6854b4ffc8b3b79b07c6c946b3e2809a84865f1226d1"
+
+[[files]]
+file = "dynmap/renderdata/twigs-models.txt"
+hash = "69a5b6812a1c3e9004e8247732ff3c4b93400573f5978d218d54cede5c083b3a"
+
+[[files]]
+file = "dynmap/renderdata/twigs-texture.txt"
+hash = "0eca41ba5f6a353d048a12ecc4858015ca0f69aadf6b94809b0b718d9a4c61b3"
+
+[[files]]
+file = "dynmap/renderdata/upgrade_aquatic-models.txt"
+hash = "b3ed005eacc1b568967384c9fa2408eeb65dc65a39d6032190bdb96de7707306"
+
+[[files]]
+file = "dynmap/renderdata/upgrade_aquatic-texture.txt"
+hash = "6915e43c74f0bd134fbe3166e9e5e3e0ad056983b15ae9c7365d6dd12d941eb9"
+
+[[files]]
+file = "dynmap/renderdata/windswept-models.txt"
+hash = "e327a51dd1e084942db0db572f36f69116a6a29a535b08e50d4dfff57a4311f4"
+
+[[files]]
+file = "dynmap/renderdata/windswept-texture.txt"
+hash = "3adab93194e76af3975036ed4ca2dc133b870b9949acc5b11b241aaacf8a49c8"
+
+[[files]]
+file = "dynmap/renderdata/woodworks-models.txt"
+hash = "94b9594b209afe532bf70d2e4b06c2fa4ee87d4a300431a6a1b95538296fd979"
+
+[[files]]
+file = "dynmap/renderdata/woodworks-texture.txt"
+hash = "5a0f9ba8b39372aa8e9a8bd8a6c819e9ee1a8c698e389bd32eda6cadbe71b0d6"
+
+[[files]]
 file = "emi.json"
 hash = "17101d231df73a0200be7d5500914f53a44d44278e1a4af27931dd2cda9b41c7"
 
