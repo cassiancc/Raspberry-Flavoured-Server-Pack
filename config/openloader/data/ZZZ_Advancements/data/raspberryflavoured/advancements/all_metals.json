@@ -49,6 +49,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+	"Obtain Rose Gold Ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "additionaladditions:rose_gold_alloy"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
 	"Obtain Bronze Ingot": {
       "conditions": {
         "items": [
@@ -178,6 +190,9 @@
     ],
     [
       "Obtain Netherite Ingot"
+    ],
+    [
+      "Obtain Rose Gold Ingot"
     ],
     [
       "Obtain Bronze Ingot"

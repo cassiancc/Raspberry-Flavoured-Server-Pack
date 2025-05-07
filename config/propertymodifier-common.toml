@@ -184,13 +184,13 @@
 		"alloyed:steel_ingot" = "misc"
 		"alloyed:bronze_nugget" = "misc"
 		"alloyed:steel_nugget" = "misc"
-		"alloyed:bronze_sheet" = "misc"
 		"alloyed:steel_sheet" = "misc"
 		"alloyed:steel_sword" = "combat"
 		"alloyed:steel_pickaxe" = "tools"
 		"alloyed:steel_axe" = "tools"
 		"alloyed:steel_shovel" = "tools"
 		"alloyed:steel_hoe" = "tools"
+		"alloyed:steel_shears" = "tools"
 		"alloyed:steel_helmet" = "combat"
 		"alloyed:steel_chestplate" = "combat"
 		"alloyed:steel_leggings" = "combat"
@@ -369,6 +369,9 @@
 		"kubejs:eggplant_parmesan_block" = "food"
 		"kubejs:wheat_flour_bag" = "decorations"
 		"kubejs:cinder_flour_bag" = "decorations"
+		"kubejs:corn_flour_bag" = "decorations"
+		"kubejs:cinnamon_bag" = "decorations"
+		"kubejs:oat_bag" = "decorations"
 		"paletteblocks:polished_netherrack" = "building_blocks"
 		"paletteblocks:polished_basalt" = "building_blocks"
 		"paletteblocks:cobblestone_bricks" = "building_blocks"
@@ -561,8 +564,8 @@
 		"create:filter" = "tools"
 		"create:attribute_filter" = "tools"
 		"create:schedule" = "transportation"
-		"create:empty_schematic" = "misc"
-		"create:schematic_and_quill" = "misc"
+		"create:empty_schematic" = "tools"
+		"create:schematic_and_quill" = "tools"
 		"create:peculiar_bell" = "decorations"
 		"create:haunted_bell" = "decorations"
 		"create:white_toolbox" = "tools"
@@ -2211,6 +2214,7 @@
 		"alloyed:steel_chestplate" = "#raspberry_flavoured:steel_repair_materials"
 		"alloyed:steel_leggings" = "#raspberry_flavoured:steel_repair_materials"
 		"alloyed:steel_boots" = "#raspberry_flavoured:steel_repair_materials"
+		"alloyed:steel_shears" = "#raspberry_flavoured:diamond_repair_materials"
 		"ecologics:crab_claw" = "kubejs:stardust"
 		"vc_gliders:paraglider_wood" = "#raspberry_flavoured:glider_repair_materials"
 		"naturalist:bug_net" = "#raspberry_flavoured:bamboo_repair_materials"
@@ -2229,7 +2233,7 @@
 		"create:copper_diving_boots" = "#raspberry_flavoured:copper_repair_materials"
 		"create:sand_paper" = "#raspberry_flavoured:sand_repair_materials"
 		"create:potato_cannon" = "#raspberry_flavoured:copper_repair_materials"
-		"create:extendo_grip" = "#raspberry_flavoured:iron_repair_materials"
+		"create:extendo_grip" = "#raspberry_flavoured:rose_gold_repair_materials"
 		"environmental:yak_pants" = "#raspberry_flavoured:yak_repair_materials"
 		"savage_and_ravage:griefer_helmet" = "#raspberry_flavoured:griefer_repair_materials"
 		"savage_and_ravage:griefer_chestplate" = "#raspberry_flavoured:griefer_repair_materials"
@@ -2625,6 +2629,7 @@
 	#Add new compostables here. Consists of an item or item regex and a float between 0 and 1, representing the chance that the composter level is increased. Example (without the leading #):
 	#"minecraft:netherite_scrap" = 0.8
 	[composting.composting]
+		"cookscollection:lemon_sapling" = 0.3
 		"ecologics:prickly_pear" = 0.75
 		"ecologics:cooked_prickly_pear" = 0.75
 		"minecraft:poisonous_potato" = 0.85
@@ -2683,7 +2688,6 @@
 		"autumnity:red_maple_leaf_pile" = 0.075
 		"atmospheric:rosewood_leaf_pile" = 0.075
 		"atmospheric:morado_leaf_pile" = 0.075
-		"atmospheric:flowering_morado_leaf_pile" = 0.075
 		"atmospheric:yucca_leaf_pile" = 0.075
 		"woodworks:oak_leaf_pile" = 0.075
 		"woodworks:spruce_leaf_pile" = 0.075
@@ -2705,6 +2709,8 @@
 		"raspberry:pink_petals" = 0.3
 		"raspberry:wildflowers" = 0.3
 		"raspberry:clovers" = 0.5
+		"kubejs:sugar_cookie" = 0.85
+		"kubejs:oat_cookie" = 0.85
 
 #Set the values for axe stripping.
 [stripping]

@@ -54,7 +54,7 @@
     "announce_to_chat": true,
     "description": {
       "color": "#ED3D69",
-      "text": "Craft a full set of diamond armour"
+      "text": "Using mechanical crafters, craft a full set of diamond armour"
     },
     "frame": "goal",
     "hidden": false,

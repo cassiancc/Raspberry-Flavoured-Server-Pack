@@ -71,7 +71,9 @@ ServerEvents.recipes(event => {
 	'#raspberry_flavoured:red_arid_sandstone_slab',
 	'#raspberry_flavoured:gilded_sandstone_slab',
 	'#raspberry_flavoured:amethyst',
-	'#raspberry_flavoured:amethyst_slab'
+	'#raspberry_flavoured:amethyst_slab',
+	'#raspberry_flavoured:mossy_stone',
+	'#raspberry_flavoured:mossy_stone_slab'
 	]
     
     removedRecipes.forEach(recipe => {
@@ -110,7 +112,8 @@ ServerEvents.recipes(event => {
 	'#raspberry_flavoured:arid_sandstone',
 	'#raspberry_flavoured:red_arid_sandstone',
 	'#raspberry_flavoured:gilded_sandstone',
-	'#raspberry_flavoured:amethyst'
+	'#raspberry_flavoured:amethyst',
+	'#raspberry_flavoured:mossy_stone'
 	]
     
     blockTags.forEach(tag => {

@@ -33,7 +33,7 @@
     }
   },
   "rewards": {
-      "function": "raspberryflavoured:sound_nether_alt"
+      "function": "raspberryflavoured:sound_eerie"
     },
   "requirements": [
     [

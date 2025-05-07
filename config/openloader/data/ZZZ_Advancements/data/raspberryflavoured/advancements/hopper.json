@@ -1,5 +1,5 @@
 {
-  "parent": "raspberryflavoured:cog_block",
+  "parent": "raspberryflavoured:redstone_connector",
   "criteria": {
     "Place down Hopper": {
       "conditions": {

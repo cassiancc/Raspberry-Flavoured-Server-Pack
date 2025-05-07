@@ -333,6 +333,8 @@ to make editing this file much easier.
 			"alloyed:waxed_oxidized_bronze_block": "kubejs:bronze_block",
 			"cookscollection:salted_dripstone_block": "minecraft:dripstone_block",
 			"cookscollection:lemon_log": "minecraft:oak_log",
-			"cookscollection:lemon_wood": "minecraft:oak_wood"
+			"cookscollection:lemon_wood": "minecraft:oak_wood",
+			"atmospheric:flowering_morado_leaf_pile": "atmospheric:morado_leaf_pile",
+			"atmospheric:flowering_morado_hedge": "atmospheric:morado_hedge"
 	   	}
 }

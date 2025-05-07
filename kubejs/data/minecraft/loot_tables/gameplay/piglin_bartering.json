@@ -6,11 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "mynethersdelight:raw_stuffed_hoglin",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
           "functions": [
             {
               "add": false,

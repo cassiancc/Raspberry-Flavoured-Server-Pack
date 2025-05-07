@@ -56,7 +56,7 @@
   "itemSwapAnimation": true,
   "tweakElytraAnimation": true,
   "petAnimation": true,
-  "fallingAnimation": true,
+  "fallingAnimation": false,
   "freezingAnimation": true,
   "huggingAnimation": true,
   "narutoRunning": false,

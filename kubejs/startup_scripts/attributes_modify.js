@@ -30,6 +30,9 @@ const maskStealth = new $AttributeModifier("eb073e79-4059-4245-a1bc-9a0973f320ed
 const steelKnockback1 = new $AttributeModifier("0d592c6c-b2e2-438c-acc8-f21d078ae50c", "generic.attack_knockback", 1, "ADDITION")
 const steelKnockback2 = new $AttributeModifier("a8cac253-08ff-4f8a-900e-0a5500922124", "generic.attack_knockback", 2, "ADDITION")
 
+const swordRange = new $AttributeModifier("a5824ce5-1d4c-40b0-a1a6-d6a574da39e7", "forge:attack_range", 0.5, "ADDITION")
+const specialRange = new $AttributeModifier("a5824ce5-1d4c-40b0-a1a6-d6a574da39e7", "forge:attack_range", 1, "ADDITION")
+
 // Fake attributes
 const roseGoldRapierLifesteal = new $AttributeModifier("3e05eb54-d73c-4798-88aa-d2e85e2ecede", "caverns_and_chasms:lifesteal", 1, "ADDITION")
 const goldToolsLuck = new $AttributeModifier("08c86a3e-9c08-4699-93e8-18a21b4dadb7", "kubejs:luck", 1, "ADDITION")
@@ -330,5 +333,57 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 	}
 	if (event.itemStack.id == "copperized:copper_boots" && event.slotType == "feet") {
 		event.addModifier("kubejs:thunder_synergy", copperSynergy)
+	}
+	
+	// Extra sword range
+	if (event.itemStack.id == "minecraft:wooden_sword" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", swordRange)
+	}
+	if (event.itemStack.id == "minecraft:stone_sword" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", swordRange)
+	}
+	if (event.itemStack.id == "minecraft:golden_sword" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", swordRange)
+	}
+	if (event.itemStack.id == "minecraft:iron_sword" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", swordRange)
+	}
+	if (event.itemStack.id == "minecraft:diamond_sword" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", swordRange)
+	}
+	if (event.itemStack.id == "additionaladditions:rose_gold_sword" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", swordRange)
+	}
+	if (event.itemStack.id == "alloyed:steel_sword" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", swordRange)
+	}
+	if (event.itemStack.id == "oreganized:electrum_sword" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", swordRange)
+	}
+	if (event.itemStack.id == "caverns_and_chasms:necromium_sword" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", swordRange)
+	}
+	if (event.itemStack.id == "minecraft:netherite_sword" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", swordRange)
+	}
+	
+	// Extra special weapon range
+	if (event.itemStack.id == "kubejs:rose_gold_rapier" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", specialRange)
+	}
+	if (event.itemStack.id == "mace_backport:mace" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", specialRange)
+	}
+	if (event.itemStack.id == "clash:spear" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", specialRange)
+	}
+	if (event.itemStack.id == "clash:greatblade" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", specialRange)
+	}
+	if (event.itemStack.id == "clash:swept_axe" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", specialRange)
+	}
+	if (event.itemStack.id == "minecraft:trident" && event.slotType == "mainhand") {
+		event.addModifier("forge:attack_range", specialRange)
 	}
 })

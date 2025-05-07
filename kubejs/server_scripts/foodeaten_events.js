@@ -154,7 +154,7 @@ ItemEvents.foodEaten([
 	'kubejs:eggplant_parmesan',
 	'kubejs:prismatic_ice_cream',
 	'kubejs:cat_food',
-	'kubejs:stoup',
+//	'kubejs:stoup',
 	'kubejs:takoyaki',
 	'kubejs:glow_ink_pasta',
 	'kubejs:white_fish_soup',

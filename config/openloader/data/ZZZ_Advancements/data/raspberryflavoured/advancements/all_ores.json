@@ -252,6 +252,18 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+	"Obtain Blackstone Gold Ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gilded_blackstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -337,6 +349,9 @@
     ],
 	[
       "Obtain Nether Lead Ore"
+    ],
+	[
+      "Obtain Blackstone Gold Ore"
     ]
   ]
 }

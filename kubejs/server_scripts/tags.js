@@ -80,7 +80,6 @@ ServerEvents.tags('item', event => {
 	"additionaladditions:music_disc_1007",
 	"additionaladditions:music_disc_1507",
 	"environmental:music_disc_leaving_home",
-	"alloyed:steel_shears",
 	"copperized:copper_nugget",
 	"copperized:copper_helmet",
 	"copperized:copper_chestplate",
@@ -984,6 +983,7 @@ ServerEvents.tags('item', event => {
 	event.removeAll('aquaculturedelight:fish_rolls')
 	event.removeAll('culturaldelights:cucumbers')
 	event.removeAll('spelunkery:nuggets')
+	event.removeAll('create:create_ingots')
 })
 
 // Item tags
@@ -1062,6 +1062,20 @@ ServerEvents.tags('item', event => {
 		.add('kubejs:green_cloth_scrap_carpet')
 		.add('kubejs:red_cloth_scrap_carpet')
 		.add('kubejs:black_cloth_scrap_carpet')
+		.add('farmersdelight:organic_compost')
+
+	event.get('ecologics:penguin_tempt_items')
+		.add('#raspberry_flavoured:full_raw_fish')
+
+	event.get('raspberry_flavoured:geodes')
+		.add('kubejs:dwarf_geode')
+		.add('kubejs:deepslate_dwarf_geode')
+		.add('kubejs:blackstone_dwarf_geode')
+
+	event.get('raspberry_flavoured:potions')
+		.add('minecraft:potion')
+		.add('minecraft:splash_potion')
+		.add('minecraft:lingering_potion')
 
 	event.get('raspberry_flavoured:cinnamon_logs')
 		.add('minecraft:jungle_log')
@@ -1344,7 +1358,6 @@ ServerEvents.tags('item', event => {
 		.add('create:raw_zinc')
 		.add('kubejs:charcoal_lump')
 		.add('alloyed:steel_sheet')
-		.add('alloyed:bronze_sheet')
 		.add('alloyed:steel_nugget')
 		.add('alloyed:bronze_nugget')
 		.add('alloyed:steel_ingot')
@@ -1446,6 +1459,7 @@ ServerEvents.tags('item', event => {
 		.add('kubejs:scarlet_cheese_bucket')
 		.add('kubejs:flaxen_cheese_bucket')
 		.add('kubejs:batter_bucket')
+		.add('kubejs:cooking_oil_bucket')
 		.add('minecraft:tadpole_bucket')
 		.add('minecraft:axolotl_bucket')
 		.add('aquaculture:synodontis_bucket')
@@ -1726,6 +1740,9 @@ ServerEvents.tags('item', event => {
 	event.get('forge:ingots/rose_gold')
 		.add('additionaladditions:rose_gold_alloy')
 
+	event.get('forge:plates')
+		.add('alloyed:steel_sheet')
+
 	event.get('forge:ingots/brick')
 		.add('minecraft:nether_brick')
 		.add('architects_palette:algal_brick')
@@ -1887,8 +1904,8 @@ ServerEvents.tags('item', event => {
 		.add('kubejs:golden_strawberries')
 
 	event.get('raspberry_flavoured:shears')
-		.add('#farmersdelight:tools/knives')
 		.add('ecologics:crab_claw')
+		.add('alloyed:steel_shears')
 
 	event.get('raspberry_flavoured:cat_prey')
 		.add('#forge:raw_chicken')
@@ -1920,19 +1937,6 @@ ServerEvents.tags('item', event => {
 		.add('minecraft:beetroot')
 		.add('farmersdelight:onion')
 		.add('farmersdelight:tomato')
-		
-	event.get('raspberry_flavoured:wooden_tools')
-		.add('minecraft:wooden_pickaxe')
-		.add('minecraft:wooden_axe')
-		.add('minecraft:wooden_hoe')
-		.add('minecraft:wooden_shovel')
-		.add('minecraft:wooden_sword')
-		.add('minecraft:bow')
-		.add('minecraft:crossbow')
-		.add('minecraft:fishing_rod')
-		.add('minecraft:carrot_on_a_stick')
-		.add('minecraft:warped_fungus_on_a_stick')
-		.add('supplementaries:slingshot')
 
 	event.get('raspberry_flavoured:all_enchanted_tablets')
 		.add('kubejs:blank_tablet')
@@ -2315,26 +2319,6 @@ ServerEvents.tags('item', event => {
 		.add('savage_and_ravage:cleaver_of_beheading')
 		.add('clash:greatblade')
 		
-	event.get('raspberry_flavoured:copper_gear')
-		.add('minecraft:stone_sword')
-		.add('minecraft:stone_pickaxe')
-		.add('minecraft:stone_shovel')
-		.add('minecraft:stone_hoe')
-		.add('minecraft:stone_axe')
-		.add('minecraft:spyglass')
-		.add('supplementaries:wrench')
-		.add('kubejs:copper_knife')
-		.add('minecraft:shears')
-		.add('another_furniture:furniture_hammer')
-		.add('copperized:copper_helmet')
-		.add('copperized:copper_chestplate')
-		.add('copperized:copper_leggings')
-		.add('copperized:copper_boots')
-		.add('create:copper_backtank')
-		.add('create:copper_diving_helmet')
-		.add('create:copper_diving_boots')
-		.add('caverns_and_chasms:barometer')
-		
 	event.get('minecraft:music_discs')
 		.add('upgrade_aquatic:music_disc_atlantis')
 		.add('windswept:music_disc_bumblebee')
@@ -2379,6 +2363,10 @@ ServerEvents.tags('item', event => {
 		.add('supplementaries:flax_seeds')
 		.add('farmersrespite:tea_seeds')
 		.add('culturaldelights:eggplant_seeds')
+        .add('berry_good:sweet_berry_pips')
+        .add('berry_good:glow_berry_pips')
+        .add('neapolitan:strawberry_pips')
+        .add('autumnity:foul_berry_pips')
 		
 	event.get('blueprint:chicken_food')
         .add('#naturalist:bird_food_items')
@@ -2972,7 +2960,6 @@ ServerEvents.tags('block', event => {
 		.remove('minecraft:cobweb')
 	
 	event.get('auditory:basalt_sounds')
-		.add('create:andesite_alloy_block')
 	    .add('create:cut_granite')
 	    .add('create:cut_granite_stairs')
 	    .add('create:cut_granite_slab')
@@ -3398,6 +3385,7 @@ ServerEvents.tags('block', event => {
 		.add('supplementaries:spring_launcher')
 		.add('supplementaries:netherite_door')
 		.add('supplementaries:netherite_trapdoor')
+		.add('supplementaries:lock_block')
 		.add('raspberry:lead_grate')
 	    .remove('minecraft:piston')
 	    .remove('minecraft:sticky_piston')
@@ -3512,6 +3500,8 @@ ServerEvents.tags('block', event => {
 	    .add('culturaldelights:wild_eggplants')
 	    .add('farmersrespite:wild_tea_bush')
 	    .add('farmersrespite:wild_coffee_bush')
+	    .add('spelunkery:tangle_roots')
+	    .add('spelunkery:tangle_roots_plant')
 		
 	event.get('auditory:leaf_sounds')
 	    .add('#minecraft:leaves')
@@ -3594,6 +3584,7 @@ ServerEvents.tags('block', event => {
 		.add('twigs:gravel_brick_stairs')
 		.add('twigs:gravel_brick_wall')
 		.add('minecraft:end_stone')
+		.add('minecraft:powder_snow')
 		.add('raspberry:wormy_dirt')
 		.add('raspberry:deepslate_gravel')
 		.add('raspberry:blackstone_gravel')
@@ -3685,6 +3676,8 @@ ServerEvents.tags('block', event => {
 		.add('kubejs:bamboo_thatch_stairs')
 		.remove('quark:berry_sack')
 		.remove('quark:glowberry_sack')
+		.remove('quark:gunpowder_sack')
+		.remove('quark:cocoa_beans_sack')
 		.remove('neapolitan:banana_stalk')
 		.remove('neapolitan:carved_banana_stalk')
 		
@@ -3866,6 +3859,11 @@ ServerEvents.tags('block', event => {
 		.add('kubejs:black_canvas_rug')
 		.add('kubejs:wheat_flour_bag')
 		.add('kubejs:cinder_flour_bag')
+		.add('kubejs:corn_flour_bag')
+		.add('kubejs:cinnamon_bag')
+		.add('kubejs:oat_bag')
+		.add('quark:gunpowder_sack')
+		.add('quark:cocoa_beans_sack')
 	
 	event.get('minecraft:needs_stone_tool')
 		.add('create_confectionery:candy_cane_block')
@@ -4265,6 +4263,9 @@ ServerEvents.tags('worldgen/biome', event => {
 	event.get('raspberry_flavoured:wraith_spawning_biomes')
 		.add('minecraft:soul_sand_valley')
 	
+	event.get('raspberry_flavoured:vex_high_spawning_biomes')
+		.add('minecraft:dark_forest')
+	
 	event.get('raspberry_flavoured:nether_flesh_biomes')
 		.add('minecraft:nether_wastes')
 		
@@ -4350,7 +4351,8 @@ ServerEvents.tags('worldgen/structure', event => {
 	event.get('minecraft:eye_of_ender_located').removeAll()
 		.add('#minecraft:ruined_portal')
 		.add('#minecraft:bastion_remnant')
-		.add('#minecraft:shipwreck')
+		.add('#minecraft:dolphin_located')
+		.add('#minecraft:ocean_ruin')
 		
 	event.get('raspberry_flavoured:spirited_exopearl_located')
 		.add('minecraft:fortress')

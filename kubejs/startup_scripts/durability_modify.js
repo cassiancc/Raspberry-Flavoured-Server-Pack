@@ -99,7 +99,8 @@ ItemEvents.modification(event => {
 	'minecraft:diamond_shovel',
 	'minecraft:diamond_hoe',
 	'minecraft:diamond_sword',
-	'farmersdelight:diamond_knife'
+	'farmersdelight:diamond_knife',
+	'alloyed:steel_shears'
 	], item => {item.maxDamage = 2200})
 	
 	// Electrum

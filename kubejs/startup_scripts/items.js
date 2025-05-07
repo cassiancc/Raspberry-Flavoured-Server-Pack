@@ -20,6 +20,10 @@ StartupEvents.registry('item', event => {
 	event.create('rose_gold_nugget').group('misc')
 	event.create('stardust').glow(true).rarity('rare').group('misc')
 	
+	event.create('dwarf_geode').rarity('uncommon').group('misc')
+	event.create('deepslate_dwarf_geode').rarity('uncommon').group('misc')
+	event.create('blackstone_dwarf_geode').rarity('uncommon').group('misc')
+	
 // Food & drinks
 	// Regular
 	event.create('apple_slices').group('food').food(food => {
@@ -51,16 +55,23 @@ StartupEvents.registry('item', event => {
     		.saturation(0.75)
 			.effect('farmersdelight:comfort', 3000, 0, 1)
         	})
+	event.create('cinnamon_cracker').group('food').food(food => {
+		food
+    		.hunger(2)
+    		.saturation(0.7)
+			.effect('farmersdelight:comfort', 400, 0, 0.1)
+			.fastToEat()
+        	})
 	event.create('sugar_cookie').group('food').food(food => {
 		food
     		.hunger(1)
     		.saturation(0.1)
 			.fastToEat()
         	})
-	event.create('cinnamon_cracker').group('food').food(food => {
+	event.create('oat_cookie').group('food').food(food => {
 		food
     		.hunger(2)
-    		.saturation(0.9)
+    		.saturation(0.1)
 			.fastToEat()
         	})
 	event.create('candy_cane').group('food').food(food => {
@@ -75,7 +86,6 @@ StartupEvents.registry('item', event => {
 		food
     		.hunger(3)
     		.saturation(0.65)
-			.effect('speed', 1200, 0, 1)
 			.effect('farmersdelight:comfort', 6000, 0, 1)
 			.fastToEat()
         	})
@@ -83,7 +93,6 @@ StartupEvents.registry('item', event => {
 		food
     		.hunger(3)
     		.saturation(0.3)
-			.effect('speed', 600, 0, 1)
 			.effect('windswept:thorns', 600, 2, 1)
 			.fastToEat()
         	})
@@ -317,9 +326,6 @@ StartupEvents.registry('item', event => {
 			.alwaysEdible()
         	})
 		.useAnimation("drink")
-		.tooltip("§cTipsy (5:00)")
-        .tooltip("§9Slow Falling (2:45)")
-		.tooltip("§9Restfulness II")
 	event.create('buzzing_bourbon').group('food').food(food => {
 		food
     		.effect('brewinandchewin:tipsy', 6000, 0, 1)
@@ -328,9 +334,6 @@ StartupEvents.registry('item', event => {
 			.alwaysEdible()
         	})
 		.useAnimation("drink")
-		.tooltip("§cTipsy (5:00)")
-        .tooltip("§9Sunny (7:30)")
-		.tooltip("§9Vibing (3:00)")
 	event.create('prickly_gin').group('food').food(food => {
 		food
     		.effect('brewinandchewin:tipsy', 6000, 1, 1)
@@ -338,22 +341,14 @@ StartupEvents.registry('item', event => {
 			.alwaysEdible()
         	})
 		.useAnimation("drink")
-		.tooltip("§cTipsy II (5:00)")
-        .tooltip("§9Thorns IV (7:30)")
 	event.create('foul_fernet').group('food').food(food => {
 		food
     		.effect('brewinandchewin:tipsy', 12000, 2, 1)
 			.effect('autumnity:foul_taste', 12000, 2, 1)
-			.effect('mynethersdelight:b_pungent', 6000, 0, 1)
-			.effect('neapolitan:berserking', 2400, 0, 1)
+			.effect('neapolitan:berserking', 3600, 0, 1)
 			.alwaysEdible()
         	})
 		.useAnimation("drink")
-		.tooltip("§cTipsy III (10:00)")
-        .tooltip("§9Foul Taste III (10:00)")
-        .tooltip("§9Pungency (5:00)")
-        .tooltip("§9Berserking (2:00)")
-		.tooltip("§9Extinguishes Fire")
 			
 	// Joke
 	event.create('raspberry_sprite').rarity('epic').food(food => {
@@ -380,11 +375,11 @@ StartupEvents.registry('item', event => {
 			.effect('cofh_core:magic_resistance', 6000, 0, 1)
 			.effect('savage_and_ravage:weight', 6000, 0, 1)
         	})
-	event.create('stoup').maxStackSize(16).rarity('rare').food(food => {
-		food
-    		.hunger(2)
-    		.saturation(1.2)
-			.effect('instant_damage', 1, 1, 1)
-			.effect('savage_and_ravage:weight', 600, 5, 1)
-        	})
+//	event.create('stoup').maxStackSize(16).rarity('rare').food(food => {
+//		food
+//    		.hunger(2)
+//    		.saturation(1.2)
+//			.effect('instant_damage', 1, 1, 1)
+//			.effect('savage_and_ravage:weight', 600, 5, 1)
+//        	})
 })

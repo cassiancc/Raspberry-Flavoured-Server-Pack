@@ -8,13 +8,13 @@ WorldgenEvents.add(event => {
     ore.biomes = '#minecraft:is_overworld'
     ore.addTarget('#minecraft:stone_ore_replaceables', 'oreganized:silver_ore')
     ore.addTarget('#minecraft:deepslate_ore_replaceables', 'oreganized:deepslate_silver_ore')
-    ore.count([1, 10])
+    ore.count([4, 8])
       .squared()
       .uniformHeight(
         anchors.aboveBottom(45),
         anchors.absolute(11)
       )
-    ore.size = 3
+    ore.size = 4
     ore.noSurface = 0.25
     ore.worldgenLayer = 'underground_ores'
   })

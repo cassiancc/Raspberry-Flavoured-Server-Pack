@@ -67,8 +67,8 @@ JEIEvents.information(event => {
 	event.addItem('minecraft:turtle_helmet', 
 	['Turtle shell helmets will have their durability continously drain while underwater, but as long as they have any durability, they will provide you with oxygen.'])
 	
-	event.addItem(['minecraft:shears','ecologics:crab_claw'], 
-	['Shears will allow you to gather wool from sheep, as they won\'t yield any when killed. Yes, that crab claw is a pair of shears.'])
+	event.addItem(['minecraft:shears','alloyed:steel_shears','ecologics:crab_claw'], 
+	['Shears will allow you to gather wool from Sheep, as they won\'t yield any when killed. Yes, that crab claw is a pair of shears.'])
 	
 	event.addItem(['#farmersrespite:tea_leaves','farmersrespite:wild_tea_bush','farmersrespite:tea_seeds'], 
 	['Tea is rarely found in swamps. Harvesting tea in different stages of its growth will yield different coloured leaves.'])
@@ -134,7 +134,7 @@ JEIEvents.information(event => {
 	['Lemons can be found growing on lemon trees in savannas.'])
 	
 	event.addItem(['environmental:truffle','environmental:buried_truffle','environmental:truffle_crate'], 
-	['After feeding a pig a golden carrot, it will lead you to some buried truffles, which you can dig to obtain... well, truffles.'])
+	['After feeding a Pig a golden carrot, it will lead you to some buried truffles, which you can dig to obtain... well, truffles.'])
 	
 	event.addItem(['#minecraft:coal_ores','minecraft:coal','minecraft:coal_block','spelunkery:coal_lump'], 
 	['Coal can be found commonly on high altitudes.'])
@@ -212,7 +212,7 @@ JEIEvents.information(event => {
 	['Leather can be cut into scraps with shears on a cutting board. As they\'re used in the same recipes as regular leather, they\'ll allow you to save a bunch of leather.'])
 	
 	event.addItem('nethersdelight:hoglin_hide', 
-	['Some thick hide skinned off of a hoglin, which can be made into a trophy or cut into a bunch of leather. You\'ll need something lighter than a sword to get this off a hoglin...'])
+	['Some thick hide skinned off of a Hoglin, which can be made into a trophy or cut into a bunch of leather. You\'ll need something lighter than a sword to get this off a Hoglin...'])
 	
 	event.addItem(['#create:sandpaper', 'minecraft:grindstone', 'spelunkery:rough_cinnabar', 'spelunkery:rough_diamond'], 
 	['Sand paper and grindstones will allow you to polish rough gems. Sand paper can be used by looking at rough gems on the floor or by holding them in your offhand and holding right-click, while grindstones can simply be right-clicked with a rough gem in hand.'])
@@ -269,13 +269,13 @@ JEIEvents.information(event => {
 	['Paragliders will let you descend much slower and avoid fall damage when you activate them by pressing the jump key while mid-air.'])
 	
 	event.addItem(['kubejs:cloth_scrap', '#raspberry_flavoured:cloth_blocks'], 
-	['Cloth scraps drop from all mobs wearing clothes, like zombies, piglins and witches, and can also be found in various loot chests.'])
+	['Cloth scraps drop from all mobs wearing clothes, like Zombies, Piglins and Witches, and can also be found in various loot chests.'])
 	
 	event.addItem('quark:soul_bead', 
-	['Soul beads can be acquired by killing vexes or wraiths, by destroying spawners, or by bartering with piglin alchemists.'])
+	['Soul beads can be acquired by killing Vexes or Wraiths, by destroying spawners, or by bartering with Piglin Alchemists.'])
 	
 	event.addItem('kubejs:copper_brush', 
-	['Brushes will let you brush various animals for some drops, such as feathers from chickens, or string from sheep. After being brushed, animals can\'t be brushed again until some time has passed. Brushes can also be made into glue brushes and wax brushes.'])
+	['Brushes will let you brush various animals for some drops, such as feathers from Chickens, or string from Sheep. After being brushed, animals can\'t be brushed again until some time has passed. Brushes can also be made into glue brushes and wax brushes.'])
 	
 	event.addItem('kubejs:copper_brush_wax',
 	['Wax brushes are very similar to glue brushes - though instead of gluing blocks, they will allow you to bulk wax blocks, creating an area to wax when right-clicked, which can be confirmed by right-clicking again or discarded by right-clicking while sneaking.'])
@@ -290,13 +290,13 @@ JEIEvents.information(event => {
 	['Rubber is used in making various movement-related components, and blocks made of rubber are bouncy not only for players and mobs, but for projectiles as well. In certain recipes, rubber can be substituted with dried kelp as a cheaper but less efficient alternative.'])
 	
 	event.addItem(['create:copper_sheet', 'create:golden_sheet'],
-	['Copper and gold ingots can be pressed into sheets using a hammer on a cutting board, though this has a small chance to fail and not return a sheet - so this method is good when you\'re in a pinch, but otherwise - use a mechanical press!'])
+	['Copper and gold ingots can be pressed into sheets using a hammer on a cutting board, though this has a chance to fail and not return a sheet - so this method is good when you\'re in a pinch, but otherwise - use a mechanical press!'])
 	
 	event.addItem('savage_and_ravage:creeper_spores', 
-	['Creeper spores drop from creepers when they\'re killed by explosions. They can be used in various recipes, or thrown to create a small spore cloud that spawns creepies which will fight for you.'])
+	['Creeper spores drop from Creepers when they\'re killed by explosions. They can be used in various recipes, or thrown to create a small spore cloud that spawns Creepies which will fight for you.'])
 	
 	event.addItem('naturalist:glow_goop', 
-	['Glow goop drops from fireflies and can also be obtained by smelting glow berries. Up to 3 glow goop can be placed in one spot, which will provide an invisible light source - as long as you\'re not holding glow goop in your hand, that is.'])
+	['Glow goop drops from Fireflies and can also be obtained by smelting glow berries. Up to 3 glow goop can be placed in one spot, which will provide an invisible light source - as long as you\'re not holding glow goop in your hand, that is.'])
 	
 	event.addItem(['aquaculture:tackle_box', 'aquaculture:iron_fishing_rod'], 
 	['Tackle boxes will let you customize reinforced fishing rods, allowing you to attach hooks, baits, fishing lines and bobbers to them. Reinforced fishing rods do not require any of these to be attached in order to work, but they will provide some neat utilities.'])
@@ -323,7 +323,7 @@ JEIEvents.information(event => {
 	['Worms are used as bait for fishing, and can be attached to reinforced fishing rods in a tackle box. They\'ll decrease the amount of time it takes to catch something. Worms can be obtained by feeding corn kernels to a chicken, duck or turkey, which will make them search for wormy dirt. Worms will also occasionally pop out of composters.'])
 	
 	event.addItem(['naturalist:bear_fur', 'environmental:yak_hair'], 
-	['Brown bears and yaks can be sheared for their fur or hair, though beware: this will make them hostile towards you!'])
+	['Brown Bears and Yaks can be sheared for their fur or hair, though beware: this will make them hostile towards you!'])
 	
 	event.addItem('kubejs:stardust', 
 	['Stardust is a powerful crafting ingredient obtained by crushing Nether Stars. It is a universal repair material, meaning it can be used to repair any item with durability. Stardust is also required to forge Everlasting Tablets.'])
@@ -339,6 +339,15 @@ JEIEvents.information(event => {
 	
 	event.addItem('domesticationinnovation:deed_of_ownership', 
 	['Using a deed of ownership on a pet will bind it to the deed, and when that deed is passed over to another player, they can right-click the pet with the deed to transfer its ownership to them.'])
+	
+	event.addItem('kubejs:dwarf_geode', 
+	['Dwarf geodes can be found in loot chests or underground urns, and occasionally drop from Deepers.'])
+	
+	event.addItem('kubejs:deepslate_dwarf_geode', 
+	['Deepslate dwarf geodes can be found in loot chests or underground urns, and occasionally drop from Peepers.'])
+	
+	event.addItem('kubejs:blackstone_dwarf_geode', 
+	['Blackstone dwarf geodes can be found in loot chests, and occasionally drop from Magma Cubes.'])
 
 // Liquid to stone interactions	
 	// Stone & deepslate

@@ -5,6 +5,7 @@ ItemEvents.tooltip(event => {
     'minecraft:turtle_helmet': 'Turtle Scute',
     'minecraft:flint_and_steel': 'Flint',
     'minecraft:shears': 'Copper Ingot, Copper Sheet',
+    'alloyed:steel_shears': 'Diamond',
     'minecraft:bow': 'Planks',
     'minecraft:crossbow': 'Iron Ingot, Iron Sheet',
     'supplementaries:slingshot': 'Planks',
@@ -21,7 +22,7 @@ ItemEvents.tooltip(event => {
     'supplementaries:flute': 'Bamboo, Bamboo Planks',
     'vc_gliders:paraglider_wood': 'Sail, Phantom Membrane',
     'create:potato_cannon': 'Copper Ingot, Copper Sheet',
-    'create:extendo_grip': 'Iron Ingot, Iron Sheet',
+    'create:extendo_grip': 'Rose Gold Ingot',
     'supplementaries:wrench': 'Copper Ingot, Copper Sheet',
     'quark:echorang': 'Echo Shard',
 	
@@ -106,17 +107,17 @@ ItemEvents.tooltip(event => {
     'minecraft:iron_leggings': 'Iron Ingot, Iron Sheet',
     'minecraft:iron_boots': 'Iron Ingot, Iron Sheet',
 	
-    'additionaladditions:rose_gold_sword': 'Rose Gold Alloy',
-    'additionaladditions:rose_gold_shovel': 'Rose Gold Alloy',
-    'additionaladditions:rose_gold_pickaxe': 'Rose Gold Alloy',
-    'additionaladditions:rose_gold_axe': 'Rose Gold Alloy',
-    'additionaladditions:rose_gold_hoe': 'Rose Gold Alloy',
-    'kubejs:rose_gold_knife': 'Rose Gold Alloy',
+    'additionaladditions:rose_gold_sword': 'Rose Gold Ingot',
+    'additionaladditions:rose_gold_shovel': 'Rose Gold Ingot',
+    'additionaladditions:rose_gold_pickaxe': 'Rose Gold Ingot',
+    'additionaladditions:rose_gold_axe': 'Rose Gold Ingot',
+    'additionaladditions:rose_gold_hoe': 'Rose Gold Ingot',
+    'kubejs:rose_gold_knife': 'Rose Gold Ingot',
 	
-    'additionaladditions:rose_gold_helmet': 'Rose Gold Alloy',
-    'additionaladditions:rose_gold_chestplate': 'Rose Gold Alloy',
-    'additionaladditions:rose_gold_leggings': 'Rose Gold Alloy',
-    'additionaladditions:rose_gold_boots': 'Rose Gold Alloy',
+    'additionaladditions:rose_gold_helmet': 'Rose Gold Ingot',
+    'additionaladditions:rose_gold_chestplate': 'Rose Gold Ingot',
+    'additionaladditions:rose_gold_leggings': 'Rose Gold Ingot',
+    'additionaladditions:rose_gold_boots': 'Rose Gold Ingot',
 	
     'alloyed:steel_sword': 'Steel Ingot, Steel Sheet',
     'alloyed:steel_shovel': 'Steel Ingot, Steel Sheet',
@@ -202,7 +203,7 @@ ItemEvents.tooltip(event => {
     'clash:spear': 'Electrum Ingot, Block of Diamond',
     'clash:swept_axe': 'Netherite Ingot, Block of Diamond',
     'clash:greatblade': 'Necromium Ingot, Block of Diamond',
-    'kubejs:rose_gold_rapier': 'Rose Gold Alloy',
+    'kubejs:rose_gold_rapier': 'Rose Gold Ingot',
     'mace_backport:mace': 'Steel Ingot, Steel Sheet'
     }
 

@@ -62,9 +62,9 @@ Speedometers will visualise the speed of your machines.
 Minecart couplings will allow you to link minecarts together.
 Melons will cause you to spit seeds when consumed.
 Wildfires will drop ancient scrap.
-Piglin brutes will drop ancient scrap.
-Piglins and hoglins can be made immune to zombification with a golden apple.
-Zombified piglins and zoglins can be cured with weakness and a golden apple.
+Piglin Brutes will drop ancient scrap.
+Piglins and Hoglins can be made immune to zombification with a golden apple.
+Zombified Piglins and Zoglins can be cured with weakness and a golden apple.
 Pikes come in various sizes and colours.
 Rough gems can be polished with sand paper or a grindstone.
 Potato cannons use various foods as ammo.
@@ -77,7 +77,7 @@ Schematicannons can build for you when provided with blueprints and materials.
 Skillets can be held/placed over fire to cook food on the go.
 Skillets and cooking pots always drop items or containers to their right.
 All hail the Slabfish.
-Baby snails will drop snail shell pieces when they grow into adults.
+Baby Snails will drop snail shell pieces when they grow into adults.
 Snow boots will allow you to move faster over snowy blocks.
 Soul soap can clean dye off blocks.
 Stoves are like campfires, except they have 6 spaces instead of 4.
@@ -91,9 +91,9 @@ Trains allow for mass item transport and highly stylish travel.
 Both types of water wheels are cheap sources of rotational power.
 The wood type of water wheels can be changed by right-clicking with planks.
 There are numerous wood types in RF. Which one's your favourite?
-Shearing yaks will yield yak hair, but it'll also make them angry at you.
-Shearing bears will yield bear fur, but it'll also make them angry at you.
-Shearing mooblooms will yield a few buttercups and turn them into regular cows.
+Shearing Yaks will yield yak hair, but it'll also make them angry at you.
+Shearing Bears will yield bear fur, but it'll also make them angry at you.
+Shearing Mooblooms will yield a few buttercups and turn them into regular cows.
 Awoken exopearls will fly towards ruined structures.
 Spirited exopearls will fly towards structures with spawners.
 Hand a binding exopearl to another player to easily locate them.
@@ -104,7 +104,7 @@ Paragliders allow for slower descension.
 Smoke from fires will boost you up when using a paraglider.
 Koi fish will reduce hostile mob spawns in an area.
 Large obsidian spikes in the Nether are easy sources of blazes.
-Blaze spawners will also fill empty blaze burners when right-clicked.
+Blaze spawners will also fill empty Blaze burners when right-clicked.
 Cages allow you to capture small to medium-sized mobs.
 The Nether is a lot taller and denser than normal.
 Bronze has musical properties.
@@ -112,7 +112,6 @@ Use display boards to display specific information about your machinery.
 Steam engines can provide large amounts of stress capacity.
 Lava oceans in the Nether are big enough to pump an infinite amount of lava.
 Trains can go through Nether portals if there's a track on the other side.
-Deepers will explode and destroy terrain, but are only found underground.
 Unstable spawners spawn a horde of mobs which will drop extra goodies.
 Craft lightning rods to redirect lightning, or to create a helpful buddy.
 Large boats can carry higher amounts of passengers or larger ones.
@@ -123,6 +122,7 @@ Ancient cities contain major loot - a high risk, high reward adventure.
 Deep in underwater caves, you may find groups of nautili swimming around.
 Hostile mobs become neutral on easy difficulty.
 Mimes will copy your held item - and worn armour, if they hit you.
+Deepers will explode and destroy terrain, but are only found underground.
 While Creepers don't blow up blocks, Deepers do.
 Peepers only move when you're not looking.
 Cameras will allow you to capture precious moments.
@@ -136,11 +136,12 @@ Wax brushes can wax loads of blocks at once.
 Shift + T while hovering over an item will share it in chat.
 Tackle boxes can customise reinforced fishing rods.
 Worms will shorten the time it takes to catch a fish.
-Feeding chickens, ducks or turkeys corn kernels will make them find wormy dirt.
+Feeding Chickens, Ducks or Turkeys corn kernels will make them find wormy dirt.
 Different hooks have a different impact on the fishing experience.
 Holding a water bucket in the offhand will make caught fish go in the bucket.
 Copper and gold can be hammered into sheets, with a chance of breaking.
 A storage interface and terminal allow for a more unified storage system.
 Fortresses have gotten reinforcements and a refreshed layout.
-Tuff golems can be created with a carved pumpkin, any wool and a tuff block.
+Copper Golems can be created with a carved pumpkin and a lightning rod.
+Tuff Golems can be created with a carved pumpkin, any wool and a tuff block.
 Crops can be harvested by right-clicking them.

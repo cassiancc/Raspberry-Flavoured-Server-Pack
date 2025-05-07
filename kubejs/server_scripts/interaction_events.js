@@ -112,9 +112,9 @@ ItemEvents.entityInteracted('kubejs:copper_brush', function (event) {
         }
 })
 
-// shearing bears with crab claw
+// shearing bears
 ItemEvents.entityInteracted(event => {
-    if (event.item.id === "ecologics:crab_claw" && event.target.type == "naturalist:bear") {
+    if (event.item.hasTag('raspberry_flavoured:shears') && event.target.type == "naturalist:bear") {
         event.player.swing(event.hand, true)
         if (event.target.nbt.Sheared == 0 && !event.target.isBaby()) {
             // damage item, shear sound, set bear to sheared and make it angry
@@ -275,6 +275,52 @@ ItemEvents.rightClicked(event => {
     }
 })
 
+// soap & brush interactions
+BlockEvents.rightClicked(event => {
+    // set which block turns into what
+    global.soapingMap = {
+        'quark:dirty_glass': 'minecraft:glass',
+        'quark:dirty_glass_pane': 'minecraft:glass_pane'
+    }
+    global.brushingMap = {
+        'quark:dirty_glass': 'minecraft:glass',
+        'quark:dirty_glass_pane': 'minecraft:glass_pane'
+    }
+    Object.keys(global.soapingMap).forEach((value) => {
+        if (event.item.id === 'supplementaries:soap') {
+            if (event.block.id === value) {
+                event.server.schedule(2, callback => {
+                    event.player.stopUsingItem()
+                })
+                // remove the soap from the player's hand
+                if (!event.player.isCreative()) {
+                event.item.count --
+                }
+                // swing hand, damage item, play sounds and transform block
+                event.player.swing(event.hand, true)
+				event.server.runCommandSilent(`particle supplementaries:suds ${event.block.x} ${event.block.y+0.5} ${event.block.z} 0.5 0.25 0.5 0.01 15 force`)
+                event.level.playSound(null, event.block.x, event.block.y, event.block.z, 'item.honeycomb.wax_on', 'players', 1, 1)
+                event.block.set(global.soapingMap[event.block.id])
+            }  
+        }
+    })
+    Object.keys(global.brushingMap).forEach((value) => {
+        if (event.item.id === 'kubejs:copper_brush') {
+            if (event.block.id === value) {
+                // damage brush
+                if (!event.player.isCreative()) {
+                event.player.damageHeldItem(event.hand, 1)
+                }
+                // swing hand, damage item, play sounds and transform block
+                event.player.swing(event.hand, true)
+				event.server.runCommandSilent(`particle wax_off ${event.block.x} ${event.block.y+0.5} ${event.block.z} 0.5 0.25 0.5 0.01 15 force`)
+                event.level.playSound(null, event.block.x, event.block.y, event.block.z, 'kubejs:copper_brush.brush', 'players', 1, 1)
+                event.block.set(global.brushingMap[event.block.id])
+            }  
+        }
+    })
+})
+
 // custom right click on block with water bottle interactions
 BlockEvents.rightClicked(event => {
     // set which block turns into what
@@ -303,57 +349,33 @@ BlockEvents.rightClicked(event => {
             }  
         }
     })
-})
-
-// soap interactions
-BlockEvents.rightClicked(event => {
-    // set which block turns into what
-    global.soapingMap = {
-        'quark:dirty_glass': 'minecraft:glass',
-        'quark:dirty_glass_pane': 'minecraft:glass_pane'
+    if (event.item.id === 'minecraft:potion' && event.item.nbt.Potion == 'minecraft:water') {
+        if (event.block.hasTag('raspberry_flavoured:all_wood_logs') && !event.block.hasTag('raspberry_flavoured:driftwood')) {
+            let props = event.block.getProperties()
+            event.server.schedule(2, callback => {
+                event.player.stopUsingItem()
+            })
+            if (!event.player.isCreative()) {
+            event.item.count --
+            event.player.giveInHand('minecraft:glass_bottle')
+            }
+            event.player.swing(event.hand, true)
+            event.level.playSound(null, event.block.x, event.block.y, event.block.z, 'item.bottle.empty', 'players', 1, 1)
+            event.level.playSound(null, event.block.x, event.block.y, event.block.z, 'entity.generic.splash', 'players', 1, 1)
+            if (event.block.hasTag('raspberry_flavoured:logs')) {
+                event.block.set('upgrade_aquatic:driftwood_log', props)
+            }
+            if (event.block.hasTag('raspberry_flavoured:wood')) {
+                event.block.set('upgrade_aquatic:driftwood', props)
+            }
+            if (event.block.hasTag('raspberry_flavoured:stripped_logs')) {
+                event.block.set('upgrade_aquatic:stripped_driftwood_log', props)
+            }
+            if (event.block.hasTag('raspberry_flavoured:stripped_wood')) {
+                event.block.set('upgrade_aquatic:stripped_driftwood', props)
+            }
+        } 
     }
-    Object.keys(global.soapingMap).forEach((value) => {
-        if (event.item.id === 'supplementaries:soap') {
-            if (event.block.id === value) {
-                event.server.schedule(2, callback => {
-                    event.player.stopUsingItem()
-                })
-                // remove the soap from the player's hand
-                if (!event.player.isCreative()) {
-                event.item.count --
-                }
-                // swing hand, damage item, play sounds and transform block
-                event.player.swing(event.hand, true)
-				event.server.runCommandSilent(`particle supplementaries:suds ${event.block.x} ${event.block.y+0.5} ${event.block.z} 0.5 0.25 0.5 0.01 15 force`)
-                event.level.playSound(null, event.block.x, event.block.y, event.block.z, 'item.honeycomb.wax_on', 'players', 1, 1)
-                event.block.set(global.soapingMap[event.block.id])
-            }  
-        }
-    })
-})
-
-// brush interactions
-BlockEvents.rightClicked(event => {
-    // set which block turns into what
-    global.brushingMap = {
-        'quark:dirty_glass': 'minecraft:glass',
-        'quark:dirty_glass_pane': 'minecraft:glass_pane'
-    }
-    Object.keys(global.brushingMap).forEach((value) => {
-        if (event.item.id === 'kubejs:copper_brush') {
-            if (event.block.id === value) {
-                // damage brush
-                if (!event.player.isCreative()) {
-                event.player.damageHeldItem(event.hand, 1)
-                }
-                // swing hand, damage item, play sounds and transform block
-                event.player.swing(event.hand, true)
-				event.server.runCommandSilent(`particle wax_off ${event.block.x} ${event.block.y+0.5} ${event.block.z} 0.5 0.25 0.5 0.01 15 force`)
-                event.level.playSound(null, event.block.x, event.block.y, event.block.z, 'kubejs:copper_brush.brush', 'players', 1, 1)
-                event.block.set(global.brushingMap[event.block.id])
-            }  
-        }
-    })
 })
 
 // latex wood stripping

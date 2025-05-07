@@ -21,7 +21,8 @@ ItemEvents.modification(event => {
 	'domesticationinnovation:collar_tag',
 	'kubejs:eggplant_parmesan_block',
 	'sullysmod:cave_chum_bucket',
-	'mynethersdelight:hot_wings_bucket'
+	'mynethersdelight:hot_wings_bucket',
+	'mynethersdelight:hot_cream'
 	], item => {item.maxStackSize = 1})
 	
 // Stack to 16

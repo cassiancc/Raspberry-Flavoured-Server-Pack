@@ -5,10 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "ecologics:crab_claw",
-			  "minecraft:shears"
-            ]
+            "tag": "forge:shears"
           }
         ]
       },

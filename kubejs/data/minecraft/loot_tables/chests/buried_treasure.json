@@ -195,6 +195,20 @@
         "min": 0.0
       }
     },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supplementaries:globe"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 0.0
+      }
+    },
 	{
       "bonus_rolls": 0.0,
       "entries": [

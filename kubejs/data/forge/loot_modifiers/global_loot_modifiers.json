@@ -1,9 +1,11 @@
 {
   "replace": false,
   "entries": [
+    "farmersdelight:dwarf_geode",
+    "farmersdelight:deepslate_dwarf_geode",
+    "farmersdelight:blackstone_dwarf_geode",
     "farmersdelight:cloth",
     "farmersdelight:dimensional_tears",
-    "farmersdelight:soul_bead",
     "farmersdelight:straw_from_giant_tall_grass",
 	"farmersdelight:straw_from_dead_bush",
 	"farmersdelight:straw_from_tall_dead_bush",

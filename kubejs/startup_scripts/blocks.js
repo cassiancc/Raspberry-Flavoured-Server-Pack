@@ -5,6 +5,10 @@ StartupEvents.registry('block', event => {
 
 	event.create('wheat_flour_bag').soundType('wool').hardness(0.8).resistance(0.8)
 	event.create('cinder_flour_bag').soundType('wool').hardness(0.8).resistance(0.8)
+	event.create('corn_flour_bag').soundType('wool').hardness(0.8).resistance(0.8)
+	event.create('cinnamon_bag').soundType('wool').hardness(0.8).resistance(0.8)
+	event.create('oat_bag').soundType('wool').hardness(0.8).resistance(0.8)
+	
 	event.create('paper_block').soundType('wool').hardness(0.1).resistance(0.1)
 	
 	event.create('lead_ore').soundType('stone').hardness(3).resistance(3).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)

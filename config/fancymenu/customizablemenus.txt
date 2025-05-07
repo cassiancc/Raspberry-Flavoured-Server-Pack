@@ -21,9 +21,6 @@ betteradvancements.gui.BetterAdvancementsScreen {
 net.minecraft.client.gui.screens.DeathScreen {
 }
 
-net.minecraft.client.gui.screens.worldselection.CreateWorldScreen {
-}
-
 net.minecraft.client.gui.screens.InBedChatScreen {
 }
 
@@ -67,5 +64,11 @@ net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
 }
 
 com.tom.storagemod.gui.StorageTerminalScreen {
+}
+
+net.minecraft.client.gui.screens.packs.PackSelectionScreen {
+}
+
+net.minecraft.client.gui.screens.worldselection.CreateWorldScreen {
 }
 

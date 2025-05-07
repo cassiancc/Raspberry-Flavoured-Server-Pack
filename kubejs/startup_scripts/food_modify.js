@@ -636,14 +636,19 @@ ItemEvents.modification(event => {
             food.hunger(3).saturation(0.7).removeEffect('haste').effect('nausea', 300, 0, 0.1)
         }
     })
-	event.modify('nethersdelight:magma_gelatin', item => {
+	event.modify('mynethersdelight:hot_cream', item => {
         item.foodProperties = food => {
-            food.hunger(3).effect('cofh_core:slimed', 600, 0, 100)
+            food.removeEffect('fire_resistance').effect('cofh_core:slimed', 900, 0, 100)
+        }
+    })
+	event.modify('mynethersdelight:hot_cream_cone', item => {
+        item.foodProperties = food => {
+            food.removeEffect('fire_resistance').effect('cofh_core:slimed', 300, 0, 100)
         }
     })
 	event.modify('abnormals_delight:escargot', item => {
         item.foodProperties = food => {
-            food.effect('cofh_core:slimed', 300, 0, 100)
+            food.effect('cofh_core:slimed', 600, 0, 100)
         }
     })
 	event.modify('create:chocolate_glazed_berries', item => {
@@ -768,7 +773,7 @@ ItemEvents.modification(event => {
     })
 	event.modify('farmersrespite:rose_hip_pie_slice', item => {
         item.foodProperties = food => {
-            food.removeEffect('regeneration').effect('brewinandchewin:sweet_heart', 300, 0, 100)
+            food.removeEffect('regeneration').effect('brewinandchewin:sweet_heart', 600, 0, 100)
         }
     })
 	event.modify('farmersrespite:rose_hip_tea', item => {
@@ -1023,7 +1028,7 @@ ItemEvents.modification(event => {
     })
 	event.modify('farmersdelight:chocolate_pie_slice', item => {
         item.foodProperties = food => {
-            food.removeEffect('speed').effect('neapolitan:sugar_rush', 700, 0, 100)
+            food.effect('neapolitan:sugar_rush', 1200, 0, 100)
         }
     })
 	event.modify('create_central_kitchen:cherry_pie_slice', item => {
@@ -1057,7 +1062,9 @@ ItemEvents.modification(event => {
         }
     })
 	event.modify('ecologics:surface_moss', item => {
-        item.foodProperties = food => {}
+        item.foodProperties = food => {
+			food.alwaysEdible()
+		}
     })
 	event.modify('culturaldelights:corn_dough', item => {
         item.foodProperties = food => {
@@ -1082,11 +1089,6 @@ ItemEvents.modification(event => {
 	event.modify('brewinandchewin:pale_jane', item => {
         item.foodProperties = food => {
             food.removeEffect('brewinandchewin:satisfaction').effect('farmersdelight:comfort', 3600, 0, 1)
-        }
-    })
-	event.modify('brewinandchewin:kombucha', item => {
-        item.foodProperties = food => {
-            food.removeEffect('brewinandchewin:satisfaction').effect('windswept:thorns', 2000, 1, 1)
         }
     })
 	event.modify('brewinandchewin:kimchi', item => {
@@ -1126,7 +1128,7 @@ ItemEvents.modification(event => {
     })
 	event.modify('farmersdelight:sweet_berry_cheesecake_slice', item => {
         item.foodProperties = food => {
-            food.effect('glowing', 600, 0, 1)
+            food.effect('glowing', 1200, 0, 1)
         }
     })
 	event.modify('farmersdelight:glow_berry_custard', item => {
@@ -1202,6 +1204,16 @@ ItemEvents.modification(event => {
 	event.modify('autumnity:syrup_bottle', item => {
         item.foodProperties = food => {
             food.effect('resistance', 400, 0, 0.25).effect('neapolitan:sugar_rush', 600, 0, 1)
+        }
+    })
+	event.modify('farmersdelight:apple_pie_slice', item => {
+        item.foodProperties = food => {
+            food.effect('absorption', 2100, 0, 1)
+        }
+    })
+	event.modify('create_central_kitchen:truffle_pie_slice', item => {
+        item.foodProperties = food => {
+            food.removeEffect('health_boost').effect('health_boost', 2400, 0, 1)
         }
     })
 	event.modify('cookscollection:lemon', item => {
@@ -1331,11 +1343,6 @@ ItemEvents.modification(event => {
             food.effect('autumnity:foul_taste', 120, 0, 1)
         }
     })
-	event.modify('brewinandchewin:withering_dross', item => {
-        item.foodProperties = food => {
-            food.effect('autumnity:foul_taste', 18000, 5, 1)
-        }
-    })
 	event.modify('farmersdelight:dog_food', item => {
         item.foodProperties = food => {
             food.effect('autumnity:foul_taste', 600, 0, 1)
@@ -1344,6 +1351,68 @@ ItemEvents.modification(event => {
 	event.modify('abnormals_delight:slabdish', item => {
         item.foodProperties = food => {
             food.effect('autumnity:foul_taste', 600, 0, 1)
+        }
+    })
+	
+// Modify alcoholic beverages
+	event.modify('brewinandchewin:beer', item => {
+        item.foodProperties = food => {
+            food.effect('strength', 1800, 0, 1)
+        }
+    })
+	event.modify('brewinandchewin:strongroot_ale', item => {
+        item.foodProperties = food => {
+            food.effect('strength', 2400, 0, 1)
+        }
+    })
+	event.modify('brewinandchewin:steel_toe_stout', item => {
+        item.foodProperties = food => {
+            food.effect('strength', 3000, 0, 1)
+        }
+    })
+	event.modify('brewinandchewin:vodka', item => {
+        item.foodProperties = food => {
+            food.effect('quark:resilience', 2400, 0, 1)
+        }
+    })
+	event.modify('brewinandchewin:salty_folly', item => {
+        item.foodProperties = food => {
+            food.effect('quark:resilience', 3000, 0, 1)
+        }
+    })
+	event.modify('brewinandchewin:bloody_mary', item => {
+        item.foodProperties = food => {
+            food.effect('quark:resilience', 3000, 0, 1)
+        }
+    })
+	event.modify('brewinandchewin:red_rum', item => {
+        item.foodProperties = food => {
+            food.effect('quark:resilience', 3600, 0, 1)
+        }
+    })
+	event.modify('brewinandchewin:egg_grog', item => {
+        item.foodProperties = food => {
+            food.removeEffect('absorption').effect('farmersdelight:comfort', 1200, 0, 1).effect('cofh_core:cold_resistance', 3000, 0, 1)
+        }
+    })
+	event.modify('brewinandchewin:kombucha', item => {
+        item.foodProperties = food => {
+            food.removeEffect('haste').removeEffect('brewinandchewin:satisfaction').effect('windswept:thorns', 2400, 1, 1).effect('respiteful:maturity', 2400, 0, 1)
+        }
+    })
+	
+// Remove speed from pie slices
+	event.modify([
+	'farmersrespite:rose_hip_pie_slice',
+	'farmersdelight:apple_pie_slice',
+	'farmersdelight:sweet_berry_cheesecake_slice',
+	'farmersdelight:chocolate_pie_slice',
+	'create_central_kitchen:pumpkin_pie_slice',
+	'create_central_kitchen:cherry_pie_slice',
+	'create_central_kitchen:truffle_pie_slice'
+	], item => {
+        item.foodProperties = food => {
+            food.removeEffect('speed')
         }
     })
 	

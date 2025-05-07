@@ -1274,7 +1274,6 @@ ItemEvents.tooltip(tooltip => {
 	"naturalist:azure_froglass_pane",
 	"architects_palette:sheet_metal_block",
 	"architects_palette:sheet_metal_wall",
-	"alloyed:steel_shears",
 	"minecraft:jukebox",
 	"brewinandchewin:dread_nog",
 	"etched:jukebox_minecart",
@@ -2342,16 +2341,48 @@ ItemEvents.tooltip(tooltip => {
 	"upgrade_aquatic:beachgrass",
 	"upgrade_aquatic:tall_beachgrass",
 	"create_confectionery:cocoa_powder",
-	"create:brass_hand"
+	"create:brass_hand",
+	"alloyed:bronze_sheet",
+	"spelunkery:dust_bun",
+	"atmospheric:flowering_morado_leaf_pile",
+	"atmospheric:flowering_morado_hedge"
 	], "§4Unobtainable")
   
   tooltip.addAdvanced('lucky:raspberry_lucky_block', (item, advanced, text) => {
 	text.remove(1)
   })
   
+  tooltip.addAdvanced([
+  'brewinandchewin:beer',
+  'brewinandchewin:vodka'
+  ], (item, advanced, text) => {
+	text.remove(3)
+	text.remove(3)
+	text.remove(3)
+  })
+  
+  tooltip.addAdvanced([
+  'brewinandchewin:strongroot_ale',
+  'brewinandchewin:salty_folly',
+  'brewinandchewin:steel_toe_stout',
+  'brewinandchewin:bloody_mary',
+  'brewinandchewin:red_rum'
+  ], (item, advanced, text) => {
+	text.remove(4)
+	text.remove(4)
+	text.remove(4)
+  })
+  
   tooltip.addAdvanced('brewinandchewin:saccharine_rum', (item, advanced, text) => {
 	text.remove(2)
 	text.remove(2)
+  })
+  
+  tooltip.addAdvanced('brewinandchewin:withering_dross', (item, advanced, text) => {
+	text.remove(6)
+	text.remove(6)
+	text.remove(6)
+	text.remove(6)
   })
   
   tooltip.addAdvanced('respiteful:mocha_coffee', (item, advanced, text) => {
@@ -2497,6 +2528,34 @@ ItemEvents.tooltip(tooltip => {
       text.add(3, [Text.of('When used on an').gray()])
       text.add(4, [Text.of('obsidian portal structure:').gray()])
       text.add(5, [Text.of(' Creates Nether Portal').blue()])
+  })
+  
+// soulstice sake
+  tooltip.addAdvanced('kubejs:soulstice_sake', (item, advanced, text) => {
+      text.add(1, [Text.of('Tipsy (5:00)').red()])
+      text.add(2, [Text.of('Slow Falling (2:45)').blue()])
+      text.add(3, [Text.of('Restfulness II').blue()])
+  })
+  
+// buzzing bourbon
+  tooltip.addAdvanced('kubejs:buzzing_bourbon', (item, advanced, text) => {
+      text.add(1, [Text.of('Tipsy (5:00)').red()])
+      text.add(2, [Text.of('Sunny (7:30)').blue()])
+      text.add(3, [Text.of('Vibing (3:00)').blue()])
+  })
+  
+// prickly gin
+  tooltip.addAdvanced('kubejs:prickly_gin', (item, advanced, text) => {
+      text.add(1, [Text.of('Tipsy II (5:00)').red()])
+      text.add(2, [Text.of('Thorns IV (7:30)').blue()])
+  })
+  
+// foul fernet
+  tooltip.addAdvanced('kubejs:foul_fernet', (item, advanced, text) => {
+      text.add(1, [Text.of('Tipsy III (10:00)').red()])
+      text.add(2, [Text.of('Foul Taste III (10:00)').blue()])
+      text.add(3, [Text.of('Berserking (3:00)').blue()])
+      text.add(4, [Text.of('Extinguishes Fire').blue()])
   })
   
 // temp item compensation
