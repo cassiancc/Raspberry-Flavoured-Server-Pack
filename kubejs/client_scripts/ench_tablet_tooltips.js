@@ -158,7 +158,7 @@ ItemEvents.tooltip(event => {
 			text.add([Text.of('Smite').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('V').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Melee Weapons').gray()])
-			text.add([Text.of('Increases damage dealt to undead mobs.').darkGray()])
+			text.add([Text.of('Inflicts extra damage against undead mobs.').darkGray()])
 			
 			text.add([Text.of('Channeling').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I').gray()])
@@ -188,7 +188,7 @@ ItemEvents.tooltip(event => {
 			text.add([Text.of('Soul Speed').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Boots').gray()])
-			text.add([Text.of('Increases movement speed on soul infused blocks.').darkGray()])
+			text.add([Text.of('Increases movement speed on soul-infused blocks.').darkGray()])
 			
 			text.add([Text.of('Spirit Seal').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('I').gray()])
@@ -227,14 +227,15 @@ ItemEvents.tooltip(event => {
 	
 	event.addAdvanced('kubejs:infested_tablet', (item, advanced, text) => {
 		if (!event.shift) {
-			text.add([Text.of('Bane of Arthropods').gray()])
+			text.add([Text.of('Creepy Crippler').gray()])
 			text.add([Text.of('Spread of Ailments').gray()])
 		} else {
-			text.add([Text.of('Bane of Arthropods').gray().underlined()])
+			text.add([Text.of('Creepy Crippler').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('V').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Melee Weapons').gray()])
-			text.add([Text.of('Increases damage dealt to arthropods').darkGray()])
-			text.add([Text.of('and cobweb mining speed.').darkGray()])
+			text.add([Text.of('Inflicts extra damage against').darkGray()])
+			text.add([Text.of('some multi-legged creatures').darkGray()])
+			text.add([Text.of('and increases cobweb harvesting speed.').darkGray()])
 			
 			text.add([Text.of('Spread of Ailments').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
@@ -282,8 +283,8 @@ ItemEvents.tooltip(event => {
 			text.add([Text.of('Impaling').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('V').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Trident').gray()])
-			text.add([Text.of('Increases damage dealt to aquatic mobs').darkGray()])
-			text.add([Text.of('or ones in contact with water.').darkGray()])
+			text.add([Text.of('Inflicts extra damage against aquatic mobs').darkGray()])
+			text.add([Text.of('or any mobs in contact with water.').darkGray()])
 		}
 	})
 	
@@ -314,7 +315,7 @@ ItemEvents.tooltip(event => {
 			text.add([Text.of('Backstabbing').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Knife').gray()])
-			text.add([Text.of('Increases damage dealt when target').darkGray()])
+			text.add([Text.of('Inflicts extra damage when target').darkGray()])
 			text.add([Text.of('is struck from behind.').darkGray()])
 			
 			text.add([Text.of('Swift Sneak').gray().underlined()])

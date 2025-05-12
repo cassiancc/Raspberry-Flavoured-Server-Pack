@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
 	// Beastly
 	event.custom({type: 'miningmaster:forging_recipe', gems: [{item: 'minecraft:goat_horn'}], catalyst: {item: 'kubejs:blank_tablet'}, result: {item: 'kubejs:beastly_tablet'}})
 	event.custom({type: 'miningmaster:forging_recipe', gems: [{item: 'caverns_and_chasms:lost_goat_horn'}], catalyst: {item: 'kubejs:blank_tablet'}, result: {item: 'kubejs:beastly_tablet'}}).id('kubejs:beastly_tablet_special')
-	event.custom({type: 'miningmaster:forging_recipe', gems: [{item: 'naturalist:bear_fur'}, {item: 'naturalist:bear_fur'}, {item: 'naturalist:bear_fur'}, {item: 'naturalist:bear_fur'}, {item: 'naturalist:bear_fur'}, {item: 'naturalist:bear_fur'}], catalyst: {item: 'kubejs:blank_tablet'}, result: {item: 'kubejs:beastly_tablet'}})
+	event.custom({type: 'miningmaster:forging_recipe', gems: [{item: 'naturalist:bear_fur'}, {item: 'naturalist:bear_fur'}, {item: 'naturalist:bear_fur'}, {item: 'naturalist:bear_fur'}, {item: 'naturalist:bear_fur'}], catalyst: {item: 'kubejs:blank_tablet'}, result: {item: 'kubejs:beastly_tablet'}})
 	// Cyclic
 	event.custom({type: 'miningmaster:forging_recipe', gems: [{item: 'minecraft:prismarine_shard'}, {item: 'minecraft:prismarine_shard'}, {item: 'minecraft:prismarine_shard'}], catalyst: {item: 'kubejs:blank_tablet'}, result: {item: 'kubejs:cyclic_tablet'}})
 	// Enduring
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
 	// Heavy
 	event.custom({type: 'miningmaster:forging_recipe', gems: [{item: 'oreganized:lead_ingot'}, {item: 'oreganized:lead_ingot'}, {item: 'oreganized:lead_ingot'}, {item: 'oreganized:lead_ingot'}, {item: 'oreganized:lead_ingot'}, {item: 'oreganized:lead_ingot'}, {item: 'oreganized:lead_ingot'}, {item: 'oreganized:lead_ingot'}, {item: 'oreganized:lead_ingot'}], catalyst: {item: 'kubejs:blank_tablet'}, result: {item: 'kubejs:heavy_tablet'}})
 	// Infested
-	event.custom({type: 'miningmaster:forging_recipe', gems: [{item: 'minecraft:spider_eye'}, {item: 'minecraft:spider_eye'}, {item: 'minecraft:spider_eye'}, {item: 'minecraft:spider_eye'}], catalyst: {item: 'kubejs:blank_tablet'}, result: {item: 'kubejs:infested_tablet'}})
+	event.custom({type: 'miningmaster:forging_recipe', gems: [{item: 'minecraft:spider_eye'}, {item: 'minecraft:spider_eye'}, {item: 'minecraft:spider_eye'}, {item: 'savage_and_ravage:creeper_spores'}], catalyst: {item: 'kubejs:blank_tablet'}, result: {item: 'kubejs:infested_tablet'}})
 	// Otherworldly
 	event.custom({type: 'miningmaster:forging_recipe', gems: [{item: 'minecraft:ender_pearl'}, {item: 'minecraft:ender_pearl'}, {item: 'minecraft:ender_pearl'}], catalyst: {item: 'kubejs:blank_tablet'}, result: {item: 'kubejs:otherworldly_tablet'}})
 	// Piercing

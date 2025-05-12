@@ -30,6 +30,22 @@ EntityEvents.spawned(event => {
         }
     }
 
+	// frostbitten snowballs
+    if (entity.type == 'dungeons_mobs:frozen_zombie') {
+        if (entity.mainHandItem === 'minecraft:snowball') {
+            entity.setItemSlot("mainhand", Item.of('minecraft:air'))
+        }
+        if (entity.offHandItem === 'minecraft:snowball') {
+            entity.setItemSlot("offhand", Item.of('minecraft:air'))
+        }
+        let snowballChance = Math.floor(Math.random() * (4 - 0 + 1) + 0)
+		event.server.schedule(1, callback => {
+			if (snowballChance === 4) {
+				entity.setItemSlot("mainhand", Item.of('minecraft:snowball'))
+			}
+		})
+    }
+
 	// replace chilled with frostbitten as a fallback
     if (entity.type == 'windswept:chilled') {
         let iceZombie = entity.block.createEntity('dungeons_mobs:frozen_zombie')

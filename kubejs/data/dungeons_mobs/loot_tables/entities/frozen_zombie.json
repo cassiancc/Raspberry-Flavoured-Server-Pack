@@ -37,7 +37,7 @@
           "condition": "minecraft:killed_by_player"
         },
         {
-          "chance": 0.075,
+          "chance": 0.05,
           "condition": "minecraft:random_chance_with_looting",
           "looting_multiplier": 0.03
         }
@@ -49,6 +49,22 @@
         },
         {
           "type": "minecraft:item",
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "flags": {
+                      "is_on_fire": true
+                    }
+                  }
+                }
+              ],
+              "function": "minecraft:furnace_smelt"
+            }
+          ],
           "name": "minecraft:potato"
         }
       ],
@@ -61,7 +77,7 @@
           "condition": "minecraft:killed_by_player"
         },
         {
-          "chance": 0.009,
+          "chance": 0.005,
           "condition": "minecraft:random_chance_with_looting",
           "looting_multiplier": 0.005
         }
@@ -117,36 +133,7 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "neapolitan:ice_cubes"
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 0.0
-              },
-              "function": "minecraft:set_count"
-            },
-            {
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 0.0
-              },
-              "function": "minecraft:looting_enchant"
-            }
-          ],
-          "name": "minecraft:snowball"
+          "name": "minecraft:snow"
         }
       ],
       "rolls": 1.0

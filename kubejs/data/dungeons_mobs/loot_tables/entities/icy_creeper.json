@@ -37,7 +37,7 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 4.0,
+                "max": 2.0,
                 "min": 0.0
               },
               "function": "minecraft:set_count"
@@ -51,7 +51,7 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "neapolitan:ice_cubes"
+          "name": "minecraft:snow"
         }
       ],
       "rolls": 1.0

@@ -1668,7 +1668,10 @@ ServerEvents.recipes(event => {
 	'sob:caldera_roll',
 	'alloyed:bronze_sheet',
 	'atmospheric:flowering_morado_leaf_pile',
-	'atmospheric:flowering_morado_hedge'
+	'atmospheric:flowering_morado_hedge',
+	'spelunkery:jade_shard',
+	'create:speedometer',
+	'create:stressometer'
 	]})
 
 // Removing by ID
@@ -2390,7 +2393,47 @@ ServerEvents.recipes(event => {
 	'alloyed:mechanical_crafting/steel_hoe',
 	'alloyed:mechanical_crafting/steel_leggings',
 	'alloyed:mechanical_crafting/steel_shovel',
-	'create:milling/compat/environmental/dianthus'
+	'create:milling/compat/environmental/dianthus',
+	'architects_palette:warping/twisted_log_from_logs',
+	'architects_palette:warping/twisted_stripped_log_from_logs',
+	'architects_palette:warping/twisted_wood_from_wood',
+	'architects_palette:warping/twisted_stripped_wood_from_wood',
+	'mynethersdelight:zoglin_trophy',
+	'architects_palette:warping/craterstone_from_cobblestone_warping',
+	'architects_palette:warping/moonshale_from_stone_warping',
+	'architects_palette:warping/moonshale_bricks_from_stone_bricks_warping',
+	'architects_palette:warping/hadaline_from_abyssaline_warping',
+	'architects_palette:warping/hadaline_tiles_from_abyssaline_tiles_warping',
+	'architects_palette:warping/hadaline_pillar_from_abyssaline_pillar_warping',
+	'architects_palette:warping/hadaline_bricks_from_abyssaline_bricks_warping',
+	'architects_palette:warping/chiseled_hadaline_bricks_from_chiseled_abyssaline_bricks_warping',
+	'architects_palette:warping/hadaline_plating_from_abyssaline_plating_warping',
+	'architects_palette:warping/hadaline_lamp_from_abyssaline_lamp_warping',
+	'architects_palette:warping/moonstone_from_sunstone_warping',
+	'architects_palette:warping/unobtanium_from_netherite_ingot_warping',
+	'architects_palette:warping/onyx_from_granite_warping',
+	'architects_palette:warping/nebulite_from_diorite_warping',
+	'architects_palette:warping/esoterrack_from_andesite_warping',
+	'architects_palette:warping/entrails_from_rotten_flesh_block_warping',
+	'architects_palette:warping/twisted_planks_from_planks',
+	'architects_palette:warping/twisted_sapling_from_saplings',
+	'create:milling/compat/botania/lime_petal',
+	'create:milling/compat/botania/yellow_petal',
+	'create:milling/compat/botania/white_petal',
+	'create:milling/compat/botania/blue_petal',
+	'create:milling/compat/botania/pink_petal',
+	'create:milling/compat/botania/light_gray_petal',
+	'create:milling/compat/botania/magenta_petal',
+	'create:milling/compat/botania/orange_petal',
+	'create:milling/compat/botania/black_petal',
+	'create:milling/compat/botania/purple_petal',
+	'create:milling/compat/botania/cyan_petal',
+	'create:milling/compat/botania/brown_petal',
+	'create:milling/compat/botania/gray_petal',
+	'create:milling/compat/botania/green_petal',
+	'create:milling/compat/botania/light_blue_petal',
+	'create:milling/compat/botania/red_petal',
+	'minecraft:snow'
 	]
     
     removedIds.forEach(removedId => {

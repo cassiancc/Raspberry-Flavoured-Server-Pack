@@ -59,6 +59,14 @@
       "particle": {
         "type": "farmersdelight:steam"
       }
+    },
+    {
+      "block": [
+		"raspberry:magma_cake"
+	  ],
+      "particle": {
+        "type": "minecraft:flame"
+      }
     }
   ]
 }

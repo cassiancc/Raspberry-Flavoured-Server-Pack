@@ -1164,6 +1164,7 @@ When Cook's Collection gives you lemons!
 Terrabins all the way down!
 Rose Gold Peach!
 Patient zero for Woke Mind Virus!
+Manager Esquire!
 Justice for seagulls!
 Justice for crabs!
 Justice for copper golems!
@@ -1193,6 +1194,7 @@ Also try &lRose's Reimagined Minecraft!
 Also try &lInfinity Plus!
 Also try &lSimply Infinite!
 Also try &lSimply Craftmine!
+Also try &lDB3K!
 Also try &lSonic Spinball!
 Also try &lSonic Colours!
 Also try &lSonic Sunventure!
@@ -1281,10 +1283,12 @@ Shoutout to &lnoodleman!
 Shoutout to &lbeb!
 Shoutout to &lJameslice!
 Shoutout to &ljaybees!
+Shoutout to &lSarahIsWeird!
 Shoutout to &lWaterOre!
 Shoutout to &lAkhillLikesMinecraft!
 Shoutout to &lculling!
 Shoutout to &lKelpiesaurus!
+Shoutout to &ldb3k!
 Shoutout to &lVazkii!
 Shoutout to &lFreshah!
 Shoutout to &lmurao.kun!
@@ -1302,4 +1306,4 @@ Shoutout to &lSpncr!
 Shoutout to &lThe Sonic Hangout!
 Shoutout to &lthe RF Discord server!
 240 mods!
-&oThis splash has a 1 in 1305 chance of showing up!
+&oThis splash has a 1 in 1308 chance of showing up!

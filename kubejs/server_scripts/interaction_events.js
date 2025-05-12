@@ -501,6 +501,16 @@ ItemEvents.rightClicked('minecraft:lingering_potion', event => {
     event.player.addItemCooldown('minecraft:lingering_potion', 300)
 })
 
+
+// snow/ashballs cooldown
+ItemEvents.rightClicked('minecraft:snowball', event => {
+    event.player.addItemCooldown('minecraft:snowball', 5)
+})
+
+ItemEvents.rightClicked('raspberry:ashball', event => {
+    event.player.addItemCooldown('raspberry:ashball', 5)
+})
+
 // cancel custom exopearl throwing if structure isnt found
 const $Registry = Java.loadClass('net.minecraft.core.Registry')
 const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')        

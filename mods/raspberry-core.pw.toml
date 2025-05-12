@@ -1,13 +1,13 @@
 name = "Raspberry Core"
-filename = "raspberry_core-1.4+1.19.2.jar"
+filename = "raspberry_core-1.5+1.19.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "49ef6d93b472b233d3d76b0b681708fd0636b352"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/1dE2nxJB/versions/IAoeTY5K/raspberry_core-1.5%2B1.19.2.jar"
+hash-format = "sha512"
+hash = "f1bee71eb0677168d7836641fce3ba530028369a5157768b80c64aa02b971eb80b63d090430463d39bc32d3d23e9219c15c1f781e5c412a3281cb8b860ae8e7b"
 
 [update]
-[update.curseforge]
-file-id = 6506205
-project-id = 1204167
+[update.modrinth]
+mod-id = "1dE2nxJB"
+version = "IAoeTY5K"

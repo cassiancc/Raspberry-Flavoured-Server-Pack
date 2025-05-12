@@ -962,7 +962,8 @@ ServerEvents.tags('item', event => {
 	"cookscollection:lemon_log",
 	"cookscollection:lemon_wood",
 	"everycomp:q/cookscollection/fruiting_lemon_hedge",
-	"everycomp:abnww/cookscollection/fruiting_lemon_leaf_pile"
+	"everycomp:abnww/cookscollection/fruiting_lemon_leaf_pile",
+	"create:red_sand_paper"
 	])
 	
 	event.removeAll('createaddition:plant_foods')
@@ -1063,6 +1064,16 @@ ServerEvents.tags('item', event => {
 		.add('kubejs:red_cloth_scrap_carpet')
 		.add('kubejs:black_cloth_scrap_carpet')
 		.add('farmersdelight:organic_compost')
+
+	event.get('raspberry_flavoured:glowing_mushrooms')
+		.add('quark:glow_shroom')
+		.add('spelunkery:phosphor_fungus')
+		.add('spelunkery:mushgloom')
+
+	event.get('raspberry_flavoured:expensive_ingots')
+		.add('oreganized:electrum_ingot')
+		.add('caverns_and_chasms:necromium_ingot')
+		.add('minecraft:netherite_ingot')
 
 	event.get('ecologics:penguin_tempt_items')
 		.add('#raspberry_flavoured:full_raw_fish')
@@ -1188,7 +1199,6 @@ ServerEvents.tags('item', event => {
 
 	event.get('raspberry_flavoured:material_items')
 		.add('minecraft:leather')
-		.add('minecraft:snowball')
 		.add('minecraft:flint')
 		.add('minecraft:wheat')
 		.add('minecraft:feather')
@@ -2284,6 +2294,19 @@ ServerEvents.tags('item', event => {
 	
 	event.get('create:upright_on_belt')
 		.add('neapolitan:milk_bottle')
+		.add('raspberry:cake')
+		.add('raspberry:vanilla_cake')
+		.add('raspberry:chocolate_cake')
+		.add('raspberry:strawberry_cake')
+		.add('raspberry:banana_cake')
+		.add('raspberry:mint_cake')
+		.add('raspberry:cherry_cake')
+		.add('raspberry:green_tea_cake')
+		.add('raspberry:yellow_tea_cake')
+		.add('raspberry:black_tea_cake')
+		.add('raspberry:coffee_cake')
+		.add('raspberry:magma_cake')
+		.add('atmospheric:yucca_gateau')
 	
 	event.get('naturalist:bear_tempt_items')
 		.add('environmental:venison')
@@ -2469,6 +2492,36 @@ ServerEvents.tags('block', event => {
 	event.removeAll('auditory:obsidian_sounds')
 	event.removeAll('sullysmod:projectiles_bounce_on')
 	event.removeAll('spelunkery:can_boil_water')
+
+	event.get('raspberry:useable/knives')
+		.add('raspberry:cake')
+		.add('raspberry:vanilla_cake')
+		.add('raspberry:chocolate_cake')
+		.add('raspberry:strawberry_cake')
+		.add('raspberry:banana_cake')
+		.add('raspberry:mint_cake')
+		.add('raspberry:cherry_cake')
+		.add('raspberry:green_tea_cake')
+		.add('raspberry:yellow_tea_cake')
+		.add('raspberry:black_tea_cake')
+		.add('raspberry:coffee_cake')
+		.add('raspberry:magma_cake')
+		.add('atmospheric:yucca_gateau')
+
+	event.get('create:brittle')
+		.add('raspberry:cake')
+		.add('raspberry:vanilla_cake')
+		.add('raspberry:chocolate_cake')
+		.add('raspberry:strawberry_cake')
+		.add('raspberry:banana_cake')
+		.add('raspberry:mint_cake')
+		.add('raspberry:cherry_cake')
+		.add('raspberry:green_tea_cake')
+		.add('raspberry:yellow_tea_cake')
+		.add('raspberry:black_tea_cake')
+		.add('raspberry:coffee_cake')
+		.add('raspberry:magma_cake')
+		.add('atmospheric:yucca_gateau')
 
 	event.get('minecraft:slabs')
 		.add('twigs:bamboo_thatch_slab')
@@ -2810,6 +2863,10 @@ ServerEvents.tags('block', event => {
 		.add('minecraft:purpur_pillar')
 		.add('minecraft:purpur_stairs')
 		.add('endergetic:cracked_purpur_block')
+		.add('quark:duskbound_block')
+		.add('quark:duskbound_block_slab')
+		.add('quark:duskbound_block_stairs')
+		.add('quark:duskbound_lantern')
 
 	event.get('minecraft:beacon_base_blocks')
 		.add('oreganized:lead_block')
@@ -3409,6 +3466,10 @@ ServerEvents.tags('block', event => {
 		.add('atmospheric:kousa_trapped_chest')
 		.add('endergetic:cracked_purpur_block')
 		.add('kubejs:cracked_midori_block')
+		.add('quark:duskbound_block')
+		.add('quark:duskbound_block_slab')
+		.add('quark:duskbound_block_stairs')
+		.add('quark:duskbound_lantern')
 	
 	event.get('auditory:gourd_sounds')
 		.add('farmersdelight:stuffed_pumpkin_block')
@@ -3531,8 +3592,12 @@ ServerEvents.tags('block', event => {
 		.add('#architects_palette:twisted_logs')
 		.add('everycomp:q/architects_palette/hollow_twisted_log')
 		
+	event.get('farmersdelight:tray_heat_sources')
+		.add('raspberry:magma_cake')
+		
 	event.get('farmersdelight:heat_sources')
 		.add('kubejs:heating_cask')
+		.add('raspberry:magma_cake')
 		
 	event.get('brewinandchewin:freeze_sources')
 		.add('#auditory:ice_sounds')
@@ -3864,6 +3929,19 @@ ServerEvents.tags('block', event => {
 		.add('kubejs:oat_bag')
 		.add('quark:gunpowder_sack')
 		.add('quark:cocoa_beans_sack')
+		.add('raspberry:cake')
+		.add('raspberry:vanilla_cake')
+		.add('raspberry:chocolate_cake')
+		.add('raspberry:strawberry_cake')
+		.add('raspberry:banana_cake')
+		.add('raspberry:mint_cake')
+		.add('raspberry:cherry_cake')
+		.add('raspberry:green_tea_cake')
+		.add('raspberry:yellow_tea_cake')
+		.add('raspberry:black_tea_cake')
+		.add('raspberry:coffee_cake')
+		.add('raspberry:magma_cake')
+		.add('atmospheric:yucca_gateau')
 	
 	event.get('minecraft:needs_stone_tool')
 		.add('create_confectionery:candy_cane_block')

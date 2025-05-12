@@ -107,7 +107,7 @@ JEIEvents.information(event => {
 	['Foul berries can be found growing in maple forests. Turkeys love them for some reason.'])
 	
 	event.addItem(['neapolitan:strawberries','neapolitan:strawberry_basket','neapolitan:white_strawberries','neapolitan:white_strawberry_basket','neapolitan:strawberry_pips'], 
-	['Strawberries are found in patches around plains biomes. Growing strawberry bushes at very high altitudes will yield pineberries.'])
+	['Strawberries are found in patches around plains biomes. Growing strawberry bushes at very high altitudes will yield pineberries. Strawberry bushes will make various mobs like Bees, Spiders and Creepers invisible when they walk through them.'])
 	
 	event.addItem(['neapolitan:mint_leaves','neapolitan:mint_sprout', 'neapolitan:mint_basket'], 
 	['Mint is typically found on windswept hills and some other cold biomes.'])

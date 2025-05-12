@@ -75,7 +75,7 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "neapolitan:ice_cubes"
+          "name": "minecraft:snow"
         }
       ],
       "rolls": 1.0

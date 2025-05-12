@@ -16,15 +16,15 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:ender_dragon"
+        "type": "minecraft:strider"
       }
     },
     {
       "condition": "minecraft:random_chance_with_looting",
-      "chance": 0.25,
+      "chance": 0.5,
       "looting_multiplier": 0.25
     }
   ],
-  "item": "mynethersdelight:strider_slice",
-  "count": 3.0
+  "item": "minecraft:string",
+  "count": 1.0
 }

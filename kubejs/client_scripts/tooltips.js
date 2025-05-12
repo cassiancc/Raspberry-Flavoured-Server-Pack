@@ -2345,7 +2345,20 @@ ItemEvents.tooltip(tooltip => {
 	"alloyed:bronze_sheet",
 	"spelunkery:dust_bun",
 	"atmospheric:flowering_morado_leaf_pile",
-	"atmospheric:flowering_morado_hedge"
+	"atmospheric:flowering_morado_hedge",
+    "minecraft:cake",
+    "farmersrespite:coffee_cake",
+    "neapolitan:vanilla_cake",
+    "neapolitan:chocolate_cake",
+    "neapolitan:strawberry_cake",
+    "neapolitan:banana_cake",
+    "neapolitan:mint_cake",
+    "neapolitan:adzuki_cake",
+    "respiteful:green_tea_cake",
+    "respiteful:yellow_tea_cake",
+    "respiteful:black_tea_cake",
+    "mynethersdelight:magma_cake",
+	"create:red_sand_paper"
 	], "§4Unobtainable")
   
   tooltip.addAdvanced('lucky:raspberry_lucky_block', (item, advanced, text) => {

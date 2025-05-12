@@ -3,83 +3,14 @@
 ServerEvents.recipes(event => {
 // Remove existing recipes
     const removedRecipes = [
-	'#raspberry_flavoured:stone',
-	'#raspberry_flavoured:stone_slab',
-	'#raspberry_flavoured:deepslate',
-	'#raspberry_flavoured:deepslate_slab',
 	'#create:stone_types/deepslate',
-	'#raspberry_flavoured:granite',
-	'#raspberry_flavoured:granite_slab',
 	'#create:stone_types/granite',
-	'#raspberry_flavoured:diorite',
-	'#raspberry_flavoured:diorite_slab',
 	'#create:stone_types/diorite',
-	'#raspberry_flavoured:andesite',
-	'#raspberry_flavoured:andesite_slab',
 	'#create:stone_types/andesite',
-	'#raspberry_flavoured:calcite',
-	'#raspberry_flavoured:calcite_slab',
 	'#create:stone_types/calcite',
-	'#raspberry_flavoured:tuff',
-	'#raspberry_flavoured:tuff_slab',
 	'#create:stone_types/tuff',
-	'#raspberry_flavoured:dripstone',
-	'#raspberry_flavoured:dripstone',
-	'#create:stone_types/dripstone',
-	'#raspberry_flavoured:quartz',
-	'#raspberry_flavoured:quartz_slab',
-	'#raspberry_flavoured:basalt',
-	'#raspberry_flavoured:basalt_slab',
-	'#raspberry_flavoured:blackstone',
-	'#raspberry_flavoured:blackstone_slab',
-	'#raspberry_flavoured:glance',
-	'#raspberry_flavoured:glance_slab',
-	'#raspberry_flavoured:copper',
-	'#raspberry_flavoured:exposed_copper',
-	'#raspberry_flavoured:weathered_copper',
-	'#raspberry_flavoured:oxidized_copper',
-	'#raspberry_flavoured:copper_slab',
-	'#raspberry_flavoured:exposed_copper_slab',
-	'#raspberry_flavoured:weathered_copper_slab',
-	'#raspberry_flavoured:oxidized_copper_slab',
-	'#raspberry_flavoured:waxed_copper',
-	'#raspberry_flavoured:waxed_exposed_copper',
-	'#raspberry_flavoured:waxed_weathered_copper',
-	'#raspberry_flavoured:waxed_oxidized_copper',
-	'#raspberry_flavoured:waxed_copper_slab',
-	'#raspberry_flavoured:waxed_exposed_copper_slab',
-	'#raspberry_flavoured:waxed_weathered_copper_slab',
-	'#raspberry_flavoured:waxed_oxidized_copper_slab',
-	'#raspberry_flavoured:lapis',
-	'#raspberry_flavoured:lapis_slab',
-	'#raspberry_flavoured:gravel',
-	'#raspberry_flavoured:gravel_slab',
-	'#raspberry_flavoured:deepslate_gravel',
-	'#raspberry_flavoured:deepslate_gravel_slab',
-	'#raspberry_flavoured:blackstone_gravel',
-	'#raspberry_flavoured:blackstone_gravel_slab',
-	'#raspberry_flavoured:sandstone',
-	'#raspberry_flavoured:red_sandstone',
-	'#raspberry_flavoured:soul_sandstone',
-	'#raspberry_flavoured:arid_sandstone',
-	'#raspberry_flavoured:red_arid_sandstone',
-	'#raspberry_flavoured:gilded_sandstone',
-	'#raspberry_flavoured:sandstone_slab',
-	'#raspberry_flavoured:red_sandstone_slab',
-	'#raspberry_flavoured:soul_sandstone_slab',
-	'#raspberry_flavoured:arid_sandstone_slab',
-	'#raspberry_flavoured:red_arid_sandstone_slab',
-	'#raspberry_flavoured:gilded_sandstone_slab',
-	'#raspberry_flavoured:amethyst',
-	'#raspberry_flavoured:amethyst_slab',
-	'#raspberry_flavoured:mossy_stone',
-	'#raspberry_flavoured:mossy_stone_slab'
+	'#create:stone_types/dripstone'
 	]
-    
-    removedRecipes.forEach(recipe => {
-		event.remove({input: recipe, type: 'minecraft:stonecutting'})
-		event.remove({output: recipe, type: 'minecraft:stonecutting'})
-    })
 	
     const blockTags = [
 	'#raspberry_flavoured:stone',
@@ -113,10 +44,67 @@ ServerEvents.recipes(event => {
 	'#raspberry_flavoured:red_arid_sandstone',
 	'#raspberry_flavoured:gilded_sandstone',
 	'#raspberry_flavoured:amethyst',
-	'#raspberry_flavoured:mossy_stone'
+	'#raspberry_flavoured:mossy_stone',
+	'#raspberry_flavoured:purpur',
+	'#raspberry_flavoured:midori',
+	'#raspberry_flavoured:duskbound',
+	'#raspberry_flavoured:brick',
+	'#raspberry_flavoured:silt_brick',
+	'#raspberry_flavoured:ash_brick',
+	'#raspberry_flavoured:mossy_brick',
+	'#raspberry_flavoured:nether_brick',
+	'#raspberry_flavoured:red_nether_brick',
+	'#raspberry_flavoured:blue_nether_brick',
+	'#raspberry_flavoured:mud',
+	'#raspberry_flavoured:prismarine',
+	'#raspberry_flavoured:dark_prismarine',
+	'#raspberry_flavoured:luminous_prismarine',
+	'#raspberry_flavoured:rock_salt',
+	'#raspberry_flavoured:white_concrete',
+	'#raspberry_flavoured:orange_concrete',
+	'#raspberry_flavoured:magenta_concrete',
+	'#raspberry_flavoured:light_blue_concrete',
+	'#raspberry_flavoured:yellow_concrete',
+	'#raspberry_flavoured:lime_concrete',
+	'#raspberry_flavoured:pink_concrete',
+	'#raspberry_flavoured:gray_concrete',
+	'#raspberry_flavoured:light_gray_concrete',
+	'#raspberry_flavoured:cyan_concrete',
+	'#raspberry_flavoured:purple_concrete',
+	'#raspberry_flavoured:blue_concrete',
+	'#raspberry_flavoured:brown_concrete',
+	'#raspberry_flavoured:green_concrete',
+	'#raspberry_flavoured:red_concrete',
+	'#raspberry_flavoured:black_concrete',
+	'#raspberry_flavoured:terracotta',
+	'#raspberry_flavoured:white_terracotta',
+	'#raspberry_flavoured:orange_terracotta',
+	'#raspberry_flavoured:magenta_terracotta',
+	'#raspberry_flavoured:light_blue_terracotta',
+	'#raspberry_flavoured:yellow_terracotta',
+	'#raspberry_flavoured:lime_terracotta',
+	'#raspberry_flavoured:pink_terracotta',
+	'#raspberry_flavoured:gray_terracotta',
+	'#raspberry_flavoured:light_gray_terracotta',
+	'#raspberry_flavoured:cyan_terracotta',
+	'#raspberry_flavoured:purple_terracotta',
+	'#raspberry_flavoured:blue_terracotta',
+	'#raspberry_flavoured:brown_terracotta',
+	'#raspberry_flavoured:green_terracotta',
+	'#raspberry_flavoured:red_terracotta',
+	'#raspberry_flavoured:black_terracotta'
 	]
     
+    removedRecipes.forEach(recipe => {
+		event.remove({input: recipe, type: 'minecraft:stonecutting'})
+		event.remove({output: recipe, type: 'minecraft:stonecutting'})
+    })
+    
     blockTags.forEach(tag => {
+		event.remove({input: tag, type: 'minecraft:stonecutting'})
+		event.remove({output: tag, type: 'minecraft:stonecutting'})
+		event.remove({input: tag + '_slab', type: 'minecraft:stonecutting'})
+		event.remove({output: tag + '_slab', type: 'minecraft:stonecutting'})
 		Ingredient.of(tag).itemIds.forEach(id => {
 			event.stonecutting('1x ' + id, tag)
 		})

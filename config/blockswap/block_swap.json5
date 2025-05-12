@@ -335,6 +335,18 @@ to make editing this file much easier.
 			"cookscollection:lemon_log": "minecraft:oak_log",
 			"cookscollection:lemon_wood": "minecraft:oak_wood",
 			"atmospheric:flowering_morado_leaf_pile": "atmospheric:morado_leaf_pile",
-			"atmospheric:flowering_morado_hedge": "atmospheric:morado_hedge"
+			"atmospheric:flowering_morado_hedge": "atmospheric:morado_hedge",
+			"minecraft:cake": "raspberry:cake",
+			"neapolitan:vanilla_cake": "raspberry:vanilla_cake",
+			"neapolitan:chocolate_cake": "raspberry:chocolate_cake",
+			"neapolitan:strawberry_cake": "raspberry:strawberry_cake",
+			"neapolitan:banana_cake": "raspberry:banana_cake",
+			"neapolitan:mint_cake": "raspberry:mint_cake",
+			"neapolitan:adzuki_cake": "raspberry:cherry_cake",
+			"respiteful:green_tea_cake": "raspberry:green_tea_cake",
+			"respiteful:yellow_tea_cake": "raspberry:yellow_tea_cake",
+			"respiteful:black_tea_cake": "raspberry:black_tea_cake",
+			"farmersrespite:coffee_cake": "raspberry:coffee_cake",
+			"mynethersdelight:magma_cake": "raspberry:magma_cake"
 	   	}
 }

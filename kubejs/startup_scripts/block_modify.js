@@ -167,6 +167,7 @@ BlockEvents.modification(event => {
 	breakFast('minecraft:red_bed', 1.25)
 	breakFast('minecraft:black_bed', 1.25)
 	breakFast('minecraft:red_bed', 1.25)
+	breakFast('bedspreads:decorated_bed', 1.25)
 	breakFast('domesticationinnovation:pet_bed_white', 0.75)
 	breakFast('domesticationinnovation:pet_bed_orange', 0.75)
 	breakFast('domesticationinnovation:pet_bed_magenta', 0.75)

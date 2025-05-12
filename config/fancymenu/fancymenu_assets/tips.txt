@@ -8,9 +8,9 @@ Having an atlas in your hotbar will display a minimap.
 There's many ways to automate many things.
 Bellows can make fires last longer and speed up furnaces.
 Bombs will damage mobs, but not blocks.
-Campfires grant the &lComfort &reffect when lit and stood near.
+Campfires grant the Comfort effect when lit and stood near.
 Crushing cinnabar will yield redstone dust.
-Cooking pots can cook meals that grant helpful effects.
+Cooking pots can make meals and drinks that grant helpful effects.
 Ovens can cook meals and pastries that grant helpful effects.
 Blaze burners with cooking guides can cook automatically.
 There are no stone tools in RF - only copper tools.
@@ -32,6 +32,7 @@ Rose gold tools dig quickly and cause blocks to drop in their purest form.
 Rose gold armour protects against magic.
 Steel tools dig slowly, but are durable and knock targets further away.
 Steel armour protects against projectiles and getting knocked back.
+Diamond armour requires mechanical crafters to obtain.
 Electrum tools dig very quickly and deal extra damage when sprinting.
 Electrum armour grants a movement speed boost.
 Netherite tools light targets on fire & auto-smelt blocks.
@@ -47,7 +48,7 @@ Don't leave trees floating!
 Item vaults can combine into bigger vaults when placed next to each other.
 Fluid tanks can combine into bigger tanks when placed next to each other.
 Flutes can be assigned to tamed mobs and will call them from far away.
-Mushrooms and nether fungi on resurgent soil will grow into colonies.
+Some fungi planted on rich soil will grow into colonies.
 Furnace boats can be fueled with coal to go faster.
 Furnace minecarts will load chunks when fueled.
 Lighting copper-related blocks on fire will create green cupric fire.
@@ -79,7 +80,7 @@ Skillets and cooking pots always drop items or containers to their right.
 All hail the Slabfish.
 Baby Snails will drop snail shell pieces when they grow into adults.
 Snow boots will allow you to move faster over snowy blocks.
-Soul soap can clean dye off blocks.
+Soap can clean dye off blocks.
 Stoves are like campfires, except they have 6 spaces instead of 4.
 Too many machines attached to a single power source may cause overstress.
 Suspicious stews can only be obtained from loot and brown mooshrooms.
@@ -120,7 +121,7 @@ Various recipes have the potential to leave byproducts.
 Sculk shriekers will give you three warnings before releasing the beast.
 Ancient cities contain major loot - a high risk, high reward adventure.
 Deep in underwater caves, you may find groups of nautili swimming around.
-Hostile mobs become neutral on easy difficulty.
+Hostile mobs become neutral on Easy difficulty.
 Mimes will copy your held item - and worn armour, if they hit you.
 Deepers will explode and destroy terrain, but are only found underground.
 While Creepers don't blow up blocks, Deepers do.

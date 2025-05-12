@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
 	event.recipes.farmersdelight.cutting('glass_bottle', 'another_furniture:furniture_hammer', ['quark:clear_shard'], 'minecraft:block.glass.break')
 	event.recipes.farmersdelight.cutting('brewinandchewin:tankard', 'another_furniture:furniture_hammer', ['stick', Item.of('iron_nugget').withChance(0.1)], 'minecraft:entity.item.break')
 	event.recipes.farmersdelight.cutting('supplementaries:globe', 'another_furniture:furniture_hammer', ['2x blue_dye', '2x green_dye', '8x gold_nugget'], 'minecraft:entity.item.break')
-	event.recipes.farmersdelight.cutting('supplementaries:sepia_globe', 'another_furniture:furniture_hammer', ['4x brown_dye', '8x gold_nugget'], 'minecraft:entity.item.break')
+	event.recipes.farmersdelight.cutting('supplementaries:globe_sepia', 'another_furniture:furniture_hammer', ['4x brown_dye', '8x gold_nugget'], 'minecraft:entity.item.break')
 	
 	// Shears
 	event.recipes.farmersdelight.cutting('saddle', '#forge:shears', ['2x rabbit_hide', Item.of('chain').withChance(0.25)])
@@ -354,5 +354,5 @@ ServerEvents.recipes(event => {
 	event.recipes.create.milling(['quark:clear_shard'], 'glass_bottle')
 	event.recipes.create.milling(['stick', Item.of('iron_nugget').withChance(0.1)], 'brewinandchewin:tankard')
 	event.recipes.create.milling(['2x blue_dye', '2x green_dye', '8x gold_nugget'], 'supplementaries:globe')
-	event.recipes.create.milling(['4x brown_dye', '8x gold_nugget'], 'supplementaries:sepia_globe')
+	event.recipes.create.milling(['4x brown_dye', '8x gold_nugget'], 'supplementaries:globe_sepia')
 })
