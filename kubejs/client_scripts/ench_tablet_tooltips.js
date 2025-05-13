@@ -227,15 +227,15 @@ ItemEvents.tooltip(event => {
 	
 	event.addAdvanced('kubejs:infested_tablet', (item, advanced, text) => {
 		if (!event.shift) {
-			text.add([Text.of('Creepy Crippler').gray()])
+			text.add([Text.of('Hiss Hazard').gray()])
 			text.add([Text.of('Spread of Ailments').gray()])
 		} else {
-			text.add([Text.of('Creepy Crippler').gray().underlined()])
+			text.add([Text.of('Hiss Hazard').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('V').gray()])
 			text.add([Text.of('Applied to: ').darkGray(), Text.of('Melee Weapons').gray()])
 			text.add([Text.of('Inflicts extra damage against').darkGray()])
-			text.add([Text.of('some multi-legged creatures').darkGray()])
-			text.add([Text.of('and increases cobweb harvesting speed.').darkGray()])
+			text.add([Text.of('some hissing creatures and').darkGray()])
+			text.add([Text.of('increases cobweb harvesting speed.').darkGray()])
 			
 			text.add([Text.of('Spread of Ailments').gray().underlined()])
 			text.add([Text.of('Max. Level: ').darkGray(), Text.of('III').gray()])

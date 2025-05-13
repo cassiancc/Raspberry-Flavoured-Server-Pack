@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
 	event.recipes.farmersdelight.cutting('supplementaries:globe_sepia', 'another_furniture:furniture_hammer', ['4x brown_dye', '8x gold_nugget'], 'minecraft:entity.item.break')
 	
 	// Shears
-	event.recipes.farmersdelight.cutting('saddle', '#forge:shears', ['2x rabbit_hide', Item.of('chain').withChance(0.25)])
+	event.recipes.farmersdelight.cutting('saddle', '#forge:shears', ['rabbit_hide', Item.of('chain').withChance(0.25)])
 	event.recipes.farmersdelight.cutting('leather_helmet', '#forge:shears', ['1x rabbit_hide'])
 	event.recipes.farmersdelight.cutting('leather_chestplate', '#forge:shears', ['2x rabbit_hide'])
 	event.recipes.farmersdelight.cutting('leather_leggings', '#forge:shears', ['2x rabbit_hide'])
@@ -300,7 +300,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.milling(['savage_and_ravage:blast_proof_plating', Item.of('stick').withChance(0.5)], 'shieldexp:griefer_shield')
 	event.recipes.create.milling(['caverns_and_chasms:sanguine_plating', Item.of('stick').withChance(0.5)], 'shieldexp:iron_shield')
 	
-	event.recipes.create.milling(['2x rabbit_hide', Item.of('chain').withChance(0.25)], 'saddle')
+	event.recipes.create.milling(['rabbit_hide', Item.of('chain').withChance(0.25)], 'saddle')
 	event.recipes.create.milling(['1x stick', Item.of('string').withChance(0.5)], 'fishing_rod')
 	event.recipes.create.milling(['1x stick', Item.of('string').withChance(0.5)], 'carrot_on_a_stick')
 	event.recipes.create.milling(['1x stick', Item.of('string').withChance(0.5)], 'warped_fungus_on_a_stick')

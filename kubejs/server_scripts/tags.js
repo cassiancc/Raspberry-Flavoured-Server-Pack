@@ -4335,6 +4335,12 @@ ServerEvents.tags('worldgen/biome', event => {
 	event.get('betterwitchhuts:has_structure/better_witch_hut').removeAll()
 		.add('minecraft:swamp')
 		
+	event.get('yungsextras:has_structure/desert_decorations').removeAll()
+		.add('minecraft:desert')
+		
+	event.get('yungsextras:has_structure/vanilla_desert_well').removeAll()
+		.add('minecraft:desert')
+		
 	event.get('geophilic_reforged:wood_type/mc/oak')
 		.remove('minecraft:swamp')
 	
