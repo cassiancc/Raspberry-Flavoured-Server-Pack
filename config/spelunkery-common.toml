@@ -52,6 +52,6 @@
 	stone_stripe_features = true
 	enable_sporophytes = true
 	better_sculk_patches = false
-	dark_forest_portabellas = false
+	dark_forest_portabellas = true
 	enable_mores = true
 

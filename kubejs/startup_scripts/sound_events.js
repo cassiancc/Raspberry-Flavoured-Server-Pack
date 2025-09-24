@@ -35,7 +35,9 @@ StartupEvents.registry('sound_event', (event) => {
 	'alt_hanging_sign',
 	'bamboo_hanging_sign',
 	'nether_hanging_sign',
-	'tnt'
+	'tnt',
+	'obsidian',
+	'iron'
 	]
 	blockSounds.forEach(block => {
 		event.create('sound.'+block+'.break')
@@ -57,6 +59,7 @@ StartupEvents.registry('sound_event', (event) => {
 	event.create('spawner.spawn')
 	event.create('copper_brush.brush')
 	event.create('copper_patina.apply')
+	event.create('sound.swing')
 	
 // Advancement sounds
 	event.create('advancement.regular')

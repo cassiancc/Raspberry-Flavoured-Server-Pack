@@ -2,7 +2,7 @@
   "type": "blueprint:simple",
   "priority": "normal",
   "replaces_block": "minecraft:iron_bars",
-  "replaces_with": "caverns_and_chasms:copper_bars",
+  "replaces_with": "caverns_and_chasms:waxed_copper_bars",
   "selector": {
     "type": "names",
     "config": [

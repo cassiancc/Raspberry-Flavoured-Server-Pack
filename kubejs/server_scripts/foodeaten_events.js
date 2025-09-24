@@ -82,9 +82,7 @@ ItemEvents.foodEaten('kubejs:foul_fernet', event =>{
 
 // Fire extinguishing foods
 ItemEvents.foodEaten([
-	'sob:aloe_tea',
 	'abnormals_delight:dune_platter',
-	'brewinandchewin:steel_toe_stout',
 	'kubejs:foul_fernet',
 	'kubejs:prismatic_ice_cream',
 	'kubejs:neapolitan_ice_cream_sandwich',
@@ -147,7 +145,7 @@ ItemEvents.foodEaten([
 	'kubejs:oatmeal',
 	'kubejs:mixed_oatmeal',
 	'kubejs:squid_stir_fry',
-	'kubejs:turkey_chowder',
+	'kubejs:turkey_stew',
 	'kubejs:pasta_with_turkey',
 	'kubejs:mutton_udon',
 	'kubejs:cinnamon_mint_curry',
@@ -161,7 +159,9 @@ ItemEvents.foodEaten([
 	'kubejs:tambaqui_curry',
 	'kubejs:pollock_with_vegetables',
 	'kubejs:pasta_with_tuna',
-	'kubejs:rollmops'
+	'kubejs:rollmops',
+	'kubejs:spicy_crab_cakes',
+	'kubejs:coconut_crusted_gar'
 	], event => {
 		if (!event.player.isCreative()) {
 			event.server.schedule(1, callback => {
@@ -172,7 +172,10 @@ ItemEvents.foodEaten([
 
 // Returns glass bottle
 ItemEvents.foodEaten([
-	'kubejs:cactus_juice'
+	'kubejs:cactus_juice',
+	'kubejs:cherry_cream_soda',
+	'kubejs:pickerelweed_juice',
+	'kubejs:builders_tea'
 	], event => {
 		if (!event.player.isCreative()) {
 			event.server.schedule(1, callback => {
@@ -192,5 +195,12 @@ ItemEvents.foodEaten([
 			event.server.schedule(1, callback => {
 				event.player.giveInHand('brewinandchewin:tankard')
 		})
+	}
+})
+
+// Thrasher jumping alt. fix (by grom_pe)
+ItemEvents.foodEaten(event => {
+	if (event.player) {
+		event.player.jumping = false;
 	}
 })

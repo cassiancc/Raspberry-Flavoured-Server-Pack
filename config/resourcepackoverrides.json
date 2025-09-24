@@ -14,12 +14,14 @@
         "file/BatBackport-16x-v1.1.0.zip",
         "file/Better Create Palettes 1.3 1.20.1.zip",
         "file/Better_Mobs_RP_1.1.zip",
+        "file/Brush-Up-1.6.zip",
         "file/Copper+Color+Fix+3.1.zip",
         "file/Create Touch-Ups v1.0.zip",
         "file/Create Tweaks Compats.zip",
         "file/Deepslate Ore Fix.zip",
         "file/Detail-Brush-1.6-1.20.zip",
         "file/Farcr's Re-Crafted V2.16.zip",
+        "file/Golden crit.zip",
         "file/Peeves - 1.16x.zip",
         "file/Quark VRO.zip",
         "file/Refined-Armor-1.0-1.19.zip",
@@ -29,7 +31,6 @@
         "file/SHC Enhanced Fire.zip",
         "file/texture_tweaks_v1.1.zip",
         "file/Up To Scratch V9.zip",
-        "file/VexBackport-16x-1.19.zip",
         "file/Warm Polar Bear.zip",
         "programer_art",
         "create:legacy_copper",
@@ -38,7 +39,8 @@
         "spelunkery:emissive_better_vanilla_ores",
         "spelunkery:emissive_ores",
         "spelunkery:unlit_redstone_ores",
-        "supplementaries:darker_ropes"
+        "supplementaries:darker_ropes",
+        "modestmining:modestmining_materials"
       ],
       "2": [
         "vanilla"
@@ -79,8 +81,9 @@
         "resources/25_DeepslateOreFix",
         "resources/26_EmiheadsBookshelves",
         "resources/27_CrudeGlass",
-        "resources/28_AdditionalResources",
-        "resources/29_RaspberryResources"
+        "resources/28_GoldenCrit",
+        "resources/29_AdditionalResources",
+        "resources/99_RaspberryResources"
       ],
       "$1": {
         "hidden": true,

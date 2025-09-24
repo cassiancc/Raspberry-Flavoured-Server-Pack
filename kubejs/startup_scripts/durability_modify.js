@@ -3,21 +3,40 @@ ItemEvents.modification(event => {
 		event.modify(modifiedItem, item => {item.maxDamage = modifiedAmount})
 	}
 
-// Gizmos
-	maxDura('minecraft:trident', 1500)
+// Misc
+	maxDura('supplementaries:flute', 200)
+	maxDura('naturalist:bug_net', 200)
+	maxDura('minecraft:fishing_rod', 350)
+	maxDura('minecraft:carrot_on_a_stick', 350)
+	maxDura('minecraft:warped_fungus_on_a_stick', 350)
+	maxDura('minecraft:bow', 350)
+	maxDura('supplementaries:slingshot', 350)
+	maxDura('supplementaries:wrench', 500)
+	maxDura('another_furniture:furniture_hammer', 500)
+	maxDura('aquaculture:iron_fishing_rod', 900)
+	maxDura('farmersdelight:skillet', 900)
+	maxDura('minecraft:crossbow', 900)
 	
-	maxDura('savage_and_ravage:mask_of_dishonesty', 750)
+	maxDura('minecraft:trident', 2000)
+	
+	maxDura('savage_and_ravage:mask_of_dishonesty', 1000)
 	maxDura('savage_and_ravage:conch_of_conjuring', 1000)
-	maxDura('savage_and_ravage:wand_of_freezing', 1250)
+	maxDura('savage_and_ravage:wand_of_freezing', 1500)
 	
 	maxDura('create:potato_cannon', 750)
 	maxDura('create:extendo_grip', 750)
+	maxDura('vc_gliders:paraglider_wood', 700)
 	maxDura('create:super_glue', 100)
-	maxDura('ecologics:crab_claw', 100)
-	maxDura('vc_gliders:paraglider_wood', 500)
+	maxDura('ecologics:crab_claw', 150)
+	maxDura('create:sand_paper', 150)
 	
-// Tools & weapons
-	// Wooden or other
+	maxDura('minecraft:turtle_helmet', 650)
+	maxDura('autumnity:snail_shell_chestplate', 800)
+	maxDura('environmental:yak_pants', 250)
+	maxDura('windswept:snow_boots', 350)
+	
+// Main tools & weapons
+	// Wood or flint
 	event.modify([
 	'minecraft:wooden_pickaxe',
 	'minecraft:wooden_axe',
@@ -25,19 +44,10 @@ ItemEvents.modification(event => {
 	'minecraft:wooden_hoe',
 	'minecraft:wooden_sword',
 	'farmersdelight:flint_knife',
-	'minecraft:flint_and_steel',
-	'minecraft:fishing_rod',
-	'minecraft:carrot_on_a_stick',
-	'minecraft:warped_fungus_on_a_stick',
-	'create:sand_paper',
-	'create:red_sand_paper',
-	'supplementaries:flute',
-	'supplementaries:slingshot',
-	'naturalist:bug_net',
-	'minecraft:bow'
+	'minecraft:flint_and_steel'
 	], item => {item.maxDamage = 150})
 	
-	// Golden
+	// Gold
 	event.modify([
 	'minecraft:golden_pickaxe',
 	'minecraft:golden_axe',
@@ -54,9 +64,7 @@ ItemEvents.modification(event => {
 	'minecraft:stone_shovel',
 	'minecraft:stone_hoe',
 	'minecraft:stone_sword',
-	'minecraft:shears',
-	'supplementaries:wrench',
-	'another_furniture:furniture_hammer'
+	'minecraft:shears'
 	], item => {item.maxDamage = 350})
 	
 	// Iron
@@ -66,10 +74,7 @@ ItemEvents.modification(event => {
 	'minecraft:iron_shovel',
 	'minecraft:iron_hoe',
 	'minecraft:iron_sword',
-	'farmersdelight:iron_knife',
-	'aquaculture:iron_fishing_rod',
-	'farmersdelight:skillet',
-	'minecraft:crossbow'
+	'farmersdelight:iron_knife'
 	], item => {item.maxDamage = 700})
 	
 	// Rose gold
@@ -90,7 +95,7 @@ ItemEvents.modification(event => {
 	'alloyed:steel_sword',
 	'alloyed:steel_knife',
 	'mace_backport:mace'
-	], item => {item.maxDamage = 4000})
+	], item => {item.maxDamage = 3000})
 	
 	// Diamond
 	event.modify([
@@ -148,7 +153,7 @@ ItemEvents.modification(event => {
 	'shieldexp:wooden_shield'
 	], item => {item.maxDamage = 125})
 
-	// Golden
+	// Gold
 	event.modify([
 	'minecraft:golden_helmet',
 	'minecraft:golden_chestplate',
@@ -198,7 +203,7 @@ ItemEvents.modification(event => {
 	'alloyed:steel_chestplate',
 	'alloyed:steel_leggings',
 	'alloyed:steel_boots'
-	], item => {item.maxDamage = 900})
+	], item => {item.maxDamage = 850})
 
 	// Diamond
 	event.modify([
@@ -249,18 +254,4 @@ ItemEvents.modification(event => {
 	'caverns_and_chasms:sanguine_boots',
 	'shieldexp:iron_shield'
 	], item => {item.maxDamage = 1000})
-
-	// Explorer
-	event.modify([
-	'environmental:thief_hood',
-	'environmental:healer_pouch',
-	'environmental:architect_belt',
-	'environmental:wanderer_boots'
-	], item => {item.maxDamage = 350})
-	
-	// Other
-	maxDura('minecraft:turtle_helmet', 650)
-	maxDura('autumnity:snail_shell_chestplate', 800)
-	maxDura('environmental:yak_pants', 250)
-	maxDura('windswept:snow_boots', 350)
 })

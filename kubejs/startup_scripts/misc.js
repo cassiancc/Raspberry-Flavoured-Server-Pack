@@ -37,6 +37,14 @@ StartupEvents.registry('fluid', event =>
 	event.create('ink').stillTexture('kubejs:fluid/ink_still').flowingTexture('kubejs:fluid/ink_flow')
 	event.create('latex').stillTexture('kubejs:fluid/latex_still').flowingTexture('kubejs:fluid/latex_flow')
 	event.create('cooking_oil').stillTexture('kubejs:fluid/cooking_oil_still').flowingTexture('kubejs:fluid/cooking_oil_flow')
+	event.create('strawberry_banana_smoothie').stillTexture('kubejs:fluid/strawberry_banana_smoothie_still').flowingTexture('kubejs:fluid/strawberry_banana_smoothie_flow').noBucket().noBlock()
+	event.create('cherry_cream_soda').stillTexture('kubejs:fluid/cherry_cream_soda_still').flowingTexture('kubejs:fluid/cherry_cream_soda_flow').noBucket().noBlock()
+	
+	event.create('cactus_juice').thinTexture(0x4B8C37).noBucket().noBlock
+	event.create('lemonade').thinTexture(0xF9F93B).noBucket().noBlock()
+	event.create('mint_green_tea').thinTexture(0x6BCF87).noBucket().noBlock()
+	event.create('vanilla_milk_tea').thinTexture(0xD3A872).noBucket().noBlock()
+	event.create('pickerelweed_juice').thinTexture(0x519991).noBucket().noBlock
 	
 	// don't ask
 	event.create('wooden_pickaxe').displayName('Wooden Pickaxe Fluid').stillTexture('kubejs:fluid/wooden_pickaxe').flowingTexture('kubejs:fluid/wooden_pickaxe')
@@ -45,9 +53,6 @@ StartupEvents.registry('fluid', event =>
 // Misc. item attributes
 ItemEvents.modification(event => {
 	// Burn time
-	event.modify('minecraft:fishing_rod', item => {
-		item.burnTime = 0
-    })
 	event.modify('atmospheric:large_kousa_boat', item => {
 		item.burnTime = 2400
     })
@@ -59,6 +64,12 @@ ItemEvents.modification(event => {
     })
 	event.modify('kubejs:heating_cask', item => {
 		item.burnTime = 900
+    })
+	event.modify('minecraft:mushroom_stem', item => {
+		item.burnTime = 800
+    })
+	event.modify('quark:glow_shroom_stem', item => {
+		item.burnTime = 800
     })
 	event.modify([
 	'minecraft:campfire',
@@ -94,6 +105,7 @@ ItemEvents.modification(event => {
 	'minecraft:ender_eye',
 	'minecraft:golden_apple',
 	'minecraft:bell',
+	'minecraft:disc_fragment_5',
 	'create:peculiar_bell',
 	'oreganized:silver_mirror',
 	'clash:spear',
@@ -130,7 +142,8 @@ ItemEvents.modification(event => {
 	'supplementaries:bomb_spiky',
 	'supplementaries:bomb_spiky_projectile',
 	'aquaculture:goldfish',
-	'kubejs:spirited_exopearl'
+	'kubejs:spirited_exopearl',
+	'moyai:moyai'
 	], item => {
         item.rarity = 'uncommon'
     })
@@ -138,7 +151,6 @@ ItemEvents.modification(event => {
 	// Rare items
 	event.modify([
 	'create:haunted_bell',
-	'minecraft:disc_fragment_5',
 	'minecraft:trident',
 	'minecraft:nether_star',
 	'minecraft:globe_banner_pattern',
@@ -174,6 +186,9 @@ ItemEvents.modification(event => {
 	})
 	event.modify('kubejs:batter', item => {
 		item.craftingRemainder = Item.of('minecraft:bowl').item
+	})
+	event.modify('kubejs:caramelized_marshmellow_on_a_stick', item => {
+		item.craftingRemainder = Item.of('minecraft:stick').item
 	})
 	event.modify('ecologics:coconut_slice', item => {
 		item.craftingRemainder = Item.of('ecologics:coconut_husk').item
@@ -276,6 +291,12 @@ EntityJSEvents.attributes(event => {
     event.modify('naturalist:rhino', attribute => {
         attribute.add("minecraft:generic.max_health", 60)
     })
+    event.modify('naturalist:butterfly', attribute => {
+        attribute.add("minecraft:generic.max_health", 6)
+    })
+    event.modify('naturalist:caterpillar', attribute => {
+        attribute.add("minecraft:generic.max_health", 2)
+    })
     event.modify('autumnity:turkey', attribute => {
         attribute.add("minecraft:generic.max_health", 8)
     })
@@ -324,7 +345,7 @@ EntityJSEvents.attributes(event => {
         attribute.add("minecraft:generic.movement_speed", 0.2)
     })
     event.modify('caverns_and_chasms:peeper', attribute => {
-        attribute.add("minecraft:generic.movement_speed", 0.2)
+        attribute.add("minecraft:generic.movement_speed", 0.1)
     })
     event.modify('savage_and_ravage:creepie', attribute => {
         attribute.add("minecraft:generic.movement_speed", 0.32)
@@ -384,6 +405,9 @@ EntityJSEvents.modifyEntity(event => {
 		modifier.mobType('arthropod')
 	})
 	event.modify('ecologics:coconut_crab', modifier => {
+		modifier.mobType('arthropod')
+	})
+	event.modify('naturalist:snake', modifier => {
 		modifier.mobType('arthropod')
 	})
 })

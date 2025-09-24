@@ -16,10 +16,10 @@
       "tag": "forge:ingots/steel"
     },
 	{
-      "item": "minecraft:crimson_fungus"
+      "item": "environmental:truffle"
     },
     {
-      "item": "minecraft:wheat"
+      "item": "create:cinder_flour"
     }
   ],
   "recipe_book_tab": "drinks",

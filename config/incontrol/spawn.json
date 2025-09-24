@@ -10,11 +10,6 @@
     "result": "deny"
   },
   {
-    "mob": "minecraft:evoker",
-    "onjoin": true,
-    "result": "deny"
-  },
-  {
     "mob": "minecraft:ravager",
     "onjoin": true,
     "result": "deny"

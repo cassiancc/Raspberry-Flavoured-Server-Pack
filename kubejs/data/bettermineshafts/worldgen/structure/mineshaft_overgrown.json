@@ -12,26 +12,23 @@
       "snowChance": 0,
       "cactusChance": 0,
       "deadBushChance": 0,
-      "mushroomChance": 0,
+      "mushroomChance": 0.6,
       "gravelPileChance": 0.8,
       "lushDecorations": false,
       "dripstoneDecorations": false
     },
     "blockStates": {
       "mainBlockState": {
-        "Name": "minecraft:spruce_planks"
+        "Name": "minecraft:mossy_cobblestone"
       },
       "supportBlockState": {
-        "Name": "minecraft:spruce_fence"
+        "Name": "paletteblocks:mossy_cobblestone_brick_wall"
       },
       "slabBlockState": {
-        "Name": "minecraft:spruce_slab"
+        "Name": "paletteblocks:mossy_cobblestone_brick_slab"
       },
       "gravelBlockState": {
-        "Name": "minecraft:spruce_leaves",
-        "Properties": {
-          "persistent": "true"
-        }
+        "Name": "minecraft:moss_block"
       },
       "stoneWallBlockState": {
         "Name": "minecraft:mossy_cobblestone_wall"
@@ -40,10 +37,10 @@
         "Name": "minecraft:mossy_cobblestone_slab"
       },
       "trapdoorBlockState": {
-        "Name": "minecraft:oak_trapdoor"
+        "Name": "copperandtuffbackport:waxed_weathered_copper_trapdoor"
       },
       "smallLegBlockState": {
-        "Name": "minecraft:oak_log",
+        "Name": "quark:midori_pillar",
         "Properties": {
           "axis": "y"
         }
@@ -52,87 +49,51 @@
     "blockStateRandomizers": {
       "mainRandomizer": {
         "defaultBlockState": {
-          "Name": "minecraft:spruce_planks"
+          "Name": "minecraft:cobblestone"
         },
         "entries": [
           {
             "blockState": {
-              "Name": "minecraft:spruce_leaves",
-			  "Properties": {
-				"persistent": "true"
-			  }
+              "Name": "paletteblocks:mossy_cobblestone_bricks"
             },
-            "probability": 0.7
+            "probability": 0.5
           },
           {
             "blockState": {
-              "Name": "minecraft:oak_log",
-              "Properties": {
-                "axis": "x"
-              }
+              "Name": "minecraft:mossy_stone_bricks"
             },
-            "probability": 0.05
+            "probability": 0.4
           },
           {
             "blockState": {
-              "Name": "minecraft:oak_log",
-              "Properties": {
-                "axis": "y"
-              }
+              "Name": "minecraft:infested_mossy_stone_bricks"
             },
-            "probability": 0.05
-          },
-          {
-            "blockState": {
-              "Name": "minecraft:oak_log",
-              "Properties": {
-                "axis": "z"
-              }
-            },
-            "probability": 0.05
+            "probability": 0.1
           }
         ]
       },
       "floorRandomizer": {
         "defaultBlockState": {
-          "Name": "minecraft:spruce_planks"
+          "Name": "architects_palette:algal_bricks"
         },
         "entries": [
           {
             "blockState": {
-              "Name": "minecraft:spruce_leaves",
-			  "Properties": {
-				"persistent": "true"
-			  }
+              "Name": "architects_palette:algal_bricks"
             },
-            "probability": 0.7
+            "probability": 0.3
           },
           {
             "blockState": {
-              "Name": "minecraft:oak_log",
-              "Properties": {
-                "axis": "x"
-              }
+              "Name": "architects_palette:overgrown_algal_bricks"
             },
-            "probability": 0.05
+            "probability": 0.4
           },
           {
             "blockState": {
-              "Name": "minecraft:oak_log",
-              "Properties": {
-                "axis": "y"
-              }
+              "Name": "architects_palette:cracked_algal_bricks"
             },
-            "probability": 0.05
-          },
-          {
-            "blockState": {
-              "Name": "minecraft:oak_log",
-              "Properties": {
-                "axis": "z"
-              }
-            },
-            "probability": 0.05
+            "probability": 0.3
           }
         ]
       },
@@ -143,15 +104,27 @@
         "entries": [
           {
             "blockState": {
-              "Name": "minecraft:mossy_cobblestone"
+              "Name": "paletteblocks:mossy_cobblestone_bricks"
             },
             "probability": 0.5
+          },
+          {
+            "blockState": {
+              "Name": "minecraft:mossy_stone_bricks"
+            },
+            "probability": 0.4
+          },
+          {
+            "blockState": {
+              "Name": "minecraft:infested_mossy_stone_bricks"
+            },
+            "probability": 0.1
           }
         ]
       },
       "legRandomizer": {
         "defaultBlockState": {
-          "Name": "minecraft:oak_log",
+          "Name": "quark:midori_pillar",
           "Properties": {
             "axis": "y"
           }

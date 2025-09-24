@@ -28,6 +28,20 @@
           "predicate": {
             "type": "minecraft:pig"
           }
+        },
+		{
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:frog"
+          }
+        },
+		{
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "naturalist:snake"
+          }
         }
       ]
     }

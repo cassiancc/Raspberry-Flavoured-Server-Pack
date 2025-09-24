@@ -9,11 +9,16 @@ StartupEvents.registry('item', event => {
 	'incomplete_respiteful_ice_cream',
 	'incomplete_prismatic_ice_cream',
 	'incomplete_blaze_tart',
-	'incomplete_balloon'
+	'incomplete_balloon',
+	'incomplete_rose_gold_rapier',
+	'incomplete_steel_mace',
+	'incomplete_electrum_spear',
+	'incomplete_necromium_claymore',
+	'incomplete_netherite_broad_axe'
 	]
     
-    incompleteItems.forEach(incompleteItem => {
-        event.create(incompleteItem, 'create:sequenced_assembly')
+    incompleteItems.forEach(item => {
+        event.create(item, 'create:sequenced_assembly').texture('kubejs:item/incomplete/'+item)
     })
 	
 // Incomplete foods
@@ -31,7 +36,7 @@ StartupEvents.registry('item', event => {
 	'incomplete_melon_popsicle',
 	'incomplete_meat_skewer',
 	'incomplete_spicy_skewer',
-	'incomplete_deepskewer',
+	'incomplete_lush_skewer',
 	'incomplete_preserved_skewer',
 	'incomplete_ham_and_cheese_sandwich',
 	'incomplete_rose_hip_pie',
@@ -49,8 +54,8 @@ StartupEvents.registry('item', event => {
 	'incomplete_sporedough'
 	]
     
-    incompleteRegularFoods.forEach(incompleteRegularFood => {
-        event.create(incompleteRegularFood, 'create:sequenced_assembly').food(food => {food.hunger(2).saturation(0.6)})
+    incompleteRegularFoods.forEach(item => {
+        event.create(item, 'create:sequenced_assembly').texture('kubejs:item/incomplete/'+item).food(food => {food.hunger(2).saturation(0.6)})
     })
 	
 // Small incomplete foods
@@ -60,7 +65,7 @@ StartupEvents.registry('item', event => {
 	'incomplete_rice_ball'
 	]
     
-    incompleteSmallFoods.forEach(incompleteSmallFood => {
-        event.create(incompleteSmallFood, 'create:sequenced_assembly').food(food => {food.hunger(1).saturation(0.3)})
+    incompleteSmallFoods.forEach(item => {
+        event.create(item, 'create:sequenced_assembly').texture('kubejs:item/incomplete/'+item).food(food => {food.hunger(1).saturation(0.3)})
     })
 })

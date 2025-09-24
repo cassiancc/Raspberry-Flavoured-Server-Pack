@@ -92,7 +92,10 @@ ServerEvents.recipes(event => {
 	'#raspberry_flavoured:brown_terracotta',
 	'#raspberry_flavoured:green_terracotta',
 	'#raspberry_flavoured:red_terracotta',
-	'#raspberry_flavoured:black_terracotta'
+	'#raspberry_flavoured:black_terracotta',
+	'#raspberry_flavoured:steel',
+	'#raspberry_flavoured:obsidian',
+	'#raspberry_flavoured:crying_obsidian'
 	]
     
     removedRecipes.forEach(recipe => {

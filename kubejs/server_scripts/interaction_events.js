@@ -252,6 +252,37 @@ ItemEvents.entityInteracted(event => {
     }
 })
 
+// feeding magma to frogs
+ItemEvents.entityInteracted(event => {
+    if (event.item.id === "mynethersdelight:hot_cream_cone" && event.target.type === "minecraft:frog") {
+        event.player.swing(event.hand, true)
+        event.server.schedule(0.0001, callback => {
+            event.player.stopUsingItem()
+        })
+        event.level.playSound(null, event.target.x, event.target.y, event.target.z, 'entity.frog.tongue', 'players', 1, 1)
+        event.level.spawnParticles('minecraft:heart', true, event.target.x, event.target.y, event.target.z, 0.2, 0, 0.2, 3, 0.05)
+        event.level.spawnParticles('minecraft:item mynethersdelight:hot_cream_cone', true, event.target.x, event.target.y, event.target.z, 0.25, 0.25, 0.25, 15, 0.05)
+        if (!event.player.isCreative()) {
+            event.item.count --
+        }
+		let itemEntity = event.level.createEntity("item")
+        if (event.target.nbt.variant === "minecraft:temperate") {
+			itemEntity.item = ('minecraft:ochre_froglight')
+        }
+        if (event.target.nbt.variant === "minecraft:warm") {
+			itemEntity.item = ('minecraft:pearlescent_froglight')
+        }
+        if (event.target.nbt.variant === "minecraft:cold") {
+			itemEntity.item = ('minecraft:verdant_froglight')
+        }
+		itemEntity.y = event.target.y + 0.25
+		itemEntity.x = event.target.x
+		itemEntity.z = event.target.z
+		itemEntity.motionY = 0.25
+		itemEntity.spawn()
+    }
+})
+
 // loot bag item interaction
 ItemEvents.rightClicked(event => {
     if (event.item.id === 'kubejs:loot_bag') {
@@ -437,6 +468,48 @@ BlockEvents.rightClicked([
     }
 })
 
+// shearing blocks only regular shears can
+BlockEvents.rightClicked([
+    'minecraft:flowering_azalea',
+    'minecraft:flowering_azalea_leaves',
+    'atmospheric:flowering_morado_leaves'
+], event => {
+    if (event.item.hasTag('raspberry_flavoured:shears')) {
+        event.player.swing(event.hand, true)
+        if (!event.player.isCreative()) {
+			event.player.damageHeldItem(event.hand, 1)
+        }
+		
+		let itemEntity = event.level.createEntity("item")
+		itemEntity.y = event.block.y + 0.5
+		itemEntity.x = event.block.x
+		itemEntity.z = event.block.z
+		itemEntity.motionY = 0.25
+		
+        let props = event.block.getProperties()
+        event.server.schedule(1, callback => {
+			if (event.block.id === 'minecraft:flowering_azalea') {
+				event.block.set('minecraft:azalea', props)
+				event.level.playSound(null, event.block.x, event.block.y, event.block.z, 'block.flowering_azalea.break', 'players', 1, 1)
+				itemEntity.item = ('ecologics:azalea_flower')
+				itemEntity.spawn()
+            }
+            if (event.block.id === 'minecraft:flowering_azalea_leaves') {
+                event.block.set('minecraft:azalea_leaves', props)
+				event.level.playSound(null, event.block.x, event.block.y, event.block.z, 'block.flowering_azalea.break', 'players', 1, 1)
+				itemEntity.item = ('ecologics:azalea_flower')
+				itemEntity.spawn()
+            }
+            if (event.block.id === 'atmospheric:flowering_morado_leaves') {
+                event.block.set('atmospheric:morado_leaves', props)
+				event.level.playSound(null, event.block.x, event.block.y, event.block.z, 'entity.sheep.shear', 'players', 1, 1)
+				itemEntity.item = ('atmospheric:yellow_blossoms')
+				itemEntity.spawn()
+            }
+        })
+    }
+})
+
 // bee disc interaction
 BlockEvents.rightClicked(event => {
     if (event.block.hasTag('minecraft:beehives')) {
@@ -491,26 +564,6 @@ BlockEvents.rightClicked(event => {
     }
 })
 
-
-// splash/lingering pots cooldown
-ItemEvents.rightClicked('minecraft:splash_potion', event => {
-    event.player.addItemCooldown('minecraft:splash_potion', 200)
-})
-
-ItemEvents.rightClicked('minecraft:lingering_potion', event => {
-    event.player.addItemCooldown('minecraft:lingering_potion', 300)
-})
-
-
-// snow/ashballs cooldown
-ItemEvents.rightClicked('minecraft:snowball', event => {
-    event.player.addItemCooldown('minecraft:snowball', 5)
-})
-
-ItemEvents.rightClicked('raspberry:ashball', event => {
-    event.player.addItemCooldown('raspberry:ashball', 5)
-})
-
 // cancel custom exopearl throwing if structure isnt found
 const $Registry = Java.loadClass('net.minecraft.core.Registry')
 const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')        
@@ -523,11 +576,6 @@ ItemEvents.rightClicked("kubejs:spirited_exopearl", event => {
     }
 })
 
-// creeper spores advancement
-ItemEvents.rightClicked('savage_and_ravage:creeper_spores', event => {
-    event.server.runCommandSilent(`advancement grant ${event.player.username} only raspberryflavoured:creeper_spores_use`)
-})
-
 // message in a bottle
 ItemEvents.rightClicked('aquaculture:message_in_a_bottle', event => {
     event.player.swing(event.hand, true)
@@ -536,5 +584,89 @@ ItemEvents.rightClicked('aquaculture:message_in_a_bottle', event => {
         event.server.schedule(1, callback => {
             event.player.giveInHand('quark:clear_shard')
         })
+    }
+})
+
+// net effects
+ItemEvents.entityInteracted(event => {
+	const netInteractables = ['naturalist:firefly', 'naturalist:caterpillar', 'naturalist:butterfly']
+    if (event.item.id === "naturalist:bug_net" && netInteractables.includes(event.target.type)) {
+        event.player.sweepAttack()
+        event.level.playSound(null, event.target.x, event.target.y, event.target.z, 'kubejs:sound.swing', 'players', 0.5, 1)
+        event.level.playSound(null, event.target.x, event.target.y, event.target.z, 'entity.item.pickup', 'players', 1, 1)
+    }
+})
+
+// catching fish with net (script by Baisylia <3)
+ItemEvents.entityInteracted(event => { 
+	const fishMap = { 
+	'minecraft:cod': 'minecraft:cod',
+	'minecraft:salmon': 'minecraft:salmon',
+	'minecraft:pufferfish': 'minecraft:pufferfish',
+	'minecraft:tropical_fish': 'minecraft:tropical_fish',
+	'minecraft:squid': 'miners_delight:squid',
+	'minecraft:glow_squid': 'miners_delight:glow_squid',
+	'upgrade_aquatic:perch': 'upgrade_aquatic:perch',
+	'upgrade_aquatic:pike': 'upgrade_aquatic:pike',
+	'upgrade_aquatic:lionfish': 'upgrade_aquatic:lionfish',
+	'aquaculture:blackfish': 'aquaculture:blackfish',
+	'aquaculture:atlantic_herring': 'aquaculture:atlantic_herring',
+	'aquaculture:pollock': 'aquaculture:pollock',
+	'aquaculture:bayad': 'aquaculture:bayad',
+	'aquaculture:boulti': 'aquaculture:boulti',
+	'aquaculture:capitaine': 'aquaculture:capitaine',
+	'aquaculture:synodontis': 'aquaculture:synodontis',
+	'aquaculture:bluegill': 'aquaculture:bluegill',
+	'aquaculture:brown_trout': 'aquaculture:brown_trout',
+	'aquaculture:carp': 'aquaculture:carp',
+	'aquaculture:gar': 'aquaculture:gar',
+	'aquaculture:tambaqui': 'aquaculture:tambaqui',
+	'aquaculture:red_grouper': 'aquaculture:red_grouper',
+	'aquaculture:tuna': 'aquaculture:tuna',
+	'naturalist:bass': 'naturalist:bass',
+	'environmental:koi': 'environmental:koi',
+	'sullysmod:lanternfish': 'sullysmod:lanternfish'
+	};
+	if (event.item.id === "naturalist:bug_net") {
+		if (fishMap.hasOwnProperty(event.target.type)) {
+			event.player.swing(event.hand, true);
+			event.player.sweepAttack()
+			event.level.playSound(null, event.target.x, event.target.y, event.target.z, 'kubejs:sound.swing', 'players', 0.5, 1)
+			event.level.playSound(null, event.target.x, event.target.y, event.target.z, 'entity.item.pickup', 'players', 1, 1)
+			event.target.discard();
+			if (!event.player.isCreative()) {
+				event.player.damageHeldItem(event.hand, 1);
+			}
+			event.server.schedule(1, () => {
+				event.player.giveInHand(fishMap[event.target.type]);
+			});
+		}
+	}
+});
+
+// cooldowns
+ItemEvents.rightClicked('minecraft:splash_potion', event => {
+    event.player.addItemCooldown('minecraft:splash_potion', 200)
+})
+ItemEvents.rightClicked('minecraft:lingering_potion', event => {
+    event.player.addItemCooldown('minecraft:lingering_potion', 200)
+})
+ItemEvents.rightClicked('minecraft:snowball', event => {
+    event.player.addItemCooldown('minecraft:snowball', 5)
+})
+ItemEvents.rightClicked('raspberry:ashball', event => {
+    event.player.addItemCooldown('raspberry:ashball', 5)
+})
+ItemEvents.rightClicked('raspberry:rose_gold_bomb', event => {
+    event.player.addItemCooldown('raspberry:rose_gold_bomb', 10)
+})
+
+// advancements
+ItemEvents.rightClicked(event => {
+    if (event.item.id === 'savage_and_ravage:creeper_spores') {
+		event.server.runCommandSilent(`advancement grant ${event.player.username} only raspberry_flavoured:exploration/creeper_spores`)
+    }
+    if (event.item.hasTag('raspberry_flavoured:bombs')) {
+		event.server.runCommandSilent(`advancement grant ${event.player.username} only raspberry_flavoured:exploration/bomb`)
     }
 })

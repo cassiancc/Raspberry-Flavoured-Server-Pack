@@ -1,0 +1,26 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "minecraft:item/copper_knife"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damage": 0.25
+            },
+            "model": "kubejs:item/exposed_copper_knife"
+        },
+        {
+            "predicate": {
+                "damage": 0.5
+            },
+            "model": "kubejs:item/weathered_copper_knife"
+        },
+        {
+            "predicate": {
+                "damage": 0.75
+            },
+            "model": "kubejs:item/oxidized_copper_knife"
+        }
+    ]
+}

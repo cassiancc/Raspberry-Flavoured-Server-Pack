@@ -10,13 +10,13 @@
   },
   "ingredients": [
     {
-      "item": "minecraft:brown_mushroom"
+      "tag": "raspberry_flavoured:edible_mushrooms"
     },
     {
-      "item": "minecraft:brown_mushroom"
+      "tag": "raspberry_flavoured:edible_mushrooms"
     },
     {
-      "item": "minecraft:sugar"
+      "item": "spelunkery:salt"
     }
   ],
   "recipe_book_tab": "misc",

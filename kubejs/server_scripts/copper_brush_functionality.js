@@ -1,5 +1,7 @@
 // priority: 1
 
+// script by asof
+
 const brushColors = {
   inactive: Color.rgba(192,192,192,255),
   wax: Color.rgba(255,192,0,255),

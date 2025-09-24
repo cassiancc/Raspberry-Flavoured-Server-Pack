@@ -25,4 +25,29 @@ StartupEvents.registry('item', event => {
 	enchantedTablets.forEach(tablet => {
 		event.create(tablet).glow(true).rarity('rare').texture('kubejs:item/enchanted_tablets/'+tablet).group('brewing')
 	})
+	
+// Incomplete tablets
+	const incompleteTablets = [
+	'incomplete_blank_tablet',
+	'incomplete_aquatic_tablet',
+	'incomplete_beastly_tablet',
+	'incomplete_cyclic_tablet',
+	'incomplete_enduring_tablet',
+	'incomplete_everlasting_tablet',
+	'incomplete_flinging_tablet',
+	'incomplete_glacial_tablet',
+	'incomplete_hallowed_tablet',
+	'incomplete_haunted_tablet',
+	'incomplete_heavy_tablet',
+	'incomplete_infested_tablet',
+	'incomplete_otherworldly_tablet',
+	'incomplete_piercing_tablet',
+	'incomplete_pulling_tablet',
+	'incomplete_silent_tablet',
+	'incomplete_swift_tablet'
+	]
+    
+    incompleteTablets.forEach(incompleteTablet => {
+        event.create(incompleteTablet, 'create:sequenced_assembly').texture('kubejs:item/enchanted_tablets/incomplete/'+incompleteTablet)
+    })
 })

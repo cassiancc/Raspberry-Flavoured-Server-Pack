@@ -1,3 +1,4 @@
+// script by asof
 
 /*
 ok, so.
@@ -12,7 +13,6 @@ when there's an array, it means "try every single one of these in order til one 
  */
 let outputTypes = [
   ["log",4,"WOOD_trapdoor",["MOD:"]],
-  ["log",4,"WOOD_button",["MOD:"]],
   ["log",4,"WOOD_door",["MOD:"]],
   ["log",4,["WOOD_stairs","WOOD_planks_stairs"],["MOD:"]],
   ["log",8,["WOOD_slab","WOOD_planks_slab"],["MOD:"]],

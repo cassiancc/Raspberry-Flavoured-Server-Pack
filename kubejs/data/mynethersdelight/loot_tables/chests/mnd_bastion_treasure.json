@@ -5,11 +5,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 1,
-          "name": "mynethersdelight:skoglin_trophy"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 4,
           "name": "mynethersdelight:hoglin_trophy"
         },

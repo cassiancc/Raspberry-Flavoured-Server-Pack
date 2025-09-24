@@ -1,15 +1,11 @@
 {
   "values": [
     {
-      "block": "spelunkery:cinnabar_block",
-      "amplifier": 0
-    },
-    {
-      "block": "twigs:polished_amethyst",
+      "block": "create:rose_quartz_tiles",
       "amplifier": 1
     },
     {
-      "block": "minecraft:iron_block",
+      "block": "twigs:polished_amethyst",
       "amplifier": 1
     },
     {
@@ -21,19 +17,19 @@
       "amplifier": 1
     },
     {
+      "block": "minecraft:iron_block",
+      "amplifier": 2
+    },
+    {
       "block": "minecraft:gold_block",
       "amplifier": 2
     },
     {
-      "block": "minecraft:diamond_block",
-      "amplifier": 3
+      "block": "spelunkery:cinnabar_block",
+      "amplifier": 2
     },
     {
       "block": "create:brass_block",
-      "amplifier": 3
-    },
-    {
-      "block": "alloyed:steel_block",
       "amplifier": 3
     },
     {
@@ -45,8 +41,16 @@
       "amplifier": 3
     },
     {
-      "block": "oreganized:silver_block",
+      "block": "alloyed:steel_block",
       "amplifier": 4
+    },
+    {
+      "block": "oreganized:silver_block",
+      "amplifier": 5
+    },
+    {
+      "block": "minecraft:diamond_block",
+      "amplifier": 5
     },
     {
       "block": "architects_palette:ender_pearl_block",
@@ -54,7 +58,7 @@
     },
     {
       "block": "caverns_and_chasms:echo_block",
-      "amplifier": 6
+      "amplifier": 5
     },
     {
       "block": "oreganized:electrum_block",

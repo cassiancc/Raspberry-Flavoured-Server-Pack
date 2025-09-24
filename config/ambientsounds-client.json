@@ -154,7 +154,7 @@
     },
     "cold": {
       "overall": 1,
-      "light-wind": 1
+      "light-wind": 0.7490774989128113
     },
     "beach": {
       "overall": 1,

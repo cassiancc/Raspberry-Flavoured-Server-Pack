@@ -11,11 +11,17 @@ StartupEvents.registry('block', event => {
 	
 	event.create('paper_block').soundType('wool').hardness(0.1).resistance(0.1)
 	
-	event.create('lead_ore').soundType('stone').hardness(3).resistance(3).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
-	event.create('nether_lead_ore').soundType('nether_ore').hardness(3).resistance(3).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
+	event.create('lead_ore').soundType('stone').hardness(3).resistance(1200).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
+	event.create('nether_lead_ore').soundType('nether_ore').hardness(3).resistance(1200).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
+	
+	event.create('deposit').soundType('stone').hardness(3).resistance(3).requiresTool(true)
+	event.create('deepslate_deposit').soundType('deepslate').hardness(4.5).resistance(4.5).requiresTool(true)
+	event.create('blackstone_deposit').soundType('stone').hardness(3).resistance(6).requiresTool(true)
 	
 	event.create('bronze_block').soundType('copper').hardness(3).resistance(6).requiresTool(true)
 	event.create('rose_gold_block').soundType('metal').hardness(3).resistance(6).requiresTool(true)
+	
+	event.create('polished_steel').soundType('netherite_block').hardness(5).resistance(14).requiresTool(true)
 	
 	event.create('smooth_stone_stairs', 'stairs').soundType('stone').hardness(2).resistance(6).requiresTool(true)
 	event.create('smooth_stone_wall', 'wall').soundType('stone').hardness(2).resistance(6).requiresTool(true)
@@ -35,7 +41,6 @@ StartupEvents.registry('block', event => {
 	event.create('chiseled_exolite').soundType('netherrack').hardness(2).resistance(9).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
 	event.create('chiseled_exolite_tiles').soundType('deepslate_tiles').hardness(2).resistance(9).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
 	
-	event.create('stuffed_pumpkin_two', 'farmersdelight:feast').servingItems('farmersdelight:stuffed_pumpkin').hasLeftovers(false)
 	event.create('eggplant_parmesan_block', 'farmersdelight:feast').servingItems('kubejs:eggplant_parmesan').hasLeftovers(true).box(0, 0, 0, 16, 5, 16, true)
 	
 	event.create('butterscotch_cinnamon_pie', 'farmersdelight:pie').soundType('wool').sliceItem('kubejs:butterscotch_cinnamon_pie_slice')
@@ -154,14 +159,10 @@ StartupEvents.registry('block', event => {
 	event.create('cobbled_blackstone_stairs', 'stairs').soundType('stone').hardness(1.5).resistance(6).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
 	event.create('cobbled_blackstone_wall', 'wall').soundType('stone').hardness(1.5).resistance(6).tagBlock('minecraft:mineable/pickaxe').requiresTool(true)
 	
-	event.create('deepslate_gravel', 'falling').soundType('gravel').hardness(0.6).resistance(1).tagBlock('minecraft:mineable/shovel')
-	
 	event.create('deepslate_gravel_bricks').soundType('gravel').hardness(1.2).resistance(5).tagBlock('minecraft:mineable/shovel').tagBlock('minecraft:mineable/pickaxe')
 	event.create('deepslate_gravel_brick_slab', 'slab').soundType('gravel').hardness(1.2).resistance(5).tagBlock('minecraft:mineable/shovel').tagBlock('minecraft:mineable/pickaxe')
 	event.create('deepslate_gravel_brick_stairs', 'stairs').soundType('gravel').hardness(1.2).resistance(5).tagBlock('minecraft:mineable/shovel').tagBlock('minecraft:mineable/pickaxe')
 	event.create('deepslate_gravel_brick_wall', 'wall').soundType('gravel').hardness(1.2).resistance(5).tagBlock('minecraft:mineable/shovel').tagBlock('minecraft:mineable/pickaxe')
-	
-	event.create('blackstone_gravel', 'falling').soundType('gravel').hardness(0.4).resistance(1).tagBlock('minecraft:mineable/shovel')
 	
 	event.create('blackstone_gravel_bricks').soundType('gravel').hardness(0.9).resistance(5).tagBlock('minecraft:mineable/shovel').tagBlock('minecraft:mineable/pickaxe')
 	event.create('blackstone_gravel_brick_slab', 'slab').soundType('gravel').hardness(0.9).resistance(5).tagBlock('minecraft:mineable/shovel').tagBlock('minecraft:mineable/pickaxe')

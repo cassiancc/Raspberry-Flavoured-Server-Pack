@@ -1,13 +1,13 @@
 name = "Useful Spyglass"
-filename = "usefulspyglass-forge-1.19.2-0.3.0.jar"
+filename = "usefulspyglass-forge-1.19.2-0.6.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "18affbd7c10f12e2e7aeb814dd2fb901e7d09d13"
+hash = "e85d03b07a1a580345798e10cb824410d433f283"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4516546
+file-id = 6462242
 project-id = 840027

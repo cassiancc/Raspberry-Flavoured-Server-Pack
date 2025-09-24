@@ -57,9 +57,6 @@ top.theillusivec4.curios.client.gui.CuriosScreen {
 net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
 }
 
-net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
-}
-
 net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
 }
 

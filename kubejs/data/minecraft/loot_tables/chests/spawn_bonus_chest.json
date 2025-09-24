@@ -6,7 +6,29 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:compass"
+          "name": "minecraft:recovery_compass"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "name": "supplementaries:sacks"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "name": "forge:chalks"
         }
       ],
       "rolls": 1.0
@@ -21,14 +43,8 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:wooden_axe",
-          "weight": 6
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "entries": [
+          "weight": 4
+        },
         {
           "type": "minecraft:item",
           "name": "minecraft:stone_pickaxe"
@@ -36,14 +52,8 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:wooden_pickaxe",
-          "weight": 6
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "entries": [
+          "weight": 4
+        },
         {
           "type": "minecraft:item",
           "name": "kubejs:copper_knife"
@@ -51,7 +61,7 @@
         {
           "type": "minecraft:item",
           "name": "farmersdelight:flint_knife",
-          "weight": 6
+          "weight": 4
         }
       ],
       "rolls": 1.0
@@ -62,21 +72,22 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:flint_and_steel",
-          "weight": 2
+          "weight": 6
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:fishing_rod",
-          "weight": 2
+          "weight": 6
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:writable_book",
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:bundle"
+          "name": "minecraft:bundle",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -85,22 +96,16 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:campfire",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:tag",
-          "expand": true,
-          "name": "supplementaries:sacks"
+          "weight": 6
         },
         {
           "type": "minecraft:item",
           "name": "create:sand_paper",
-          "weight": 2
+          "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "supplementaries:slingshot",
-          "weight": 2
+          "name": "supplementaries:slingshot"
         },
         {
           "type": "minecraft:item",
@@ -116,7 +121,7 @@
             }
           ],
           "name": "minecraft:map",
-          "weight": 2
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -125,45 +130,14 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 21.0,
-                "min": 9.0
+                "max": 24.0,
+                "min": 16.0
               },
               "function": "minecraft:set_count"
             }
           ],
           "name": "supplementaries:rope",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 3.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "kubejs:cloth_scrap",
-          "weight": 3
-        }
-      ],
-      "rolls": {
-        "type": "minecraft:uniform",
-        "max": 3.0,
-        "min": 1.0
-      }
-    },
-    {
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:tag",
-          "expand": true,
-          "name": "forge:chalks"
+          "weight": 6
         }
       ],
       "rolls": 1.0
@@ -264,6 +238,22 @@
               "function": "minecraft:set_count"
             }
           ],
+          "name": "minecraft:dried_kelp",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 10.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
           "name": "kubejs:sugar_cookie",
           "weight": 3
         },
@@ -323,7 +313,7 @@
               "count": {
                 "type": "minecraft:uniform",
                 "max": 6.0,
-                "min": 1.0
+                "min": 3.0
               },
               "function": "minecraft:set_count"
             }
@@ -412,13 +402,22 @@
         },
         {
           "type": "minecraft:item",
-          "name": "create:sweet_roll",
-          "weight": 2
+          "name": "farmersdelight:melon_juice",
+          "weight": 3
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:glistering_melon_slice",
-          "weight": 2
+          "name": "farmersdelight:hot_cocoa",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cookscollection:lemonade",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "create:builders_tea"
         }
       ],
       "rolls": 3.0
@@ -426,54 +425,6 @@
     {
       "bonus_rolls": 0.0,
       "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "quark:stick_block",
-          "weight": 12
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "twigs:twig",
-          "weight": 14
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 18.0,
-                "min": 3.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "twigs:pebble",
-          "weight": 10
-        },
         {
           "type": "minecraft:item",
           "functions": [
@@ -699,7 +650,7 @@
           "weight": 3
         }
       ],
-      "rolls": 4.0
+      "rolls": 3.0
     }
   ]
 }

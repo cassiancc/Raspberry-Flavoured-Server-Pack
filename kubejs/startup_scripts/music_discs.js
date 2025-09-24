@@ -11,7 +11,8 @@ let music_list = {
 	"music_disc_origin": "Origin",
 	"music_disc_savour": "Savour",
 	"music_disc_fruitiger": "Fruitiger",
-	"music_disc_redstone_baby": "Redstone Baby"
+	"music_disc_redstone_baby": "Redstone Baby",
+	"music_disc_raveyard": "Raveyard"
 }
 
 StartupEvents.registry('sound_event', (event) => {

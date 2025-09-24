@@ -11,13 +11,13 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2.0,
+                "max": 4.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:enchanted_golden_apple"
+          "name": "kubejs:loot_bag"
         },
         {
           "type": "minecraft:item",
@@ -31,47 +31,13 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 32.0,
-                "min": 8.0
+                "max": 24.0,
+                "min": 12.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "supplementaries:rope",
-          "weight": 7
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:music_disc_stal",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:music_disc_otherside",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:music_disc_11"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kubejs:loot_bag"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 10.0,
-                "min": 4.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:sculk",
+          "name": "minecraft:sculk_vein",
           "weight": 3
         },
         {
@@ -81,8 +47,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
+                "max": 6.0,
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
@@ -97,8 +63,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 2.0
+                "max": 48.0,
+                "min": 12.0
               },
               "function": "minecraft:set_count"
             }
@@ -113,8 +79,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 12.0,
-                "min": 2.0
+                "max": 36.0,
+                "min": 12.0
               },
               "function": "minecraft:set_count"
             }
@@ -129,29 +95,13 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 20.0,
-                "min": 4.0
+                "max": 18.0,
+                "min": 6.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:glow_berries",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "berry_good:glowgurt",
+          "name": "quark:glowberry_sack",
           "weight": 3
         },
         {
@@ -162,28 +112,12 @@
               "count": {
                 "type": "minecraft:uniform",
                 "max": 6.0,
-                "min": 2.0
+                "min": 3.0
               },
               "function": "minecraft:set_count"
             }
           ],
           "name": "minecraft:echo_shard",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "quark:soul_bead",
           "weight": 4
         },
         {
@@ -199,6 +133,22 @@
               "function": "minecraft:set_count"
             }
           ],
+          "name": "quark:soul_bead",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 12.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
           "name": "minecraft:disc_fragment_5",
           "weight": 5
         },
@@ -207,7 +157,7 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "minecraft:strong_regeneration"
+              "id": "minecraft:regeneration"
             }
           ],
           "name": "minecraft:potion",
@@ -218,7 +168,7 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "upgrade_aquatic:restfulness_strong"
+              "id": "upgrade_aquatic:restfulness"
             }
           ],
           "name": "minecraft:potion",
@@ -253,8 +203,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 3.0
+                "max": 48.0,
+                "min": 6.0
               },
               "function": "minecraft:set_count"
             }
@@ -269,8 +219,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 20.0,
-                "min": 3.0
+                "max": 24.0,
+                "min": 6.0
               },
               "function": "minecraft:set_count"
             }
@@ -285,8 +235,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 4.0,
-                "min": 1.0
+                "max": 6.0,
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
@@ -301,8 +251,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 4.0,
-                "min": 1.0
+                "max": 6.0,
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
@@ -317,8 +267,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 15.0,
-                "min": 3.0
+                "max": 32.0,
+                "min": 16.0
               },
               "function": "minecraft:set_count"
             }
@@ -333,8 +283,40 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 1.0
+                "max": 36.0,
+                "min": 18.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "kubejs:cloth_scrap",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 24.0,
+                "min": 12.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:string",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 6.0,
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
@@ -349,14 +331,14 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 4.0,
-                "min": 1.0
+                "max": 8.0,
+                "min": 4.0
               },
               "function": "minecraft:set_count"
             }
           ],
           "name": "additionaladditions:rose_gold_alloy",
-          "weight": 3
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -366,12 +348,13 @@
               "count": {
                 "type": "minecraft:uniform",
                 "max": 24.0,
-                "min": 8.0
+                "min": 12.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "spelunkery:raw_silver_nugget"
+          "name": "alloyed:bronze_ingot",
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -380,8 +363,38 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 15.0,
-                "min": 5.0
+                "max": 32.0,
+                "min": 16.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "spelunkery:rough_diamond"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 20.0,
+                "min": 10.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "oreganized:raw_silver"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 32.0,
+                "min": 8.0
               },
               "function": "minecraft:set_count"
             }
@@ -391,45 +404,13 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 64.0,
-                "min": 48.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "spelunkery:coal_lump",
-          "weight": 10
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "architects_palette:spool",
-          "weight": 6
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:bell"
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 10.0,
-        "min": 5.0
+        "max": 28.0,
+        "min": 14.0
       }
     },
     {
@@ -446,12 +427,12 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 10
+          "weight": 9
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 2.0,
+        "max": 8.0,
         "min": 0.0
       }
     },
@@ -469,6 +450,57 @@
         {
           "type": "minecraft:empty",
           "weight": 7
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 8
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:enchanted_golden_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_stal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_otherside"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_11"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 3
         }
       ],
       "rolls": 1.0

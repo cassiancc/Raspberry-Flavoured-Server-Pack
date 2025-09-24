@@ -29,6 +29,11 @@ EntityEvents.spawned(event => {
             entity.setItemSlot("offhand", Item.of('kubejs:raw_ammonite'))
         }
     }
+	
+	// remove vex swords
+    if (entity.type === 'minecraft:vex') {
+        entity.setItemSlot("mainhand", Item.of('minecraft:air'))
+    }
 
 	// frostbitten snowballs
     if (entity.type == 'dungeons_mobs:frozen_zombie') {
@@ -235,9 +240,22 @@ EntityEvents.spawned(event => {
 	}
 })
 
+// thrasher hunger fix (by grom_pe)
+EntityEvents.death(event => {
+	var entity = event.entity;
+	if ((entity.type == "upgrade_aquatic:thrasher" || entity.type == "upgrade_aquatic:great_thrasher") && event.getSource().type == "player")
+	{
+		var player = event.getSource().getPlayer();
+		event.server.schedule(40, function(callback)
+		{
+			player.jumping = false;
+		});
+	}
+})
+
 // potion advancement
 PlayerEvents.inventoryChanged(event => {
 	if (event.item.hasTag('raspberry_flavoured:potions') && event.item.nbt.Potion !== "minecraft:water" && event.item.nbt.Potion !== "minecraft:awkward") {
-		event.server.runCommandSilent(`advancement grant ${event.player.username} only raspberryflavoured:potion`)
+		event.server.runCommandSilent(`advancement grant ${event.player.username} only raspberry_flavoured:main/potion`)
 	}
 })

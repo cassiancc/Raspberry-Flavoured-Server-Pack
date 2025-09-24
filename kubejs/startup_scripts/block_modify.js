@@ -83,56 +83,6 @@ BlockEvents.modification(event => {
 	breakFast('supplementaries:deepslate_lamp', 2.0)
 	breakFast('minecraft:budding_amethyst', 5)
 	breakFast('supplementaries:skull_pile', 0.5)
-	breakFast('minecraft:clay', 0.3)
-	breakFast('minecraft:gravel', 0.3)
-	breakFast('supplementaries:raked_gravel', 0.3)
-	breakFast('minecraft:sand', 0.3)
-	breakFast('minecraft:red_sand', 0.3)
-	breakFast('minecraft:soul_sand', 0.3)
-	breakFast('atmospheric:arid_sand', 0.3)
-	breakFast('atmospheric:red_arid_sand', 0.3)
-	breakFast('quark:gravisand', 0.3)
-	breakFast('minecraft:sponge', 0.3)
-	breakFast('minecraft:wet_sponge', 0.3)
-	breakFast('minecraft:mud', 0.3)
-	breakFast('minecraft:muddy_mangrove_roots', 0.3)
-	breakFast('minecraft:white_concrete_powder', 0.3)
-	breakFast('minecraft:orange_concrete_powder', 0.3)
-	breakFast('minecraft:magenta_concrete_powder', 0.3)
-	breakFast('minecraft:light_blue_concrete_powder', 0.3)
-	breakFast('minecraft:yellow_concrete_powder', 0.3)
-	breakFast('minecraft:lime_concrete_powder', 0.3)
-	breakFast('minecraft:pink_concrete_powder', 0.3)
-	breakFast('minecraft:gray_concrete_powder', 0.3)
-	breakFast('minecraft:light_gray_concrete_powder', 0.3)
-	breakFast('minecraft:cyan_concrete_powder', 0.3)
-	breakFast('minecraft:purple_concrete_powder', 0.3)
-	breakFast('minecraft:blue_concrete_powder', 0.3)
-	breakFast('minecraft:brown_concrete_powder', 0.3)
-	breakFast('minecraft:green_concrete_powder', 0.3)
-	breakFast('minecraft:red_concrete_powder', 0.3)
-	breakFast('minecraft:black_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_white_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_orange_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_magenta_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_light_blue_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_yellow_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_lime_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_pink_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_gray_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_light_gray_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_cyan_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_purple_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_blue_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_brown_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_green_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_red_concrete_powder', 0.3)
-	breakFast('oreganized:waxed_black_concrete_powder', 0.3)
-	breakFast('additionaladditions:patina_block', 0.3)
-	breakFast('supplementaries:sugar_cube', 0.3)
-	breakFast('spelunkery:salt_block', 0.3)
-	breakFast('incubation:hay_nest', 0.3)
-	breakFast('incubation:twig_nest', 0.3)
 	breakFast('neapolitan:banana_bundle', 0.9)
 	breakFast('kubejs:eggplant_parmesan_block', 0.5)
 	breakFast('kubejs:butterscotch_cinnamon_pie', 0.5)
@@ -193,6 +143,7 @@ BlockEvents.modification(event => {
 	breakFast('farmersdelight:organic_compost', 0.5)
 	breakFast('mynethersdelight:letios_compost', 0.5)
 	breakFast('kubejs:sturdy_blackstone', 4.0)
+	breakFast('kubejs:sturdy_netherrack', 2.75)
 	breakFast('supplementaries:book_pile', 0.1)
 	breakFast('supplementaries:book_pile_horizontal', 0.1)
 	breakFast('aquaculture:tackle_box', 0.5)
@@ -237,6 +188,71 @@ BlockEvents.modification(event => {
 	breakFast('quark:gunpowder_sack', 0.8)
 	breakFast('quark:cocoa_beans_sack', 0.8)
 	breakFast('quark:golden_carrot_crate', 2)
+	breakFast('architects_palette:unobtanium_block', 1.5)
+	breakFast('ecologics:coconut', 1)
+	breakFast('ecologics:hanging_coconut', 1)
+	breakFast('ecologics:surface_moss', 0.1)
+	breakFast('storagedrawers:oak_full_drawers_1', 3)
+	breakFast('storagedrawers:controller', 3)
+	
+	breakFast('spelunkery:rough_quartz_block', 0.8)
+	breakFast('create:rose_quartz_tiles', 0.8)
+	
+	breakFast('minecraft:clay', 0.4)
+	breakFast('minecraft:sand', 0.4)
+	breakFast('minecraft:red_sand', 0.4)
+	breakFast('minecraft:soul_sand', 0.4)
+	breakFast('atmospheric:arid_sand', 0.4)
+	breakFast('atmospheric:red_arid_sand', 0.4)
+	breakFast('quark:gravisand', 0.4)
+	breakFast('minecraft:sponge', 0.4)
+	breakFast('minecraft:wet_sponge', 0.4)
+	breakFast('minecraft:mud', 0.4)
+	breakFast('minecraft:muddy_mangrove_roots', 0.4)
+	breakFast('minecraft:white_concrete_powder', 0.4)
+	breakFast('minecraft:orange_concrete_powder', 0.4)
+	breakFast('minecraft:magenta_concrete_powder', 0.4)
+	breakFast('minecraft:light_blue_concrete_powder', 0.4)
+	breakFast('minecraft:yellow_concrete_powder', 0.4)
+	breakFast('minecraft:lime_concrete_powder', 0.4)
+	breakFast('minecraft:pink_concrete_powder', 0.4)
+	breakFast('minecraft:gray_concrete_powder', 0.4)
+	breakFast('minecraft:light_gray_concrete_powder', 0.4)
+	breakFast('minecraft:cyan_concrete_powder', 0.4)
+	breakFast('minecraft:purple_concrete_powder', 0.4)
+	breakFast('minecraft:blue_concrete_powder', 0.4)
+	breakFast('minecraft:brown_concrete_powder', 0.4)
+	breakFast('minecraft:green_concrete_powder', 0.4)
+	breakFast('minecraft:red_concrete_powder', 0.4)
+	breakFast('minecraft:black_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_white_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_orange_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_magenta_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_light_blue_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_yellow_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_lime_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_pink_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_gray_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_light_gray_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_cyan_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_purple_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_blue_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_brown_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_green_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_red_concrete_powder', 0.4)
+	breakFast('oreganized:waxed_black_concrete_powder', 0.4)
+	breakFast('additionaladditions:patina_block', 0.4)
+	breakFast('supplementaries:sugar_cube', 0.4)
+	breakFast('spelunkery:salt_block', 0.4)
+	breakFast('incubation:hay_nest', 0.4)
+	breakFast('incubation:twig_nest', 0.4)
+	
+	breakFast('minecraft:gravel', 0.4)
+	breakFast('supplementaries:raked_gravel', 0.4)
+	breakFast('raspberry:deepslate_gravel', 0.5)
+	breakFast('raspberry:raked_deepslate_gravel', 0.5)
+	breakFast('raspberry:blackstone_gravel', 0.5)
+	breakFast('raspberry:raked_blackstone_gravel', 0.5)
 	
 	breakFast('minecraft:player_head', 0.5)
 	breakFast('minecraft:player_wall_head', 0.5)
@@ -269,6 +285,7 @@ BlockEvents.modification(event => {
 // Set block explosion resistance
 	howExplode('minecraft:end_stone', 0.5)
 	howExplode('kubejs:sturdy_blackstone', 11)
+	howExplode('kubejs:sturdy_netherrack', 4)
 	howExplode('architects_palette:sunmetal_block', 6) 
 	howExplode('architects_palette:sunmetal_slab', 6) 
 	howExplode('architects_palette:sunmetal_stairs', 6) 
@@ -293,7 +310,9 @@ BlockEvents.modification(event => {
 	howExplode('spelunkery:rock_salt_brick_slab', 1)
 	howExplode('spelunkery:rock_salt_bricks', 1)
 	howExplode('spelunkery:rock_salt', 0.5)
-	howExplode('spelunkery:salt_block', 0.3)
+	howExplode('spelunkery:salt_block', 0.4)
+	howExplode('storagedrawers:oak_full_drawers_1', 1200)
+	howExplode('storagedrawers:controller', 1200)
 	
 // Set exolite blocks' destroy speed
 	event.modify([
@@ -341,8 +360,15 @@ BlockEvents.modification(event => {
 	'architects_palette:mushy_myonite_brick_wall'
 	], block => {block.explosionResistance = 9})
 	
-// Make deepslate ores un-blow-up-able	
+// Make ores un-blow-up-able	
 	event.modify([
+	'minecraft:coal_ore',
+	'minecraft:iron_ore',
+	'minecraft:copper_ore',
+	'minecraft:gold_ore',
+	'minecraft:redstone_ore',
+	'minecraft:diamond_ore',
+	'create:zinc_ore',
 	'oreganized:silver_ore',
 	'oreganized:deepslate_silver_ore',
 	'minecraft:deepslate_coal_ore',
@@ -354,7 +380,10 @@ BlockEvents.modification(event => {
 	'minecraft:deepslate_lapis_ore',
 	'minecraft:deepslate_diamond_ore',
 	'create:deepslate_zinc_ore',
-	'oreganized:deepslate_lead_ore'
+	'oreganized:deepslate_lead_ore',
+	'minecraft:gilded_blackstone',
+	'minecraft:nether_gold_ore',
+	'minecraft:nether_quartz_ore'
 	], block => {block.explosionResistance = 1200})
 	
 // Set blocks to not require tool
@@ -402,6 +431,9 @@ BlockEvents.modification(event => {
 	'oreganized:glance_brick_stairs',
 	'oreganized:glance_wall',
 	'oreganized:glance_brick_wall',
-	'kubejs:sturdy_blackstone'
+	'kubejs:sturdy_blackstone',
+	'kubejs:sturdy_netherrack',
+	'storagedrawers:oak_full_drawers_1',
+	'storagedrawers:controller'
 	], block => {block.requiresTool = true})
 })

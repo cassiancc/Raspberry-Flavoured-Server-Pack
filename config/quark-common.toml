@@ -21,7 +21,7 @@
 	#Set to true if you need to find the class name for a screen that's causing problems
 	"Print Screen Classnames" = false
 	#A list of screens that can accept quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Allowed Screens" = []
+	"Allowed Screens" = ["com.tom.storagemod.gui.StorageTerminalScreen"]
 	#If set to true, the 'Allowed Screens' option will work as a Blacklist rather than a Whitelist. WARNING: Use at your own risk as some mods may not support this.
 	"Use Screen List Blacklist" = false
 	#Set to true to make the quark big worldgen features such as stone clusters generate as spheres rather than unique shapes. It's faster, but won't look as cool
@@ -580,7 +580,7 @@
 		#Can other stone-like materials be used for crafting stone tools?
 		"Better Stone Tool Crafting" = false
 		#Can a dispenser be crafted by adding a bow to a dropper?
-		"Enable Dispenser" = true
+		"Enable Dispenser" = false
 		#Can a repeater be crafted with the pattern for a redstone torch?
 		"Enable Repeater" = true
 		#Can you craft a minecart around blocks which can be placed inside?
@@ -704,7 +704,7 @@
 		"Italic Tooltip" = true
 		"Display Baked Enchantments In Tooltip" = true
 		#Enchantments other than Gold's Fortune/Looting to bake into items. Format is "item+enchant@level", such as "minecraft:stick+sharpness@10".
-		"Baked Enchantments" = ["minecraft:trident+loyalty@2", "minecraft:trident+power@1", "minecraft:crossbow+power@2", "farmersdelight:golden_knife+looting@1", "minecraft:golden_axe+looting@1", "minecraft:leather_helmet+feather_falling@2", "minecraft:leather_chestplate+feather_falling@2", "minecraft:leather_leggings+feather_falling@2", "minecraft:leather_boots+feather_falling@2", "minecraft:turtle_helmet+aqua_affinity@1", "minecraft:golden_helmet+fire_protection@2", "minecraft:golden_chestplate+fire_protection@2", "minecraft:golden_leggings+fire_protection@2", "minecraft:golden_boots+fire_protection@2", "minecraft:chainmail_helmet+thorns@1", "minecraft:chainmail_chestplate+thorns@1", "minecraft:chainmail_leggings+thorns@1", "minecraft:chainmail_boots+thorns@1", "alloyed:steel_helmet+projectile_protection@2", "alloyed:steel_chestplate+projectile_protection@2", "alloyed:steel_leggings+projectile_protection@2", "alloyed:steel_boots+projectile_protection@2", "additionaladditions:rose_gold_sword+silk_touch@1", "additionaladditions:rose_gold_shovel+silk_touch@1", "additionaladditions:rose_gold_pickaxe+silk_touch@1", "additionaladditions:rose_gold_axe+silk_touch@1", "additionaladditions:rose_gold_hoe+silk_touch@1", "kubejs:rose_gold_knife+silk_touch@1", "minecraft:netherite_helmet+fire_protection@3", "minecraft:netherite_chestplate+fire_protection@3", "minecraft:netherite_leggings+fire_protection@3", "minecraft:netherite_boots+fire_protection@3", "minecraft:netherite_pickaxe+fire_aspect@1", "minecraft:netherite_pickaxe+miningmaster:smelting@1", "minecraft:netherite_shovel+fire_aspect@1", "minecraft:netherite_shovel+miningmaster:smelting@1", "minecraft:netherite_hoe+fire_aspect@1", "minecraft:netherite_hoe+miningmaster:smelting@1", "minecraft:netherite_axe+fire_aspect@2", "minecraft:netherite_axe+miningmaster:smelting@1", "minecraft:netherite_sword+fire_aspect@2", "minecraft:netherite_sword+miningmaster:smelting@1", "farmersdelight:netherite_knife+fire_aspect@2", "farmersdelight:netherite_knife+miningmaster:smelting@1", "clash:swept_axe+fire_aspect@2", "clash:swept_axe+miningmaster:smelting@1", "clash:spear+clash:agility@1", "oreganized:silver_mirror+smite@6", "kubejs:rose_gold_rapier+kubejs:rose_lifesteal@1", "kubejs:electrum_horse_armor+allurement:obedience@1", "kubejs:necromium_horse_armor+allurement:obedience@1", "kubejs:netherite_horse_armor+allurement:obedience@1", "clash:greatblade+clash:whirling@1"]
+		"Baked Enchantments" = ["minecraft:trident+loyalty@2", "minecraft:trident+power@1", "minecraft:crossbow+power@2", "farmersdelight:golden_knife+looting@1", "minecraft:golden_axe+looting@1", "minecraft:leather_helmet+feather_falling@1", "minecraft:leather_chestplate+feather_falling@2", "minecraft:leather_leggings+feather_falling@3", "minecraft:leather_boots+feather_falling@4", "minecraft:turtle_helmet+aqua_affinity@1", "minecraft:golden_helmet+fire_protection@1", "minecraft:golden_chestplate+fire_protection@2", "minecraft:golden_leggings+fire_protection@2", "minecraft:golden_boots+fire_protection@1", "minecraft:chainmail_helmet+thorns@1", "minecraft:chainmail_chestplate+thorns@1", "minecraft:chainmail_leggings+thorns@1", "minecraft:chainmail_boots+thorns@1", "minecraft:diamond_helmet+projectile_protection@2", "minecraft:diamond_chestplate+projectile_protection@3", "minecraft:diamond_leggings+projectile_protection@3", "minecraft:diamond_boots+projectile_protection@2", "additionaladditions:rose_gold_sword+silk_touch@1", "additionaladditions:rose_gold_shovel+silk_touch@1", "additionaladditions:rose_gold_pickaxe+silk_touch@1", "additionaladditions:rose_gold_axe+silk_touch@1", "additionaladditions:rose_gold_hoe+silk_touch@1", "kubejs:rose_gold_knife+silk_touch@1", "minecraft:netherite_helmet+fire_protection@3", "minecraft:netherite_chestplate+fire_protection@4", "minecraft:netherite_leggings+fire_protection@4", "minecraft:netherite_boots+fire_protection@3", "minecraft:netherite_pickaxe+fire_aspect@1", "minecraft:netherite_pickaxe+miningmaster:smelting@1", "minecraft:netherite_shovel+fire_aspect@1", "minecraft:netherite_shovel+miningmaster:smelting@1", "minecraft:netherite_hoe+fire_aspect@1", "minecraft:netherite_hoe+miningmaster:smelting@1", "minecraft:netherite_axe+fire_aspect@2", "minecraft:netherite_axe+miningmaster:smelting@1", "minecraft:netherite_sword+fire_aspect@2", "minecraft:netherite_sword+miningmaster:smelting@1", "farmersdelight:netherite_knife+fire_aspect@2", "farmersdelight:netherite_knife+miningmaster:smelting@1", "clash:swept_axe+fire_aspect@2", "clash:swept_axe+miningmaster:smelting@1", "clash:spear+clash:agility@1", "oreganized:silver_mirror+smite@6", "kubejs:rose_gold_rapier+kubejs:rose_lifesteal@1", "kubejs:electrum_horse_armor+allurement:obedience@1", "kubejs:necromium_horse_armor+allurement:obedience@1", "kubejs:netherite_horse_armor+allurement:obedience@1", "clash:greatblade+clash:whirling@1"]
 
 	[tweaks.enhanced_ladders]
 		#Allowed values: (,0]
@@ -786,7 +786,7 @@
 	"Spiral Spires" = false
 	Permafrost = false
 	"No More Lava Pockets" = true
-	"New Stone Types" = true
+	"New Stone Types" = false
 	"Nether Obsidian Spikes" = true
 	"Monster Box" = true
 	"Glimmering Weald" = true
@@ -853,7 +853,7 @@
 	[world.new_stone_types]
 		"Enable Limestone" = false
 		"Enable Jasper" = false
-		"Enable Shale" = true
+		"Enable Shale" = false
 		"Enable Myalite" = false
 
 		[world.new_stone_types.limestone]
@@ -1009,7 +1009,7 @@
 	[world.fairy_rings]
 		"Forest Chance" = 0.00625
 		"Plains Chance" = 0.0025
-		Ores = ["minecraft:emerald_ore", "minecraft:diamond_ore"]
+		Ores = ["minecraft:diamond_ore", "minecraft:gold_ore"]
 
 		[world.fairy_rings.dimensions]
 			"Is Blacklist" = false
@@ -1794,7 +1794,7 @@
 		#Set this to false to remove the behaviour where totems destroy themselves if the player dies again.
 		"Dark Souls Mode" = false
 		#Totem will always spawn if the player killer is himself.
-		"Spawn Totem on PVP Kill" = false
+		"Spawn Totem on PVP Kill" = true
 		#Set this to true to make it so that if a totem is destroyed, the items it holds are destroyed alongside it rather than dropped
 		"Destroy Lost Items" = false
 		#Set this to false to only allow the owner of a totem to collect its items rather than any player

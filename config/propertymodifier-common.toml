@@ -220,7 +220,7 @@
 		"farmersrespite:tea_seeds" = "misc"
 		"farmersrespite:coffee_beans" = "misc"
 		"farmersrespite:coffee_berries" = "food"
-		"farmersrespite:rose_hips" = "misc"
+		"farmersrespite:rose_hips" = "food"
 		"farmersrespite:green_tea" = "food"
 		"farmersrespite:yellow_tea" = "food"
 		"farmersrespite:black_tea" = "food"
@@ -523,7 +523,6 @@
 		"create:creative_blaze_cake" = "tools"
 		"create:sweet_roll" = "food"
 		"create:chocolate_glazed_berries" = "food"
-		"create:builders_tea" = "food"
 		"create:raw_zinc" = "misc"
 		"create:andesite_alloy" = "misc"
 		"create:zinc_ingot" = "misc"
@@ -1360,8 +1359,6 @@
 		"another_furniture:red_tall_stool" = "decorations"
 		"another_furniture:black_tall_stool" = "decorations"
 		"another_furniture:furniture_hammer" = "tools"
-		"nethersdelight:nether_brick_smoker" = "decorations"
-		"nethersdelight:blackstone_blast_furnace" = "decorations"
 		"nethersdelight:crimson_fungus_colony" = "decorations"
 		"nethersdelight:warped_fungus_colony" = "decorations"
 		"nethersdelight:hoglin_hide" = "misc"
@@ -1393,17 +1390,6 @@
 		"minecraft:tipped_arrow" = "brewing"
 		"farmersdelight:hot_cocoa" = "food"
 		"farmersdelight:melon_juice" = "food"
-		"sob:cinder_dough" = "food"
-		"sob:aloe_tea" = "food"
-		"sob:caldera_roll" = "food"
-		"sob:saffron_tisane" = "food"
-		"sob:cinder_bread" = "food"
-		"sob:maple_bread" = "food"
-		"sob:sweet_berry_smoothie" = "food"
-		"sob:glow_berry_smoothie" = "food"
-		"sob:cherry_smoothie" = "food"
-		"sob:carrot_smoothie" = "food"
-		"sob:exquisite_mushroom_soup" = "food"
 		"twigs:twig" = "misc"
 		"twigs:pebble" = "misc"
 		"twigs:bamboo_leaves" = "decorations"
@@ -1442,7 +1428,6 @@
 		"twigs:polished_amethyst" = "building_blocks"
 		"twigs:cut_amethyst" = "building_blocks"
 		"twigs:petrified_lichen" = "decorations"
-		"twigs:rocky_dirt" = "building_blocks"
 		"twigs:twisting_polished_blackstone_bricks" = "building_blocks"
 		"twigs:twisting_polished_blackstone_brick_stairs" = "building_blocks"
 		"twigs:twisting_polished_blackstone_brick_slab" = "building_blocks"
@@ -1737,7 +1722,6 @@
 		"create_central_kitchen:truffle_pie_slice" = "food"
 		"kubejs:prickly_pear_pie" = "food"
 		"kubejs:pumpkin_pie" = "food"
-		"miningmaster:gem_forge" = "decorations"
 		"spelunkery:portal_fluid_bucket" = "misc"
 		"kubejs:lazurite_slab" = "building_blocks"
 		"kubejs:lazurite_stairs" = "building_blocks"
@@ -1821,7 +1805,6 @@
 		"mynethersdelight:spicy_skewer" = "food"
 		"mynethersdelight:chilidog" = "food"
 		"mynethersdelight:spicy_hoglin_stew" = "food"
-		"mynethersdelight:hot_wings" = "food"
 		"mynethersdelight:spicy_curry" = "food"
 		"mynethersdelight:hot_cream" = "food"
 		"mynethersdelight:hot_cream_cone" = "food"
@@ -2079,6 +2062,44 @@
 		"raspberry:silt_stove" = "decorations"
 		"raspberry:ash_stove" = "decorations"
 		"minecraft:snowball" = "combat"
+		"raspberry:cake" = "food"
+		"raspberry:chocolate_cake" = "food"
+		"raspberry:strawberry_cake" = "food"
+		"raspberry:banana_cake" = "food"
+		"raspberry:mint_cake" = "food"
+		"raspberry:vanilla_cake" = "food"
+		"raspberry:cherry_cake" = "food"
+		"raspberry:magma_cake" = "food"
+		"raspberry:green_tea_cake" = "food"
+		"raspberry:yellow_tea_cake" = "food"
+		"raspberry:black_tea_cake" = "food"
+		"raspberry:coffee_cake" = "food"
+		"create:rose_quartz_tiles" = "building_blocks"
+		"create:polished_rose_quartz" = "misc"
+		"kubejs:sturdy_netherrack" = "building_blocks"
+		"miners_delight:wild_cave_carrots" = "decorations"
+		"minecraft:brown_mushroom" = "food"
+		"minecraft:red_mushroom" = "food"
+		"minecraft:crimson_fungus" = "food"
+		"minecraft:warped_fungus" = "food"
+		"spelunkery:button_mushroom" = "food"
+		"spelunkery:crimini" = "food"
+		"spelunkery:portabella" = "food"
+		"spelunkery:milly_bubcap" = "food"
+		"spelunkery:inkcap_mushroom" = "food"
+		"spelunkery:white_inkcap_mushroom" = "food"
+		"spelunkery:mushgloom" = "food"
+		"architects_palette:twisted_sapling" = "food"
+		"quark:glow_shroom" = "food"
+		"kubejs:polished_steel" = "building_blocks"
+		"everycomp:q/mynethersdelight/powdery_bookshelf" = "building_blocks"
+		"storagedrawers:oak_full_drawers_1" = "decorations"
+		"storagedrawers:controller" = "decorations"
+		"kubejs:deposit" = "building_blocks"
+		"kubejs:deepslate_deposit" = "building_blocks"
+		"kubejs:blackstone_deposit" = "building_blocks"
+		"upgrade_aquatic:purple_pickerelweed" = "decorations"
+		"raspberry:firefly" = "misc"
 
 	#Set this value to true to make an item fire resistant (like netherite is), or set it to false to make it burn in fire and lava. Example (without the leading #):
 	#"minecraft:netherite_ingot" = false
@@ -2097,6 +2118,8 @@
 		"caverns_and_chasms:necromium_boots" = false
 		"caverns_and_chasms:necromium_horse_armor" = false
 		"caverns_and_chasms:necromium_nugget" = false
+		"minecraft:ender_eye" = true
+		"kubejs:spirited_exopearl" = true
 
 	#Set the rarity (item color) of an item. Must be a valid rarity name. Example (without the leading #):
 	#"minecraft:beacon" = "common"
@@ -2405,6 +2428,7 @@
 			"autumnity:snail_shell_chestplate" = 3
 			"environmental:yak_pants" = 1
 			"windswept:snow_boots" = 1
+			"create:copper_diving_boots" = 2
 
 		#Set the knockback resistance of an armor item. May not work on modded armors, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:golden_leggings" = 0.1
@@ -2413,6 +2437,12 @@
 			"alloyed:steel_chestplate" = 2
 			"alloyed:steel_leggings" = 2
 			"alloyed:steel_boots" = 1
+			"minecraft:netherite_chestplate" = 2
+			"minecraft:netherite_leggings" = 2
+			"minecraft:iron_helmet" = 0.5
+			"minecraft:iron_chestplate" = 1
+			"minecraft:iron_leggings" = 1
+			"minecraft:iron_boots" = 0.5
 
 	#Set the values for tools, swords and tridents.
 	[items.tools]
@@ -2421,7 +2451,7 @@
 		#"minecraft:netherite_sword" = 12
 		[items.tools.attack_damage]
 			"minecraft:trident" = 13.5
-			"clash:swept_axe" = 8
+			"clash:swept_axe" = 14
 			"mace_backport:mace" = 7.0
 			"kubejs:rose_gold_rapier" = 3
 			"kubejs:crowbar" = 3
@@ -2505,11 +2535,11 @@
 			"minecraft:iron_axe" = 6.5
 			"minecraft:iron_hoe" = 6.5
 			"farmersdelight:iron_knife" = 6.5
-			"alloyed:steel_pickaxe" = 6.0
-			"alloyed:steel_axe" = 6.0
-			"alloyed:steel_shovel" = 6.0
-			"alloyed:steel_hoe" = 6.0
-			"alloyed:steel_knife" = 6.0
+			"alloyed:steel_pickaxe" = 5.0
+			"alloyed:steel_axe" = 5.0
+			"alloyed:steel_shovel" = 5.0
+			"alloyed:steel_hoe" = 5.0
+			"alloyed:steel_knife" = 5.0
 			"minecraft:diamond_shovel" = 8.0
 			"minecraft:diamond_pickaxe" = 8.0
 			"minecraft:diamond_axe" = 8.0
@@ -2544,11 +2574,11 @@
 		#"minecraft:netherite_pickaxe" = 2.5
 		[items.tools.attack_speed]
 			"savage_and_ravage:cleaver_of_beheading" = 0.6
-			"clash:swept_axe" = 1.0
+			"clash:swept_axe" = 0.8
 			"mace_backport:mace" = 0.9
 			"kubejs:rose_gold_rapier" = 2.775
 			"kubejs:crowbar" = 1.6
-			"oreganized:silver_mirror" = 0.6
+			"oreganized:silver_mirror" = 0.8
 			"minecraft:wooden_pickaxe" = 1.2
 			"minecraft:wooden_shovel" = 1.1
 			"minecraft:wooden_hoe" = 1
@@ -2629,6 +2659,7 @@
 	#"minecraft:netherite_scrap" = 0.8
 	[composting.composting]
 		"cookscollection:lemon_sapling" = 0.3
+		"cookscollection:lemon" = 0.65
 		"ecologics:prickly_pear" = 0.75
 		"ecologics:cooked_prickly_pear" = 0.75
 		"minecraft:poisonous_potato" = 0.85
@@ -2710,6 +2741,8 @@
 		"raspberry:clovers" = 0.5
 		"kubejs:sugar_cookie" = 0.85
 		"kubejs:oat_cookie" = 0.85
+		"onion_onion:onion_slice" = 0.3
+		"ecologics:surface_moss" = 0.125
 
 #Set the values for axe stripping.
 [stripping]

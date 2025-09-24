@@ -19,6 +19,8 @@
   "selector": {
     "type": "names",
     "config": [
+      "minecraft:shipwreck",
+      "minecraft:shipwreck_beached",
       "explorify:mausoleum",
       "betterdungeons:skeleton_dungeon",
       "betterdungeons:small_dungeon",

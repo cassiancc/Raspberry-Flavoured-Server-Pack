@@ -1,2 +1,0 @@
-doDropsOnRightClick=false
-showUpdateMessage=false

@@ -20,9 +20,8 @@ ItemEvents.modification(event => {
 	'create:black_toolbox',
 	'domesticationinnovation:collar_tag',
 	'kubejs:eggplant_parmesan_block',
-	'sullysmod:cave_chum_bucket',
-	'mynethersdelight:hot_wings_bucket',
-	'mynethersdelight:hot_cream'
+	'storagedrawers:oak_full_drawers_1',
+	'naturalist:butterfly'
 	], item => {item.maxStackSize = 1})
 	
 // Stack to 16
@@ -211,7 +210,10 @@ ItemEvents.modification(event => {
 	'trickytrialspaintingsplusmusic:music_disc_precipice',
 	'trickytrialspaintingsplusmusic:music_disc_relic',
 	'caverns_and_chasms:depth_gauge',
-	'caverns_and_chasms:barometer'
+	'caverns_and_chasms:barometer',
+	'sullysmod:cave_chum_bucket',
+	'mynethersdelight:hot_wings_bucket',
+	'mynethersdelight:hot_cream'
 	], item => {item.maxStackSize = 16})
 	
 // Stack to 64
@@ -272,15 +274,6 @@ ItemEvents.modification(event => {
 	'abnormals_delight:cherry_cream_soda',
 	'abnormals_delight:passion_aloe_nectar',
 	'abnormals_delight:pickerelweed_juice',
-	'sob:aloe_tea',
-	'sob:mulberry_smoothie',
-	'sob:carrot_smoothie',
-	'sob:saffron_tisane',
-	'sob:nether_nectar',
-	'sob:passionfruit_smoothie',
-	'sob:sweet_berry_smoothie',
-	'sob:glow_berry_smoothie',
-	'sob:cherry_smoothie',
 	'create:builders_tea',
 	'minecraft:snowball',
 	'minecraft:ender_pearl',
@@ -401,6 +394,7 @@ ItemEvents.modification(event => {
 	'sullysmod:lanternfish_roll',
 	'mynethersdelight:magma_cake_slice',
 	'cookscollection:cooking_oil',
-	'cookscollection:lemonade'
+	'cookscollection:lemonade',
+	'mynethersdelight:hot_cream_cone'
 	], item => {item.maxStackSize = 64})
 })

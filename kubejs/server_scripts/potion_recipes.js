@@ -18,25 +18,25 @@ ServerEvents.recipes(event => {
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
 		Potion:"minecraft:invisibility"
 	}), [Fluid.of('create:potion', 1000, {Bottle:"REGULAR", Potion:"minecraft:awkward"}), 
-		'amethyst_shard', 'quartz'
+		'3x amethyst_shard', '3x #forge:gems/quartz'
 	]).heated()
 	// Jump boost
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
 		Potion:"minecraft:leaping"
 	}), [Fluid.of('create:potion', 1000, {Bottle:"REGULAR", Potion:"minecraft:awkward"}), 
-		'kubejs:rubber', 'slime_ball'
+		'kubejs:rubber', '2x slime_ball'
 	]).heated()
 	// Fire resistance
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
 		Potion:"minecraft:fire_resistance"
 	}), [Fluid.of('create:potion', 1000, {Bottle:"REGULAR", Potion:"minecraft:awkward"}), 
-		'magma_cream', 'blaze_powder', 'mynethersdelight:bullet_pepper'
+		'magma_cream', '2x blaze_powder', 'mynethersdelight:bullet_pepper'
 	]).heated()
 	// Speed
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
 		Potion:"minecraft:swiftness"
 	}), [Fluid.of('create:potion', 1000, {Bottle:"REGULAR", Potion:"minecraft:awkward"}), 
-		'supplementaries:sugar_cube', 'honeycomb'
+		'supplementaries:sugar_cube', '2x honeycomb'
 	]).heated()
 	// Turtle master
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
@@ -48,13 +48,18 @@ ServerEvents.recipes(event => {
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
 		Potion:"minecraft:water_breathing"
 	}), [Fluid.of('create:potion', 1000, {Bottle:"REGULAR", Potion:"minecraft:awkward"}), 
-		'aquaculture:goldfish', 'nautilus_shell'
+		'aquaculture:goldfish', '2x nautilus_shell'
+	]).heated()
+	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
+		Potion:"minecraft:water_breathing"
+	}), [Fluid.of('create:potion', 1000, {Bottle:"REGULAR", Potion:"minecraft:awkward"}), 
+		'kubejs:crystalfish'
 	]).heated()
 	// Instant health
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
 		Potion:"minecraft:healing"
 	}), [Fluid.of('create:potion', 1000, {Bottle:"REGULAR", Potion:"minecraft:awkward"}), 
-		'#raspberry_flavoured:golden_healers'
+		'2x caverns_and_chasms:bejeweled_apple'
 	]).heated()
 	// Regeneration
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
@@ -72,7 +77,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
 		Potion:"minecraft:slow_falling"
 	}), [Fluid.of('create:potion', 1000, {Bottle:"REGULAR", Potion:"minecraft:awkward"}), 
-		'phantom_membrane', 'feather'
+		'phantom_membrane', '2x miners_delight:bat_wing'
 	]).heated()
 	// Thorns
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
@@ -96,7 +101,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
 		Potion:"caverns_and_chasms:rewind"
 	}), [Fluid.of('create:potion', 1000, {Bottle:"REGULAR", Potion:"minecraft:awkward"}), 
-		'ender_pearl', 'echo_shard'
+		'2x architects_palette:twisted_sapling', 'echo_shard'
 	]).heated()
 	// Health boost
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
@@ -145,13 +150,13 @@ ServerEvents.recipes(event => {
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
 		Potion:"minecraft:harming"
 	}), [Fluid.of('create:potion', 1000, {Bottle:"REGULAR", Potion:"minecraft:awkward"}), 
-		'quartz', 'red_mushroom'
+		'#raspberry_flavoured:exotic_fish', 'upgrade_aquatic:thrasher_tooth'
 	]).heated()
 	// Poison
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 
 		Potion:"minecraft:poison"
 	}), [Fluid.of('create:potion', 1000, {Bottle:"REGULAR", Potion:"minecraft:awkward"}), 
-		'spider_eye', 'poisonous_potato'
+		'spider_eye', 'poisonous_potato', 'red_mushroom'
 	]).heated()
 	// Weakness
 	event.recipes.create.mixing(Fluid.of('create:potion', 1000, {Bottle:"REGULAR", 

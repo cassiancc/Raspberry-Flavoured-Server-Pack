@@ -6,6 +6,7 @@
     "farmersdelight:blackstone_dwarf_geode",
     "farmersdelight:cloth",
     "farmersdelight:dimensional_tears",
+	
     "farmersdelight:straw_from_giant_tall_grass",
 	"farmersdelight:straw_from_dead_bush",
 	"farmersdelight:straw_from_tall_dead_bush",
@@ -15,6 +16,9 @@
 	"farmersdelight:straw_from_tall_beachgrass",
 	"farmersdelight:straw_from_sporophyte",
 	"farmersdelight:straw_from_tall_sporophyte",
+	"farmersdelight:straw_from_arid_sprouts",
+	"farmersdelight:straw_from_cave_grass",
+	
 	"farmersdelight:seeds_from_grass",
 	"farmersdelight:seeds_from_tall_grass",
 	"farmersdelight:seeds_from_giant_tall_grass",
@@ -23,11 +27,15 @@
 	"farmersdelight:seeds_from_sporophyte",
 	"farmersdelight:seeds_from_tall_sporophyte",
 	"farmersdelight:seeds_from_sandy_shrub",
+	"farmersdelight:seeds_from_arid_sprouts",
+	
 	"farmersdelight:music_disc_droopy1",
 	"farmersdelight:music_disc_death",
 	"farmersdelight:music_disc_hullabaloo",
 	"farmersdelight:music_disc_rain",
+	"farmersdelight:music_disc_raveyard",
 	"farmersdelight:disc_fragment_from_creepie",
+	
 	"farmersdelight:scavenging/string_extra",
 	"farmersdelight:scavenging/bones_livestock",
 	"farmersdelight:scavenging/bones_livestock_small",
@@ -61,6 +69,7 @@
 	"farmersdelight:scavenging/piglin_brute_head",
 	"farmersdelight:scavenging/piglin_alchemist_head",
 	"farmersdelight:scavenging/zombified_piglin_head",
+	
 	"farmersdelight:cleaving/skeleton_skull",
 	"farmersdelight:cleaving/skeleton_skull_stray",
 	"farmersdelight:cleaving/skeleton_skull_villager",

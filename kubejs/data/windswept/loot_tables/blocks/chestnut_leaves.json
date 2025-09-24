@@ -164,6 +164,16 @@
           "conditions": [
             {
               "condition": "minecraft:survives_explosion"
+            },
+            {
+              "chances": [
+                0.02,
+                0.1,
+                0.3,
+                0.5
+              ],
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune"
             }
           ],
           "functions": [
@@ -171,8 +181,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": -4.0
+                "max": 4.0,
+                "min": 1.0
               },
               "function": "minecraft:set_count"
             },

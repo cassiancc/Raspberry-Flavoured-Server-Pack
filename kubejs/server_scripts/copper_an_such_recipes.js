@@ -1,3 +1,5 @@
+// script by asof
+
 let excluded=[
   /caverns_and_chasms:.*toolbox/,
   /copperized:.*bars/,
