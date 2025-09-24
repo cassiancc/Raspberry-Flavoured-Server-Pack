@@ -41,6 +41,10 @@ file = "config/additional_enchantments-client.toml"
 hash = "f24ce915ca374baa91e2290935c64466be41bb9c85a38a582185c677f4752074"
 
 [[files]]
+file = "config/additional_enchantments-server.toml"
+hash = "9826eb66efd77dfbeb26acad5721bf4dd0aa45fe4da8d99e234bce5caf23548e"
+
+[[files]]
 file = "config/advancementplaques-common.toml"
 hash = "2a21c798151e3ab656dc494947643a0a5d894502b3f9943cce562f8370c582f6"
 
@@ -221,6 +225,10 @@ file = "config/clash-client.toml"
 hash = "8bf237375be8b594da327d91becd2ff8ba00434fb2f9891a5f5f8ded66e6a5d3"
 
 [[files]]
+file = "config/clash-server.toml"
+hash = "f86705e817c4b5971bedc49c34d60ba57e4bc143eea71aaa847e02b6c6f07e64"
+
+[[files]]
 file = "config/clayworks-common.toml"
 hash = "aae2419f17f22f8d8989cbf8c22c61806ecbc149bcf11efddd098ec56f5466de"
 
@@ -243,6 +251,10 @@ hash = "58771ae3fbac0f5bf9936e37d76bc483634b9e5c3e0778b3fac438463f291225"
 [[files]]
 file = "config/cofh_core-common.toml"
 hash = "e254fd10199336dd0e0c1c3f20a8daa1fdf9ca026b02dd9c0064ae1f058b9393"
+
+[[files]]
+file = "config/cofh_core-server.toml"
+hash = "ce708d8e2bead2aebfc4f4ad73494a6734729771e724c10ea3db4ec5e83d5380"
 
 [[files]]
 file = "config/comfortable_campfires.json"
@@ -275,6 +287,10 @@ hash = "de9203dd7ebf8551e32c2a4a15733d0547d32334bfb3c562c6f31631b61fddb3"
 [[files]]
 file = "config/create-common.toml"
 hash = "b3290f5c27772cfad6519311d2c61342a7eae425009bff98f50a866cd5bbe67f"
+
+[[files]]
+file = "config/create-server.toml"
+hash = "d7d3891c09a1386da91ac953e82120a7486df6c1229e92d958aeaab3c7fd8687"
 
 [[files]]
 file = "config/create_central_kitchen-common.toml"
@@ -403,6 +419,10 @@ hash = "b757a8a1ee8965736ef1172ec4f802b084bdb752088eaf1c035d804085bb62fa"
 [[files]]
 file = "config/endergetic-common.toml"
 hash = "bf0b9695be02081947e0702335844755ee28f8538722d181184e9557c9762b89"
+
+[[files]]
+file = "config/ensorcellation-server.toml"
+hash = "caaee961d804a16800640f3d15852fc4699bd3c116c473962b68fd4724c59b8b"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -937,6 +957,10 @@ file = "config/hourglass-client.toml"
 hash = "e73bef2be254b3bbb5822d1ed12e214165e5156aa64977c7533cd9af0d8665e5"
 
 [[files]]
+file = "config/hourglass-server.toml"
+hash = "06f9bfe890f5d6e977186afc0e322a51a50ed27b135207b820abd68e7a776e28"
+
+[[files]]
 file = "config/immediatelyfast.json"
 hash = "24e30e4bc37f445b1af5a52dc0c70830f2559abaa5b840721062ce6bb852b8ae"
 
@@ -1099,6 +1123,10 @@ hash = "f97fc5ae7dd7d312e86ecddf2e4491fee3e3a16b7a26cbb3aa078fdd3255c4df"
 [[files]]
 file = "config/nostalgic_tweaks/backup/nostalgic_tweaks-client-startup_backup.json"
 hash = "36a09a2806a23bee59f6e3c07858d4306f39f28646a4a9ba10c5ccbdc0a0cd17"
+
+[[files]]
+file = "config/nostalgic_tweaks/nostalgic_tweaks-server.json"
+hash = "79228e68697e18bd82e5b343f3337ab5a7dff7bf3fea88b4cedf4a4163e2b361"
 
 [[files]]
 file = "config/nostalgic_tweaks/nostalgic_tweaks.json"
@@ -2445,6 +2473,10 @@ file = "config/rrls.toml"
 hash = "622e98cf832506aa24634e302984536fd06be31fe29e9621317776589f995e56"
 
 [[files]]
+file = "config/rrp.properties"
+hash = "126b80f6c694aa1ab404e06ead03ffce379ec446013fb0111dce06ed1c2e820b"
+
+[[files]]
 file = "config/rubidium_extras.toml"
 hash = "5a6d577447fdb5616bee4b7c216c279dcb6528e5e35e5daac96af3adfbf242b9"
 
@@ -2549,6 +2581,10 @@ file = "config/tactical_fishing.toml"
 hash = "321f88fabd189915028fe6d872ecd57295b2c08fb9073a480f5db973b69ec78b"
 
 [[files]]
+file = "config/throttle-server.toml"
+hash = "dbf01eb2932ae378ccb8dfceac6d04a34df546165cb2b7b7085ca8bd1749f5f1"
+
+[[files]]
 file = "config/tips.json"
 hash = "15816f3e9982621325fb9bb2cec06b137ea27078ace66c816c1180d65cf7d6a5"
 
@@ -2627,50 +2663,6 @@ hash = "da1c5624e49170467645060e595530ca920a12b3581c846678911db9e6857204"
 [[files]]
 file = "config/worldplaytime/config.json"
 hash = "2dafd311e06ef3b74cbb2d686e4312a9be24f8e2870b02d0af8f3b9097665a5e"
-
-[[files]]
-file = "defaultconfigs/additional_enchantments-server.toml"
-hash = "9826eb66efd77dfbeb26acad5721bf4dd0aa45fe4da8d99e234bce5caf23548e"
-
-[[files]]
-file = "defaultconfigs/clash-server.toml"
-hash = "f86705e817c4b5971bedc49c34d60ba57e4bc143eea71aaa847e02b6c6f07e64"
-
-[[files]]
-file = "defaultconfigs/cofh_core-server.toml"
-hash = "ce708d8e2bead2aebfc4f4ad73494a6734729771e724c10ea3db4ec5e83d5380"
-
-[[files]]
-file = "defaultconfigs/create-server.toml"
-hash = "d7d3891c09a1386da91ac953e82120a7486df6c1229e92d958aeaab3c7fd8687"
-
-[[files]]
-file = "defaultconfigs/easyshulkerboxes-server.toml"
-hash = "889b35466b0531bbb41cccfed12c98d1806c8923346e2585c01a0a5e8d84b08e"
-
-[[files]]
-file = "defaultconfigs/ensorcellation-server.toml"
-hash = "caaee961d804a16800640f3d15852fc4699bd3c116c473962b68fd4724c59b8b"
-
-[[files]]
-file = "defaultconfigs/hourglass-server.toml"
-hash = "06f9bfe890f5d6e977186afc0e322a51a50ed27b135207b820abd68e7a776e28"
-
-[[files]]
-file = "defaultconfigs/nostalgic_tweaks/nostalgic_tweaks-server.json"
-hash = "79228e68697e18bd82e5b343f3337ab5a7dff7bf3fea88b4cedf4a4163e2b361"
-
-[[files]]
-file = "defaultconfigs/rrp.properties"
-hash = "126b80f6c694aa1ab404e06ead03ffce379ec446013fb0111dce06ed1c2e820b"
-
-[[files]]
-file = "defaultconfigs/throttle-server.toml"
-hash = "dbf01eb2932ae378ccb8dfceac6d04a34df546165cb2b7b7085ca8bd1749f5f1"
-
-[[files]]
-file = "defaultconfigs/universalbonemeal-server.toml"
-hash = "ab0eb99bfd2b91f115d9025fdbfd5ae268b21c282f0a50d3f8c9ace400698768"
 
 [[files]]
 file = "dynmap/renderdata/README"
