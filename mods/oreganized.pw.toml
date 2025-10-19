@@ -3,11 +3,11 @@ filename = "Oreganized 1.19.2-2.0.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "e47583c0de633f5fa9aea330450680e92dc9ae52"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/2FJutzEL/versions/8mxk6Cye/Oreganized%201.19.2-2.0.2.jar"
+hash-format = "sha512"
+hash = "5d332392c5341ce3c1a8ab0bb3a55253eb233801493efc17b04ea0886def5966c772f45df2b121cb807efc95863a48382dd66475be408e5af3109c269bb53ba8"
 
 [update]
-[update.curseforge]
-file-id = 4377982
-project-id = 769203
+[update.modrinth]
+mod-id = "2FJutzEL"
+version = "8mxk6Cye"

@@ -3,11 +3,11 @@ filename = "apathy-forge-1.19.2-2.7.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "29ed2618ee63404451b95426de261f7ab6f45e93"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/fvtFPg1k/versions/KjIyu2yU/apathy-forge-1.19.2-2.7.1.jar"
+hash-format = "sha512"
+hash = "42ea6dde9e7c40bf2e4d3a3e51b4ac79bcf9b5a4e097e8ae57b6c2eb4affec24a8b63c28a1bd42d44267cf4a32577c98b1cd18d6c27033ce806605a65a97da3a"
 
 [update]
-[update.curseforge]
-file-id = 4611843
-project-id = 499846
+[update.modrinth]
+mod-id = "fvtFPg1k"
+version = "KjIyu2yU"

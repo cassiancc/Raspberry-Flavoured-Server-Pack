@@ -3,11 +3,11 @@ filename = "boatload-1.19.2-4.2.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "775f53660f4fe12c5e5bd815ef6be777c035badc"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/hevpK888/versions/DDO9WQES/boatload-1.19.2-4.2.2.jar"
+hash-format = "sha512"
+hash = "361a0b5714f667dc85aefad4246e2f0bc2953d6468a0446b2b2a3e678985022e9922bf3b1e84994849135386fdf03babe018b66ab50511e8880351e16219eff6"
 
 [update]
-[update.curseforge]
-file-id = 4776091
-project-id = 337396
+[update.modrinth]
+mod-id = "hevpK888"
+version = "DDO9WQES"

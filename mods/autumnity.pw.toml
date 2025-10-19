@@ -3,11 +3,11 @@ filename = "autumnity-1.19.2-4.0.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "851303e6fb52410709b270f40609806fac9621b9"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/cRh6MJ6n/versions/zukiG2Xb/autumnity-1.19.2-4.0.1.jar"
+hash-format = "sha512"
+hash = "79547ea463b411990e74f977ba90e3c0492967ba5c9169a6102ca9fea761dc187a74a9d3752d817a164c8504280acbfbc54ea27ac9b1a37b535bc6cb22043b0f"
 
 [update]
-[update.curseforge]
-file-id = 4776187
-project-id = 365045
+[update.modrinth]
+mod-id = "cRh6MJ6n"
+version = "zukiG2Xb"

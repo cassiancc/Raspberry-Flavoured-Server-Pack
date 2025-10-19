@@ -3,11 +3,11 @@ filename = "EchoChest-v4.0.2-1.19.2-Forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "591eb32063075acc34a1df15adb1f01cb8ea2914"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/m3pkVbY8/versions/T0Ez2ktf/EchoChest-v4.0.2-1.19.2-Forge.jar"
+hash-format = "sha512"
+hash = "5d82f601f48da769d2266fa8abeb6c2412e93a7729a269de5b8a321688d44dcd277fdff877d536d97b99dcde6464cffbda6577845b808bc7229abd7071e6c96f"
 
 [update]
-[update.curseforge]
-file-id = 4538164
-project-id = 857972
+[update.modrinth]
+mod-id = "m3pkVbY8"
+version = "T0Ez2ktf"

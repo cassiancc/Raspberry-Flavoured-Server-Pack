@@ -3,11 +3,11 @@ filename = "miningmaster-1.19.2-4.1.4.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "bc12358c18718126e1c48a13d8580bf77b254412"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/Xu8V0UlK/versions/DAG6dnJS/miningmaster-1.19.2-4.1.4.jar"
+hash-format = "sha512"
+hash = "54e677413dc043ce17c313dc46f9034bad1848ad386379f15f1957bbc74c774d19d863163dc1780d84389f7c42ae81029362969d0abfced8b4207df3f20af667"
 
 [update]
-[update.curseforge]
-file-id = 4662004
-project-id = 534956
+[update.modrinth]
+mod-id = "Xu8V0UlK"
+version = "DAG6dnJS"

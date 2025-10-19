@@ -3,11 +3,11 @@ filename = "spelunkery-1.19.2-0.2.6-forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "c27dd94002e26bd7a1fc2d37eb1d08a165c8efe8"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/krskFMfA/versions/v6sHcul7/spelunkery-1.19.2-0.2.6-forge.jar"
+hash-format = "sha512"
+hash = "6fdfdb5c26c872641a8f7fc53f2904df478964363e6dca53829beca4f9a2ac0c13c5824313732b4f042bf0e0a7ff728f3955a01aedf7805c1685068399134eff"
 
 [update]
-[update.curseforge]
-file-id = 4719507
-project-id = 790530
+[update.modrinth]
+mod-id = "krskFMfA"
+version = "v6sHcul7"

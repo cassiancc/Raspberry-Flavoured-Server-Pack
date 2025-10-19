@@ -3,11 +3,11 @@ filename = "incontrol-1.19-7.1.14.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "99fcc289860236c017d03659b80cd04551521b50"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/KpICtuVx/versions/NjPpClOo/incontrol-1.19-7.1.14.jar"
+hash-format = "sha512"
+hash = "9c19f52710927711f13c74cd40423cde3eca0c937e40eb7f8b6cf30a956e22beaf006a01b01e527f36e154634493f5c54984f487b2356060072fad73b13372b8"
 
 [update]
-[update.curseforge]
-file-id = 5322522
-project-id = 257356
+[update.modrinth]
+mod-id = "KpICtuVx"
+version = "NjPpClOo"

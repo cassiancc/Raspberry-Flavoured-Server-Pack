@@ -3,11 +3,11 @@ filename = "horsestonks-forge-1.17+-1.0.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "b39636807ac9feb5000d1feda1805931e5db2fe9"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/Vj70oKlA/versions/1.0.1-Forge1.17%2B/horsestonks-forge-1.17%2B-1.0.1.jar"
+hash-format = "sha512"
+hash = "5eb1d593e56084a300f530604939e588827d5bbe99dbee4835992a5fb11591f6ddbdafc916d1acd48c134747c91b5a65fe3b66ef9137c02527ee048ddea51916"
 
 [update]
-[update.curseforge]
-file-id = 3781919
-project-id = 497378
+[update.modrinth]
+mod-id = "Vj70oKlA"
+version = "sVfoVB5Y"

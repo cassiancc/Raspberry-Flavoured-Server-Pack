@@ -3,11 +3,11 @@ filename = "TacticalFishing-1.19.x2-v1.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "ecb02283f278af78e2bc32196fac863491a24a32"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/5kRS9LYk/versions/g5xGoydC/TacticalFishing-1.19.x2-v1.2.jar"
+hash-format = "sha512"
+hash = "9bbad917aa578a01d59acc7f1fa8db6212249c9d57af93b877e098df214a6933d60a3cdacbf6214b338a995a26f56a7bc8cc7dffc921fc9646e033ee42e2db3f"
 
 [update]
-[update.curseforge]
-file-id = 4819189
-project-id = 462326
+[update.modrinth]
+mod-id = "5kRS9LYk"
+version = "g5xGoydC"

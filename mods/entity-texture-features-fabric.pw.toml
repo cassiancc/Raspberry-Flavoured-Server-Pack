@@ -3,11 +3,11 @@ filename = "entity_texture_features_forge_1.19.2-4.5.1.jar"
 side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "8716927533691c7eb2c1e64706b23c8637b29a6b"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/BVzZfTc1/versions/tHwXqOG3/entity_texture_features_forge_1.19.2-4.5.1.jar"
+hash-format = "sha512"
+hash = "5c0bb46564e90f08f95ecbb12ef75aef044f47e930a97834bfdd9fc7808e7c1922acd7326fcaf2eeff120b41669f6db2f9e3472225999c54e0a9ee8ce9d3ff1b"
 
 [update]
-[update.curseforge]
-file-id = 4716603
-project-id = 568563
+[update.modrinth]
+mod-id = "BVzZfTc1"
+version = "tHwXqOG3"

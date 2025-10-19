@@ -1,13 +1,13 @@
 name = "Immersive Overlays"
 filename = "immersiveoverlays-forge-1.2.0+1.19.2.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "90982e235ec8bfe8ce668c7f29ffb489d986489c"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/PKoLkD98/versions/2N9dLoXm/immersiveoverlays-forge-1.2.0%2B1.19.2.jar"
+hash-format = "sha512"
+hash = "a40d86492649e8c2edfa054c39ec144793ec450bf7e5bc867077e8ed582400882e43c93bfab6c7aac8204eceadc7aa4639e1a82c8e68a975af028d42371e7ed8"
 
 [update]
-[update.curseforge]
-file-id = 6481214
-project-id = 1245453
+[update.modrinth]
+mod-id = "PKoLkD98"
+version = "2N9dLoXm"

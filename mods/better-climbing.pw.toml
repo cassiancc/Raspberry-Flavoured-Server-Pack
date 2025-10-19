@@ -3,11 +3,11 @@ filename = "better_climbing-forge-2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "dff14afd0bf69a5740f45ec1eccf00570c7496d2"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/ZucWZEBV/versions/XB1ghJZJ/better_climbing-forge-2.jar"
+hash-format = "sha512"
+hash = "ac88863e858a0b91b1aa0a9cf4e5fd3981a64400f6969cecbdb20aed29063e8e3cd1b83abdb2789f57ecd442343ef81185dc21b4ef36e22da50fa820d6db8272"
 
 [update]
-[update.curseforge]
-file-id = 4589729
-project-id = 655619
+[update.modrinth]
+mod-id = "ZucWZEBV"
+version = "XB1ghJZJ"

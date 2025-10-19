@@ -1,13 +1,13 @@
 name = "Advancement Plaques [Neo/Forge]"
 filename = "AdvancementPlaques-1.19.2-1.4.7.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "a52677eb955bde82bec4552e0e084b5ffff6e37a"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/9NM0dXub/versions/i82iP1q7/AdvancementPlaques-1.19.2-1.4.7.jar"
+hash-format = "sha512"
+hash = "fcbd49173198def2f1ec6fcbce10993b2667b98bf4eacb48825a9d96a70c2a25f612cdf539d1424d4ed7c19ea57f4e052fbdf0f49b8180dac29c4d616f789058"
 
 [update]
-[update.curseforge]
-file-id = 4029209
-project-id = 499826
+[update.modrinth]
+mod-id = "9NM0dXub"
+version = "i82iP1q7"

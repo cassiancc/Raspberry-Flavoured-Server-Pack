@@ -3,11 +3,11 @@ filename = "panorama_screens-1.0+forge+mc1.19.jar"
 side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "8ee1ed796f04980a27186f0191183af9027623d8"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/4k0QM1rC/versions/vkP8a2ME/panorama_screens-1.0%2Bforge%2Bmc1.19.jar"
+hash-format = "sha512"
+hash = "98f58942cb558e1d2fe0736f5d473e17b286a5dd4f7f63abdc918eae3456f6c76609ad8f03c4f1d34887f5d555e239cd4b7bd2a0eb9455367209e9bab93ec45f"
 
 [update]
-[update.curseforge]
-file-id = 4505329
-project-id = 854176
+[update.modrinth]
+mod-id = "4k0QM1rC"
+version = "vkP8a2ME"

@@ -3,11 +3,11 @@ filename = "betterfog-1.19.2-1.1.2.jar"
 side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "5e31138bbf58bdc4164e21c312d22ffe21f85a81"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/Bno70aWr/versions/uw4XHhfA/betterfog-1.19.2-1.1.2.jar"
+hash-format = "sha512"
+hash = "4e3364d35e48436a65fefa17cb0f0e82b27d4690a1902024c2a64d83c89be6121c5472ccc97acad08900ea8e6cc711928dde68c886146b4be9bc4c69e2318d1e"
 
 [update]
-[update.curseforge]
-file-id = 4600099
-project-id = 667872
+[update.modrinth]
+mod-id = "Bno70aWr"
+version = "uw4XHhfA"

@@ -3,11 +3,11 @@ filename = "jeed-1.19.2-2.1.4.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "4d893b3be13644df7299778d4bed933bfd293eae"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/EO27GKs1/versions/dbK8LkEi/jeed-1.19.2-2.1.4.jar"
+hash-format = "sha512"
+hash = "2719f3d4f62ce6761a3f5dfdc5073b95558479be754f2d73c6af222383e33c3879ef50885ea0b5ca0423ce30890a928ded8484badc500d632541c5dd0ab69845"
 
 [update]
-[update.curseforge]
-file-id = 4599099
-project-id = 532286
+[update.modrinth]
+mod-id = "EO27GKs1"
+version = "dbK8LkEi"

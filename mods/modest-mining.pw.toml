@@ -3,11 +3,11 @@ filename = "modestmining-0.2.13.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "9523957e5aee2f125076b75eef807896f719fcf7"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/5QcDoykP/versions/QGmZQOWM/modestmining-0.2.13.jar"
+hash-format = "sha512"
+hash = "08bbce9c9951ab40a435348394741433b373b271ae5f33469413aa9f4dafa0298e4736410053df47722f0d367f0963d5c64515f485c1eb319cfd387bf49e88a0"
 
 [update]
-[update.curseforge]
-file-id = 6974850
-project-id = 533775
+[update.modrinth]
+mod-id = "5QcDoykP"
+version = "QGmZQOWM"

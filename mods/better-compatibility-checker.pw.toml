@@ -3,11 +3,11 @@ filename = "BetterCompatibilityChecker-1.0.10-build.50+mc1.19.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "8219cb875a75a561befebb56511b9c4507fdb0ea"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/KJhXPbHQ/versions/SIqdR1UJ/BetterCompatibilityChecker-1.0.10-build.50%2Bmc1.19.2.jar"
+hash-format = "sha512"
+hash = "6eedab842c71c1da9d6c6b8be4ebb08cec0b2db523f02e5884d680819c7609aaa2d4c8c84d492da858c3c3ad3497be2999e690ff9373ab6a32a1330fb69e7b27"
 
 [update]
-[update.curseforge]
-file-id = 4441760
-project-id = 551894
+[update.modrinth]
+mod-id = "KJhXPbHQ"
+version = "SIqdR1UJ"

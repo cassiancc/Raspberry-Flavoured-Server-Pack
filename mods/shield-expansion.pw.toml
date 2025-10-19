@@ -3,11 +3,11 @@ filename = "ShieldExpansion-1.19.2-1.2.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "ee481679990d4772bb4063c43e17728e36ee6fc5"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/sjxWxSao/versions/dEY11Uda/ShieldExpansion-1.19.2-1.2.2.jar"
+hash-format = "sha512"
+hash = "3960f129879e3287f1490c5a9dad1b5312ea38b54e742dcc7713c45c58eef13618a93184f5470fdf6685ccad546591a12dc91f83c0ca4708b02fbf5d84007446"
 
 [update]
-[update.curseforge]
-file-id = 6049260
-project-id = 583318
+[update.modrinth]
+mod-id = "sjxWxSao"
+version = "dEY11Uda"

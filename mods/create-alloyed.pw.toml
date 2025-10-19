@@ -3,11 +3,11 @@ filename = "alloyed-1.19.2-v1.5a.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "8712a3c19e6537e0ddf3c150872222ad8736fde3"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/KUInlTFo/versions/SFWaKYwq/alloyed-1.19.2-v1.5a.jar"
+hash-format = "sha512"
+hash = "032c89e395e361d2a329aa8938f11dac3bc163660ea4673ceba72cf5d24d72c9fe10e85d018b92e634bb13543d2d03a1f5d7954e02c73453842070f12b31c48b"
 
 [update]
-[update.curseforge]
-file-id = 4591571
-project-id = 564792
+[update.modrinth]
+mod-id = "KUInlTFo"
+version = "SFWaKYwq"

@@ -3,11 +3,11 @@ filename = "emi-1.1.6+1.19.2+forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "770cbda0bf463ecd407a3a925d13a9d50bca0b2c"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/fRiHVvU7/versions/QhG3TG8L/emi-1.1.6%2B1.19.2%2Bforge.jar"
+hash-format = "sha512"
+hash = "d3d6a4027bc7c965125ae3efaedeb3779fe047d8c12007788b6fbbd99c71762814494a9cbf9708d39a69f56eb1b06ee7fd4693b24350c3de2902c2fe6f1d13ec"
 
 [update]
-[update.curseforge]
-file-id = 5311324
-project-id = 580555
+[update.modrinth]
+mod-id = "fRiHVvU7"
+version = "QhG3TG8L"

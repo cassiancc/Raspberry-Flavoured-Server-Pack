@@ -3,11 +3,11 @@ filename = "netherportalfix-forge-1.19-10.0.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "56f4cecf220a965d50dc96c26d0fb4563ecaf6f4"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/nPZr02ET/versions/kpXZdI4d/netherportalfix-forge-1.19-10.0.1.jar"
+hash-format = "sha512"
+hash = "ee030317768340051f4a733bfd317fea7e6f39da6f628554fed7d22550b9d77d4be0e3a746849b581c23abb4e488c3dab5b199b961d1854da52af5429c4c245a"
 
 [update]
-[update.curseforge]
-file-id = 4412699
-project-id = 241160
+[update.modrinth]
+mod-id = "nPZr02ET"
+version = "kpXZdI4d"

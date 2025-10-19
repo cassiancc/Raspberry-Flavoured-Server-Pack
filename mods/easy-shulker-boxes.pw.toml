@@ -3,11 +3,11 @@ filename = "EasyShulkerBoxes-v4.4.1-1.19.2-Forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "64569fb1bde9884d7e19ae0567862a4a9f9c4bc8"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/gA5euN8S/versions/5tmX635q/EasyShulkerBoxes-v4.4.1-1.19.2-Forge.jar"
+hash-format = "sha512"
+hash = "dbb58b9689059396fd898608cd546167af8f9376e007e8095857d55ffee70ad7c37cca53783901eaa9dfefda3205dcc758cff715a4e3eb9a712a7ea43789e2ac"
 
 [update]
-[update.curseforge]
-file-id = 4559054
-project-id = 594006
+[update.modrinth]
+mod-id = "gA5euN8S"
+version = "5tmX635q"

@@ -3,11 +3,11 @@ filename = "StorageDrawers-1.19.2-11.4.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "797afd3e5eba164a0a04807c9c2b72e2267a6846"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/guitPqEi/versions/rUXcd0Oi/StorageDrawers-1.19.2-11.4.1.jar"
+hash-format = "sha512"
+hash = "96da999dcf3a622efe2dcc194e3ec791d20cd92f8cb7bc451512b0d0e9631a1e08375e8322f5c5f19d59157d7c78d7d9c9149219f6430d4871022c0768106eee"
 
 [update]
-[update.curseforge]
-file-id = 5648923
-project-id = 223852
+[update.modrinth]
+mod-id = "guitPqEi"
+version = "rUXcd0Oi"

@@ -3,11 +3,11 @@ filename = "atmospheric-1.19.2-5.0.0.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "d87e9283dcd3270a3722f32326a08f4f9ed5e7bc"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/U9sJOFmJ/versions/vEIX2xn5/atmospheric-1.19.2-5.0.0.jar"
+hash-format = "sha512"
+hash = "e2fbc7f87000abfec2ab03a68231666dd3b49a7422d048917004417e68013d0109ae1dd4eb0177b80bbdacdb26aa877f219873fd4e74c9ee65fbfa79b66b0bb1"
 
 [update]
-[update.curseforge]
-file-id = 4415516
-project-id = 362393
+[update.modrinth]
+mod-id = "U9sJOFmJ"
+version = "vEIX2xn5"

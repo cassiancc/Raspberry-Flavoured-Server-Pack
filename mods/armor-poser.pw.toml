@@ -3,11 +3,11 @@ filename = "ArmorPoser-forge-1.19.2-1.2.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "f823e8a924b9825340ded34d1a79dce14b6c759d"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/PFwYNrHb/versions/DTfzy58C/ArmorPoser-forge-1.19.2-1.2.2.jar"
+hash-format = "sha512"
+hash = "f258538c40cad0cd626498b5964ef7da15cc74d44ff5eabe55b44ba6dbb73d300297d19356df44147785ee347432fd240026e88d2b0c990ac005a6b0eac3864b"
 
 [update]
-[update.curseforge]
-file-id = 4500019
-project-id = 450663
+[update.modrinth]
+mod-id = "PFwYNrHb"
+version = "DTfzy58C"

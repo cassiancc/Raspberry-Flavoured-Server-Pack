@@ -3,11 +3,11 @@ filename = "chalk-1.19.2-1.6.3.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "2e753699aca0646c0a75d84ac449108040ed292f"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/YWGP4Y1d/versions/fvS0q7eV/chalk-1.19.2-1.6.3.jar"
+hash-format = "sha512"
+hash = "ecc42557ae2eb8a4b3d1ffdbf79282eca7c3c72cbdac69433130784411b4150a350a72e768f9d3a8963d9a370bb7113f78146ffdad641b50db1850a8dbc59534"
 
 [update]
-[update.curseforge]
-file-id = 4827982
-project-id = 533748
+[update.modrinth]
+mod-id = "YWGP4Y1d"
+version = "fvS0q7eV"

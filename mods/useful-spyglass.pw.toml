@@ -3,11 +3,11 @@ filename = "usefulspyglass-forge-1.19.2-0.6.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "e85d03b07a1a580345798e10cb824410d433f283"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/XwvK7Tzg/versions/uSFcHxbJ/usefulspyglass-forge-1.19.2-0.6.1.jar"
+hash-format = "sha512"
+hash = "90116260528830f47ad703eb713a5577f0b72d32c2c7009ccdcee880dd480dd136eb060149162ea8243a96f92216f5d4639ba8ee145615dcf5fd2c8b20dde5a7"
 
 [update]
-[update.curseforge]
-file-id = 6462242
-project-id = 840027
+[update.modrinth]
+mod-id = "XwvK7Tzg"
+version = "uSFcHxbJ"

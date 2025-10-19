@@ -3,11 +3,11 @@ filename = "clayworks-1.19.2-2.1.0.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "cbbd9b65d6d99d99a8131888ea6670b2f4fa8329"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/1iicrEO3/versions/Skc3zBzk/clayworks-1.19.2-2.1.0.jar"
+hash-format = "sha512"
+hash = "e3fef50b8ed3c9b3a9e1e4fa833ec757e27e9cf55fb0ddb563dfe8500af75f6b46295cd026cac520291bf40f46035fd0f20faddd839347042fd48bb4b70f93b1"
 
 [update]
-[update.curseforge]
-file-id = 4776086
-project-id = 592162
+[update.modrinth]
+mod-id = "1iicrEO3"
+version = "Skc3zBzk"

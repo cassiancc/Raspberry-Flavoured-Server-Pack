@@ -3,11 +3,11 @@ filename = "BrewinAndChewin-1.19-2.0.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "04ccef86a671471a6e183caec98aa3b02f5f9996"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/hIu9KJTT/versions/gj3ERfxM/BrewinAndChewin-1.19-2.0.jar"
+hash-format = "sha512"
+hash = "1b96e66a08a090e8a19af884c25eb1f3f680b493d6844687da8debf65bcc04e720e74b634209f5d764a1508c854da7a15a344ef42b58b0fb316e17fd2932ea3d"
 
 [update]
-[update.curseforge]
-file-id = 4468049
-project-id = 637808
+[update.modrinth]
+mod-id = "hIu9KJTT"
+version = "gj3ERfxM"

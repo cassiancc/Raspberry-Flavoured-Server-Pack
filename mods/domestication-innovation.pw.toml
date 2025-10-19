@@ -3,11 +3,11 @@ filename = "domesticationinnovation-1.6.1-1.19.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "9d26f64a4dac8e4a36f7e3578c8b7df2ac050372"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/h5JyLdjM/versions/FQhDA1rS/domesticationinnovation-1.6.1-1.19.2.jar"
+hash-format = "sha512"
+hash = "1257934629a5d390a1adae4d722ac1acd0d94978edbdf34328846c695067a62fbb19136989f54f9c134c3942096999f240d857a8e9149a3b2c3c44ce900110f0"
 
 [update]
-[update.curseforge]
-file-id = 4154024
-project-id = 591149
+[update.modrinth]
+mod-id = "h5JyLdjM"
+version = "FQhDA1rS"
