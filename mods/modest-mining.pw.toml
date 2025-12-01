@@ -1,13 +1,13 @@
 name = "Modest Mining"
-filename = "modestmining-0.2.13.jar"
+filename = "modestmining-0.2.16.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/5QcDoykP/versions/QGmZQOWM/modestmining-0.2.13.jar"
+url = "https://cdn.modrinth.com/data/5QcDoykP/versions/ocN9Q6Pf/modestmining-0.2.16.jar"
 hash-format = "sha512"
-hash = "08bbce9c9951ab40a435348394741433b373b271ae5f33469413aa9f4dafa0298e4736410053df47722f0d367f0963d5c64515f485c1eb319cfd387bf49e88a0"
+hash = "ee0f76d121706bac92674fca80cac959fb1fdddd17e90cbffe53e28b0867f27f75c5e21effb487e7519383dfeaf00fcb6febe2ffa4cb9ac4226bff50b8a1e2e8"
 
 [update]
 [update.modrinth]
 mod-id = "5QcDoykP"
-version = "QGmZQOWM"
+version = "ocN9Q6Pf"

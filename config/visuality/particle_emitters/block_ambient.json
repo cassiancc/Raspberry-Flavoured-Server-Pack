@@ -45,27 +45,37 @@
     },
     {
       "block": [
-		"minecraft:magma_block",
-		"kubejs:heating_cask"
-	  ],
+        "minecraft:magma_block",
+        "kubejs:heating_cask"
+      ],
       "particle": {
         "type": "minecraft:smoke"
       }
     },
     {
-      "block": [
-		"kubejs:ice_crate"
-	  ],
+      "block": "kubejs:ice_crate",
       "particle": {
         "type": "farmersdelight:steam"
       }
     },
     {
       "block": [
-		"raspberry:magma_cake"
-	  ],
+        "kubejs:lachryte",
+        "kubejs:lachryte_slab",
+        "kubejs:lachryte_stairs",
+        "kubejs:lachryte_wall",
+        "kubejs:polished_lachryte",
+        "kubejs:polished_lachryte_slab",
+        "kubejs:polished_lachryte_stairs",
+        "kubejs:polished_lachryte_wall",
+        "kubejs:chiseled_lachryte",
+        "kubejs:lachryte_bricks",
+        "kubejs:lachryte_brick_slab",
+        "kubejs:lachryte_brick_stairs",
+        "kubejs:lachryte_brick_wall"
+      ],
       "particle": {
-        "type": "minecraft:flame"
+        "type": "minecraft:portal"
       }
     }
   ]

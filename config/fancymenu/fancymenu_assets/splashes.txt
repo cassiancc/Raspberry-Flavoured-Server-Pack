@@ -1644,6 +1644,50 @@ Girl, we've been knowing how to draw!
 I'm the beatboxing puppy!
 Everything's a splash at this point!
 Woke!
+Purposefully Transgender!
+First we Raspberry, then we Flavoured!
+The game that makes you trans!
+Delayed by Silksong!
+Delayed by Hades II!
+Added Lesbians!
+Be gay, post art!
+Be gay to play!
+Great Value!
+So a cucumber is a melon and a melon is a gourd!
+But a gourd is a pepo and a pepo is a berry?!
+What is a cucumber?!
+Absolutely enjoy your wife wanting you 24/7!
+Hot spouse, hotter taxonomy!
+PEPO???????????
+Death to Chronos!
+So mote it be!
+Moonlight guide you!
+Together we shine!
+Time flows freely forth!
+But that's really not important to the story!
+Did he just spit on my island?!
+What's stopping me from eliminating you?
+They who persist!
+Tiny little baby tree!
+i should have 5
+Fuck nihilism, it's yuri time!
+Obese microwave!
+Hey man, I'll take a curry goat rice and peas!
+I will always love you!
+Hahaha, yes!
+Yes, haha!
+Have another!
+And another!
+How about two!
+One more!
+Electric slam-a-roo!
+pringle chip in your ps2 memory card slot
+Error reading disc
+You fight evil, stop powerful bad guys!
+November 2nd!
+December 1st!
+Reaching far across these new frontiers!
+With a stroke of luck, you might become a monster truck!
 Justice for seagulls!
 Justice for crabs!
 Justice for tuff golems!
@@ -1663,6 +1707,7 @@ Has &lBagels' Palette Blocks!
 Has &lBrewin' and Chewin'!
 Has &lCaverns & Chasms!
 Has &lComfortable Campfires!
+Has &lCook's Collection!
 Has &lCreate!
 Has &lCreate: Alloyed!
 Has &lCultural Delights!
@@ -1705,13 +1750,11 @@ Has &lTwigs!
 Has &lUpgrade Aquatic!
 Has &lWindswept!
 Doesn't have Create 6... sorry!
-&oDon't &rtry &lMCreator!
 &oDon't &rtry &lSonic Origins!
 &oDon't &rtry &lSonic Omens!
 &oDon't &rtry &lSonic Eraser!
 &oDon't &rtry &lBetter Minecraft!
 &oDon't &rtry &lRLCraft!
-&oDon't &rtry &lPoopSMP!
 &oDon't &rtry &lAI!
 &oDon't &rtry &lOptiFine!
 Also try &lANTONBLAST!
@@ -1723,7 +1766,7 @@ Also try &lBig's Big Fishing Derby!
 Also try &lBloons TD 6!
 Also try &lCave Story!
 Also try &lChibi-Robo: Zip-Lash!
-Also try &lCook's Collection!
+Also try &lCobblemon: Flint & Steel!
 Also try &lCreate: Broken Bad!
 Also try &lCreate: Estrogen!
 Also try &lDB3K!
@@ -1738,12 +1781,13 @@ Also try &lGrimbly Garden!
 Also try &lGrimbly Schmeggle 2!
 Also try &lGrimbly Schmeggle 3: Ultimate Grimble!
 Also try &lGrimbly Schmeggle!
-Also try &lHades II!
 Also try &lHades!
+Also try &lHades II!
 Also try &lInfinity Plus!
 Also try &lInscryption!
 Also try &lLand Ahoy!
 Also try &lLast Card!
+Also try &lLemon Sorbet!
 Also try &lLilypad!
 Also try &lMantle!
 Also try &lMario Tennis: Ultra Smash!
@@ -1770,8 +1814,8 @@ Also try &lShattered Depths!
 Also try &lSimply Craftmine!
 Also try &lSimply Infinite!
 Also try &lSlay the Spire!
-Also try &lSlime Rancher 2!
 Also try &lSlime Rancher!
+Also try &lSlime Rancher 2!
 Also try &lSonic 1 Forever!
 Also try &lSonic 2 Absolute!
 Also try &lSonic 3 A.I.R.!
@@ -1824,9 +1868,12 @@ Shoutout to &lJamiscus!
 Shoutout to &lCW!
 Shoutout to &lKobber!
 Shoutout to &lnoodleman!
+Shoutout to &lcrunchylungs!
 Shoutout to &lbeb!
 Shoutout to &lJameslice!
 Shoutout to &ljaybees!
+Shoutout to &lmintynoura!
+Shoutout to &levanbones!
 Shoutout to &lSarahIsWeird!
 Shoutout to &lGrom PE!
 Shoutout to &lWaterOre!
@@ -1839,9 +1886,9 @@ Shoutout to &lFreshah!
 Shoutout to &lmurao.kun!
 Shoutout to &lZeera the Zesty!
 Shoutout to &lThe Bottom Dweller!
-Shoutout to &lWestoro!
 Shoutout to &lCosmonautic!
 Shoutout to &lIceMcFall!
+Shoutout to &lWestoro!
 Shoutout to &lMisty Rio Strider!
 Shoutout to &lChef's Delights!
 Shoutout to &lSonicBoss1991!
@@ -1850,5 +1897,5 @@ Shoutout to &lScrap Sorra!
 Shoutout to &lSpncr!
 Shoutout to &lThe Sonic Hangout!
 Shoutout to &lthe RF Discord server!
-241 mods!
-This splash has a &l1 &rin &l1854 &rchance of showing up!
+240 mods!
+This splash has a &l1 &rin &l1901 &rchance of showing up!

@@ -20,6 +20,7 @@ let outputTypes = [
   ["log",3,"WOOD_post",["quark:","MOD:","everycomp:q/MOD/"]],
   ["log",8,"WOOD_fence",["MOD:"]],
   ["log",8,"WOOD_railing",["architects_palette:","everycomp:ap/MOD/"]],
+  ["log",4,"WOOD_ladder",["MOD:","everycomp:q/MOD/","quark:"],"incomplete"],
 
   //god is dead.
   //["log",4,"WOOD_boards",["architects_palette:","everycomp:ap/MOD/"],"incomplete"],
@@ -30,8 +31,8 @@ let outputTypes = [
   ["log",4,"WOOD_fence_gate",["MOD:"]],
   ["log",1,"WOOD_boat",["MOD:","boatload:"],"incomplete"],
   ["log",8,"sign_post_WOOD",["supplementaries:","supplementaries:MOD/"]],
-  ["log",1,"hollow_WOOD_log",["quark:","everycomp:q/MOD/"],"incomplete"],
-  ["log",1,"WOOD_cabinet",["farmersdelight:","MOD:","abnormals_delight:","everycomp:fd/MOD/"]],
+  ["log",1,"hollow_WOOD_log",["everycomp:q/MOD/","quark:"],"incomplete"],
+  ["log",1,"WOOD_cabinet",["everycomp:fd/MOD/","farmersdelight:","MOD:","abnormals_delight:"]],
   
   //this bit's nice. no conficts here!
   ["log",1,"WOOD_drawer",["another_furniture:","everycomp:af/MOD/"]],
@@ -79,7 +80,7 @@ ServerEvents.recipes(e=>{
   //event.custom basically acts like json recipes, pretty convenient if there's no addon.
   function addSawmill(material,count,result){
     let recipe = {
-      "type": "woodworks:sawmill",
+      "type": "minecraft:stonecutting",
       "count": count,
       "ingredient": material.toJson(),
       "result": result.id
@@ -90,6 +91,17 @@ ServerEvents.recipes(e=>{
   //these ones aren't wood-dependant, so they're done without the larger system
   addSawmill(Ingredient.of("#minecraft:logs"),8,Item.of("minecraft:stick"))
   addSawmill(Ingredient.of("#minecraft:planks"),2,Item.of("minecraft:stick"))
+  addSawmill(Ingredient.of("#minecraft:logs"),4,Item.of("minecraft:bowl"))
+  addSawmill(Ingredient.of("#minecraft:planks"),1,Item.of("minecraft:bowl"))
+  
+  // oak ladders separately bc they don't have "oak" in their id
+  addSawmill(Ingredient.of("#minecraft:oak_logs"),4,Item.of("minecraft:ladder"))
+  addSawmill(Ingredient.of("minecraft:oak_planks"),1,Item.of("minecraft:ladder"))
+  
+  // fine wood
+  addSawmill(Ingredient.of("raspberry:fine_wood"),1,Item.of("raspberry:fine_wood_stairs"))
+  addSawmill(Ingredient.of("raspberry:fine_wood"),2,Item.of("raspberry:fine_wood_slab"))
+  addSawmill(Ingredient.of("raspberry:fine_wood"),2,Item.of("raspberry:fine_wood_wall"))
   
   woodtypes.forEach(([originMod,woodType])=>{
     //console.log(`wood type! ${originMod}:${woodType}`)
@@ -133,10 +145,17 @@ ServerEvents.recipes(e=>{
         if(result.id != "minecraft:air") break
       }
 
-      //if it is still air after all that searching, and that product was supposed to be complete, it means that some part was wrong.
-      if(!incomplete){
-        assert(result.id != "minecraft:air", `result item "${outputs.join(",")}" doesn't seem to exist for "${originMod}:${woodType}", did you mistype something?`)
-      }
+      if(result.id == "everycomp:q/mynethersdelight/hollow_powdery_log") continue
+
+      if(result.id == "minecraft:air"){
+        console.log(`result item [${outputs.join("|")}] doesn't seem to exist for "${originMod}:${woodType}", did you mistype something, or is someone else to blame?`)        
+        //if "incomplete" mode is enabled, skip it entirely.
+        if(incomplete) continue;
+
+        throw new Error("missing item, either check your id options or mark this shape as incomplete!")
+      } 
+        
+      //otherwise it means that some part was wrong, and an error is displayed.
   
       //create the sawmill recipe.
       addSawmill(inputItem,outputCount,result)

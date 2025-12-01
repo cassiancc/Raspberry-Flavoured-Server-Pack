@@ -36,7 +36,7 @@
               }
             }
           ],
-          "name": "minecraft:gunpowder"
+          "name": "savage_and_ravage:creeper_spores"
         },
         {
           "type": "minecraft:item",
@@ -55,11 +55,6 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:rabbit_foot"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:pufferfish"
         },
@@ -67,21 +62,6 @@
           "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:phantom_membrane"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4.0,
-                "max": 7.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "minecraft:redstone"
         },
         {
           "type": "minecraft:item",
@@ -119,12 +99,27 @@
       "rolls": 1.0,
       "entries": [
         {
-          "type": "minecraft:empty",
-          "weight": 4
-        },
+          "type": "minecraft:item",
+          "name": "kubejs:witch_bag"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "entries": [
         {
           "type": "minecraft:item",
-          "name": "spelunkery:portal_fluid_bottle"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "kubejs:herb_bag"
         }
       ]
     },

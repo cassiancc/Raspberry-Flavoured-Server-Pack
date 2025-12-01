@@ -1,8 +1,0 @@
-{
-    "parent": "block/stairs",
-    "textures": {
-        "bottom": "kubejs:block/deepslate_gravel_bricks",
-        "top": "kubejs:block/deepslate_gravel_bricks",
-        "side": "kubejs:block/deepslate_gravel_bricks"
-    }
-}

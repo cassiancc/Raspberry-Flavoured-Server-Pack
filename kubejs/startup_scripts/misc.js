@@ -37,48 +37,40 @@ StartupEvents.registry('fluid', event =>
 	event.create('ink').stillTexture('kubejs:fluid/ink_still').flowingTexture('kubejs:fluid/ink_flow')
 	event.create('latex').stillTexture('kubejs:fluid/latex_still').flowingTexture('kubejs:fluid/latex_flow')
 	event.create('cooking_oil').stillTexture('kubejs:fluid/cooking_oil_still').flowingTexture('kubejs:fluid/cooking_oil_flow')
+	
+	event.create('butter').stillTexture('kubejs:fluid/butter_still').flowingTexture('kubejs:fluid/butter_flow').noBucket().noBlock()
+	event.create('coleslaw').stillTexture('kubejs:fluid/coleslaw').flowingTexture('kubejs:fluid/coleslaw').noBucket().noBlock()
+	event.create('blazing_chili').stillTexture('kubejs:fluid/blazing_chili').flowingTexture('kubejs:fluid/blazing_chili').noBucket().noBlock()
 	event.create('strawberry_banana_smoothie').stillTexture('kubejs:fluid/strawberry_banana_smoothie_still').flowingTexture('kubejs:fluid/strawberry_banana_smoothie_flow').noBucket().noBlock()
 	event.create('cherry_cream_soda').stillTexture('kubejs:fluid/cherry_cream_soda_still').flowingTexture('kubejs:fluid/cherry_cream_soda_flow').noBucket().noBlock()
 	
-	event.create('cactus_juice').thinTexture(0x4B8C37).noBucket().noBlock
+	event.create('cactus_juice').thinTexture(0x4B8C37).noBucket().noBlock()
 	event.create('lemonade').thinTexture(0xF9F93B).noBucket().noBlock()
 	event.create('mint_green_tea').thinTexture(0x6BCF87).noBucket().noBlock()
 	event.create('vanilla_milk_tea').thinTexture(0xD3A872).noBucket().noBlock()
-	event.create('pickerelweed_juice').thinTexture(0x519991).noBucket().noBlock
+	event.create('pickerelweed_juice').thinTexture(0x519991).noBucket().noBlock()
 	
 	// don't ask
-	event.create('wooden_pickaxe').displayName('Wooden Pickaxe Fluid').stillTexture('kubejs:fluid/wooden_pickaxe').flowingTexture('kubejs:fluid/wooden_pickaxe')
+	event.create('wooden_pickaxe').stillTexture('kubejs:fluid/wooden_pickaxe').flowingTexture('kubejs:fluid/wooden_pickaxe')
 })
 
-// Misc. item attributes
 ItemEvents.modification(event => {
-	// Burn time
-	event.modify('atmospheric:large_kousa_boat', item => {
-		item.burnTime = 2400
-    })
-	event.modify('twigs:twig', item => {
-		item.burnTime = 200
-    })
-	event.modify('environmental:tall_dead_bush', item => {
+// Fuel (fuel amount is x * 200)
+	// 0.5 
+	event.modify([
+	'environmental:tall_dead_bush'
+	], item => {
 		item.burnTime = 100
     })
-	event.modify('kubejs:heating_cask', item => {
-		item.burnTime = 900
-    })
-	event.modify('minecraft:mushroom_stem', item => {
-		item.burnTime = 800
-    })
-	event.modify('quark:glow_shroom_stem', item => {
-		item.burnTime = 800
-    })
+	
+	// 1
 	event.modify([
-	'minecraft:campfire',
-	'minecraft:soul_campfire',
-	'endergetic:ender_campfire',
-	'caverns_and_chasms:cupric_campfire'
+	'twigs:twig'
 	], item => {
-		item.burnTime = 600
+		item.burnTime = 200
     })
+	
+	// 1.25
 	event.modify([
 	'minecraft:torch',
 	'minecraft:soul_torch',
@@ -88,11 +80,62 @@ ItemEvents.modification(event => {
 		item.burnTime = 250
     })
 	
+	// 3
+	event.modify([
+	'minecraft:campfire',
+	'minecraft:soul_campfire',
+	'endergetic:ender_campfire',
+	'caverns_and_chasms:cupric_campfire',
+	'mynethersdelight:bullet_pepper',
+	'mynethersdelight:magma_cake_slice'
+	], item => {
+		item.burnTime = 600
+    })
+	
+	// 4
+	event.modify([
+	'minecraft:mushroom_stem',
+	'quark:glow_shroom_stem',
+	'minecraft:blaze_powder',
+	'mynethersdelight:hot_cream_cone'
+	], item => {
+		item.burnTime = 800
+    })
+	
+	// 4.5
+	event.modify([
+	'kubejs:heating_cask'
+	], item => {
+		item.burnTime = 900
+    })
+	
+	// 12
+	event.modify([
+	'atmospheric:large_kousa_boat',
+	'mynethersdelight:hot_cream'
+	], item => {
+		item.burnTime = 2400
+    })
+	
+	// 21
+	event.modify([
+	'raspberry:magma_cake'
+	], item => {
+		item.burnTime = 4200
+    })
+	
+	// 30
+	event.modify('mynethersdelight:bullet_pepper_crate', item => {
+		item.burnTime = 6000
+    })
+	
+// Rarity
 	// Common items
 	event.modify([
 	'supplementaries:quiver',
 	'supplementaries:bomb',
 	'supplementaries:bomb_projectile',
+	'oreganized:silver_mirror',
 	'create_confectionery:candy_cane_block'
 	], item => {
         item.rarity = 'common'
@@ -107,17 +150,12 @@ ItemEvents.modification(event => {
 	'minecraft:bell',
 	'minecraft:disc_fragment_5',
 	'create:peculiar_bell',
-	'oreganized:silver_mirror',
 	'clash:spear',
 	'clash:swept_axe',
 	'clash:greatblade',
 	'mace_backport:mace',
 	'kubejs:rose_gold_rapier',
 	'spelunkery:portal_fluid_bucket',
-	'environmental:thief_hood',
-	'environmental:healer_pouch',
-	'environmental:architect_belt',
-	'environmental:wanderer_boots',
 	'quark:echorang',
 	'heartstone:heartstone',
 	'bigbrain:buckler',
@@ -143,7 +181,8 @@ ItemEvents.modification(event => {
 	'supplementaries:bomb_spiky_projectile',
 	'aquaculture:goldfish',
 	'kubejs:spirited_exopearl',
-	'moyai:moyai'
+	'moyai:moyai',
+	'minecraft:piglin_banner_pattern'
 	], item => {
         item.rarity = 'uncommon'
     })
@@ -163,12 +202,16 @@ ItemEvents.modification(event => {
 	
 	// Epic items
 	event.modify([
-	'quark:monster_box'
+	'quark:monster_box',
+	'minecraft:totem_of_undying',
+	'savage_and_ravage:mask_of_dishonesty',
+	'savage_and_ravage:conch_of_conjuring',
+	'savage_and_ravage:wand_of_freezing'
 	], item => {
         item.rarity = 'epic'
     })
 	
-	// Crafting remainders
+// Crafting remainders
 	event.modify('minecraft:potion', item => {
 		item.craftingRemainder = Item.of('minecraft:glass_bottle').item
 	})
@@ -187,20 +230,34 @@ ItemEvents.modification(event => {
 	event.modify('kubejs:batter', item => {
 		item.craftingRemainder = Item.of('minecraft:bowl').item
 	})
+	event.modify('kubejs:coleslaw', item => {
+		item.craftingRemainder = Item.of('minecraft:bowl').item
+	})
 	event.modify('kubejs:caramelized_marshmellow_on_a_stick', item => {
 		item.craftingRemainder = Item.of('minecraft:stick').item
 	})
 	event.modify('ecologics:coconut_slice', item => {
 		item.craftingRemainder = Item.of('ecologics:coconut_husk').item
 	})
+	event.modify('spelunkery:portal_fluid_bottle', item => {
+		item.craftingRemainder = Item.of('minecraft:glass_bottle').item
+	})
+	event.modify('spelunkery:portal_fluid_bucket', item => {
+		item.craftingRemainder = Item.of('minecraft:bucket').item
+	})
+	event.modify('oreganized:molten_lead_bucket', item => {
+		item.craftingRemainder = Item.of('minecraft:bucket').item
+	})
 })
 // Enchantments
 StartupEvents.registry('enchantment', event => {
+	// used exclusively on rose gold rapiers
     event.create('rose_lifesteal')
         .postAttack(
             (user, target, level) => {
                 user.health += 1
             })
+	// reduces targets' invulnerability timer
     event.create('guard_break')
         .maxLevel(3)
         .weapon()
@@ -220,9 +277,11 @@ StartupEvents.registry('painting_variant', event => {
     event.create('epiphany').width(32).height(32).tag('minecraft:placeable')
     event.create('fool_me_twice').width(48).height(64).tag('minecraft:placeable')
     event.create('four_pixels').width(48).height(32).tag('minecraft:placeable')
+    event.create('grimbly').width(64).height(64).tag('minecraft:placeable')
     event.create('investigation').width(64).height(64).tag('minecraft:placeable')
     event.create('miniature').width(48).height(48).tag('minecraft:placeable')
     event.create('mirror_mirror').width(32).height(32).tag('minecraft:placeable')
+    event.create('ride_fast').width(64).height(64).tag('minecraft:placeable')
     event.create('six_months').width(48).height(32).tag('minecraft:placeable')
     event.create('sun').width(48).height(48).tag('minecraft:placeable')
     event.create('white_eyes').width(64).height(48).tag('minecraft:placeable')
@@ -291,6 +350,9 @@ EntityJSEvents.attributes(event => {
     event.modify('naturalist:rhino', attribute => {
         attribute.add("minecraft:generic.max_health", 60)
     })
+    event.modify('naturalist:boar', attribute => {
+        attribute.add("minecraft:generic.max_health", 20)
+    })
     event.modify('naturalist:butterfly', attribute => {
         attribute.add("minecraft:generic.max_health", 6)
     })
@@ -323,6 +385,9 @@ EntityJSEvents.attributes(event => {
     })
     event.modify('caverns_and_chasms:peeper', attribute => {
         attribute.add("minecraft:generic.max_health", 15)
+    })
+    event.modify('minecraft:witch', attribute => {
+        attribute.add("minecraft:generic.max_health", 30)
     })
     event.modify('minecraft:wither', attribute => {
         attribute.add("minecraft:generic.max_health", 500)
@@ -385,6 +450,11 @@ EntityJSEvents.attributes(event => {
     event.modify('neapolitan:plantain_spider', attribute => {
         attribute.add("minecraft:generic.follow_range", 20.0)
         attribute.add("forge:step_height_addition", 0.45)
+    })
+	
+	// Buff witches
+    event.modify('minecraft:witch', attribute => {
+        attribute.add("minecraft:generic.armor", 6)
     })
 })
 

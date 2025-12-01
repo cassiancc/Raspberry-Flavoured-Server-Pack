@@ -143,67 +143,6 @@ ItemEvents.entityInteracted(event => {
     }
 })
 
-// taming ocelots
-ItemEvents.entityInteracted(event => {
-    if (event.item.id === 'kubejs:cat_food' && event.target.type === 'minecraft:ocelot') {
-		event.player.swing(event.hand, true)
-
-        if (event.target.nbt.Trusting == 1) {
-		    if (!event.player.isCreative()) {
-                event.item.count --
-                event.player.giveInHand('minecraft:bowl')
-            }
-
-            const catVars = [
-                "minecraft:white",
-                "minecraft:black",
-                "minecraft:red",
-                "minecraft:siamese",
-                "minecraft:british_shorthair",
-                "minecraft:calico",
-                "minecraft:persian",
-                "minecraft:ragdoll",
-                "minecraft:tabby",
-                "minecraft:all_black",
-                "minecraft:jellie",
-                "moremobvariants:doug",
-                "moremobvariants:gray_tabby",
-                "moremobvariants:tortoiseshell"
-            ]
-            const random = Math.floor(Math.random() * catVars.length)
-
-            let ocelotData = event.target.nbt
-            delete ocelotData.UUID
-
-            event.server.runCommandSilent(`particle minecraft:heart ${event.target.x} ${event.target.y} ${event.target.z} 0.5 0.25 0.5 0.125 5 force`)
-
-            let cat = event.player.level.getBlock(event.target.x, event.target.y, event.target.z).createEntity("cat")
-            cat.mergeNbt(ocelotData)
-            cat.mergeNbt({Owner: event.player.stringUuid})
-            cat.mergeNbt({VariantID: catVars[random]})
-            cat.mergeNbt({ActiveEffects: [{"forge:id": "minecraft:speed", Ambient: 0, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1}], ShowIcon: 1, ShowParticles: 1, Duration: 6000, Id: 1, Amplifier: 0}, {"forge:id": "minecraft:regeneration", Ambient: 0, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1}], ShowIcon: 1, ShowParticles: 1, Duration: 6000, Id: 10, Amplifier: 0}, {"forge:id": "minecraft:resistance", Ambient: 0, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1}], ShowIcon: 1, ShowParticles: 1, Duration: 6000, Id: 11, Amplifier: 0}]})
-            cat.spawn()
-            event.target.discard()
-        }
-    }
-})
-
-// feeding cat food
-ItemEvents.entityInteracted(event => {
-    if (event.item.id === 'kubejs:cat_food') {
-        if (event.target.type === 'minecraft:cat') {
-		event.player.swing(event.hand, true)
-        if (!event.player.isCreative()) {
-            event.item.count --
-            event.player.giveInHand('minecraft:bowl')
-        }
-		event.level.playSound(null, event.target.x, event.target.y, event.target.z, 'entity.generic.eat', 'players', 1, 1)
-        event.server.runCommandSilent(`particle farmersdelight:star ${event.target.x} ${event.target.y+0.5} ${event.target.z} 0.2 0 0.2 0.05 4 force`)
-        event.target.mergeNbt({ActiveEffects: [{"forge:id": "minecraft:speed", Ambient: 0, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1}], ShowIcon: 1, ShowParticles: 1, Duration: 6000, Id: 1, Amplifier: 0}, {"forge:id": "minecraft:regeneration", Ambient: 0, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1}], ShowIcon: 1, ShowParticles: 1, Duration: 6000, Id: 10, Amplifier: 0}, {"forge:id": "minecraft:resistance", Ambient: 0, CurativeItems: [{id: "minecraft:milk_bucket", Count: 1}], ShowIcon: 1, ShowParticles: 1, Duration: 6000, Id: 11, Amplifier: 0}]})
-        }
-    }
-})
-
 // oxidizing copper golems
 ItemEvents.entityInteracted(event => {
     if (event.item.id === "additionaladditions:copper_patina" && event.target.type == "caverns_and_chasms:copper_golem") {
@@ -283,17 +222,19 @@ ItemEvents.entityInteracted(event => {
     }
 })
 
-// loot bag item interaction
-ItemEvents.rightClicked(event => {
-    if (event.item.id === 'kubejs:loot_bag') {
-	// remove one loot bag if the player isnt in creative
-		if (!event.player.isCreative()) {
-		event.item.count --
+// feeding glares
+ItemEvents.entityInteracted(event => {
+    if (event.item.hasTag('caverns_and_chasms:glare_food') && event.target.type === "caverns_and_chasms:glare") {
+        event.level.spawnParticles('minecraft:end_rod', true, event.target.x, event.target.y+0.5, event.target.z, 0.2, 0.2, 0.2, Math.floor(Math.random() * (18 - 9 + 1) + 9), 0.15)
+		if (event.item.id === 'minecraft:glow_berries') {
+			event.player.potionEffects.add('night_vision', Math.floor(Math.random() * (1200 - 600 + 1) + 600), 0, true, false)
 		}
-		// swing arm, play the bundle sound and spawn loot
-		event.player.swing(event.hand, true)
-		event.level.playSound(null, event.player.x, event.player.y, event.player.z, 'item.bundle.drop_contents', 'players', 1, 1)
-		event.server.runCommandSilent(`execute as ${event.entity.username} run loot spawn ${event.player.x} ${event.player.y+0.2} ${event.player.z} loot additionaladditions:mysterious_bundle`)
+		if (event.item.id === 'naturalist:glow_goop') {
+			event.player.potionEffects.add('night_vision', Math.floor(Math.random() * (2400 - 1200 + 1) + 1200), 0, true, false)
+		}
+		if (event.item.id === 'nethersdelight:propelpearl') {
+			event.player.potionEffects.add('night_vision', Math.floor(Math.random() * (3600 - 2400 + 1) + 2400), 0, true, false)
+		}
     }
 })
 
@@ -407,6 +348,104 @@ BlockEvents.rightClicked(event => {
             }
         } 
     }
+})
+
+// right click crying obby for lachryte
+BlockEvents.rightClicked(event => {
+    // set which block turns into what
+    global.lachryteMap = {
+        'minecraft:crying_obsidian': 'minecraft:obsidian',
+        'frame_changer:crying_polished_obsidian': 'frame_changer:polished_obsidian',
+        'frame_changer:crying_polished_obsidian_stairs': 'frame_changer:polished_obsidian_stairs',
+        'frame_changer:crying_polished_obsidian_wall': 'frame_changer:polished_obsidian_wall',
+        'frame_changer:crying_obsidian_bricks': 'frame_changer:obsidian_bricks',
+        'frame_changer:crying_obsidian_brick_stairs': 'frame_changer:obsidian_brick_stairs',
+        'frame_changer:crying_obsidian_brick_wall': 'frame_changer:obsidian_brick_wall',
+        'frame_changer:crying_obsidian_pillar': 'frame_changer:obsidian_pillar',
+        'frame_changer:crying_chiseled_obsidian': 'frame_changer:chiseled_obsidian'
+    }
+    Object.keys(global.lachryteMap).forEach((value) => {
+        let playerOffhand = event.player.getOffHandItem()
+        if (event.item.hasTag('forge:tools/pickaxes') && playerOffhand === null) {
+            if (event.block.id === value) {
+                // damage pickaxe
+                if (!event.player.isCreative()) {
+			    event.player.damageHeldItem(event.hand, 1)
+                }
+                
+                let props = event.block.getProperties()
+
+                // swing hand, play sounds, make particles and transform block
+                event.player.swing(event.hand, true)
+                event.level.playSound(null, event.block.x, event.block.y, event.block.z, 'kubejs:sound.lachryte.extract', 'players', 1, 1)
+                event.level.spawnParticles('minecraft:reverse_portal', true, event.block.x+0.5, event.block.y+0.5, event.block.z+0.5, 0.25, 0.25, 0.25, 25, 1)
+                event.level.spawnParticles('minecraft:falling_obsidian_tear', true, event.block.x+0.5, event.block.y+0.5, event.block.z+0.5, 0.35, 0.35, 0.35, 15, 1)
+                event.block.set(global.lachryteMap[event.block.id], props)
+                
+                // spawn item
+		        let itemEntity = event.level.createEntity("item")
+			    itemEntity.item = ('minecraft:ghast_tear')
+			    itemEntity.y = event.block.y + 0.5
+			    itemEntity.x = event.block.x + 0.5
+			    itemEntity.z = event.block.z + 0.5
+			    itemEntity.motionY = 0.3
+			    itemEntity.spawn()
+            }  
+        }
+    })
+})
+
+// right click block with hammer to crack
+BlockEvents.rightClicked(event => {
+    // set which block turns into what
+    global.crackingMap = {
+        'minecraft:stone': 'minecraft:cobblestone',
+        'minecraft:stone_slab': 'minecraft:cobblestone_slab',
+        'minecraft:stone_stairs': 'minecraft:cobblestone_stairs',
+        'minecraft:deepslate': 'minecraft:cobbled_deepslate',
+        'minecraft:blackstone': 'kubejs:cobbled_blackstone',
+        'minecraft:blackstone_slab': 'kubejs:cobbled_blackstone_slab',
+        'minecraft:blackstone_stairs': 'kubejs:cobbled_blackstone_stairs',
+        'minecraft:blackstone_wall': 'kubejs:cobbled_blackstone_wall',
+        'kubejs:exolite': 'kubejs:cobbled_exolite',
+        'architects_palette:myonite_slab': 'architects_palette:myonite_brick_slab',
+        'architects_palette:myonite_stairs': 'architects_palette:myonite_brick_stairs',
+        'architects_palette:myonite_wall': 'architects_palette:myonite_brick_wall',
+        'minecraft:stone_bricks': 'minecraft:cracked_stone_bricks',
+        'minecraft:deepslate_bricks': 'minecraft:cracked_deepslate_bricks',
+        'minecraft:deepslate_tiles': 'minecraft:cracked_deepslate_tiles',
+        'minecraft:nether_bricks': 'minecraft:cracked_nether_bricks',
+        'minecraft:polished_blackstone_bricks': 'minecraft:cracked_polished_blackstone_bricks',
+        'quark:midori_block': 'kubejs:cracked_midori_block',
+        'minecraft:purpur_block': 'endergetic:cracked_purpur_block',
+        'architects_palette:algal_bricks': 'architects_palette:cracked_algal_bricks',
+        'architects_palette:heavy_stone_bricks': 'architects_palette:heavy_cracked_stone_bricks',
+        'architects_palette:basalt_tiles': 'architects_palette:cracked_basalt_tiles',
+        'architects_palette:moonshale_bricks': 'architects_palette:cracked_moonshale_bricks',
+        'minecraft:bricks': 'twigs:cracked_bricks',
+        'twigs:polished_bloodstone_bricks': 'twigs:cracked_polished_bloodstone_bricks',
+        'twigs:silt_bricks': 'twigs:cracked_silt_bricks',
+        'paletteblocks:cobblestone_bricks': 'paletteblocks:cracked_cobblestone_bricks',
+        'modestmining:adobe_bricks': 'modestmining:cracked_adobe_bricks'
+    }
+    Object.keys(global.crackingMap).forEach((value) => {
+        if (event.item.hasTag('another_furniture:furniture_hammers')) {
+            if (event.block.id === value) {
+                // damage hammer
+                if (!event.player.isCreative()) {
+			    event.player.damageHeldItem(event.hand, 1)
+                }
+                
+                let props = event.block.getProperties()
+
+                // swing hand, play sounds, make particles and transform block
+                event.player.swing(event.hand, true)
+                event.level.playSound(null, event.block.x, event.block.y, event.block.z, 'kubejs:sound.hammer.crack', 'players', 1, 1)
+                event.level.spawnParticles(`minecraft:item ${event.block.id}`, true, event.block.x+0.5, event.block.y+0.5, event.block.z+0.5, 0.3, 0.3, 0.3, 25, 0.1)
+                event.block.set(global.crackingMap[event.block.id], props)
+            }  
+        }
+    })
 })
 
 // latex wood stripping
@@ -531,6 +570,17 @@ BlockEvents.rightClicked(event => {
             }
         }
     }
+})
+
+// flax harvesting from top block (script by Grom PE)
+BlockEvents.rightClicked(event => {
+	if (event.block.id == "supplementaries:flax" && !event.player.isCrouching()) {
+		if (event.block.properties.half == "upper" && event.block.properties.age == "7") {
+			// make it as if event.block.down is right-clicked by player
+			event.block.pos.y--;
+			event.player.swing(event.hand, true);
+		}
+	}
 })
 
 // right click on water interaction (WIP)
@@ -659,14 +709,4 @@ ItemEvents.rightClicked('raspberry:ashball', event => {
 })
 ItemEvents.rightClicked('raspberry:rose_gold_bomb', event => {
     event.player.addItemCooldown('raspberry:rose_gold_bomb', 10)
-})
-
-// advancements
-ItemEvents.rightClicked(event => {
-    if (event.item.id === 'savage_and_ravage:creeper_spores') {
-		event.server.runCommandSilent(`advancement grant ${event.player.username} only raspberry_flavoured:exploration/creeper_spores`)
-    }
-    if (event.item.hasTag('raspberry_flavoured:bombs')) {
-		event.server.runCommandSilent(`advancement grant ${event.player.username} only raspberry_flavoured:exploration/bomb`)
-    }
 })

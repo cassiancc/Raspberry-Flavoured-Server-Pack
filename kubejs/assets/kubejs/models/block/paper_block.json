@@ -1,7 +1,0 @@
-{
-	"parent": "block/cube_column",
-	"textures": {
-		"end": "kubejs:block/paper_block_top",
-		"side": "kubejs:block/paper_block"
-	}
-}

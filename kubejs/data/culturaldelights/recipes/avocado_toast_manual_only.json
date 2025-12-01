@@ -5,14 +5,11 @@
       "tag": "culturaldelights:avocados"
     },
     {
-      "tag": "culturaldelights:avocados"
-    },
-    {
       "item": "minecraft:bread"
     }
   ],
   "result": {
     "item": "culturaldelights:avocado_toast",
-    "count": 3
+    "count": 2
   }
 }

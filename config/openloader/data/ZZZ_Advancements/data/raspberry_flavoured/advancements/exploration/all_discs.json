@@ -373,7 +373,7 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-	"C418 - face": {
+	"C418 - droopy": {
       "conditions": {
         "items": [
           {
@@ -385,7 +385,7 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-	"C418 - ricochet": {
+	"C418 - remember": {
       "conditions": {
         "items": [
           {
@@ -475,6 +475,42 @@
           {
             "items": [
               "kubejs:music_disc_raveyard"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+	"C418 - one": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "kubejs:music_disc_one"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+	"Kayla_the_Bee - artisan": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "kubejs:music_disc_artisan"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+	"Hlzfss - Pancake Song": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "kubejs:music_disc_pancake"
             ]
           }
         ]
@@ -597,10 +633,10 @@
       "C418 - death"
     ],
 	[
-      "C418 - face"
+      "C418 - droopy"
     ],
 	[
-      "C418 - ricochet"
+      "C418 - remember"
     ],
 	[
       "LudoCrypt - scour"
@@ -622,6 +658,15 @@
     ],
 	[
       "raspmary - Raveyard"
-    ]
+    ],
+	[
+      "C418 - one"
+    ],
+	[
+	  "Kayla_the_Bee - artisan"
+	],
+	[
+	  "Hlzfss - Pancake Song"
+	]
   ]
 }

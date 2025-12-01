@@ -4,17 +4,21 @@ let music_list = {
     "music_disc_eleven": "Eleven",
 	"music_disc_dog": "Dog",
 	"music_disc_death": "Death",
-	"music_disc_droopy1": "Droopy Likes Your Face",
-	"music_disc_droopy2": "Droopy Likes Ricochet",
+	"music_disc_droopy1": "Droopy",
+	"music_disc_droopy2": "Remember",
 	"music_disc_shimmer": "Shimmer",
 	"music_disc_frontier": "Frontier",
 	"music_disc_origin": "Origin",
 	"music_disc_savour": "Savour",
 	"music_disc_fruitiger": "Fruitiger",
 	"music_disc_redstone_baby": "Redstone Baby",
-	"music_disc_raveyard": "Raveyard"
+	"music_disc_raveyard": "Raveyard",
+	"music_disc_one": "One",
+	"music_disc_artisan": "Artisan",
+	"music_disc_pancake": "Pancake"
 }
 
+// Music disc sound registry
 StartupEvents.registry('sound_event', (event) => {
     Object.keys(music_list).forEach((value) => {
         event.create(`music.${value}`)
@@ -22,8 +26,8 @@ StartupEvents.registry('sound_event', (event) => {
 	event.create('music.music_disc_exostep')
 })
 
-StartupEvents.registry('item', event => {
 // Music disc items
+StartupEvents.registry('item', event => {
 	Object.keys(music_list).forEach((value, index) => {
         event.create(value, "music_disc")
             .song(`kubejs:music.${value}`, 1)

@@ -4,9 +4,6 @@
 ItemEvents.foodEaten('minecraft:glistering_melon_slice', event =>{
 	event.player.heal(2)
 })
-ItemEvents.foodEaten('kubejs:mixed_oatmeal', event =>{
-	event.player.heal(3)
-})
 ItemEvents.foodEaten('kubejs:golden_strawberries', event =>{
 	event.player.heal(4)
 })
@@ -116,9 +113,13 @@ ItemEvents.foodEaten([
 ItemEvents.foodEaten([
 	'kubejs:caramelized_marshmellow_on_a_stick',
 	'kubejs:preserved_skewer',
+	'kubejs:incomplete_preserved_skewer',
 	'farmersdelight:melon_popsicle',
+	'kubejs:incomplete_melon_popsicle',
 	'farmersdelight:barbecue_stick',
+	'kubejs:incomplete_meat_skewer',
 	'miners_delight:improvised_barbecue_stick',
+	'kubejs:incomplete_lush_skewer',
 	'culturaldelights:elote'
 	], event => {
 		if (!event.player.isCreative()) {
@@ -130,7 +131,8 @@ ItemEvents.foodEaten([
 
 // Returns blaze rod
 ItemEvents.foodEaten([
-	'mynethersdelight:spicy_skewer'
+	'mynethersdelight:spicy_skewer',
+	'kubejs:incomplete_spicy_skewer'
 	], event => {
 		if (!event.player.isCreative()) {
 			event.server.schedule(1, callback => {
@@ -149,10 +151,8 @@ ItemEvents.foodEaten([
 	'kubejs:pasta_with_turkey',
 	'kubejs:mutton_udon',
 	'kubejs:cinnamon_mint_curry',
-	'kubejs:eggplant_parmesan',
 	'kubejs:prismatic_ice_cream',
-	'kubejs:cat_food',
-//	'kubejs:stoup',
+	'kubejs:batter',
 	'kubejs:takoyaki',
 	'kubejs:glow_ink_pasta',
 	'kubejs:white_fish_soup',
@@ -161,11 +161,25 @@ ItemEvents.foodEaten([
 	'kubejs:pasta_with_tuna',
 	'kubejs:rollmops',
 	'kubejs:spicy_crab_cakes',
-	'kubejs:coconut_crusted_gar'
+	'kubejs:coconut_crusted_gar',
+	'kubejs:coconut_pudding_with_jam',
+	'kubejs:coleslaw'
 	], event => {
 		if (!event.player.isCreative()) {
 			event.server.schedule(1, callback => {
 				event.player.giveInHand('minecraft:bowl')
+		})
+	}
+})
+
+// Returns bucket
+ItemEvents.foodEaten([
+	'kubejs:popcorn_bucket',
+	'kubejs:incomplete_popcorn_bucket'
+	], event => {
+		if (!event.player.isCreative()) {
+			event.server.schedule(1, callback => {
+				event.player.giveInHand('minecraft:bucket')
 		})
 	}
 })

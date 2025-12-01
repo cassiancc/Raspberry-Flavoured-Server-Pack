@@ -1,6 +1,0 @@
-{
-  "parent": "farmersdelight:item/mug",
-    "textures": {
-        "layer0": "abnormals_delight:item/pickerelweed_juice"
-    }
-}
