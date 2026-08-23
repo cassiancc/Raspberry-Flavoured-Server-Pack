@@ -1,8 +1,0 @@
-{
-	"parent": "blueprint:block/thatch/thatch_stairs",
-	"render_type": "cutout",
-	"textures": {
-		"thatch": "kubejs:block/thatch/flax_thatch",
-		"extrudes": "kubejs:block/thatch/flax_thatch_extrudes"
-	}
-}

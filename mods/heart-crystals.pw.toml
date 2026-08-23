@@ -1,0 +1,13 @@
+name = "Heart Crystals"
+filename = "heart_crystals-1.19.2-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8e1d0ff779ca87ee4e8a7a026062fea9d46f367c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5161051
+project-id = 947411

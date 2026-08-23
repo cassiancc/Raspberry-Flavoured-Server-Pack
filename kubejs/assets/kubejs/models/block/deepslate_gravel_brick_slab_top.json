@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab_top",
-    "textures": {
-        "bottom": "kubejs:block/deepslate_gravel_bricks",
-        "top": "kubejs:block/deepslate_gravel_bricks",
-        "side": "kubejs:block/deepslate_gravel_bricks"
-    }
-}

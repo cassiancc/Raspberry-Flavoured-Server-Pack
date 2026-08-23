@@ -7,18 +7,21 @@
   },
   "ingredients": [
     {
+      "item": "neapolitan:dried_vanilla_pods"
+    },
+    {
+      "item": "neapolitan:dried_vanilla_pods"
+    },
+    {
       "item": "minecraft:sugar"
     },
     {
-      "item": "neapolitan:dried_vanilla_pods"
-    },
-    {
-      "item": "neapolitan:dried_vanilla_pods"
+      "item": "kubejs:butter"
     }
   ],
   "recipe_book_tab": "misc",
   "result": {
-    "count": 4,
+    "count": 2,
     "item": "neapolitan:vanilla_fudge"
   },
   "temperature": 4

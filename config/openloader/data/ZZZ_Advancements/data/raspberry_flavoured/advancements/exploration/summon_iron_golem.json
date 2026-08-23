@@ -1,0 +1,43 @@
+{
+  "parent": "raspberry_flavoured:exploration/summon_copper_golem",
+  "criteria": {
+    "Summon Iron Golem": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:iron_golem"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:summoned_entity"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.rf.exploration.summon_iron_golem.title"
+    },
+    "description": {
+      "color": "#CE3131",
+      "translate": "advancements.rf.exploration.summon_iron_golem.description"
+    },
+    "icon": {
+      "item": "minecraft:iron_block"
+    },
+    "frame": "task",
+    "hidden": false,
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "rewards": {
+      "function": "raspberry_flavoured:sound_task"
+    },
+  "requirements": [
+    [
+      "Summon Iron Golem"
+    ]
+  ]
+}

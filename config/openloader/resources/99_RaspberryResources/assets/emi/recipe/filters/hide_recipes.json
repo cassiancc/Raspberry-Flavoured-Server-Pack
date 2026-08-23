@@ -39,6 +39,9 @@
 	{
       "id": "kubejs:deed_of_ownership_clear"
     },
+	{
+      "id": "minecraft:kjs_farmersdelight_vegetable_soup"
+    },
     {
       "id": "/miningmaster/",
       "category": "minecraft:smithing"

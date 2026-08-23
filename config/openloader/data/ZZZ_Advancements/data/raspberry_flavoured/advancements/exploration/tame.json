@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:exploration/adventure_tools",
+  "parent": "raspberry_flavoured:exploration/creeper_spores",
   "criteria": {
     "0": {
       "conditions": {},

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Created by Stridey",
+	"parent": "block/cube",
+	"textures": {
+		"0": "block/dropper_top",
+		"4": "block/dropper_back",
+		"5": "block/dropper_side",
+		"6": "create:block/smart_observer_bottom",
+		"7": "block/dropper_front",
+		"particle": "block/dropper_side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#6", "cullface": "north"},
+				"east": {"uv": [0, 16, 16, 0], "rotation": 90, "texture": "#5", "cullface": "east"},
+				"south": {"uv": [16, 16, 0, 0], "texture": "#0", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#5", "cullface": "west"},
+				"up": {"uv": [16, 16, 0, 0], "texture": "#7", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#4", "cullface": "down"}
+			}
+		}
+	]
+}

@@ -1,0 +1,13 @@
+name = "Modest Magic"
+filename = "modestmagic-0.3.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/sWRvoDiO/versions/xFhCZ0d0/modestmagic-0.3.0.jar"
+hash-format = "sha512"
+hash = "941a8f8f5f2c4fe3868af1ab6b2081bd103d8605a4f7be3c61294b2754291c71d377094b8f319b7745405b2305fb04d26aa0c4359363fb326f71a18cbe7641b7"
+
+[update]
+[update.modrinth]
+mod-id = "sWRvoDiO"
+version = "xFhCZ0d0"

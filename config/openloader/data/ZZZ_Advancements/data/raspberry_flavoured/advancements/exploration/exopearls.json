@@ -1,14 +1,11 @@
 {
-  "parent": "raspberry_flavoured:exploration/root",
+  "parent": "raspberry_flavoured:exploration/dwarf_geode",
   "criteria": {
     "0": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:ender_eye",
-              "kubejs:spirited_exopearl"
-            ]
+            "tag": "raspberry_flavoured:seeker_exopearls"
           }
         ]
       },

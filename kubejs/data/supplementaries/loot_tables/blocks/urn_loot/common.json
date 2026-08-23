@@ -2,42 +2,10 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "weight": 25,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 4.0,
-                "max": 12.0
-              },
-              "add": false
-            }
-          ],
-          "name": "supplementaries:ash"
-        },
-		{
-          "type": "minecraft:item",
-          "weight": 20,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 8.0,
-                "max": 24.0
-              },
-              "add": false
-            }
-          ],
-          "name": "farmersdelight:straw"
-        },
-		{
           "type": "minecraft:item",
           "weight": 16,
           "functions": [
@@ -45,29 +13,61 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 4.0,
-                "max": 16.0
+                "min": 4,
+                "max": 8
               },
               "add": false
             }
           ],
-          "name": "minecraft:flint"
+          "name": "supplementaries:ash"
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 16,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1.0,
-                "max": 3.0
+                "min": 4,
+                "max": 8
               },
               "add": false
             }
           ],
-          "name": "minecraft:slime_ball"
+          "name": "farmersdelight:straw"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 16,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 6
+              },
+              "add": false
+            }
+          ],
+          "name": "twigs:twig"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 14,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 6
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:flint"
         },
         {
           "type": "minecraft:item",
@@ -77,8 +77,40 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1.0,
-                "max": 3.0
+                "min": 2,
+                "max": 4
+              },
+              "add": false
+            }
+          ],
+          "name": "kubejs:cloth_scrap"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:slime_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
               },
               "add": false
             }
@@ -93,24 +125,24 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 2.0,
-                "max": 9.0
+                "min": 6,
+                "max": 12
               },
               "add": false
             }
           ],
-          "name": "minecraft:bone"
+          "name": "minecraft:bone_meal"
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 6.0,
-                "max": 18.0
+                "min": 4,
+                "max": 8
               },
               "add": false
             }
@@ -125,8 +157,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 3.0,
-                "max": 9.0
+                "min": 2,
+                "max": 4
               },
               "add": false
             }
@@ -141,8 +173,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 3.0,
-                "max": 9.0
+                "min": 2,
+                "max": 4
               },
               "add": false
             }
@@ -151,14 +183,14 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 3.0,
-                "max": 9.0
+                "min": 1,
+                "max": 4
               },
               "add": false
             }
@@ -167,14 +199,14 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 3.0,
-                "max": 9.0
+                "min": 1,
+                "max": 4
               },
               "add": false
             }
@@ -183,14 +215,14 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 3.0,
-                "max": 9.0
+                "min": 1,
+                "max": 4
               },
               "add": false
             }
@@ -199,19 +231,32 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 3.0,
-                "max": 9.0
+                "min": 1,
+                "max": 4
               },
               "add": false
             }
           ],
           "name": "farmersdelight:cabbage_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "atmospheric:aloe_kernels",
+          "weight": 6,
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biome": "minecraft:desert"
+              }
+            }
+          ]
         }
       ]
     }

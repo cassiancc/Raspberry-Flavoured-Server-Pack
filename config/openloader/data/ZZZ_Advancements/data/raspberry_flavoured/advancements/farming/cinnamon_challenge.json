@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:farming/tree_bark",
+  "parent": "raspberry_flavoured:farming/hammer",
   "criteria": {
     "0": {
       "trigger": "minecraft:consume_item",

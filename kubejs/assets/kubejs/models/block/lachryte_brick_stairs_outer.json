@@ -1,8 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "kubejs:block/lachryte_bricks",
-        "top": "kubejs:block/lachryte_bricks",
-        "side": "kubejs:block/lachryte_bricks"
-    }
-}

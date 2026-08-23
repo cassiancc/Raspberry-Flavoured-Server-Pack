@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:farming/truffle",
+  "parent": "raspberry_flavoured:farming/all_hoes",
   "criteria": {
     "Obtain Wheat": {
       "trigger": "minecraft:inventory_changed",

@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab",
-    "textures": {
-        "bottom": "kubejs:block/blackstone_gravel_bricks",
-        "top": "kubejs:block/blackstone_gravel_bricks",
-        "side": "kubejs:block/blackstone_gravel_bricks"
-    }
-}

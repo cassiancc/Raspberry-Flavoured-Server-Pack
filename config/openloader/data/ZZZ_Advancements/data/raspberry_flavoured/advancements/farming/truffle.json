@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:farming/plant_seed",
+  "parent": "raspberry_flavoured:farming/rich_soil",
   "criteria": {
     "0": {
       "conditions": {

@@ -1,0 +1,13 @@
+name = "Treeliable"
+filename = "treeliable-forge-1.19.2-1.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "df8b0a1fd829a3cf110dc562aad8197eed461226"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8160635
+project-id = 1502764

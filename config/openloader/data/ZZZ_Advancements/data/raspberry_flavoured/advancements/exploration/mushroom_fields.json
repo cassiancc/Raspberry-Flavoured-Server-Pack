@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:exploration/navigation_tools",
+  "parent": "raspberry_flavoured:exploration/glimmering_weald",
   "criteria": {
     "0": {
       "conditions": {

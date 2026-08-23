@@ -1,0 +1,14 @@
+{
+   "targets": [
+   "minecraft:clay"
+   ],
+   "sound_type": {
+      "break_sound": "twigs:block.packed_silt.break",
+	  "place_sound": "twigs:block.packed_silt.place",
+      "hit_sound": "twigs:block.packed_silt.hit",
+      "fall_sound": "twigs:block.packed_silt.fall",
+      "step_sound": "twigs:block.packed_silt.step",
+      "pitch": 1,
+      "volume": 1
+   } 
+}

@@ -1,0 +1,9 @@
+{
+  "debug_entries": false,
+  "food": {
+    "raspberry_flavoured:placeable_foods": {
+      "base_item": "brewinandchewin:pizza",
+      "item_tag": "raspberry_flavoured:all_placeable_foods"
+    }
+  }
+}

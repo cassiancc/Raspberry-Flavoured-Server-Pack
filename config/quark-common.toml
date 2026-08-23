@@ -11,7 +11,7 @@
 	"Piston Push Limit" = 24
 	#How many advancements deep you can see in the advancement screen. Vanilla is 2.
 	#Allowed values: (0,)
-	"Advancement Visibility Depth" = 2
+	"Advancement Visibility Depth" = 4
 	#Blocks that Quark should treat as Shulker Boxes.
 	"Shulker Boxes" = ["minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
 	#Should Quark treat anything with 'shulker_box' in its item identifier as a shulker box?
@@ -85,12 +85,12 @@
 	[automation.feeding_trough]
 		#How long, in game ticks, between animals being able to eat from the trough
 		#Allowed values: [1,)
-		Cooldown = 30
+		Cooldown = 100
 		#The maximum amount of animals allowed around the trough's range for an animal to enter love mode
-		"Max Animals" = 32
+		"Max Animals" = 24
 		#The chance (between 0 and 1) for an animal to enter love mode when eating from the trough
 		#Allowed values: (0,1]
-		"Love Chance" = 0.333333333
+		"Love Chance" = 0.75
 		Range = 10.0
 		#Set to false to make it so animals look for a nearby trough every time they want to eat instead of remembering the last one. Can affect performance if false.
 		"Enable Trough Caching" = true
@@ -109,7 +109,7 @@
 	"Vertical Slabs" = false
 	"Vertical Planks" = false
 	"Variant Ladders" = true
-	"Variant Furnaces" = true
+	"Variant Furnaces" = false
 	"Variant Chests" = true
 	"Variant Bookshelves" = true
 	Thatch = true
@@ -306,9 +306,9 @@
 
 	[management.expanded_item_interactions]
 		"Enable Armor Interaction" = true
-		"Enable Shulker Box Interaction" = false
+		"Enable Shulker Box Interaction" = true
 		"Enable Lava Interaction" = true
-		"Allow Opening Shulker Boxes" = false
+		"Allow Opening Shulker Boxes" = true
 		"Allow Rotating Bundles" = false
 
 	[management.easy_transfering]
@@ -337,15 +337,15 @@
 	"Torch Arrow" = true
 	"Slime In A Bucket" = true
 	"Skull Pikes" = true
-	"Seed Pouch" = false
+	"Seed Pouch" = true
 	Pickarang = true
 	"Pathfinder Maps" = true
-	"Parrot Eggs" = false
+	"Parrot Eggs" = true
 	"Endermosh Music Disc" = false
 	"Color Runes" = true
 	"Bundle Recipe" = true
 	"Bottled Cloud" = false
-	"Beacon Redirection" = false
+	"Beacon Redirection" = true
 	"Ancient Tomes" = false
 	"Ambient Discs" = false
 	Abacus = true
@@ -354,10 +354,10 @@
 		#Amount of blocks placed is this value + 1.
 		#Set to 0 to make the Trowel unbreakable
 		#Allowed values: [0,)
-		"Trowel Max Durability" = 0
+		"Trowel Max Durability" = 1600
 
 	[tools.torch_arrow]
-		"Extinguish On Miss" = false
+		"Extinguish On Miss" = true
 
 	[tools.skull_pikes]
 		"Pike Range" = 5.0
@@ -448,7 +448,7 @@
 		#
 		#Here's an example of a map to locate Ice Mountains:
 		#minecraft:ice_mountains,2,8,14,7FE4FF
-		Customs = ["minecraft:ice_spikes,2,8,14,7FE4FF"]
+		Customs = ["minecraft:ice_spikes,2,8,14,7FE4FF", "minecraft:old_growth_birch_forest,2,8,14,B6E069", "environmental:blossom_woods,2,8,14,FF829A", "atmospheric:rainforest,2,8,14,340071", "atmospheric:flourishing_dunes,2,8,14,F0984E", "windswept:chestnut_forest,2,8,14,614634", "quark:glimmering_weald,2,8,14,7EDDBE", "kubejs:tropical_beach,2,8,14,EABB2C"]
 		"Search Radius" = 6400
 		"Xp From Trade" = 5
 		#Set to false to make it so the default quark Pathfinder Map Built-In don't get added, and only the custom ones do
@@ -468,9 +468,9 @@
 
 	[tools.parrot_eggs]
 		#The chance feeding a parrot will produce an egg
-		Chance = 0.05
+		Chance = 0.25
 		#How long it takes to create an egg
-		"Egg Time" = 12000
+		"Egg Time" = 6000
 		"Enable Special Awesome Parrot" = false
 
 	[tools.endermosh_music_disc]
@@ -534,7 +534,7 @@
 [tweaks]
 	"Zombie Villagers On Normal" = true
 	"Villagers Follow Emeralds" = true
-	"Vexes Die With Their Masters" = true
+	"Vexes Die With Their Masters" = false
 	"Utility Recipes" = true
 	"Sponge On Water Placement" = true
 	"Snow Golem Player Heads" = true
@@ -582,7 +582,7 @@
 		#Can a dispenser be crafted by adding a bow to a dropper?
 		"Enable Dispenser" = false
 		#Can a repeater be crafted with the pattern for a redstone torch?
-		"Enable Repeater" = true
+		"Enable Repeater" = false
 		#Can you craft a minecart around blocks which can be placed inside?
 		"Enable Minecarts" = true
 		#Can you craft four chests at once using logs?
@@ -704,7 +704,7 @@
 		"Italic Tooltip" = true
 		"Display Baked Enchantments In Tooltip" = true
 		#Enchantments other than Gold's Fortune/Looting to bake into items. Format is "item+enchant@level", such as "minecraft:stick+sharpness@10".
-		"Baked Enchantments" = ["minecraft:trident+loyalty@2", "minecraft:trident+power@1", "minecraft:crossbow+power@2", "farmersdelight:golden_knife+looting@1", "minecraft:golden_axe+looting@1", "minecraft:leather_helmet+feather_falling@1", "minecraft:leather_chestplate+feather_falling@2", "minecraft:leather_leggings+feather_falling@3", "minecraft:leather_boots+feather_falling@4", "minecraft:turtle_helmet+aqua_affinity@1", "minecraft:golden_helmet+fire_protection@1", "minecraft:golden_chestplate+fire_protection@2", "minecraft:golden_leggings+fire_protection@2", "minecraft:golden_boots+fire_protection@1", "minecraft:chainmail_helmet+thorns@1", "minecraft:chainmail_chestplate+thorns@1", "minecraft:chainmail_leggings+thorns@1", "minecraft:chainmail_boots+thorns@1", "minecraft:diamond_helmet+projectile_protection@2", "minecraft:diamond_chestplate+projectile_protection@3", "minecraft:diamond_leggings+projectile_protection@3", "minecraft:diamond_boots+projectile_protection@2", "additionaladditions:rose_gold_sword+silk_touch@1", "additionaladditions:rose_gold_shovel+silk_touch@1", "additionaladditions:rose_gold_pickaxe+silk_touch@1", "additionaladditions:rose_gold_axe+silk_touch@1", "additionaladditions:rose_gold_hoe+silk_touch@1", "kubejs:rose_gold_knife+silk_touch@1", "minecraft:netherite_helmet+fire_protection@3", "minecraft:netherite_chestplate+fire_protection@4", "minecraft:netherite_leggings+fire_protection@4", "minecraft:netherite_boots+fire_protection@3", "minecraft:netherite_pickaxe+fire_aspect@1", "minecraft:netherite_pickaxe+miningmaster:smelting@1", "minecraft:netherite_shovel+fire_aspect@1", "minecraft:netherite_shovel+miningmaster:smelting@1", "minecraft:netherite_hoe+fire_aspect@1", "minecraft:netherite_hoe+miningmaster:smelting@1", "minecraft:netherite_axe+fire_aspect@2", "minecraft:netherite_axe+miningmaster:smelting@1", "minecraft:netherite_sword+fire_aspect@2", "minecraft:netherite_sword+miningmaster:smelting@1", "farmersdelight:netherite_knife+fire_aspect@2", "farmersdelight:netherite_knife+miningmaster:smelting@1", "clash:swept_axe+fire_aspect@2", "clash:swept_axe+miningmaster:smelting@1", "clash:swept_axe+clash:rampage@3", "clash:swept_axe+clash:retaliation@4", "clash:spear+clash:agility@1", "oreganized:silver_mirror+smite@5", "kubejs:rose_gold_rapier+kubejs:rose_lifesteal@1", "kubejs:electrum_horse_armor+allurement:obedience@1", "kubejs:necromium_horse_armor+allurement:obedience@1", "kubejs:netherite_horse_armor+allurement:obedience@1", "clash:greatblade+clash:whirling@1", "mace_backport:mace+mace_backport:wind_burst@1"]
+		"Baked Enchantments" = ["minecraft:trident+loyalty@3", "minecraft:crossbow+power@2", "farmersdelight:golden_knife+looting@1", "minecraft:golden_axe+looting@1", "minecraft:leather_helmet+feather_falling@1", "minecraft:leather_chestplate+feather_falling@2", "minecraft:leather_leggings+feather_falling@3", "minecraft:leather_boots+feather_falling@4", "minecraft:turtle_helmet+aqua_affinity@1", "minecraft:golden_helmet+fire_protection@1", "minecraft:golden_chestplate+fire_protection@2", "minecraft:golden_leggings+fire_protection@2", "minecraft:golden_boots+fire_protection@1", "minecraft:chainmail_helmet+thorns@1", "minecraft:chainmail_chestplate+thorns@1", "minecraft:chainmail_leggings+thorns@1", "minecraft:chainmail_boots+thorns@1", "minecraft:diamond_helmet+projectile_protection@2", "minecraft:diamond_chestplate+projectile_protection@3", "minecraft:diamond_leggings+projectile_protection@3", "minecraft:diamond_boots+projectile_protection@2", "additionaladditions:rose_gold_shovel+silk_touch@1", "additionaladditions:rose_gold_pickaxe+silk_touch@1", "additionaladditions:rose_gold_axe+silk_touch@1", "additionaladditions:rose_gold_hoe+silk_touch@1", "kubejs:rose_gold_knife+silk_touch@1", "minecraft:netherite_helmet+fire_protection@3", "minecraft:netherite_chestplate+fire_protection@4", "minecraft:netherite_leggings+fire_protection@4", "minecraft:netherite_boots+fire_protection@3", "minecraft:netherite_pickaxe+fire_aspect@1", "minecraft:netherite_pickaxe+miningmaster:smelting@1", "minecraft:netherite_shovel+fire_aspect@1", "minecraft:netherite_shovel+miningmaster:smelting@1", "minecraft:netherite_hoe+fire_aspect@1", "minecraft:netherite_hoe+miningmaster:smelting@1", "minecraft:netherite_axe+fire_aspect@2", "minecraft:netherite_axe+miningmaster:smelting@1", "minecraft:netherite_sword+fire_aspect@2", "farmersdelight:netherite_knife+fire_aspect@2", "farmersdelight:netherite_knife+miningmaster:smelting@1", "clash:swept_axe+fire_aspect@2", "clash:swept_axe+miningmaster:smelting@1", "clash:swept_axe+clash:rampage@3", "clash:swept_axe+clash:retaliation@4", "clash:spear+clash:agility@1", "oreganized:silver_mirror+smite@5", "kubejs:rose_gold_rapier+kubejs:rose_lifesteal@1", "kubejs:electrum_horse_armor+allurement:obedience@1", "kubejs:necromium_horse_armor+allurement:obedience@1", "kubejs:netherite_horse_armor+allurement:obedience@1", "clash:greatblade+clash:whirling@1", "mace_backport:mace+mace_backport:wind_burst@1"]
 
 	[tweaks.enhanced_ladders]
 		#Allowed values: (,0]
@@ -783,7 +783,7 @@
 		"Ignore Anti Overlap" = false
 
 [world]
-	"Spiral Spires" = false
+	"Spiral Spires" = true
 	Permafrost = false
 	"No More Lava Pockets" = true
 	"New Stone Types" = false
@@ -791,7 +791,7 @@
 	"Monster Box" = true
 	"Glimmering Weald" = true
 	"Fairy Rings" = true
-	Corundum = false
+	Corundum = true
 	"Chorus Vegetation" = true
 	"Blossom Trees" = false
 	"Big Stone Clusters" = true
@@ -804,7 +804,7 @@
 		"Enable Myalite Viaducts" = true
 		#Allowed values: [2,1,024]
 		"Myalite Conduit Distance" = 24
-		"Renewable Myalite" = true
+		"Renewable Myalite" = false
 
 		[world.spiral_spires.dimensions]
 			"Is Blacklist" = false
@@ -1025,31 +1025,31 @@
 		#Allowed values: [0,1]
 		"Double Crystal Chance" = 0.2
 		#The chance that a crystal can grow, this is on average 1 in X world ticks, set to a higher value to make them grow slower. Minimum is 1, for every tick. Set to 0 to disable growth.
-		"Cave Crystal Growth Chance" = 5
-		"Crystals Craft Runes" = true
+		"Cave Crystal Growth Chance" = 0
+		"Crystals Craft Runes" = false
 		"Enable Collateral Movement" = true
 
 		[world.corundum.generation_settings]
 			#Allowed values: [0,)
-			Rarity = 400
+			Rarity = 40000
 			"Min Y Level" = 0
-			"Max Y Level" = 64
+			"Max Y Level" = 0
 			#Allowed values: [0,)
-			"Horizontal Size" = 72
+			"Horizontal Size" = 0
 			#Allowed values: [0,)
-			"Vertical Size" = 20
+			"Vertical Size" = 0
 			#Allowed values: [0,)
-			"Horizontal Variation" = 22
+			"Horizontal Variation" = 0
 			#Allowed values: [0,)
-			"Vertical Variation" = 4
+			"Vertical Variation" = 0
 
 			[world.corundum.generation_settings.dimensions]
 				"Is Blacklist" = false
-				Dimensions = ["minecraft:overworld"]
+				Dimensions = []
 
 			[world.corundum.generation_settings.biomes]
-				"Biome Tags" = ["minecraft:is_ocean"]
-				"Is Blacklist" = true
+				"Biome Tags" = []
+				"Is Blacklist" = false
 
 	[world.chorus_vegetation]
 		Rarity = 150
@@ -1341,7 +1341,7 @@
 	Stonelings = false
 	Shiba = false
 	Foxhound = false
-	Forgotten = false
+	Forgotten = true
 	Crabs = false
 
 	[mobs.wraith]
@@ -1573,7 +1573,7 @@
 	[client.improved_tooltips]
 		"Attribute Tooltips" = true
 		"Food Tooltips" = false
-		"Shulker Tooltips" = false
+		"Shulker Tooltips" = true
 		"Map Tooltips" = false
 		"Enchanting Tooltips" = false
 		"Fuel Time Tooltips" = true

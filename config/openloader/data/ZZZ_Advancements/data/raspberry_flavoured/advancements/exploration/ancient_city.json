@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:exploration/pyramid",
+  "parent": "raspberry_flavoured:exploration/deep_dark",
   "criteria": {
     "0": {
       "conditions": {
@@ -27,7 +27,7 @@
       "translate": "advancements.rf.exploration.ancient_city.description"
     },
     "icon": {
-      "item": "minecraft:echo_shard"
+      "item": "minecraft:sculk_shrieker"
     },
     "frame": "goal",
     "hidden": false,

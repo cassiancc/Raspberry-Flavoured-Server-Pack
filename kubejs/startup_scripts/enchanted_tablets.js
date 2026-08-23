@@ -15,6 +15,7 @@ StartupEvents.registry('item', event => {
 	'otherworldly_tablet',
 	'piercing_tablet',
 	'pulling_tablet',
+	'recollection_tablet',
 	'silent_tablet',
 	'swift_tablet'
 	]
@@ -43,6 +44,7 @@ StartupEvents.registry('item', event => {
 	'incomplete_otherworldly_tablet',
 	'incomplete_piercing_tablet',
 	'incomplete_pulling_tablet',
+	'incomplete_recollection_tablet',
 	'incomplete_silent_tablet',
 	'incomplete_swift_tablet'
 	]

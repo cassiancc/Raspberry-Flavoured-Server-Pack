@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:main/netherite",
+  "parent": "raspberry_flavoured:main/diamond_pickaxe",
   "criteria": {
     "Obtain Iron Ingot": {
       "conditions": {

@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:clay_ball"
+          "name": "minecraft:clay"
         },
 		{
           "type": "minecraft:item",

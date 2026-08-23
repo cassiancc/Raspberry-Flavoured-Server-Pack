@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#raspberry_flavoured:cobblestone_spikes_biomes",
+  "features": "kubejs:cobblestone_spikes",
+  "step": "fluid_springs"
+}

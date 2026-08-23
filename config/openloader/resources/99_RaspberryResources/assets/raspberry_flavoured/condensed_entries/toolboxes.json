@@ -1,0 +1,9 @@
+{
+  "debug_entries": false,
+  "tools": {
+    "raspberry_flavoured:toolboxes": {
+      "base_item": "create:white_toolbox",
+      "item_tag": "create:toolboxes"
+    }
+  }
+}

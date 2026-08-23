@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:jigsaw",
+	"biomes": "minecraft:soul_sand_valley",
+	"step": "underground_decoration",
+	"spawn_overrides": {},
+	"terrain_adaptation": "none",
+	"start_pool": "kubejs:soul_ruin",
+	"size": 6,
+	"start_height": {
+		"type": "uniform",
+		"min_inclusive": {
+			"absolute": -96
+		},
+		"max_inclusive": {
+			"absolute": -24
+		}
+	},
+	"max_distance_from_center": 128,
+	"use_expansion_hack": false
+}

@@ -187,13 +187,13 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 32.0,
-                "min": 8.0
+                "max": 8.0,
+                "min": 4.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:nether_brick",
+          "name": "minecraft:nether_bricks",
           "weight": 30
         },
         {

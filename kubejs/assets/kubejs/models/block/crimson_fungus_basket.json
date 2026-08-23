@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "kubejs:block/crimson_fungus_basket_bottom",
-    "side": "kubejs:block/crimson_fungus_basket_side",
-    "top": "kubejs:block/crimson_fungus_basket_top"
-  }
-}

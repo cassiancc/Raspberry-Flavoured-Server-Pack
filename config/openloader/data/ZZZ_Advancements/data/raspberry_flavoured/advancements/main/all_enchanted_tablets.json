@@ -169,6 +169,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "Obtain Recollection Tablet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "kubejs:recollection_tablet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "Obtain Silent Tablet": {
       "conditions": {
         "items": [
@@ -212,7 +224,7 @@
     "show_toast": true
   },
   "rewards": {
-      "function": "raspberryflavoured:sound_challenge"
+      "function": "raspberry_flavoured:sound_challenge"
     },
   "requirements": [
     [
@@ -256,6 +268,9 @@
     ],
     [
       "Obtain Pulling Tablet"
+    ],
+    [
+      "Obtain Recollection Tablet"
     ],
     [
       "Obtain Silent Tablet"

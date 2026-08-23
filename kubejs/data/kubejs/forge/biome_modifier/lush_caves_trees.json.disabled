@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:lush_caves",
+  "features": "kubejs:trees_lush_caves",
+  "step": "fluid_springs"
+}

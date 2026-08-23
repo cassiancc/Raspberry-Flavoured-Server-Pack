@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:exploration/dungeon",
+  "parent": "raspberry_flavoured:exploration/silver_mirror",
   "criteria": {
     "Find a Desert Pyramid": {
       "conditions": {
@@ -9,7 +9,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "structure": "minecraft:desert_pyramid"
+                "structure": "kubejs:desert_pyramid"
               }
             }
           }

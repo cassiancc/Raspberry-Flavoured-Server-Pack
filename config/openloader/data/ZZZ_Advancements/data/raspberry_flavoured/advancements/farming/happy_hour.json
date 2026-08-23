@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:farming/keg",
+  "parent": "raspberry_flavoured:farming/pizza_time",
   "criteria": {
     "Consume Beer": {
       "trigger": "minecraft:consume_item",

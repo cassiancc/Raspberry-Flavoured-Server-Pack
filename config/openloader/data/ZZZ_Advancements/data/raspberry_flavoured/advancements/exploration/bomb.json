@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:exploration/root",
+  "parent": "raspberry_flavoured:exploration/creeper_spores",
   "criteria": {
     "0": {
       "trigger": "minecraft:impossible"

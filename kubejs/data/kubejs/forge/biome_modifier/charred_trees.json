@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#raspberry_flavoured:charred_tree_biomes",
+  "features": "kubejs:patch_charred_trees",
+  "step": "vegetal_decoration"
+}

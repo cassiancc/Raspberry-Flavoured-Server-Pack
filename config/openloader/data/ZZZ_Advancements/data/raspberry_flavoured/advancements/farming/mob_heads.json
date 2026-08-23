@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:farming/ham",
+  "parent": "raspberry_flavoured:farming/decorated_bed",
   "criteria": {
     "0": {
       "conditions": {

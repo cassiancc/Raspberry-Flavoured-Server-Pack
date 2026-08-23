@@ -1,8 +1,0 @@
-{
-    "parent": "block/stairs",
-    "textures": {
-        "bottom": "spelunkery:block/rough_lazurite_block",
-        "top": "spelunkery:block/rough_lazurite_block",
-        "side": "spelunkery:block/rough_lazurite_block"
-    }
-}

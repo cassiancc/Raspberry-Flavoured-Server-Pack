@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:farming/harvest_honey",
+  "parent": "raspberry_flavoured:farming/cooking_pot",
   "criteria": {
     "0": {
       "conditions": {

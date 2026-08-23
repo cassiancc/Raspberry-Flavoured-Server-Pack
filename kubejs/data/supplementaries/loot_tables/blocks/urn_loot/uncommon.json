@@ -7,51 +7,51 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 8.0,
-                "max": 32.0
+                "min": 1.0,
+                "max": 2.0
               },
               "add": false
             }
           ],
-          "name": "spelunkery:raw_iron_nugget"
+          "name": "minecraft:raw_iron"
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 8.0,
-                "max": 32.0
+                "min": 1.0,
+                "max": 2.0
               },
               "add": false
             }
           ],
-          "name": "spelunkery:raw_gold_nugget"
+          "name": "minecraft:raw_gold"
         },
 		{
           "type": "minecraft:item",
-          "weight": 20,
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 16.0,
-                "max": 64.0
+                "min": 1.0,
+                "max": 3.0
               },
               "add": false
             }
           ],
-          "name": "spelunkery:raw_copper_nugget"
+          "name": "minecraft:raw_copper"
         },
         {
           "type": "minecraft:item",
@@ -61,13 +61,29 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 6.0,
-                "max": 18.0
+                "min": 3.0,
+                "max": 6.0
               },
               "add": false
             }
           ],
           "name": "minecraft:bone"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3.0,
+                "max": 6.0
+              },
+              "add": false
+            }
+          ],
+          "name": "savage_and_ravage:creeper_spores"
         },
         {
           "type": "minecraft:item",
@@ -77,13 +93,45 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 6.0,
-                "max": 12.0
+                "min": 3.0,
+                "max": 6.0
               },
               "add": false
             }
           ],
           "name": "supplementaries:antique_ink"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 16,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 8.0,
+                "max": 16.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4.0,
+                "max": 8.0
+              },
+              "add": false
+            }
+          ],
+          "name": "supplementaries:bomb"
         },
         {
           "type": "minecraft:item",
@@ -93,8 +141,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 12.0,
-                "max": 48.0
+                "min": 6.0,
+                "max": 24.0
               },
               "add": false
             }
@@ -109,8 +157,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1.0,
-                "max": 16.0
+                "min": 3.0,
+                "max": 6.0
               },
               "add": false
             }

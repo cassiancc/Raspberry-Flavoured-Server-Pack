@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_mushroom",
+  "features": "kubejs:mushroom_fields_flowers",
+  "step": "vegetal_decoration"
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:exploration/summon_golem",
+  "parent": "raspberry_flavoured:exploration/summon_iron_golem",
   "criteria": {
     "Right-Click on Iron Golem with Tuned Tuning Fork": {
       "trigger": "minecraft:player_interacted_with_entity",

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "kubejs:patch_cave_grass",
+  "step": "vegetal_decoration"
+}

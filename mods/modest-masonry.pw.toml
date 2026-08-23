@@ -1,0 +1,13 @@
+name = "Modest Masonry"
+filename = "modestmasonry-0.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/VAR0JmNn/versions/JffWzqzO/modestmasonry-0.1.0.jar"
+hash-format = "sha512"
+hash = "cd682dcbf69b817d10d5f500432fd88e3325a397ee27ecc8c9d8a993a20b3043acfe8f6a773073ca7affe012bfb367b8f33c3bf6dfa57357099b7bade654a5ee"
+
+[update]
+[update.modrinth]
+mod-id = "VAR0JmNn"
+version = "JffWzqzO"

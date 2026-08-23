@@ -1,0 +1,15 @@
+{
+	"name": "kubejs:desert_pyramid/pyramid",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "kubejs:desert_pyramid/pyramid",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		}
+	]
+}

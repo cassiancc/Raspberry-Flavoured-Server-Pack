@@ -8,11 +8,7 @@
 	"spelunkery:rock_salt_wall",
 	"spelunkery:rock_salt_stairs",
 	"spelunkery:rock_salt_slab",
-	"spelunkery:rock_salt_block",
-	"spelunkery:rock_salt_brick_wall",
-	"spelunkery:rock_salt_brick_stairs",
-	"spelunkery:rock_salt_brick_slab",
-	"spelunkery:rock_salt_bricks"
+	"spelunkery:rock_salt_block"
    ],
    "sound_type": {
       "break_sound": "minecraft:block.dripstone_block.break",

@@ -1,0 +1,9 @@
+{
+  "debug_entries": false,
+  "misc": {
+    "raspberry_flavoured:geodes": {
+      "base_item": "minecraft:wheat_seeds",
+      "item_tag": "raspberry_flavoured:geodes"
+    }
+  }
+}

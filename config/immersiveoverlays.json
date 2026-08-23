@@ -11,7 +11,7 @@
   "render_endcap": true,
   "hide_from_debug": true,
   "compass_enable": true,
-  "compass_vertical_position": 140,
+  "compass_vertical_position": 170,
   "compass_horizontal_position_left": false,
   "compass_text_colour": 14737632,
   "compass_x_colour": "Red",
@@ -40,7 +40,7 @@
   "clock_24_hour": true,
   "clock_seasons": true,
   "clock_text_colour": 14737632,
-  "clock_vertical_position": 85,
+  "clock_vertical_position": 120,
   "clock_horizontal_position_left": false,
   "clock_items": [
     "minecraft:clock"
@@ -73,7 +73,7 @@
   "biome_reduced_info": false,
   "biome_text_tinted": true,
   "biome_text_colour": 14737632,
-  "biome_vertical_position": 112,
+  "biome_vertical_position": 142,
   "biome_horizontal_position_left": false,
   "biome_items": [
     "minecraft:map",
@@ -83,7 +83,8 @@
     "map_atlases:end_atlas",
     "map_atlases:nether_atlas",
     "naturescompass:naturescompass",
-    "antiqueatlas:antique_atlas"
+    "antiqueatlas:antique_atlas",
+    "raspberry:atlas"
   ],
   "season_items": [
     "sereneseasons:calendar",

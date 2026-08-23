@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "kubejs:block/warped_fungus_basket_bottom",
-    "side": "kubejs:block/warped_fungus_basket_side",
-    "top": "kubejs:block/warped_fungus_basket_top"
-  }
-}

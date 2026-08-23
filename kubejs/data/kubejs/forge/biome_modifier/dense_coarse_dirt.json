@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#raspberry_flavoured:dense_coarse_dirt_biomes",
+  "features": "kubejs:coarse_dirt_dense",
+  "step": "fluid_springs"
+}

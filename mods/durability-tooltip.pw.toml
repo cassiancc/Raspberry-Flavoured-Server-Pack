@@ -1,13 +1,13 @@
 name = "Durability Tooltip"
-filename = "durabilitytooltip-1.1.5-forge-mc1.19.jar"
+filename = "durabilitytooltip-1.1.6a-forge-mc1.19.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/smUP7V3r/versions/vJd0yY9j/durabilitytooltip-1.1.5-forge-mc1.19.jar"
+url = "https://cdn.modrinth.com/data/smUP7V3r/versions/Da2nKmml/durabilitytooltip-1.1.6a-forge-mc1.19.jar"
 hash-format = "sha512"
-hash = "dd0ae521a9ac5d1d6f8fd0ea5d07b36a2bbdb97d690bba0cd1713cc60d42d0a02e33370ee79ead6c7eb3fcedbed8e89be52a6c8a0adf0e807313368c63ed1796"
+hash = "aba8a34fb54f18157b773ae650e65e5d86e490ecefffad049cf685b0c100259fe2123c22b4171a11d36bcc57ba02eef1e98410255b270e40686eaa6f651099b4"
 
 [update]
 [update.modrinth]
 mod-id = "smUP7V3r"
-version = "vJd0yY9j"
+version = "Da2nKmml"

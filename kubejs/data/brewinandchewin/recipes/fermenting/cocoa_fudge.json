@@ -7,13 +7,16 @@
   },
   "ingredients": [
     {
+      "tag": "minecraft:cocoa_beans_or_powder"
+    },
+    {
+      "tag": "minecraft:cocoa_beans_or_powder"
+    },
+    {
       "item": "minecraft:sugar"
     },
     {
-      "tag": "minecraft:cocoa_beans_or_powder"
-    },
-    {
-      "tag": "minecraft:cocoa_beans_or_powder"
+      "item": "kubejs:butter"
     }
   ],
   "recipe_book_tab": "misc",

@@ -13,7 +13,19 @@
    "quark:soul_sandstone_bricks",
    "quark:soul_sandstone_bricks_slab",
    "quark:soul_sandstone_bricks_stairs",
-   "quark:soul_sandstone_bricks_wall"
+   "quark:soul_sandstone_bricks_wall",
+   "kubejs:polished_soul_sandstone",
+   "kubejs:polished_soul_sandstone_slab",
+   "kubejs:polished_soul_sandstone_stairs",
+   "kubejs:polished_soul_sandstone_wall",
+   "kubejs:soul_sandstone_tiles",
+   "kubejs:soul_sandstone_tile_slab",
+   "kubejs:soul_sandstone_tile_stairs",
+   "kubejs:soul_sandstone_tile_wall",
+   "kubejs:soul_sandstone_pillar",
+   "kubejs:cracked_soul_sandstone",
+   "kubejs:cracked_layered_soul_sandstone",
+   "kubejs:cracked_soul_sandstone_bricks"
    ],
    "sound_type": {
       "break_sound": "kubejs:sound.soul_sandstone.break",

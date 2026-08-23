@@ -1,0 +1,41 @@
+{
+  "parent": "raspberry_flavoured:nether/kill_wither",
+  "criteria": {
+    "0": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "kubejs:stardust"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.rf.nether.stardust.title"
+    },
+    "description": {
+      "color": "#8630CC",
+      "translate": "advancements.rf.nether.stardust.description"
+    },
+    "icon": {
+      "item": "kubejs:stardust"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "rewards": {
+      "function": "raspberry_flavoured:sound_goal"
+    },
+  "requirements": [
+    [
+      "0"
+    ]
+  ]
+}

@@ -1,0 +1,17 @@
+{
+   "targets": [
+	"spelunkery:rock_salt_brick_wall",
+	"spelunkery:rock_salt_brick_stairs",
+	"spelunkery:rock_salt_brick_slab",
+	"spelunkery:rock_salt_bricks"
+   ],
+   "sound_type": {
+      "break_sound": "kubejs:sound.brick_variant.break",
+	  "place_sound": "kubejs:sound.brick_variant.place",
+      "hit_sound": "kubejs:sound.brick_variant.hit",
+      "fall_sound": "kubejs:sound.brick_variant.fall",
+      "step_sound": "kubejs:sound.brick_variant.step",
+      "pitch": 1.15,
+      "volume": 1
+   } 
+}

@@ -1,0 +1,39 @@
+{
+  "parent": "raspberry_flavoured:nether/exoporter",
+  "criteria": {
+    "0": {
+      "conditions": {
+        "distance": {
+          "horizontal": {
+            "min": 15000.0
+          }
+        }
+      },
+      "trigger": "minecraft:nether_travel"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.rf.nether.fast_travel.title"
+    },
+    "description": {
+      "color": "#8630CC",
+      "translate": "advancements.rf.nether.fast_travel.description"
+    },
+    "icon": {
+      "item": "frame_changer:crying_chiseled_obsidian"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "rewards": {
+      "function": "raspberry_flavoured:sound_challenge"
+    },
+  "requirements": [
+    [
+      "0"
+    ]
+  ]
+}

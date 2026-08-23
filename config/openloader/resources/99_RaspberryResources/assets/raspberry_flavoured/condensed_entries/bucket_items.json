@@ -1,6 +1,6 @@
 {
   "debug_entries": false,
-  "misc": {
+  "tools": {
     "raspberry_flavoured:bucket_items": {
       "base_item": "minecraft:water_bucket",
       "item_tag": "raspberry_flavoured:bucket_items"

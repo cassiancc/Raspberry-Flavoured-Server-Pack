@@ -1,13 +1,13 @@
 name = "Pretty Rain"
-filename = "Pretty Rain-1.19.2-Forge-1.1.0.jar"
+filename = "Pretty Rain-1.19.2-Forge-1.1.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/IhZuHxkl/versions/Rt8Uv9mM/Pretty%20Rain-1.19.2-Forge-1.1.0.jar"
+url = "https://cdn.modrinth.com/data/IhZuHxkl/versions/jivIT0rc/Pretty%20Rain-1.19.2-Forge-1.1.1.jar"
 hash-format = "sha512"
-hash = "1d1937c756b46911565a9f1b67109ac44493b5442218a7918e088b10ae59ff75a0b91482ca3be2a94106653225eb622cd3b1f8260b5605cb10912cc2e9363ac5"
+hash = "c7eb6622bc3cc572343e0eb4c789a4bc030a98e803d88dba4ff12e255de6b5f09fbfcaefc070c8d13fb04bfd534d77bf6ab5519888004842973da23a31a34144"
 
 [update]
 [update.modrinth]
 mod-id = "IhZuHxkl"
-version = "Rt8Uv9mM"
+version = "jivIT0rc"

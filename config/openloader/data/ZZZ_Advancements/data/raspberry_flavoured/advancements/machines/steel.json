@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:machines/blaze_burner",
+  "parent": "raspberry_flavoured:machines/superheating",
   "criteria": {
     "0": {
       "conditions": {

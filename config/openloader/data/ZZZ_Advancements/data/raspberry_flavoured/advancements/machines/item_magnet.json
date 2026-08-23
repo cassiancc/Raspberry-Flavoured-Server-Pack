@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:machines/mechanical_crafter",
+  "parent": "raspberry_flavoured:machines/extendo_grip",
   "criteria": {
     "0": {
       "conditions": {

@@ -22,9 +22,9 @@
 	"minecraft:grass_block": "grass",
 	"minecraft:dirt": "dirt",
 	"minecraft:coarse_dirt": "dirt,gravel",
-	"minecraft:rooted_dirt": "dirt,gravel",
+	"minecraft:rooted_dirt": "dirt",
 	"minecraft:dirt_path": "grass",
-	"minecraft:podzol": "dirt,organic",
+	"minecraft:podzol": "dirt",
 	"minecraft:cobblestone": "stone",
 
 	"minecraft:raw_iron_block": "stone",
@@ -333,7 +333,7 @@
 	"minecraft:snow_block": "snow",
 	"minecraft:powder_snow": "snow",
 
-	"minecraft:packed_ice": "stone,snow",
+	"minecraft:packed_ice": "ice",
 	"#minecraft:ice": "ice",
 
 	"minecraft:cactus": "grass",
@@ -981,7 +981,7 @@
 	"minecraft:tuff": "stone",
 	"minecraft:calcite": "marble,stone",
 
-	"#minecraft:nylium": "rough_slate,mushroom,slick",
+	"#minecraft:nylium": "rough_slate,mushroom,dirt",
 	"minecraft:stripped_warped_stem": "organic_dry,mushroom,stone",
 	"minecraft:stripped_warped_hyphae": "organic_dry,mushroom,stone",
 	"#minecraft:warped_stems": "organic_dry,wood_sticky,mushroom",
@@ -1045,7 +1045,7 @@
 	"atmospheric:aloe_bundle": "leaves",
 
 	"atmospheric:arid_sprouts": "NOT_EMITTER",
-	"atmospheric:arid_sprouts.foliage": "organic,mushroom",
+	"atmospheric:arid_sprouts.foliage": "straw",
 
 	"atmospheric:tall_aloe_vera": "NOT_EMITTER",
 	"atmospheric:tall_aloe_vera.messy": "straw",
@@ -1099,7 +1099,7 @@
 	"environmental:tall_dead_bush.foliage": "straw",
 
 	"environmental:mycelium_sprouts": "NOT_EMITTER",
-	"environmental:mycelium_sprouts.foliage": "organic,mushroom",
+	"environmental:mycelium_sprouts.foliage": "mushroom",
 
 	"environmental:giant_tall_grass": "NOT_EMITTER",
 	"environmental:giant_tall_grass.messy": "MESSY_GROUND",
@@ -1496,25 +1496,9 @@
 	"kubejs:cobbled_blackstone_wall": "stone",
 	"kubejs:sturdy_blackstone": "stone",
 	
-	"twigs:silt": "sand,quicksand",
+	"twigs:silt": "dirt,sand",
 	"twigs:rocky_dirt": "dirt,stone",
-	"twigs:packed_silt": "dirt",
-	"twigs:white_packed_silt": "dirt",
-	"twigs:orange_packed_silt": "dirt",
-	"twigs:magenta_packed_silt": "dirt",
-	"twigs:light_blue_packed_silt": "dirt",
-	"twigs:yellow_packed_silt": "dirt",
-	"twigs:lime_packed_silt": "dirt",
-	"twigs:pink_packed_silt": "dirt",
-	"twigs:gray_packed_silt": "dirt",
-	"twigs:light_gray_packed_silt": "dirt",
-	"twigs:cyan_packed_silt": "dirt",
-	"twigs:purple_packed_silt": "dirt",
-	"twigs:blue_packed_silt": "dirt",
-	"twigs:brown_packed_silt": "dirt",
-	"twigs:green_packed_silt": "dirt",
-	"twigs:red_packed_silt": "dirt",
-	"twigs:black_packed_silt": "dirt",
+	"#twigs:packed_silt": "stone",
 	"twigs:silt_shingles": "brickstone",
 	"twigs:white_silt_shingles": "brickstone",
 	"twigs:orange_silt_shingles": "brickstone",
@@ -2060,7 +2044,14 @@
 	"raspberry:moody_wildflowers.foliage": "brush",
 	"raspberry:hopeful_wildflowers": "NOT_EMITTER",
 	"raspberry:hopeful_wildflowers.foliage": "brush",
+
+	"kubejs:worm_crate": "bluntwood,organic",
+	"kubejs:golden_worm_crate": "bluntwood,organic",
+	"kubejs:grub_crate": "bluntwood,organic",
 	
 	"atmospheric:crustose": "dirt,organic",
-	"atmospheric:crustose_path": "dirt,organic"
+	"atmospheric:crustose_path": "dirt,organic",
+	
+	"modestmagic:altar[axis=y,top=true]": "rug,obsidian",
+	"modestmagic:altar": "obsidian"
 }	

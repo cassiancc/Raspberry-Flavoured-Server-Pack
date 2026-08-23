@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "kubejs:block/milly_bubcap_basket_bottom",
-    "side": "kubejs:block/milly_bubcap_basket_side",
-    "top": "kubejs:block/milly_bubcap_basket_top"
-  }
-}

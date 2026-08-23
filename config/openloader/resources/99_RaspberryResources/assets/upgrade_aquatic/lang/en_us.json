@@ -52,7 +52,16 @@
   "item.upgrade_aquatic.lionfish": "Lionfish",
   
   "entity.upgrade_aquatic.great_thrasher": "Elder Thrasher",
-  "item.upgrade_aquatic.great_thrasher_spawn_egg": "Elder Thrasher Spawn Egg",
 
-  "item.upgrade_aquatic.driftwood_chest_boat": "Driftwood Boat with Barrel"
+  "item.upgrade_aquatic.driftwood_chest_boat": "Driftwood Boat with Barrel",
+
+  "subtitles.upgrade_aquatic.entity.pike.death": "Fish dies",
+  "subtitles.upgrade_aquatic.entity.pike.flop": "Fish flops",
+  "subtitles.upgrade_aquatic.entity.pike.hurt": "Fish hurts",
+  "subtitles.upgrade_aquatic.entity.pike.bite": "Fish bites",
+  "subtitles.upgrade_aquatic.entity.pike.spit": "Fish spits",
+
+  "subtitles.upgrade_aquatic.entity.perch.death": "Fish dies",
+  "subtitles.upgrade_aquatic.entity.perch.flop": "Fish flops",
+  "subtitles.upgrade_aquatic.entity.perch.hurt": "Fish hurts"
 }

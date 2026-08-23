@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "friendsandfoes:item/rascal_spawn_egg"
+  }
+}

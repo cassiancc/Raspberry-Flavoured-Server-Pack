@@ -99,7 +99,10 @@ WorldgenEvents.remove(event => {
 		'caverns_and_chasms:ore_spinel_buried',
 		'caverns_and_chasms:ore_silver_soul',
 		'caverns_and_chasms:ore_spinel',
-		'sullysmod:jade_ore'
+		'sullysmod:jade_ore',
+		'twigs:silt_strip',
+		'oreganized:lead_ore',
+		'oreganized:lead_ore_extra'
 	])
 	event.removeFeatureById('vegetal_decoration', [
 		'naturalist:patch_cattail', 

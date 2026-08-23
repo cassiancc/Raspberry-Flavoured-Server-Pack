@@ -3,11 +3,11 @@
     "type": "minecraft:random_spread",
     "salt": 14357617,
     "separation": 6,
-    "spacing": 24
+    "spacing": 28
   },
   "structures": [
     {
-      "structure": "minecraft:desert_pyramid",
+      "structure": "kubejs:desert_pyramid",
       "weight": 1
     }
   ]

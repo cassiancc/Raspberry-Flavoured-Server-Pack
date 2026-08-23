@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:farming/shears",
+  "parent": "raspberry_flavoured:farming/copper_patina",
   "criteria": {
     "0": {
       "conditions": {

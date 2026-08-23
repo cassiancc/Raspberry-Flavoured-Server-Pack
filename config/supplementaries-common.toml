@@ -159,16 +159,16 @@
 		enabled = true
 		#Chance for an urn to spawn a critter from the urn_spawn tag
 		#Range: 0.0 ~ 1.0
-		critter_spawn_chance = 0.009999999776482582
+		critter_spawn_chance = 0.05
 
 		[functional.urn.cave_urns]
 			enabled = true
 			#Attempts at every patch to spawn 1 block. Increases average patch size
 			#Range: 1 ~ 100
-			attempts_per_patch = 6
+			attempts_per_patch = 7
 			#Spawn attempts per chunk. Increases spawn frequency
 			#Range: 0 ~ 100
-			spawn_attempts = 7
+			spawn_attempts = 10
 
 	[functional.soap]
 		enabled = true
@@ -245,7 +245,7 @@
 		door-like_gates = false
 
 	[building.item_shelf]
-		enabled = true
+		enabled = false
 		#Makes item shelves climbable
 		climbable_shelves = false
 

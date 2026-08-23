@@ -1,0 +1,22 @@
+{
+  "type": "blueprint:weighted",
+  "priority": "normal",
+  "replaces_blocks": "raspberry_flavoured:desert_pyramid_base_blocks",
+  "replaces_with": [
+    {
+      "data": "minecraft:sandstone",
+      "weight": 1
+    },
+    {
+      "data": "quark:sandstone_bricks",
+      "weight": 1
+    }
+  ],
+  "selector": {
+    "type": "names",
+    "config": [
+      "minecraft:desert_pyramid",
+      "kubejs:desert_pyramid"
+    ]
+  }
+}

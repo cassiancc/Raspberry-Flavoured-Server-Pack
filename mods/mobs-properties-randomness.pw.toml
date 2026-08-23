@@ -1,0 +1,13 @@
+name = "Mobs Properties Randomness"
+filename = "MobsPropertiesRandomness-4.2.3-mc1.19.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b7e9517e4f1088dacb29b22aee43d2f87a3fd931"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4853944
+project-id = 285012

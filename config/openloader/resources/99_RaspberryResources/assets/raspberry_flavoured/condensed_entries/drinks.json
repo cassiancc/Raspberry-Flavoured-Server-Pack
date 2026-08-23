@@ -1,0 +1,9 @@
+{
+  "debug_entries": false,
+  "food": {
+    "raspberry_flavoured:drinks": {
+      "base_item": "minecraft:glass_bottle",
+      "item_tag": "raspberry_flavoured:all_drinks"
+    }
+  }
+}

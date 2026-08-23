@@ -16,6 +16,24 @@
   "block.twigs.chiseled_silt_bricks": "Trimmed Silt Bricks",
   "block.twigs.polished_amethyst": "Block of Amethyst",
   "block.twigs.quartz_column": "Polished Quartz Column",
+
+  "block.twigs.packed_silt": "Hardened Silt",
+  "block.twigs.white_packed_silt": "White Hardened Silt",
+  "block.twigs.orange_packed_silt": "Orange Hardened Silt",
+  "block.twigs.magenta_packed_silt": "Magenta Hardened Silt",
+  "block.twigs.light_blue_packed_silt": "Light Blue Hardened Silt",
+  "block.twigs.yellow_packed_silt": "Yellow Hardened Silt",
+  "block.twigs.lime_packed_silt": "Lime Hardened Silt",
+  "block.twigs.pink_packed_silt": "Pink Hardened Silt",
+  "block.twigs.gray_packed_silt": "Gray Hardened Silt",
+  "block.twigs.light_gray_packed_silt": "Light Gray Hardened Silt",
+  "block.twigs.cyan_packed_silt": "Cyan Hardened Silt",
+  "block.twigs.purple_packed_silt": "Purple Hardened Silt",
+  "block.twigs.blue_packed_silt": "Blue Hardened Silt",
+  "block.twigs.brown_packed_silt": "Brown Hardened Silt",
+  "block.twigs.green_packed_silt": "Green Hardened Silt",
+  "block.twigs.red_packed_silt": "Red Hardened Silt",
+  "block.twigs.black_packed_silt": "Black Hardened Silt",
   
   "item.twigs.silt_ball": "Lump of Silt"
 }

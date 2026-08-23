@@ -24,7 +24,8 @@
       "translate": "advancements.rf.farming.pizza_time.description"
     },
     "icon": {
-      "item": "brewinandchewin:pizza"
+      "item": "brewinandchewin:pizza",
+      "nbt": "{\"quark:RuneAttached\": 1b, Enchantments: [{id:\"minecraft:smite\", lvl: 1}], \"quark:RuneColor\": {id: \"quark:rainbow_rune\", Count: 1b}}"
     },
     "frame": "goal",
     "hidden": false,

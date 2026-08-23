@@ -36,6 +36,13 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
+            "type": "minecraft:evoker"
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
             "type": "minecraft:zombified_piglin"
           }
         },

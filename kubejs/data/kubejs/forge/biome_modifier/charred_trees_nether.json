@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#raspberry_flavoured:nether_charred_tree_biomes",
+  "features": "kubejs:patch_nether_charred_trees",
+  "step": "underground_decoration"
+}

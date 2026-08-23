@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:exploration/root",
+  "parent": "raspberry_flavoured:exploration/exopearls",
   "criteria": {
     "0": {
       "trigger": "minecraft:effects_changed",

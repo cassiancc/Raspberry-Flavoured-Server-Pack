@@ -1,0 +1,13 @@
+name = "Reliable Backpacks"
+filename = "reliable_backpacks-forge-1.19.2-1.3.0-rf.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "44df01d9b83e74fc905980afd4b95fcc42707e5a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7876721
+project-id = 1484454

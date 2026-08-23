@@ -1,0 +1,147 @@
+{
+	"name": "explorify:campsite/tent",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:empty_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/01",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/02",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/03",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/04",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/05",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/06",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/07",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/08",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/09",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/10",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/11",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/12",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/13",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/14",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "explorify:campsite/tent/15",
+				"projection": "rigid",
+				"processors": "minecraft:mossify_10_percent"
+			}
+		}
+	]
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:machines/steel",
+  "parent": "raspberry_flavoured:machines/industrial_fan",
   "criteria": {
     "0": {
       "conditions": {

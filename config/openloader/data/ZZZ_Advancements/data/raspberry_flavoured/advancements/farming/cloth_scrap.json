@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:farming/knife",
+  "parent": "raspberry_flavoured:farming/ham",
   "criteria": {
     "0": {
       "conditions": {

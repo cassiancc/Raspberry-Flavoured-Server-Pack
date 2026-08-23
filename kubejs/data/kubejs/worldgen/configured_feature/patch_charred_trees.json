@@ -1,0 +1,108 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:tree",
+        "config": {
+          "ignore_vines": false,
+          "minimum_size": {
+            "type": "minecraft:two_layers_feature_size",
+            "limit": 1,
+            "lower_size": 0,
+            "upper_size": 1
+          },
+          "force_dirt": false,
+          "dirt_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:coarse_dirt"
+            }
+          },
+          "trunk_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "architects_palette:charcoal_block",
+              "Properties": {
+                "axis": "y"
+              }
+            }
+          },
+          "foliage_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:air"
+            }
+          },
+          "trunk_placer": {
+            "type": "minecraft:straight_trunk_placer",
+            "base_height": 1,
+            "height_rand_a": 1,
+            "height_rand_b": 3
+          },
+          "foliage_placer": {
+            "type": "minecraft:random_spread_foliage_placer",
+            "radius": 0,
+            "offset": 0,
+            "foliage_height": 1,
+            "leaf_placement_attempts": 0
+          },
+          "decorators": [
+            {
+              "type": "minecraft:alter_ground",
+              "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                  {
+                    "weight": 3,
+                    "data": {
+                      "Name": "minecraft:coarse_dirt"
+                    }
+                  },
+                  {
+                    "weight": 2,
+                    "data": {
+                      "Name": "minecraft:dirt"
+                    }
+                  },
+                  {
+                    "weight": 1,
+                    "data": {
+                      "Name": "caverns_and_chasms:rocky_dirt"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:would_survive",
+                "state": {
+                  "Name": "minecraft:oak_sapling",
+				  "Properties": {
+					  "stage": "0"
+				  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "tries": 4,
+    "xz_spread": 7,
+    "y_spread": 3
+  }
+}

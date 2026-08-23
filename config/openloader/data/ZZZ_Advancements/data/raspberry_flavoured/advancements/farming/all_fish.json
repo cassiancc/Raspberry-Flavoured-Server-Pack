@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:farming/fishing_gear",
+  "parent": "raspberry_flavoured:farming/all_hooks",
   "criteria": {
     "Obtain Cod": {
       "conditions": {
@@ -13,7 +13,7 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-	"Obtain Salmon": {
+	"Obtain Sockeye Salmon": {
       "conditions": {
         "items": [
           {
@@ -289,6 +289,30 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+	"Obtain Humpback Salmon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquaculture:pink_salmon"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+	"Obtain Minnow": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquaculture:minnow"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
 	"Obtain Goldfish": {
       "conditions": {
         "items": [
@@ -339,7 +363,7 @@
       "Obtain Cod"
     ],
     [
-      "Obtain Salmon"
+      "Obtain Sockeye Salmon"
     ],
     [
       "Obtain Tropical Fish"
@@ -406,6 +430,12 @@
     ],
     [
       "Obtain Tuna"
+    ],
+    [
+      "Obtain Humpback Salmon"
+    ],
+    [
+      "Obtain Minnow"
     ],
     [
       "Obtain Goldfish"

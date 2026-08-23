@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "kubejs:block/polished_sandstone",
+    "side": "minecraft:block/cut_sandstone",
+    "top": "kubejs:block/polished_sandstone"
+  }
+}

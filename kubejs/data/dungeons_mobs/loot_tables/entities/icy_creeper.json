@@ -11,7 +11,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 0.0,
-                "max": 2.0,
+                "max": 1.0,
                 "type": "minecraft:uniform"
               }
             },
@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "minecraft:gunpowder"
+          "name": "savage_and_ravage:creeper_spores"
         }
       ]
     },
@@ -37,8 +37,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 0.0
+                "max": 4.0,
+                "min": 1.0
               },
               "function": "minecraft:set_count"
             },
@@ -51,7 +51,7 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "minecraft:snow"
+          "name": "neapolitan:ice_cubes"
         }
       ],
       "rolls": 1.0
@@ -60,16 +60,15 @@
       "rolls": 1.0,
       "entries": [
         {
-          "type": "minecraft:tag",
-          "name": "minecraft:creeper_drop_music_discs",
-          "expand": true
+          "type": "minecraft:item",
+          "name": "windswept:music_disc_snow"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
           "predicate": {
-            "type": "#minecraft:skeletons"
+            "type": "minecraft:stray"
           },
           "entity": "killer"
         }

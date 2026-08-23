@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:exploration/exopearls",
+  "parent": "raspberry_flavoured:exploration/bomb",
   "criteria": {
     "0": {
       "trigger": "caverns_and_chasms:spotted_by_peeper"

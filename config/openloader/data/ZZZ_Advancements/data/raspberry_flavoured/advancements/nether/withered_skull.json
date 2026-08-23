@@ -1,0 +1,41 @@
+{
+  "parent": "raspberry_flavoured:nether/kill_wildfire",
+  "criteria": {
+    "0": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:wither_skeleton_skull"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "advancements.rf.nether.withered_skull.title"
+    },
+    "description": {
+      "color": "#8630CC",
+      "translate": "advancements.rf.nether.withered_skull.description"
+    },
+    "icon": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "rewards": {
+      "function": "raspberry_flavoured:sound_nether"
+    },
+  "requirements": [
+    [
+      "0"
+    ]
+  ]
+}

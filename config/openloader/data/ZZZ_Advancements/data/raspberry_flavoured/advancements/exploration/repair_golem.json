@@ -37,7 +37,7 @@
       "translate": "advancements.rf.exploration.repair_golem.description"
     },
     "icon": {
-      "item": "minecraft:iron_block"
+      "item": "minecraft:iron_ingot"
     },
     "frame": "task",
     "hidden": false,

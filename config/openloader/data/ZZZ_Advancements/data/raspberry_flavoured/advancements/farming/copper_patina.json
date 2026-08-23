@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:farming/cutting_board",
+  "parent": "raspberry_flavoured:farming/tree_bark",
   "criteria": {
     "0": {
       "conditions": {

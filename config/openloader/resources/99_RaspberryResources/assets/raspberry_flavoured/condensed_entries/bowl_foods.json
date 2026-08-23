@@ -1,0 +1,9 @@
+{
+  "debug_entries": false,
+  "food": {
+    "raspberry_flavoured:bowl_foods": {
+      "base_item": "minecraft:bowl",
+      "item_tag": "raspberry_flavoured:all_bowl_foods"
+    }
+  }
+}

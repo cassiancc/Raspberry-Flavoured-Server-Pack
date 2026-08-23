@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#raspberry_flavoured:surface_tangle_weeds_biomes",
+  "features": "kubejs:patch_tangle_weeds",
+  "step": "vegetal_decoration"
+}

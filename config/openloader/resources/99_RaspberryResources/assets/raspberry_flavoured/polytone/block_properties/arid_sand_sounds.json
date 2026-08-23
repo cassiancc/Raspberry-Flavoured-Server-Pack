@@ -1,7 +1,11 @@
 {
    "targets": [
 	"atmospheric:arid_sand",
-	"atmospheric:red_arid_sand"
+	"atmospheric:red_arid_sand",
+	"spelunkery:salt_block",
+	"spelunkery:salt",
+	"supplementaries:ash",
+	"raspberry:ash_block"
    ],
    "sound_type": {
       "break_sound": "kubejs:sound.arid_sand.break",

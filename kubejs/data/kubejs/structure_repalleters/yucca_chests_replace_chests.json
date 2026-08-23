@@ -8,7 +8,8 @@
     "config": [
       "bettermineshafts:mineshaft_desert",
       "bettermineshafts:mineshaft_red_desert",
-      "minecraft:desert_pyramid"
+      "minecraft:desert_pyramid",
+      "kubejs:desert_pyramid"
     ]
   }
 }

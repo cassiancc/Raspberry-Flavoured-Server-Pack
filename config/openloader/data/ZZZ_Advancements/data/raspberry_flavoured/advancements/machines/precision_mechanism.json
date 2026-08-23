@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:machines/deployer",
+  "parent": "raspberry_flavoured:machines/train_tracks",
   "criteria": {
     "0": {
       "conditions": {

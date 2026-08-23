@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:farming/campfire",
+  "parent": "raspberry_flavoured:farming/plant_seed",
   "criteria": {
     "0": {
       "conditions": {

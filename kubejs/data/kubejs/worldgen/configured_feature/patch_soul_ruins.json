@@ -1,0 +1,155 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:tree",
+        "config": {
+          "ignore_vines": false,
+          "minimum_size": {
+            "type": "minecraft:two_layers_feature_size",
+            "limit": 1,
+            "lower_size": 0,
+            "upper_size": 1
+          },
+          "force_dirt": false,
+          "dirt_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:soul_soil"
+            }
+          },
+          "trunk_provider": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 8,
+                "data": {
+                  "Name": "kubejs:soul_sandstone_tiles"
+                }
+              },
+              {
+                "weight": 7,
+                "data": {
+                  "Name": "quark:soul_sandstone_bricks"
+                }
+              },
+              {
+                "weight": 6,
+                "data": {
+                  "Name": "kubejs:cracked_soul_sandstone_bricks"
+                }
+              },
+              {
+                "weight": 4,
+                "data": {
+                  "Name": "kubejs:polished_soul_sandstone"
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "Name": "quark:cut_soul_sandstone"
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "Name": "quark:chiseled_soul_sandstone"
+                }
+              }
+            ]
+          },
+          "foliage_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:air"
+            }
+          },
+          "trunk_placer": {
+            "type": "minecraft:straight_trunk_placer",
+            "base_height": 3,
+            "height_rand_a": 1,
+            "height_rand_b": 3
+          },
+          "foliage_placer": {
+            "type": "minecraft:random_spread_foliage_placer",
+            "radius": 0,
+            "offset": 0,
+            "foliage_height": 1,
+            "leaf_placement_attempts": 0
+          },
+          "decorators": [
+            {
+              "type": "minecraft:alter_ground",
+              "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                  {
+                    "weight": 12,
+                    "data": {
+                      "Name": "minecraft:soul_soil"
+                    }
+                  },
+                  {
+                    "weight": 12,
+                    "data": {
+                      "Name": "quark:soul_sandstone"
+                    }
+                  },
+                  {
+                    "weight": 4,
+                    "data": {
+                      "Name": "quark:soul_sandstone_bricks"
+                    }
+                  },
+                  {
+                    "weight": 4,
+                    "data": {
+                      "Name": "kubejs:cracked_soul_sandstone_bricks"
+                    }
+                  },
+                  {
+                    "weight": 4,
+                    "data": {
+                      "Name": "kubejs:soul_sandstone_tiles"
+                    }
+                  },
+                  {
+                    "weight": 1,
+                    "data": {
+                      "Name": "minecraft:soul_sand"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:would_survive",
+                "state": {
+                  "Name": "minecraft:brown_mushroom"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "tries": 12,
+    "xz_spread": 8,
+    "y_spread": 3
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:exploration/bomb",
+  "parent": "raspberry_flavoured:exploration/dungeon",
   "criteria": {
     "0": {
       "trigger": "minecraft:impossible"
@@ -17,7 +17,7 @@
       "item": "savage_and_ravage:creeper_spores"
     },
     "frame": "task",
-    "hidden": true,
+    "hidden": false,
     "announce_to_chat": true,
     "show_toast": true
   },

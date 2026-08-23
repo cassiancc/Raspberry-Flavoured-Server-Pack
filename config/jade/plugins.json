@@ -27,16 +27,16 @@
     "entity_health": true,
     "energy_storage": true,
     "entity_armor.max_for_render": 40,
-    "enchantment_power": true,
+    "enchantment_power": false,
     "breaking_progress": true,
-    "tnt_stability": true,
+    "tnt_stability": false,
     "villager_profession": true,
     "mob_breeding": true,
     "entity_health.icons_per_line": 10,
     "item_frame": true,
     "crop_progress": true,
     "fluid.detailed": false,
-    "total_enchantment_power": true,
+    "total_enchantment_power": false,
     "potion_effects": true,
     "command_block": true,
     "mob_growth": true,
@@ -56,6 +56,11 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": false
+  },
+  "infinitybuttons": {
+    "hide_secret_buttons": true,
+    "hide_lantern_buttons": true,
+    "hide_torch_buttons": true
   },
   "storagedrawers": {
     "display.stacklimit": true,

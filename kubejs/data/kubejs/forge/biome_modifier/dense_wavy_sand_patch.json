@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#raspberry_flavoured:dense_wavy_sand_patch_biomes",
+  "features": "kubejs:patch_wavy_sand_dense",
+  "step": "fluid_springs"
+}

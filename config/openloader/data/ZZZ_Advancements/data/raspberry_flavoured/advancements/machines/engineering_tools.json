@@ -1,5 +1,5 @@
 {
-  "parent": "raspberry_flavoured:machines/mechanical_press",
+  "parent": "raspberry_flavoured:machines/millstone",
   "criteria": {
     "Obtain Engineer's Wrench": {
       "conditions": {

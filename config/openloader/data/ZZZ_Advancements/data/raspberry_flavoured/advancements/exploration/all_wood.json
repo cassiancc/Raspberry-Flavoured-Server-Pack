@@ -121,6 +121,16 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+	"Obtain Grimwood Log": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "atmospheric:grimwood_logs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
 	"Obtain Maple Log": {
       "conditions": {
         "items": [
@@ -230,6 +240,16 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+	"Obtain Charred Log": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "raspberry_flavoured:charred_logs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -290,6 +310,9 @@
       "Obtain Yucca Log"
     ],
 	[
+      "Obtain Grimwood Log"
+    ],
+	[
       "Obtain Maple Log"
     ],
 	[
@@ -321,6 +344,9 @@
     ],
 	[
       "Obtain Block of Powdery Cane"
+    ],
+	[
+      "Obtain Charred Log"
     ]
   ]
 }

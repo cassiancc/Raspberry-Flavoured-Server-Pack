@@ -11,8 +11,8 @@
 	parachute_delay = 10
 
 [slimes]
-	increased_slime_spawn_rate = false
-	slime_cauldrons = true
+	increased_slime_spawn_rate = true
+	slime_cauldrons = false
 	slimes_friendly_if_regen = true
 	slimes_always_friendly = false
 	#Range: 1 ~ 2400
