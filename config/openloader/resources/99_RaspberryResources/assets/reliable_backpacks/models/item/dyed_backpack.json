@@ -1,8 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "reliable_backpacks:item/backpack_base",
-    "layer1": "reliable_backpacks:item/backpack_overlay"
-  }
-}
-

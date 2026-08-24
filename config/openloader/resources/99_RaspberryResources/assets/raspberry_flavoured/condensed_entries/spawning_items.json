@@ -1,9 +1,0 @@
-{
-  "debug_entries": false,
-  "tools": {
-    "raspberry_flavoured:spawning_items": {
-      "base_item": "minecraft:creeper_spawn_egg",
-      "item_tag": "raspberry_flavoured:spawning_items"
-    }
-  }
-}

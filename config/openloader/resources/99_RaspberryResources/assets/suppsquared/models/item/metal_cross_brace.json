@@ -1,6 +1,0 @@
-{
-	"parent": "minecraft:block/cube_all",
-	"textures": {
-		"all": "suppsquared:block/metal_cross_brace"
-	}
-}
